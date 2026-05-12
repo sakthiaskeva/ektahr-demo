@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HRMS Geo | EKTA HR - Location Intelligence for Field Force</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/logo/favicon-32x32.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="assets/css/ekta_style.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QF7ZSPWC0P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-QF7ZSPWC0P');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MRQFZGZT');</script>
+  <!-- End Google Tag Manager -->
+
+</head>
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRQFZGZT" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <nav class="nav-wrap">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo/web-logo-black.png" alt="EKTA HR">
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li>
+            <a href="features.html">Features <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown">
+              <a href="interview.html">Interview Management</a>
+              <a href="staff.html">Staff Management</a>
+              <a href="payroll.html">Payroll Management</a>
+              <a href="performance.html">Performance Management</a>
+              <a href="lms.html" class="active">LMS Portal</a>
+              <a href="assets.html">Asset Management</a>
+              <a href="attendance.html">Attendance & Timesheet</a>
+              <a href="requests.html">Requests & Approvals</a>
+            </div>
+          </li>
+          <li><a href="pricing-plan.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="header-btns">
+          <a href="https://my.ektahr.com" class="btn btn-outline">Login</a>
+          <a href="https://my.ektahr.com/signup" class="btn btn-primary">Try EKTA Free</a>
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-close" id="menuClose">
+      <i class="fas fa-times"></i>
+    </div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="features.html">Features</a>
+    <a href="pricing-plan.html">Pricing</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
+    <a href="signup.html" style="color: var(--primary);">Try EKTA Free</a>
+  </div>
+
+  <!-- Module Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content" style="text-align: center; max-width: 850px; margin: 0 auto;">
+        <span class="section-tag" data-aos="fade-up">Location Intelligence</span>
+        <h1 data-aos="fade-up" data-aos-delay="100" class="hero-title">Visibility anywhere.<br><span
+            style="color: var(--primary-dark)">Control everywhere.</span></h1>
+        <p data-aos="fade-up" data-aos-delay="200" class="hero-text">Manage your remote and field workforce with
+          location-based attendance, geofencing, and real-time tracking. Ensure accountability wherever your team works.
+        </p>
+        <div class="header-btns-mobile" data-aos="fade-up" data-aos-delay="300">
+          <a href="contact.html" class="btn btn-primary animate-pulse-yellow">Track Your Team</a>
+          <a href="signup.html" class="btn btn-outline"><i class="fas fa-play"
+              style="font-size: 10px; margin-right: 8px;"></i> Start Free Trial</a>
+        </div>
+      </div>
+
+      <!-- Floating Dashboard Mockup -->
+      <!-- <div class="hero-mockup animate-float" data-aos="zoom-in" data-aos-delay="400">
+        <img src="assets/images/all-images/about-img1.png" alt="EKTA Dashboard">
+
+   
+        <div class="glass-card mockup-card-1">
+          <div style="display: flex; gap: 12px; align-items: center;">
+            <i class="fas fa-map-marker-alt" style="color: #ef4444; font-size: 24px;"></i>
+            <div style="text-align: left;">
+              <p style="font-size: 12px; font-weight: 700; margin:0;">Live Tracking</p>
+              <p style="font-size: 10px; color: var(--text-muted); margin:0;">85 Agents in Field</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card mockup-card-2">
+          <div style="text-align: left;">
+            <p style="font-size: 10px; color: var(--text-muted); margin:0; text-transform: uppercase;">Geofence
+              Accuracy</p>
+            <h4 style="margin: 4px 0; font-size: 24px;">99.9%</h4>
+            <div style="height: 4px; width: 100%; background: #e2e8f0; border-radius: 2px;">
+              <div style="height: 100%; width: 99%; background: var(--primary); border-radius: 2px;"></div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="sp" style="background: var(--bg-light);">
+    <div class="container">
+      <div class="split-section">
+        <div class="split-image" data-aos="fade-right">
+          <img src="assets/images/all-images/about-img1.png" alt="Geo Tracking Dashboard">
+        </div>
+        <div class="split-content" data-aos="fade-left">
+          <span class="section-tag">Field Force Mgmt</span>
+          <h2>Geospatial Workforce Management.</h2>
+          <p>EKTA HR leverages GPS technology to provide accurate insights into your field force. Define work zones with
+            geofencing and track real-time movements for ultimate transparency.</p>
+          <ul class="check-list">
+            <li><i class="fas fa-check-circle"></i> GPS-Tagged Attendance</li>
+            <li><i class="fas fa-check-circle"></i> Real-Time Field Mapping</li>
+            <li><i class="fas fa-check-circle"></i> Geo-Fenced Boundaries</li>
+            <li><i class="fas fa-check-circle"></i> Route & Visit Tracking</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Features -->
+  <section class="sp">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card" data-aos="fade-up">
+          <div class="feature-icon"><i class="fas fa-map-location-dot"></i></div>
+          <h3>Geo-Attendance</h3>
+          <p>Allow employees to check in and out only within predefined coordinates using mobile GPS.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon"><i class="fas fa-route"></i></div>
+          <h3>Visit Verification</h3>
+          <p>Track field visits with timestamped location data and image verification for absolute proof.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon"><i class="fas fa-draw-polygon"></i></div>
+          <h3>Geofencing</h3>
+          <p>Create virtual boundaries around work sites and receive alerts when employees enter or exit zones.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up">
+          <div class="feature-icon"><i class="fas fa-street-view"></i></div>
+          <h3>Live Tracking</h3>
+          <p>View the current location of your entire field team on an interactive real-time map dashboard.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon"><i class="fas fa-calendar-check"></i></div>
+          <h3>Site Allocation</h3>
+          <p>Dynamically assign tasks and sites to the nearest available employee based on their current location.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon"><i class="fas fa-chart-area"></i></div>
+          <h3>Coverage Reports</h3>
+          <p>Analyze area coverage and field productivity with detailed heatmaps and movement reports.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section (Premium) -->
+  <!-- <section class="sp" style="padding: 80px 0;">
+    <div class="container text-center">
+      <div class="glass-card"
+        style="padding: 80px 40px; background: linear-gradient(135deg, var(--secondary) 0%, #000 100%); color: var(--white); overflow: hidden; position: relative; border: none;"
+        data-aos="zoom-in">
+
+        <div
+          style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: var(--primary); opacity: 0.15; border-radius: 50%;">
+        </div>
+
+        <h2 style="color: var(--white); margin-bottom: 24px;" class="sp_h2">
+          Ready to See Your Team in Action?
+        </h2>
+
+        <p style="color: rgba(255,255,255,0.7); max-width: 650px; margin: 0 auto 48px; font-size: 1.125rem;">
+          Get real-time visibility into your remote and field workforce. Eliminate uncertainty and drive accountability
+          with EKTA HR's location intelligence.
+        </p>
+
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+          <a href="signup.html" class="btn btn-primary" style="padding: 18px 48px;">
+            Start Tracking For Free
+          </a>
+          <a href="contact.html" class="btn btn-outline"
+            style="border-color: var(--white); color: var(--white); padding: 18px 48px;">
+            Request a Live Field Demo
+          </a>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Fixed CTA Banner -->
+  <section class="fixed-cta-section" data-aos="zoom-in">
+    <div class="fixed-cta-card">
+      <h5>Transform your workforce with the power of EKTA HR. — <span style="color: var(--secondary)">3 months
+          free.</span></h5>
+      <a href="https://my.ektahr.com/signup" class="btn-fixed-cta">Start 3 months free trail</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Column 1: Logo & About -->
+        <div class="footer-brand">
+          <img src="assets/images/logo/web-logo-white.png" alt="EKTA HR">
+          <p style="margin-top: 24px; line-height: 1.7;">
+            EKTA HR is an advanced Human Resource Management System designed
+            to simplify operations, enhance employee experience, and scale
+            effortlessly with growing businesses.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="partners.html">Partners</a></li>
+            <li><a href="pricing-plan.html">Pricing</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Location Map -->
+        <div class="footer-links">
+          <h4>Core Features</h4>
+          <ul>
+            <li><a href="recruitment.html">Recruitment Software</a></li>
+            <li><a href="hr-software.html">HR Software</a></li>
+            <li> <a href="onboarding-software.html">Employee Onboarding</a></li>
+            <li><a href="attendance.html">Attendance Management</a></li>
+            <li> <a href="payroll.html">Payroll Software</a></li>
+            <li> <a href="leave.html">Leave Management</a></li>
+            <li><a href="performance.html">Performance</a></li>
+            <li><a href="lms.html">Learning Management</a></li>
+            <li><a href="expense-management-software.html">Travel & Expense</a></li>
+            <li><a href="employee-self-service.html">Employee Self Service</a></li>
+            <li><a href="mobile-application.html">Mobile App</a></li>
+            <li><a href="timesheet-software.html">Timesheet Software</a></li>
+            <li><a href="integration.html">Integration</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Location Map -->
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="hr-letter.html">HR Letters</a></li>
+            <li> <a href="hr-policy.html">HR Policies</a></li>
+            <li><a href="hr-glossary.html">HR Glossary</a></li>
+            <li> <a href="minimum-wages.html">Minimum Wages </a></li>
+            <li> <a href="professional-tax.html">Professional Tax</a></li>
+            <li><a href="holiday-list.html">Holiday Lists</a></li>
+            <li><a href="job-descriptions.html">Job Descriptions</a></li>
+            <li><a href="labour-welfare-fund.html">Labour Welfare Fund</a></li>
+            <li><a href="okr.html">OKRs</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact + Newsletter -->
+        <div class="footer-links">
+          <h4>Industries</h4>
+          <ul>
+            <li><a href="manufacturing-industry.html">Manufacturing</a></li>
+            <li><a href="social-welfare.html">Social Welfare</a></li>
+            <li> <a href="finance.html">Finance</a></li>
+            <li><a href="automotive.html">Automotive</a></li>
+            <li> <a href="healthcare.html">Healthcare</a></li>
+            <li> <a href="retail.html">Retail</a></li>
+            <li><a href="information-technology.html">Information Technology</a></li>
+            <li><a href="hospitality.html">Hospitality</a></li>
+            <li><a href="startups.html">Startups</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="copyright"
+        style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+
+        <p> &copy; 2026 EKTA HR, All rights
+          reserved. </p>
+
+        <div style="display: flex; gap: 20px;">
+          <a href="https://www.linkedin.com/company/myektahr/" target="_blank" style="color: #fff;"
+            class="social-icons"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/people/Ektahr/61586428776510/" target="_blank" style="color: #fff;"
+            class="social-icons"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/my.ektahr/" target="_blank" style="color: #fff;" class="social-icons"><i
+              class="fab fa-instagram"></i></a>
+          <!-- <a href="#" style="color: #fff;" class="social-icons"><i class="fab fa-whatsapp"></i></a> -->
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true, disable: function () { return window.innerWidth < 768; } });
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) header.classList.add('scrolled');
+      else header.classList.remove('scrolled');
+    });
+  </script>
+</body>
+
+</html>

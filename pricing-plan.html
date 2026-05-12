@@ -1,0 +1,1690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Plans | EKTA HR - Flexible Solutions for Modern Teams</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/logo/favicon-32x32.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="assets/css/ekta_style.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QF7ZSPWC0P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-QF7ZSPWC0P');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MRQFZGZT');</script>
+  <!-- End Google Tag Manager -->
+
+  <style>
+    /* Askeva-style Pricing Layout Adaptations */
+    :root {
+      --askeva-bg: radial-gradient(circle at top right, #fffdf5 0%, #ffffff 100%);
+      --askeva-primary: var(--primary);
+      --secondary: #121212;
+      --askeva-secondary: #000;
+      --askeva-text-muted: #5d5d66;
+      --table-border: rgba(0, 0, 0, 0.078);
+    }
+
+    .pricing-hero-wrap {
+      background: radial-gradient(circle at top right, #fffdf5 0%, #ffffff 100%);
+      /* Greenish like reference, or use primary if preferred */
+      color: var(--askeva-secondary);
+      padding: 120px 0 100px;
+      text-align: center;
+      position: relative;
+    }
+
+    .pricing-hero-wrap h1 {
+      font-size: 70px;
+      font-weight: 800;
+      margin-bottom: 24px;
+      color: var(--secondary);
+    }
+
+    .pricing-hero-features {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      margin: 40px 0 0;
+    }
+
+    .pricing-hero-features li {
+      position: relative;
+      padding-left: 35px;
+      text-align: left;
+    }
+
+    .pricing-hero-features li::before {
+      content: "\f00c";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 24px;
+      height: 24px;
+      background: var(--secondary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      color: white;
+    }
+
+    .pricing-hero-features li p {
+      margin: 0;
+      line-height: 1.2;
+    }
+
+    .pricing-hero-features li p:first-child {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .pricing-hero-features li p:last-child {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    /* Toggles */
+    .pricing-selectors {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-top: -35px;
+      position: relative;
+      z-index: 20;
+      background: radial-gradient(circle at top right, #fffdf5 0%, #ffffff 100%);
+    }
+
+    .duration-selector,
+    .currency-selector {
+      background: #fff;
+      padding: 5px;
+      border-radius: 40px;
+      display: flex;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .selector-btn {
+      padding: 8px 24px;
+      border-radius: 30px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 14px;
+    }
+
+    .selector-btn.active {
+      background: var(--askeva-primary);
+      color: #000;
+    }
+
+    /* Price Cards */
+    .price-grid-askeva {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0px auto;
+      padding: 0 20px;
+    }
+
+    .price-card-askeva {
+      background: #fff;
+      border-radius: 15px;
+      padding: 40px 30px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      border-bottom: 8px solid transparent;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    .price-card-askeva:hover {
+      transform: translateY(-10px);
+    }
+
+    .price-card-askeva.popular {
+      border: 1px solid #575757;
+      border-bottom: 8px solid #575757;
+      position: relative;
+    }
+
+    .price-card-askeva.popular::after {
+      content: "MOST POPULAR";
+      position: absolute;
+      top: 10px;
+      right: -10px;
+      background: var(--primary);
+      color: #000;
+      padding: 4px 12px;
+      font-size: 11px;
+      font-weight: 800;
+      border-radius: 5px 30px 30px 5px;
+    }
+
+    .plan-title-askeva {
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: #000;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .price-display-askeva {
+      margin: 15px 0;
+    }
+
+    .price-currency-askeva {
+      font-size: 24px;
+      font-weight: 600;
+      vertical-align: top;
+      margin-right: 2px;
+    }
+
+    .price-amount-askeva {
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .price-period-askeva {
+      display: block;
+      color: var(--askeva-text-muted);
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .btn-askeva {
+      background: var(--primary);
+      color: #000;
+      text-decoration: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-weight: 700;
+      display: block;
+      margin: 20px 0;
+      transition: background 0.3s;
+    }
+
+    .btn-askeva:hover {
+      background: #000;
+      color: #fff;
+    }
+
+    .plan-desc-askeva {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.6;
+      margin-top: auto;
+    }
+
+    /* Comparison Table */
+    .comparison-section-askeva {
+      background: #fff;
+      padding: 80px 0;
+    }
+
+    .comparison-table-askeva {
+      width: 100%;
+      max-width: 1200px;
+      /* Centered fixed-width feel for large screens */
+      margin: 40px auto;
+      border-collapse: collapse;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+      table-layout: auto;
+      /* Default for desktop */
+    }
+
+    .comparison-table-askeva th {
+      padding: 25px 20px;
+      text-align: center;
+      background: #fcfcfc;
+      border-bottom: 2px solid #eee;
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+
+    .comparison-table-askeva th:first-child {
+      text-align: left;
+      width: 250px;
+    }
+
+    .comparison-table-askeva th:nth-child(2) {
+      text-align: left;
+      width: 250px;
+    }
+
+    .comparison-table-askeva td {
+      padding: 15px 20px;
+      text-align: center;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .col-main-feature {
+      text-align: left !important;
+      font-weight: 700 !important;
+      color: var(--secondary) !important;
+      background: #fafafa !important;
+      vertical-align: middle;
+    }
+
+    .col-submodule {
+      text-align: left !important;
+      font-weight: 500 !important;
+    }
+
+    /* Plan Switcher for Mobile */
+    .table-plan-switcher {
+      display: none;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      padding: 5px;
+      background: #f0f0f0;
+      border-radius: 50px;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .tr {
+      border: 1px solid #000 !important;
+    }
+
+    .switcher-plan-btn {
+      flex: 1;
+      padding: 10px 15px;
+      border-radius: 50px;
+      border: none;
+      background: transparent;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.3s;
+      color: #777;
+    }
+
+    .switcher-plan-btn.active {
+      background: var(--primary);
+      color: #000;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 991px) {
+      .table-plan-switcher {
+        display: flex;
+      }
+
+      .table-responsive-askeva {
+        overflow-x: hidden;
+        /* Prevent horizontal scroll entirely */
+        padding: 0;
+      }
+
+      .comparison-table-askeva {
+        min-width: 100%;
+        table-layout: fixed;
+        /* Force columns to stay within 100% width */
+      }
+
+      /* Hide Lite, Max, Ultra columns by default in mobile if switcher is active */
+      .col-lite,
+      .col-max,
+      .col-ultra {
+        display: none;
+        width: 30% !important;
+        /* Fixed width for the plan column */
+      }
+
+      .col-main-feature {
+        width: 35% !important;
+      }
+
+      .col-submodule {
+        width: 35% !important;
+      }
+
+      /* Show based on table class */
+      .comparison-table-askeva.show-lite .col-lite,
+      .comparison-table-askeva.show-max .col-max,
+      .comparison-table-askeva.show-ultra .col-ultra {
+        display: table-cell !important;
+      }
+
+      .comparison-table-askeva th,
+      .comparison-table-askeva td {
+        padding: 12px 10px;
+        font-size: 13px;
+      }
+    }
+
+    .comparison-table-askeva tr:hover td {
+      background: #fafafa;
+    }
+
+    .table-section-header td {
+      background: rgba(0, 0, 0, 0.02) !important;
+      font-weight: 800 !important;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      color: var(--secondary);
+      padding: 22px 20px !important;
+      text-align: left !important;
+      border-bottom: 2px solid #eee !important;
+    }
+
+    .check-icon {
+      color: var(--primary);
+      font-size: 18px;
+    }
+
+    .cross-icon {
+      color: #000000b8;
+      font-size: 18px;
+    }
+
+    /* Advantage Bubbles */
+    .advantage-grid {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 50px 0;
+      flex-wrap: wrap;
+    }
+
+    .advantage-bubble {
+      width: 320px;
+      height: 320px;
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+      transition: transform 0.3s;
+    }
+
+    .advantage-bubble:hover {
+      transform: scale(1.05);
+    }
+
+    .advantage-bubble i {
+      font-size: 40px;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .advantage-bubble h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .advantage-bubble p {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    /* FAQ Restyle */
+    .faq-item {
+      border: 1px solid #eee;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      background: #fff;
+    }
+
+    .faq-q {
+      padding: 20px 25px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      padding: 0 25px;
+    }
+
+    .faq-item.open .faq-a {
+      max-height: 200px;
+      padding-bottom: 20px;
+    }
+
+    @media (max-width: 992px) {
+      .price-grid-askeva {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .price-grid-askeva {
+        grid-template-columns: 1fr;
+      }
+
+      .pricing-hero-wrap h1 {
+        font-size: 32px;
+      }
+
+      .advantage-bubble {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+      }
+    }
+
+    /* Table Responsiveness Wrapper */
+    .table-responsive-askeva {
+      width: 100%;
+      margin: 40px 0;
+      border-radius: 12px;
+    }
+
+    @media (min-width: 992px) {
+      .comparison-table-askeva {
+        min-width: 1000px;
+        /* Ensure columns have room to breathe on desktop */
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRQFZGZT" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <nav class="nav-wrap">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo/web-logo-black.png" alt="EKTA HR">
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li class="has-mega">
+            <a href="#">Product <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="mega-dropdown">
+              <div class="mega-menu-tabs">
+                <div class="mega-tab-btn active" data-tab="hrms">
+                  <span>HRMS</span>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="mega-tab-btn" data-tab="retirement">
+                  <span>Retirement Benefits</span>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+              <div class="mega-menu-content active" id="hrms">
+                <div class="mega-grid">
+                  <a href="recruitment.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-user-plus"></i></div>
+                    <div class="mega-info">
+                      <h4>Recruitment Software</h4>
+                      <p>Find the Right Talent Faster</p>
+                    </div>
+                  </a>
+                  <a href="hr-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-users-cog"></i></div>
+                    <div class="mega-info">
+                      <h4>HR Software</h4>
+                      <p>Backbone of Your HR</p>
+                    </div>
+                  </a>
+                  <a href="onboarding-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-door-open"></i></div>
+                    <div class="mega-info">
+                      <h4>Employee Onboarding</h4>
+                      <p>Positive First Impression</p>
+                    </div>
+                  </a>
+                  <a href="attendance.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-clock"></i></div>
+                    <div class="mega-info">
+                      <h4>Attendance Management</h4>
+                      <p>Put Attendance on Auto Pilot</p>
+                    </div>
+                  </a>
+                  <a href="payroll.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-money-check-dollar"></i></div>
+                    <div class="mega-info">
+                      <h4>Payroll Software</h4>
+                      <p>Payroll on Time, Every Time</p>
+                    </div>
+                  </a>
+                  <a href="leave.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-calendar-day"></i></div>
+                    <div class="mega-info">
+                      <h4>Leave Management</h4>
+                      <p>Take a Leave From Managing Leaves</p>
+                    </div>
+                  </a>
+                  <a href="performance.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="mega-info">
+                      <h4>Performance Management</h4>
+                      <p>OKR Based Performance</p>
+                    </div>
+                  </a>
+                  <a href="lms.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="mega-info">
+                      <h4>Learning Management</h4>
+                      <p>Feature Rich Learning Management</p>
+                    </div>
+                  </a>
+                  <a href="expense-management-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-plane"></i></div>
+                    <div class="mega-info">
+                      <h4>Travel & Expense</h4>
+                      <p>Control & Convenience at One Place</p>
+                    </div>
+                  </a>
+                  <a href="employee-self-service.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-user-shield"></i></div>
+                    <div class="mega-info">
+                      <h4>Employee Self Service</h4>
+                      <p>Engage Empower Workforce</p>
+                    </div>
+                  </a>
+                  <a href="mobile-application.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="mega-info">
+                      <h4>Mobile App</h4>
+                      <p>Modern App for Mobile Workforce</p>
+                    </div>
+                  </a>
+                  <a href="timesheet-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-hourglass-half"></i></div>
+                    <div class="mega-info">
+                      <h4>Timesheet Software</h4>
+                      <p>Simplified Time & Resource Tracking</p>
+                    </div>
+                  </a>
+                  <a href="integration.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-plug"></i></div>
+                    <div class="mega-info">
+                      <h4>Integration</h4>
+                      <p>Connect Your Favorite Tools</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="mega-menu-content" id="retirement">
+                <div class="mega-grid">
+                  <a href="pf-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-piggy-bank"></i></div>
+                    <div class="mega-info">
+                      <h4>Provident Fund</h4>
+                      <p>Record & track PF contributions</p>
+                    </div>
+                  </a>
+                  <a href="pension-management.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-hand-holding-dollar"></i></div>
+                    <div class="mega-info">
+                      <h4>Pension Management</h4>
+                      <p>Automate pension disbursements</p>
+                    </div>
+                  </a>
+                  <a href="gratuity.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-gift"></i></div>
+                    <div class="mega-info">
+                      <h4>Gratuity</h4>
+                      <p>Calculate gratuity with ease</p>
+                    </div>
+                  </a>
+                  <a href="benevolent-fund-trust.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-heart"></i></div>
+                    <div class="mega-info">
+                      <h4>Benevolent Fund</h4>
+                      <p>Manage employee welfare funds</p>
+                    </div>
+                  </a>
+                  <a href="gpf-trust.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-vault"></i></div>
+                    <div class="mega-info">
+                      <h4>General Provident Fund</h4>
+                      <p>Government employee PF tracking</p>
+                    </div>
+                  </a>
+                  <a href="superannuation-fund-trust.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-coins"></i></div>
+                    <div class="mega-info">
+                      <h4>Superannuation Fund</h4>
+                      <p>Retirement savings plan</p>
+                    </div>
+                  </a>
+                  <a href="unexempted-provident-fund.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-file-invoice"></i></div>
+                    <div class="mega-info">
+                      <h4>Unexempted Provident Fund</h4>
+                      <p>Trust-based PF management</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#">Industries <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown">
+              <a href="manufacturing-industry.html">Manufacturing</a>
+              <a href="social-welfare.html">Social Welfare</a>
+              <a href="finance.html">Finance</a>
+              <a href="automotive.html">Automotive</a>
+              <a href="healthcare.html">Healthcare</a>
+              <a href="retail.html">Retail</a>
+              <a href="information-technology.html">Information Technology</a>
+              <a href="hospitality.html">Hospitality</a>
+              <a href="startups.html">Startups</a>
+            </div>
+          </li>
+          <li><a href="partners.html">Partners</a></li>
+          <li>
+            <a href="#">Resources <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown">
+              <a href="blogs.html">Blogs</a>
+              <a href="hr-letter.html">HR Letters</a>
+              <a href="hr-policy.html">HR Policies</a>
+              <a href="hr-glossary.html">HR Glossary</a>
+              <a href="minimum-wages.html">Minimum Wages</a>
+              <a href="professional-tax.html">Professional Tax</a>
+              <a href="holiday-list.html">Holiday Lists</a>
+              <a href="job-descriptions.html">Job Descriptions</a>
+              <a href="labour-welfare-fund.html">Labour Welfare Fund</a>
+              <a href="okr.html">OKRs</a>
+            </div>
+          </li>
+          <li>
+            <a href="#">Company <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown">
+              <a href="contact.html">Contact Us</a>
+              <a href="about.html">About Us</a>
+              <a href="career.html">Career</a>
+            </div>
+          </li>
+
+          <li><a href="pricing-plan.html" class="active">Pricing</a></li>
+        </ul>
+        <div class="header-btns">
+          <a href="https://my.ektahr.com" class="btn btn-outline">Login</a>
+          <a href="https://my.ektahr.com/signup" class="btn btn-primary">Get Free Trial</a>
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-close" id="menuClose"><i class="fas fa-times"></i></div>
+    <a href="index.html">Home</a>
+
+    <div class="mobile-nav-item has-dropdown">
+      <div class="mobile-dropdown-toggle">
+        <a href="#">Product</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="mobile-dropdown-content">
+        <a href="recruitment.html">Recruitment Software</a>
+        <a href="hr-software.html">HR Software</a>
+        <a href="onboarding-software.html">Employee Onboarding</a>
+        <a href="attendance.html">Attendance Management</a>
+        <a href="payroll.html">Payroll Software</a>
+        <a href="leave.html">Leave Management</a>
+        <a href="performance.html">Performance Management</a>
+        <a href="lms.html">Learning Management</a>
+        <a href="expense-management-software.html">Travel & Expense</a>
+        <a href="employee-self-service.html">Employee Self Service</a>
+        <a href="mobile-application.html">Mobile App</a>
+        <a href="timesheet-software.html">Timesheet Software</a>
+        <a href="integration.html">Integration</a>
+        <a href="pf-software.html">Provident Fund</a>
+        <a href="pension-management.html">Pension Management</a>
+        <a href="gratuity.html">Gratuity</a>
+        <a href="benevolent-fund-trust.html">Benevolent Fund</a>
+        <a href="gpf-trust.html">General Provident Fund</a>
+        <a href="superannuation-fund-trust.html">Superannuation Fund</a>
+        <a href="unexempted-provident-fund.html">Unexempted Provident Fund</a>
+      </div>
+    </div>
+
+    <div class="mobile-nav-item has-dropdown">
+      <div class="mobile-dropdown-toggle">
+        <a href="#">Industries</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="mobile-dropdown-content">
+        <a href="manufacturing-industry.html">Manufacturing</a>
+        <a href="social-welfare.html">Social Welfare</a>
+        <a href="finance.html">Finance</a>
+        <a href="automotive.html">Automotive</a>
+        <a href="healthcare.html">Healthcare</a>
+        <a href="retail.html">Retail</a>
+        <a href="information-technology.html">Information Technology</a>
+        <a href="hospitality.html">Hospitality</a>
+        <a href="startups.html">Startups</a>
+      </div>
+    </div>
+
+    <a href="partners.html">Partners</a>
+
+    <div class="mobile-nav-item has-dropdown">
+      <div class="mobile-dropdown-toggle">
+        <a href="#">Resources</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="mobile-dropdown-content">
+        <a href="blogs.html">Blogs</a>
+        <a href="hr-letter.html">HR Letters</a>
+        <a href="hr-policy.html">HR Policies</a>
+        <a href="hr-glossary.html">HR Glossary</a>
+        <a href="minimum-wages.html">Minimum Wages</a>
+        <a href="professional-tax.html">Professional Tax</a>
+        <a href="holiday-list.html">Holiday Lists</a>
+        <a href="job-descriptions.html">Job Descriptions</a>
+        <a href="labour-welfare-fund.html">Labour Welfare Fund</a>
+        <a href="okr.html">OKRs</a>
+      </div>
+    </div>
+
+    <div class="mobile-nav-item has-dropdown">
+      <div class="mobile-dropdown-toggle">
+        <a href="#">Company</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="mobile-dropdown-content">
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+        <a href="career.html">Career</a>
+      </div>
+    </div>
+
+
+    <a href="pricing-plan.html" class="active">Pricing</a>
+    <a href="https://my.ektahr.com">Login</a>
+    <a href="https://my.ektahr.com/signup" style="color:var(--primary);">Get Free Trial</a>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content" style="text-align: center; max-width: 850px; margin: 0 auto;">
+        <span class="section-tag" data-aos="fade-up">Transparent Pricing</span>
+        <h1 data-aos="fade-up" data-aos-delay="100" class="hero-title"> Sensational HR Software,<br><span
+            style="color: var(--primary-dark)">Sensible Price</span></h1>
+        <p data-aos="fade-up" data-aos-delay="200" class="hero-text">Flexible plans for every team. No hidden fees.</p>
+        <div class="header-btns-mobile" data-aos="fade-up" data-aos-delay="300">
+          <a href="signup.html" class="btn btn-primary animate-pulse-yellow" style="width: auto;">Choose a Plan</a>
+          <a href="#faq" class="btn btn-outline" style="width: auto;"><i class="fas fa-play"
+              style="font-size: 10px; margin-right: 8px;"></i> Check FAQ</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Askeva Layout: Selectors -->
+  <!-- <div class="pricing-selectors">
+    <div class="duration-selector">
+      <div class="selector-btn" onclick="setPeriod('3m')">3 Months</div>
+      <div class="selector-btn" onclick="setPeriod('6m')">6 Months</div>
+      <div class="selector-btn active" onclick="setPeriod('year')">Yearly</div>
+    </div>
+    <div class="currency-selector">
+      <div class="selector-btn active" onclick="setCurrency('INR')">INR</div>
+      <div class="selector-btn" onclick="setCurrency('USD')">USD</div>
+    </div>
+  </div> -->
+
+  <!-- Askeva Layout: Price Cards -->
+  <section style="background: var(--askeva-bg); padding: 0px 0 60px;">
+    <div class="price-grid-askeva">
+      <!-- Lite -->
+      <div class="price-card-askeva" data-aos="fade-up">
+        <div class="plan-title-askeva">Lite</div>
+        <div class="price-display-askeva">
+          <span class="price-currency-askeva">₹</span>
+          <span class="price-amount-askeva" id="price-lite">299</span>
+          <span class="price-period-askeva">/ year / user</span>
+        </div>
+        <a href="https://my.ektahr.com/signup" class="btn-askeva">GET STARTED</a>
+        <p class="plan-desc-askeva">Basic HR automation for small scale startups and teams.</p>
+      </div>
+
+      <!-- Max -->
+      <div class="price-card-askeva popular" data-aos="fade-up" data-aos-delay="100">
+        <div class="plan-title-askeva">Max</div>
+        <div class="price-display-askeva">
+          <span class="price-currency-askeva">₹</span>
+          <span class="price-amount-askeva" id="price-max">699</span>
+          <span class="price-period-askeva">/ year / user</span>
+        </div>
+        <a href="https://my.ektahr.com/signup" class="btn-askeva">GET STARTED</a>
+        <p class="plan-desc-askeva">Advanced HR solutions for growing enterprises needing speed and efficiency.</p>
+      </div>
+
+      <!-- Ultra (Popular) -->
+      <div class="price-card-askeva " data-aos="fade-up" data-aos-delay="200">
+        <div class="plan-title-askeva">Ultra</div>
+        <div class="price-display-askeva">
+          <span class="price-currency-askeva">₹</span>
+          <span class="price-amount-askeva" id="price-ultra">999</span>
+          <span class="price-period-askeva">/ year / user</span>
+        </div>
+        <a href="https://my.ektahr.com/signup" class="btn-askeva">GET STARTED</a>
+        <p class="plan-desc-askeva">The ultimate HR experience with advanced monitoring and global scalability.</p>
+      </div>
+
+      <!-- Custom -->
+      <div class="price-card-askeva" data-aos="fade-up" data-aos-delay="300">
+        <div class="plan-title-askeva">Custom</div>
+        <div style="margin: 30px 0;">
+          <i class="fas fa-handshake" style="font-size: 60px; color: var(--primary);"></i>
+        </div>
+        <a href="contact.html" class="btn-askeva">Request a Call</a>
+        <p class="plan-desc-askeva">Tailored HRMS solutions for large-scale organizations with unique needs.</p>
+      </div>
+    </div>
+
+
+    <!-- Askeva Layout: Comparison Table -->
+    <div class="container" style="margin-top: 80px;">
+      <h2 style="text-align:center; font-size: 32px; margin-bottom: 40px;">Explore the full features</h2>
+
+      <!-- Mobile Plan Switcher -->
+      <div class="table-plan-switcher" data-aos="fade-up">
+        <button class="switcher-plan-btn active" onclick="switchTablePlan('lite')">Lite</button>
+        <button class="switcher-plan-btn" onclick="switchTablePlan('max')">Max</button>
+        <button class="switcher-plan-btn" onclick="switchTablePlan('ultra')">Ultra</button>
+      </div>
+
+      <div class="table-responsive-askeva">
+        <table class="comparison-table-askeva show-lite" id="comparisonTable" data-aos="fade-up">
+          <thead>
+            <tr>
+              <th class="col-main-feature">Main Feature</th>
+              <th class="col-submodule">Submodule</th>
+              <th class="col-lite">Lite</th>
+              <th class="col-max">Max</th>
+              <th class="col-ultra">Ultra</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <!-- Staff Group -->
+            <tr>
+              <td class="col-main-feature" rowspan="8">Staff</td>
+              <td class="col-submodule">Staff Overview</td>
+              <td class="col-lite"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Salary Overview</td>
+              <td class="col-lite"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Salary Structure</td>
+              <td class="col-lite"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Attendance</td>
+              <td class="col-lite"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <!-- <tr>
+              <td class="col-submodule">Screen Monitoring Agent</td>
+              <td class="col-lite"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr> -->
+            <tr>
+              <td class="col-submodule">Leaves Pending Approval</td>
+              <td class="col-lite"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Loans</td>
+              <td class="col-lite"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Expense Claims</td>
+              <td class="col-lite"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr class="border-td">
+              <td class="col-submodule">Payslip Requests</td>
+              <td class="col-lite"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+
+            <!-- Payroll -->
+            <tr class="border-td">
+              <td class="col-main-feature">Payroll</td>
+              <td></td>
+              <td class="col-lite"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+
+            <!-- Announcements -->
+            <tr class="border-td">
+              <td class="col-main-feature">Announcements</td>
+              <td></td>
+              <td class="col-lite"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+
+            <!-- Celebrations -->
+            <tr class="border-td">
+              <td class="col-main-feature">Celebrations</td>
+              <td></td>
+              <td class="col-lite"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+
+            <!-- Integration -->
+            <tr class="border-td">
+              <td class="col-main-feature">Integrations</td>
+              <td></td>
+              <td class="col-lite"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+
+            <!-- Notifications -->
+            <tr class="border-td">
+              <td class="col-main-feature">Notifications</td>
+              <td></td>
+              <td class="col-lite"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+
+
+            <!-- Asset Managements -->
+            <tr>
+              <td class="col-main-feature" rowspan="2">Asset Management</td>
+              <td class="col-submodule">Asset Types</td>
+              <td class="col-lite"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr class="border-td">
+              <td class="col-submodule">Assets</td>
+              <td class="col-lite"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+
+            <!-- Settings -->
+            <tr>
+              <td class="col-main-feature" rowspan="8">Settings</td>
+              <td class="col-submodule">User Management</td>
+              <td class="col-lite"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Attendance Settings</td>
+              <td class="col-lite"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Business Settings</td>
+              <td class="col-lite"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Payroll Settings</td>
+              <td class="col-lite"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Business Information</td>
+              <td class="col-lite"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Company Policy</td>
+              <td class="col-lite"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Onboarding Documents</td>
+              <td class="col-lite"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr class="border-td">
+              <td class="col-submodule">Others</td>
+              <td class="col-lite"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+
+            <!-- Interview Group -->
+            <tr>
+              <td class="col-main-feature" rowspan="8">Interview</td>
+              <td class="col-submodule">Job Openings</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Canditates</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Interview Appointments</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Interview Process</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Offer Letter</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Document Collection</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Background Verification</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr class="border-td">
+              <td class="col-submodule">Refer a Candidate</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+
+            <!-- Field Tracking -->
+            <tr>
+              <td class="col-main-feature" rowspan="6">Field Tracking</td>
+              <td class="col-submodule">Dashboard</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Tracking</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Forms</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Tasks</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Customers</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr class="border-td">
+              <td class="col-submodule">Geo Settings</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+
+            <!-- Grievance Handling -->
+            <tr>
+              <td class="col-main-feature" rowspan="2">Grievance Handling</td>
+              <td class="col-submodule">All Grievances</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr class="border-td">
+              <td class="col-submodule">Analytics</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-check check-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+
+            <!-- Agent -->
+            <tr class="border-td">
+              <td class="col-main-feature">Agent</td>
+              <td class="col-submodule">Screen Monitoring Agent</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+
+            <!-- Performance Group -->
+            <tr>
+              <td class="col-main-feature" rowspan="12">Performance </td>
+              <td class="col-submodule">Performance Overview</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Performance Analytics</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Performance Reviews</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Reviews Cycles</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Manager Review</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">HR Review</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Goals Management</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">My Goals</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Goal Progress</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">KRA / KPI</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">PMS Reports</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr class="border-td">
+              <td class="col-submodule">PMS Settings</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+
+            <!-- LMS Group -->
+            <tr>
+              <td class="col-main-feature" rowspan="5">LMS</td>
+              <td class="col-submodule">Course Library</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Learners</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Live Sessions</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="col-submodule">Asset Management</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+            <tr class="border-td">
+              <td class="col-submodule">Scores and Analytics</td>
+              <td class="col-lite"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-max"><i class="fas fa-times cross-icon"></i></td>
+              <td class="col-ultra"><i class="fas fa-check check-icon"></i></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <p style="text-align: center; margin-top: 30px; color: var(--text-muted); font-size: 14px;">
+        Local taxes (VAT, GST, etc.) will be charged in addition to the prices mentioned.
+      </p>
+    </div>
+  </section>
+
+  <!-- Askeva Layout: Advantages -->
+  <section style="padding: 45px 0;">
+    <div class="container text-center">
+      <h2 style="font-size: 36px; margin-bottom: 10px; text-align: center;">Delivering value on three fronts</h2>
+      <h3 style="font-size: 24px; color: var(--primary); margin-bottom: 60px; text-align: center;">The EKTA HR Advantage
+      </h3>
+
+      <div class="advantage-grid">
+        <div class="advantage-bubble" data-aos="zoom-in">
+          <i class="fas fa-search-dollar"></i>
+          <h3>Price transparency</h3>
+          <p>Get the full product for the price you pay. No hidden costs in the long run.</p>
+        </div>
+        <div class="advantage-bubble" data-aos="zoom-in" data-aos-delay="100">
+          <i class="fas fa-bolt"></i>
+          <h3>Faster deployments</h3>
+          <p>Minimize operational disruptions with 50% faster implementation than competitors.</p>
+        </div>
+        <div class="advantage-bubble" data-aos="zoom-in" data-aos-delay="200">
+          <i class="fas fa-thumbs-up"></i>
+          <h3>Higher adoption</h3>
+          <p>The intuitive UX enables your team to leverage EKTA HR better from the get-go.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section (Maintained styling but simplified list) -->
+  <section class="sp" id="faq" style="background: #fafafa; padding: 45px 0;">
+    <div class="container" style="max-width: 800px;">
+      <div class="text-center" style="margin-bottom: 60px; text-align: center;">
+        <span class="section-tag">Common Questions</span>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div data-aos="fade-up">
+        <div class="faq-item">
+          <div class="faq-q">How is "per employee" pricing calculated?<i class="fas fa-chevron-down"></i></div>
+          <div class="faq-a">
+            <p>We bill based on the number of active employee records in your system at the start of the billing cycle.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Can I switch plans later?<i class="fas fa-chevron-down"></i></div>
+          <div class="faq-a">
+            <p>Yes, you can upgrade your plan at any time. Changes to higher tiers take effect immediately.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Is there a setup fee?<i class="fas fa-chevron-down"></i></div>
+          <div class="faq-a">
+            <p>No, we believe in transparent pricing. There are no hidden setup or onboarding fees for our standard
+              plans.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fixed CTA Banner -->
+  <section class="fixed-cta-section" data-aos="zoom-in">
+    <div class="fixed-cta-card">
+      <h5>Transform your workforce with the power of EKTA HR. — <span style="color: var(--secondary)">3 months
+          free.</span></h5>
+      <a href="https://my.ektahr.com/signup" class="btn-fixed-cta">Start 3 months free trail</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Column 1: Logo & About -->
+        <div class="footer-brand">
+          <img src="assets/images/logo/web-logo-white.png" alt="EKTA HR">
+          <p style="margin-top: 24px; line-height: 1.7;">
+            EKTA HR is an advanced Human Resource Management System designed
+            to simplify operations, enhance employee experience, and scale
+            effortlessly with growing businesses.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="partners.html">Partners</a></li>
+            <li><a href="pricing-plan.html">Pricing</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Location Map -->
+        <div class="footer-links">
+          <h4>Core Features</h4>
+          <ul>
+            <li><a href="recruitment.html">Recruitment Software</a></li>
+            <li><a href="hr-software.html">HR Software</a></li>
+            <li> <a href="onboarding-software.html">Employee Onboarding</a></li>
+            <li><a href="attendance.html">Attendance Management</a></li>
+            <li> <a href="payroll.html">Payroll Software</a></li>
+            <li> <a href="leave.html">Leave Management</a></li>
+            <li><a href="performance.html">Performance</a></li>
+            <li><a href="lms.html">Learning Management</a></li>
+            <li><a href="expense-management-software.html">Travel & Expense</a></li>
+            <li><a href="employee-self-service.html">Employee Self Service</a></li>
+            <li><a href="mobile-application.html">Mobile App</a></li>
+            <li><a href="timesheet-software.html">Timesheet Software</a></li>
+            <li><a href="integration.html">Integration</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Location Map -->
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="hr-letter.html">HR Letters</a></li>
+            <li> <a href="hr-policy.html">HR Policies</a></li>
+            <li><a href="hr-glossary.html">HR Glossary</a></li>
+            <li> <a href="minimum-wages.html">Minimum Wages </a></li>
+            <li> <a href="professional-tax.html">Professional Tax</a></li>
+            <li><a href="holiday-list.html">Holiday Lists</a></li>
+            <li><a href="job-descriptions.html">Job Descriptions</a></li>
+            <li><a href="labour-welfare-fund.html">Labour Welfare Fund</a></li>
+            <li><a href="okr.html">OKRs</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact + Newsletter -->
+        <div class="footer-links">
+          <h4>Industries</h4>
+          <ul>
+            <li><a href="manufacturing-industry.html">Manufacturing</a></li>
+            <li><a href="social-welfare.html">Social Welfare</a></li>
+            <li> <a href="finance.html">Finance</a></li>
+            <li><a href="automotive.html">Automotive</a></li>
+            <li> <a href="healthcare.html">Healthcare</a></li>
+            <li> <a href="retail.html">Retail</a></li>
+            <li><a href="information-technology.html">Information Technology</a></li>
+            <li><a href="hospitality.html">Hospitality</a></li>
+            <li><a href="startups.html">Startups</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="copyright"
+        style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+
+        <p> &copy; 2026 EKTA HR, All rights
+          reserved. </p>
+
+        <div style="display: flex; gap: 20px;">
+          <a href="https://www.linkedin.com/company/myektahr/" target="_blank" style="color: #fff;"
+            class="social-icons"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/people/Ektahr/61586428776510/" target="_blank" style="color: #fff;"
+            class="social-icons"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/my.ektahr/" target="_blank" style="color: #fff;" class="social-icons"><i
+              class="fab fa-instagram"></i></a>
+          <!-- <a href="#" style="color: #fff;" class="social-icons"><i class="fab fa-whatsapp"></i></a> -->
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true, disable: function () { return window.innerWidth < 768; } });
+
+    // Header Scroll Effect
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (header && window.scrollY > 50) header.classList.add('scrolled');
+      else if (header) header.classList.remove('scrolled');
+    });
+
+    // Mega Menu Tab Switching
+    const tabBtns = document.querySelectorAll('.mega-tab-btn');
+    const tabContents = document.querySelectorAll('.mega-menu-content');
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('mouseenter', () => {
+        const target = btn.getAttribute('data-tab');
+        tabBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        tabContents.forEach(content => {
+          content.classList.remove('active');
+          if (content.id === target) {
+            content.classList.add('active');
+          }
+        });
+      });
+    });
+
+    // Mobile Dropdown Accordion
+    const mobileDropdownToggles = document.querySelectorAll('.mobile-dropdown-toggle');
+    mobileDropdownToggles.forEach(toggle => {
+      toggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        const parent = toggle.closest('.mobile-nav-item');
+        document.querySelectorAll('.mobile-nav-item').forEach(item => {
+          if (item !== parent) item.classList.remove('active');
+        });
+        parent.classList.toggle('active');
+      });
+    });
+
+    // Mobile Menu Logic
+    const menuToggle = document.getElementById('menuToggle');
+    const menuClose = document.getElementById('menuClose');
+    const mobileNav = document.getElementById('mobileNav');
+    const overlay = document.getElementById('overlay');
+
+    if (menuToggle && menuClose && mobileNav && overlay) {
+      const toggleMenu = () => {
+        mobileNav.classList.toggle('active');
+        overlay.classList.toggle('active');
+        document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : 'auto';
+      };
+      menuToggle.addEventListener('click', toggleMenu);
+      menuClose.addEventListener('click', toggleMenu);
+      overlay.addEventListener('click', toggleMenu);
+    }
+
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-q');
+      if (question) {
+        question.addEventListener('click', () => {
+          const isOpen = item.classList.contains('open');
+          faqItems.forEach(faq => {
+            faq.classList.remove('open');
+            // const answer = faq.querySelector('.faq-a');
+            // if (answer) answer.classList.remove('open');
+          });
+          if (!isOpen) {
+            item.classList.add('open');
+            // const answer = item.querySelector('.faq-a');
+            // if (answer) answer.classList.add('open');
+          }
+        });
+      }
+    });
+
+    // Pricing Logic
+    const pricingData = {
+      INR: {
+        '3m': { lite: 99, max: 199, ultra: 299, period: '/ 3 months' },
+        '6m': { lite: 179, max: 349, ultra: 499, period: '/ 6 months' },
+        'year': { lite: 299, max: 699, ultra: 999, period: '/ year' }
+      },
+      USD: {
+        '3m': { lite: 4, max: 8, ultra: 12, period: '/ 3 months' },
+        '6m': { lite: 7, max: 14, ultra: 21, period: '/ 6 months' },
+        'year': { lite: 12, max: 25, ultra: 35, period: '/ year' }
+      }
+    };
+
+    let currentPeriod = 'year';
+    let currentCurrency = 'INR';
+
+    window.setPeriod = (p) => {
+      currentPeriod = p;
+      updateSelectors('.duration-selector', p);
+      updatePrices();
+    };
+
+    window.setCurrency = (c) => {
+      currentCurrency = c;
+      updateSelectors('.currency-selector', c);
+      updatePrices();
+    };
+
+    function updateSelectors(selector, val) {
+      const btns = document.querySelectorAll(`${selector} .selector-btn`);
+      btns.forEach(btn => {
+        btn.classList.toggle('active', btn.textContent.toLowerCase().includes(val.toLowerCase()) ||
+          (val === 'year' && btn.textContent.toLowerCase().includes('yearly')) ||
+          (val === '3m' && btn.textContent.toLowerCase().includes('3')) ||
+          (val === '6m' && btn.textContent.toLowerCase().includes('6')));
+      });
+    }
+
+    function updatePrices() {
+      const data = pricingData[currentCurrency][currentPeriod];
+      const currencySymbol = currentCurrency === 'INR' ? '₹' : '$';
+
+      document.getElementById('price-lite').textContent = data.lite;
+      document.getElementById('price-max').textContent = data.max;
+      document.getElementById('price-ultra').textContent = data.ultra;
+
+      document.querySelectorAll('.price-currency-askeva').forEach(el => el.textContent = currencySymbol);
+      document.querySelectorAll('.price-period-askeva').forEach(el => el.textContent = `${data.period} / user`);
+    }
+
+    // Table Plan Switcher Logic
+    window.switchTablePlan = (plan) => {
+      const table = document.getElementById('comparisonTable');
+      const btns = document.querySelectorAll('.switcher-plan-btn');
+
+      // Update Table Classes
+      table.classList.remove('show-lite', 'show-max', 'show-ultra');
+      table.classList.add(`show-${plan}`);
+
+      // Update Button State
+      btns.forEach(btn => {
+        if (btn.textContent.toLowerCase() === plan) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+    };
+  </script>
+</body>
+
+</html>

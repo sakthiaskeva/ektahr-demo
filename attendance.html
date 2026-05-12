@@ -1,0 +1,2157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geo-Fencing Attendance Software India | EKTA HR - Real-Time Tracking &amp; Payroll Integration</title>
+  <meta name="description"
+    content="India's leading geo-fencing attendance software with facial recognition, real-time tracking, and direct payroll integration. Trusted by 3,500+ businesses. Start free.">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/logo/favicon-32x32.png">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QF7ZSPWC0P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-QF7ZSPWC0P');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MRQFZGZT');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="assets/css/ekta_style.css">
+
+  <style>
+    /* Premium UI Patterns (Matched with recruitment.html/onboarding-software.html) */
+
+    /* Advantage Cards */
+    .adv-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 36px 28px;
+      border: 1px solid var(--border);
+      text-align: center;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .adv-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary) 0%, #ffde8b 100%);
+      border-radius: 4px 4px 0 0;
+    }
+
+    .adv-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .adv-icon {
+      width: 64px;
+      height: 64px;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin: 0 auto 20px;
+      transition: var(--transition);
+    }
+
+    .adv-card:hover .adv-icon {
+      background: var(--primary);
+      color: var(--secondary);
+    }
+
+    .adv-card h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .adv-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.75;
+    }
+
+    /* Feature Sections */
+    .feature-section {
+      padding: 80px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .feature-section:last-of-type {
+      border-bottom: none;
+    }
+
+    .feature-section.alt {
+      background: var(--bg-light);
+    }
+
+    .feature-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .feature-wrap.reverse .feature-visual {
+      order: -1;
+    }
+
+    @media (max-width: 900px) {
+      .feature-wrap {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .feature-wrap.reverse .feature-visual {
+        order: 0;
+      }
+    }
+
+    .feature-visual {
+      background: linear-gradient(135deg, var(--primary-light) 0%, #fff8e1 100%);
+      border-radius: var(--radius-lg);
+      padding: 40px 32px;
+      min-height: 340px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: 1px solid rgba(249, 184, 36, 0.18);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .fv-icon-large {
+      font-size: 48px;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .fv-step-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 10px;
+    }
+
+    .fv-step-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--white);
+      border-radius: 10px;
+      padding: 12px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--secondary);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .fv-step-list li i {
+      color: var(--primary);
+      font-size: 16px;
+    }
+
+    /* Sub-feature items */
+    .sub-feature {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .sub-feature:last-child {
+      border-bottom: none;
+    }
+
+    .sf-icon {
+      width: 40px;
+      height: 40px;
+      min-width: 40px;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      transition: var(--transition);
+    }
+
+    .sf-text h4 {
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+
+    .sf-text p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* Stats bar */
+    .rec-stats {
+      background: #121212;
+      padding: 56px 0;
+    }
+
+    .rec-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .rec-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .rs-number {
+      font-size: 42px;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .rs-label {
+      font-size: 14px;
+      color: #aaaaaa;
+    }
+
+    /* CTA Strip */
+    .rec-cta {
+      background: var(--primary);
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .rec-cta h2 {
+      font-size: 38px;
+      color: var(--secondary);
+      margin-bottom: 14px;
+    }
+
+    .rec-cta p {
+      font-size: 16px;
+      color: rgba(18, 18, 18, 0.7);
+      max-width: 540px;
+      margin: 0 auto 36px;
+      line-height: 1.75;
+    }
+
+    .rec-cta .btn-dark {
+      background: var(--secondary);
+      color: var(--white);
+      padding: 16px 40px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: var(--transition);
+      text-decoration: none;
+    }
+
+    .rec-cta .btn-dark:hover {
+      background: #2a2a2a;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    }
+
+    /* ── FAQ ── */
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      margin-bottom: 12px;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .faq-item.open {
+      border-color: var(--primary);
+    }
+
+    .faq-q {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 22px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 15px;
+      gap: 12px;
+    }
+
+    .faq-q i {
+      color: var(--primary);
+      font-size: 13px;
+      transition: .3s;
+    }
+
+    .faq-item.open .faq-q i {
+      transform: rotate(180deg);
+    }
+
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s ease, padding .3s;
+    }
+
+    .faq-a.open {
+      max-height: 500px;
+      padding: 0 22px 18px;
+    }
+
+    .faq-a p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin: 0;
+    }
+  </style>
+  <style>
+    .att-page {
+      background: var(--white);
+    }
+
+    .att-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(249, 184, 36, 0.14);
+      color: var(--secondary);
+      border: 1px solid rgba(249, 184, 36, 0.28);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .att-kicker i,
+    .att-check-list i {
+      color: var(--primary-dark);
+    }
+
+    .att-hero {
+      position: relative;
+      padding: 150px 0 58px;
+      overflow: hidden;
+      background:
+        linear-gradient(rgba(249, 184, 36, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(249, 184, 36, 0.045) 1px, transparent 1px),
+        linear-gradient(180deg, #fff 0%, #fffaf0 100%);
+      background-size: 34px 34px, 34px 34px, auto;
+    }
+
+    .att-hero::before {
+      content: '';
+      position: absolute;
+      inset: 86px 0 auto;
+      height: 280px;
+      background: linear-gradient(180deg, rgba(249, 184, 36, 0.12), transparent);
+      opacity: 0.8;
+      pointer-events: none;
+    }
+
+    .att-hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(460px, 0.9fr);
+      gap: 48px;
+      align-items: center;
+    }
+
+    .att-hero-title {
+      margin: 20px 0 0;
+      color: var(--secondary);
+      font-size: clamp(38px, 4.3vw, 64px);
+      line-height: 1.04;
+      font-weight: 900;
+      letter-spacing: 0;
+    }
+
+    .att-hero-title span {
+      display: block;
+      color: var(--primary-dark);
+    }
+
+    .att-hero-sub {
+      max-width: 720px;
+      margin: 22px 0 0;
+      color: var(--text-muted);
+      font-size: 19px;
+      line-height: 1.7;
+      font-weight: 500;
+    }
+
+    .att-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .att-trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px 18px;
+      margin-top: 22px;
+      color: var(--secondary);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .att-trust-row span {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .att-trust-row i {
+      color: var(--primary-dark);
+    }
+
+    .att-command {
+      position: relative;
+      min-height: 560px;
+      padding: 20px;
+      border-radius: 38px;
+      background: linear-gradient(145deg, var(--secondary), #050505);
+      border: 1px solid rgba(249, 184, 36, 0.28);
+      box-shadow: 0 34px 80px rgba(18, 18, 18, 0.26);
+    }
+
+    .att-command::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+      background-size: 30px 30px;
+      border-radius: inherit;
+      opacity: 0.65;
+    }
+
+    .att-command-shell {
+      position: relative;
+      z-index: 1;
+      min-height: 520px;
+      border-radius: 28px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(14px);
+    }
+
+    .att-command-top {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .att-window-dots {
+      display: flex;
+      gap: 6px;
+    }
+
+    .att-window-dots span {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.32);
+    }
+
+    .att-live {
+      margin-left: auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: var(--primary);
+      font-size: 11px;
+      font-weight: 900;
+    }
+
+    .att-live span {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #76e5ad;
+      box-shadow: 0 0 0 6px rgba(118, 229, 173, 0.12);
+    }
+
+    .att-command-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 14px;
+      padding: 16px;
+    }
+
+    .att-screen-panel {
+      min-height: 150px;
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.11);
+      color: var(--white);
+    }
+
+    .att-screen-panel.white {
+      background: var(--white);
+      color: var(--secondary);
+    }
+
+    .att-screen-panel.wide {
+      grid-column: span 2;
+    }
+
+    .att-map {
+      position: relative;
+      min-height: 230px;
+      overflow: hidden;
+      background:
+        linear-gradient(rgba(18, 18, 18, 0.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(18, 18, 18, 0.055) 1px, transparent 1px),
+        #fffaf0;
+      background-size: 28px 28px;
+    }
+
+    .att-zone {
+      position: absolute;
+      inset: 50px 18% 42px;
+      border: 2px dashed rgba(249, 184, 36, 0.95);
+      border-radius: 50%;
+      background: rgba(249, 184, 36, 0.1);
+    }
+
+    .att-pin {
+      position: absolute;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      background: var(--secondary);
+      color: var(--white);
+      font-size: 12px;
+      font-weight: 800;
+      box-shadow: var(--shadow-md);
+    }
+
+    .att-pin.one {
+      left: 24px;
+      top: 34px;
+    }
+
+    .att-pin.two {
+      right: 28px;
+      bottom: 36px;
+      background: var(--primary);
+      color: var(--secondary);
+    }
+
+    .att-metric-list,
+    .att-feed-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .att-metric-list div {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(18, 18, 18, 0.08);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .att-feed-list span {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .att-proof-strip {
+      padding: 0 0 24px;
+      background: linear-gradient(180deg, var(--secondary), #1a1a1a);
+      color: var(--white);
+    }
+
+    .att-proof-box {
+      transform: translateY(20px);
+      display: grid;
+      grid-template-columns: 1.35fr repeat(4, minmax(130px, 1fr));
+      gap: 14px;
+      align-items: center;
+      padding: 18px;
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(14px);
+    }
+
+    .att-proof-label {
+      color: rgba(255, 255, 255, 0.68);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .att-stat-pill {
+      padding: 14px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.08);
+      min-height: 84px;
+    }
+
+    .att-stat-pill strong {
+      display: block;
+      color: var(--primary);
+      font-size: 30px;
+      line-height: 1;
+      margin-bottom: 8px;
+      font-weight: 900;
+    }
+
+    .att-stat-pill span {
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    .att-section {
+      padding: 84px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .att-soft {
+      background:
+        linear-gradient(rgba(249, 184, 36, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(249, 184, 36, 0.045) 1px, transparent 1px),
+        #fffaf0;
+      background-size: 34px 34px;
+    }
+
+    .att-section-head {
+      max-width: 890px;
+      margin: 0 auto 34px;
+      text-align: center;
+    }
+
+    .att-section-head h2,
+    .att-copy h2 {
+      margin-top: 14px;
+      color: var(--secondary);
+      font-size: clamp(30px, 3vw, 44px);
+      line-height: 1.12;
+      letter-spacing: 0;
+      font-weight: 900;
+    }
+
+    .att-section-head p,
+    .att-copy>p,
+    .att-panel p {
+      margin-top: 14px;
+      color: var(--text-muted);
+      font-size: 15.5px;
+      line-height: 1.72;
+      font-weight: 400;
+    }
+
+    .att-card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 34px;
+    }
+
+    .att-card {
+      position: relative;
+      min-height: 238px;
+      padding: 80px 24px 24px;
+      border: 1px solid rgba(18, 18, 18, 0.08);
+      border-radius: 26px;
+      border-top-left-radius: 0;
+      background: var(--white);
+      box-shadow: 0 16px 42px rgba(18, 18, 18, 0.06);
+      transition: var(--transition);
+      overflow: hidden;
+    }
+
+    .att-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(249, 184, 36, 0.55);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .att-card::before {
+      content: '';
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      width: 82px;
+      height: 82px;
+      background: var(--primary);
+      border-bottom-right-radius: 26px;
+    }
+
+    .att-card-icon {
+      position: absolute;
+      top: -12px;
+      left: -12px;
+      z-index: 2;
+      width: 64px;
+      height: 64px;
+      display: grid;
+      place-items: center;
+      color: var(--secondary);
+      font-size: 24px;
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: var(--shadow-md);
+    }
+
+    .att-card h3,
+    .att-panel h3 {
+      margin: 0 0 12px;
+      color: var(--secondary);
+      font-size: 21px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    .att-card p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 14px;
+      line-height: 1.68;
+    }
+
+    .att-chip-list,
+    .att-integration-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+      justify-content: center;
+    }
+
+    .att-chip,
+    .att-intg-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 12px;
+      border-radius: 999px;
+      background: var(--white);
+      border: 1px solid rgba(18, 18, 18, 0.08);
+      color: var(--secondary);
+      font-size: 12px;
+      font-weight: 900;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .att-split {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .att-panel {
+      min-height: 100%;
+      padding: 32px;
+      border-radius: 28px;
+      background: var(--white);
+      border: 1px solid rgba(18, 18, 18, 0.08);
+      box-shadow: var(--shadow-md);
+    }
+
+    .att-panel.dark {
+      background: linear-gradient(145deg, var(--secondary), #050505);
+      color: var(--white);
+      border-color: rgba(249, 184, 36, 0.22);
+    }
+
+    .att-panel.dark h3,
+    .att-panel.dark h2 {
+      color: var(--white);
+    }
+
+    .att-panel.dark p {
+      color: rgba(255, 255, 255, 0.68);
+    }
+
+    .att-check-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .att-check-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 11px;
+      color: var(--text-main);
+      font-size: 14px;
+      line-height: 1.55;
+      font-weight: 700;
+    }
+
+    .att-panel.dark .att-check-list li {
+      color: rgba(255, 255, 255, 0.84);
+    }
+
+    .att-verification {
+      display: grid;
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .att-verify-row {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .att-verify-row i {
+      color: #76e5ad;
+      margin-top: 4px;
+    }
+
+    .att-verify-row.blocked i {
+      color: #f0997b;
+    }
+
+    .att-verify-row strong {
+      display: block;
+      color: var(--white);
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    .att-verify-row span {
+      color: rgba(255, 255, 255, 0.52);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .att-feature-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .att-mini-card {
+      padding: 24px;
+      border-radius: 22px;
+      background: var(--white);
+      border: 1px solid rgba(18, 18, 18, 0.08);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .att-mini-card h3 {
+      font-size: 18px;
+      letter-spacing: 0;
+    }
+
+    .att-mini-card p {
+      margin-top: 10px;
+      color: var(--text-muted);
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .att-policy-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .att-policy-item {
+      padding: 18px;
+      border-radius: 18px;
+      background: var(--primary-light);
+      border: 1px solid rgba(249, 184, 36, 0.22);
+    }
+
+    .att-policy-item h3 {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .att-policy-item p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .att-roster-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      margin-top: 30px;
+    }
+
+    .att-roster-card {
+      padding: 30px;
+      border-radius: 26px;
+      background: var(--white);
+      border: 1px solid rgba(18, 18, 18, 0.08);
+      box-shadow: var(--shadow-md);
+    }
+
+    .att-faq-wrap {
+      display: grid;
+      grid-template-columns: 0.7fr 1.3fr;
+      gap: 30px;
+      align-items: start;
+    }
+
+    .att-faq-wrap h2 {
+      margin-top: 16px;
+      color: var(--secondary);
+      font-size: clamp(30px, 3vw, 42px);
+      line-height: 1.12;
+      letter-spacing: 0;
+      font-weight: 900;
+    }
+
+    .att-page .faq-item {
+      border: 1px solid rgba(18, 18, 18, 0.08);
+      border-radius: 18px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      background: var(--white);
+      box-shadow: 0 14px 34px rgba(18, 18, 18, 0.05);
+      transition: var(--transition);
+    }
+
+    .att-page .faq-item.open {
+      border-color: rgba(249, 184, 36, 0.65);
+    }
+
+    .att-page .faq-q {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 20px;
+      cursor: pointer;
+      font-weight: 900;
+      font-size: 15px;
+      gap: 16px;
+      color: var(--secondary);
+    }
+
+    .att-page .faq-q i {
+      color: var(--primary);
+      font-size: 13px;
+      transition: .3s;
+    }
+
+    .att-page .faq-item.open .faq-q i {
+      transform: rotate(180deg);
+    }
+
+    .att-page .faq-a.open {
+      max-height: 620px;
+      padding: 0 20px 18px;
+    }
+
+    .att-final {
+      padding: 50px 0 50px;
+      background: #fff;
+      border-top: 1px solid var(--border);
+    }
+
+    .att-final-card {
+      position: relative;
+      overflow: hidden;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 22px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 24px;
+      align-items: stretch;
+      border-radius: 30px;
+      background: linear-gradient(135deg, #fffaf0, #fff);
+      border: 1px solid rgba(18, 18, 18, 0.08);
+      box-shadow: var(--shadow-premium);
+    }
+
+    .att-final-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 32px;
+      right: 32px;
+      height: 5px;
+      background: var(--primary);
+      border-radius: 0 0 12px 12px;
+    }
+
+    .att-final-card h2 {
+      color: var(--secondary);
+      font-size: clamp(30px, 3vw, 38px);
+      line-height: 1.15;
+      letter-spacing: 0;
+      margin-bottom: 14px;
+    }
+
+    .att-final-card p {
+      max-width: 760px;
+      color: var(--text-muted);
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .att-final-copy {
+      padding: 28px;
+    }
+
+    .att-final-actions {
+      display: grid;
+      align-content: center;
+      gap: 14px;
+      padding: 30px;
+      border-radius: 22px;
+      background: var(--secondary);
+    }
+
+    .att-final-actions .btn {
+      justify-content: center;
+    }
+
+    .att-final-actions .btn-primary {
+      background: var(--primary);
+      color: var(--secondary);
+      border-color: var(--primary);
+    }
+
+    .att-final-actions .btn-outline {
+      background: transparent;
+      border-color: rgba(255, 255, 255, 0.32);
+      color: var(--white);
+    }
+
+    @media (max-width: 1100px) {
+
+      .att-hero-grid,
+      .att-faq-wrap,
+      .att-split {
+        grid-template-columns: 1fr;
+      }
+
+      .att-command {
+        max-width: 860px;
+        margin: 0 auto;
+        min-height: auto;
+      }
+
+      .att-proof-box {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .att-feature-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .att-final-card {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .att-command {
+        padding: 16px;
+        border-radius: 30px;
+      }
+
+      .att-command-shell {
+        min-height: auto;
+        border-radius: 24px;
+      }
+
+      .att-command-top {
+        gap: 10px;
+      }
+
+      .att-command-top .att-kicker {
+        min-width: 0;
+        max-width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .att-command-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        padding: 14px;
+      }
+
+      .att-screen-panel.wide {
+        grid-column: 1 / -1;
+      }
+
+      .att-map {
+        min-height: 210px;
+      }
+
+      .att-zone {
+        inset: 48px 14% 42px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .att-hero {
+        padding: 112px 0 46px;
+      }
+
+      .att-hero-title {
+        font-size: clamp(30px, 8vw, 40px);
+        line-height: 1.1;
+      }
+
+      .att-hero-sub {
+        font-size: 17px;
+      }
+
+      .att-actions .btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .att-command,
+      .att-command-shell {
+        min-height: auto;
+      }
+
+      .att-command-grid,
+      .att-proof-box,
+      .att-feature-grid,
+      .att-policy-grid,
+      .att-roster-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .att-card-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .att-screen-panel.wide {
+        grid-column: auto;
+      }
+
+      .att-section {
+        padding: 58px 0;
+      }
+
+      .att-panel,
+      .att-roster-card,
+      .att-final-copy,
+      .att-final-actions {
+        padding: 24px;
+      }
+
+      .att-card {
+        min-height: 220px;
+        padding: 96px 24px 26px;
+      }
+
+      .att-card h3,
+      .att-card p {
+        position: relative;
+        z-index: 2;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .att-command {
+        padding: 12px;
+        border-radius: 24px;
+      }
+
+      .att-command-top {
+        padding: 12px;
+      }
+
+      .att-window-dots {
+        display: none;
+      }
+
+      .att-command-top .att-kicker {
+        font-size: 10px;
+        padding: 7px 10px;
+      }
+
+      .att-live {
+        font-size: 10px;
+      }
+
+      .att-command-grid {
+        padding: 12px;
+      }
+
+      .att-map {
+        min-height: 180px;
+      }
+
+      .att-zone {
+        inset: 54px 12% 48px;
+      }
+
+      .att-pin {
+        font-size: 10px;
+        padding: 7px 9px;
+      }
+
+      .att-section-head h2,
+      .att-copy h2,
+      .att-faq-wrap h2 {
+        font-size: 28px;
+      }
+
+      .att-stat-pill strong {
+        font-size: 26px;
+      }
+
+      .att-card {
+        min-height: 238px;
+        padding: 104px 22px 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRQFZGZT" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <nav class="nav-wrap">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo/web-logo-black.png" alt="EKTA HR">
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li class="has-mega">
+            <a href="#" class="active">Product <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="mega-dropdown">
+              <div class="mega-menu-tabs">
+                <div class="mega-tab-btn active" data-tab="hrms">
+                  <span>HRMS</span>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="mega-tab-btn" data-tab="retirement">
+                  <span>Retirement Benefits</span>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+              <div class="mega-menu-content active" id="hrms">
+                <div class="mega-grid">
+                  <a href="recruitment.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-user-plus"></i></div>
+                    <div class="mega-info">
+                      <h4>Recruitment Software</h4>
+                      <p>Find the Right Talent Faster</p>
+                    </div>
+                  </a>
+                  <a href="hr-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-users-cog"></i></div>
+                    <div class="mega-info">
+                      <h4>HR Software</h4>
+                      <p>Backbone of Your HR</p>
+                    </div>
+                  </a>
+                  <a href="onboarding-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-door-open"></i></div>
+                    <div class="mega-info">
+                      <h4>Employee Onboarding</h4>
+                      <p>Positive First Impression</p>
+                    </div>
+                  </a>
+                  <a href="attendance.html" class="mega-item active">
+                    <div class="mega-icon"><i class="fas fa-clock"></i></div>
+                    <div class="mega-info">
+                      <h4>Attendance Management</h4>
+                      <p>Put Attendance on Auto Pilot</p>
+                    </div>
+                  </a>
+                  <a href="payroll.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-money-check-dollar"></i></div>
+                    <div class="mega-info">
+                      <h4>Payroll Software</h4>
+                      <p>Payroll on Time, Every Time</p>
+                    </div>
+                  </a>
+                  <a href="leave.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-calendar-day"></i></div>
+                    <div class="mega-info">
+                      <h4>Leave Management</h4>
+                      <p>Take a Leave From Managing Leaves</p>
+                    </div>
+                  </a>
+                  <a href="performance.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="mega-info">
+                      <h4>Performance Management</h4>
+                      <p>OKR Based Performance</p>
+                    </div>
+                  </a>
+                  <a href="lms.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="mega-info">
+                      <h4>Learning Management</h4>
+                      <p>Feature Rich Learning Management</p>
+                    </div>
+                  </a>
+                  <a href="expense-management-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-plane"></i></div>
+                    <div class="mega-info">
+                      <h4>Travel & Expense</h4>
+                      <p>Control & Convenience at One Place</p>
+                    </div>
+                  </a>
+                  <a href="employee-self-service.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-user-shield"></i></div>
+                    <div class="mega-info">
+                      <h4>Employee Self Service</h4>
+                      <p>Engage Empower Workforce</p>
+                    </div>
+                  </a>
+                  <a href="mobile-application.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="mega-info">
+                      <h4>Mobile App</h4>
+                      <p>Modern App for Mobile Workforce</p>
+                    </div>
+                  </a>
+                  <a href="timesheet-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-hourglass-half"></i></div>
+                    <div class="mega-info">
+                      <h4>Timesheet Software</h4>
+                      <p>Simplified Time & Resource Tracking</p>
+                    </div>
+                  </a>
+                  <a href="integration.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-plug"></i></div>
+                    <div class="mega-info">
+                      <h4>Integration</h4>
+                      <p>Connect Your Favorite Tools</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="mega-menu-content" id="retirement">
+                <div class="mega-grid">
+                  <a href="pf-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-piggy-bank"></i></div>
+                    <div class="mega-info">
+                      <h4>Provident Fund</h4>
+                      <p>Record & track PF contributions</p>
+                    </div>
+                  </a>
+                  <a href="pension-management.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-hand-holding-dollar"></i></div>
+                    <div class="mega-info">
+                      <h4>Pension Management</h4>
+                      <p>Automate pension disbursements</p>
+                    </div>
+                  </a>
+                  <a href="gratuity.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-gift"></i></div>
+                    <div class="mega-info">
+                      <h4>Gratuity</h4>
+                      <p>Calculate gratuity with ease</p>
+                    </div>
+                  </a>
+                  <a href="benevolent-fund-trust.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-heart"></i></div>
+                    <div class="mega-info">
+                      <h4>Benevolent Fund</h4>
+                      <p>Manage employee welfare funds</p>
+                    </div>
+                  </a>
+                  <a href="gpf-trust.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-vault"></i></div>
+                    <div class="mega-info">
+                      <h4>General Provident Fund</h4>
+                      <p>Government employee PF tracking</p>
+                    </div>
+                  </a>
+                  <a href="superannuation-fund-trust.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-coins"></i></div>
+                    <div class="mega-info">
+                      <h4>Superannuation Fund</h4>
+                      <p>Retirement savings plan</p>
+                    </div>
+                  </a>
+                  <a href="unexempted-provident-fund.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-file-invoice"></i></div>
+                    <div class="mega-info">
+                      <h4>Unexempted Provident Fund</h4>
+                      <p>Trust-based PF management</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#">Industries <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown">
+              <a href="manufacturing-industry.html">Manufacturing</a>
+              <a href="social-welfare.html">Social Welfare</a>
+              <a href="finance.html">Finance</a>
+              <a href="automotive.html">Automotive</a>
+              <a href="healthcare.html">Healthcare</a>
+              <a href="retail.html">Retail</a>
+              <a href="information-technology.html">Information Technology</a>
+              <a href="hospitality.html">Hospitality</a>
+              <a href="startups.html">Startups</a>
+            </div>
+          </li>
+          <li><a href="partners.html">Partners</a></li>
+          <li>
+            <a href="#">Resources <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown">
+              <a href="blogs.html">Blogs</a>
+              <a href="hr-letter.html">HR Letters</a>
+              <a href="hr-policy.html">HR Policies</a>
+              <a href="hr-glossary.html">HR Glossary</a>
+              <a href="minimum-wages.html">Minimum Wages</a>
+              <a href="professional-tax.html">Professional Tax</a>
+              <a href="holiday-list.html">Holiday Lists</a>
+              <a href="job-descriptions.html">Job Descriptions</a>
+              <a href="labour-welfare-fund.html">Labour Welfare Fund</a>
+              <a href="okr.html">OKRs</a>
+            </div>
+          </li>
+          <li>
+            <a href="#">Company <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown">
+              <a href="contact.html">Contact Us</a>
+              <a href="about.html">About Us</a>
+              <a href="career.html">Career</a>
+            </div>
+          </li>
+
+          <li><a href="pricing-plan.html">Pricing</a></li>
+        </ul>
+        <div class="header-btns">
+          <a href="https://my.ektahr.com" class="btn btn-outline">Login</a>
+          <a href="https://my.ektahr.com/signup" class="btn btn-primary">Get Free Trial</a>
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-close" id="menuClose"><i class="fas fa-times"></i></div>
+    <a href="index.html">Home</a>
+
+    <div class="mobile-nav-item has-dropdown">
+      <div class="mobile-dropdown-toggle">
+        <a href="#">Product</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="mobile-dropdown-content">
+        <a href="recruitment.html">Recruitment Software</a>
+        <a href="hr-software.html">HR Software</a>
+        <a href="onboarding-software.html">Employee Onboarding</a>
+        <a href="attendance.html">Attendance Management</a>
+        <a href="payroll.html">Payroll Software</a>
+        <a href="leave.html">Leave Management</a>
+        <a href="performance.html">Performance Management</a>
+        <a href="lms.html">Learning Management</a>
+        <a href="expense-management-software.html">Travel & Expense</a>
+        <a href="employee-self-service.html">Employee Self Service</a>
+        <a href="mobile-application.html">Mobile App</a>
+        <a href="timesheet-software.html">Timesheet Software</a>
+        <a href="integration.html">Integration</a>
+        <a href="pf-software.html">Provident Fund</a>
+        <a href="pension-management.html">Pension Management</a>
+        <a href="gratuity.html">Gratuity</a>
+        <a href="benevolent-fund-trust.html">Benevolent Fund</a>
+        <a href="gpf-trust.html">General Provident Fund</a>
+        <a href="superannuation-fund-trust.html">Superannuation Fund</a>
+        <a href="unexempted-provident-fund.html">Unexempted Provident Fund</a>
+      </div>
+    </div>
+
+    <div class="mobile-nav-item has-dropdown">
+      <div class="mobile-dropdown-toggle">
+        <a href="#">Industries</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="mobile-dropdown-content">
+        <a href="manufacturing-industry.html">Manufacturing</a>
+        <a href="social-welfare.html">Social Welfare</a>
+        <a href="finance.html">Finance</a>
+        <a href="automotive.html">Automotive</a>
+        <a href="healthcare.html">Healthcare</a>
+        <a href="retail.html">Retail</a>
+        <a href="information-technology.html">Information Technology</a>
+        <a href="hospitality.html">Hospitality</a>
+        <a href="startups.html">Startups</a>
+      </div>
+    </div>
+
+    <a href="partners.html">Partners</a>
+
+    <div class="mobile-nav-item has-dropdown">
+      <div class="mobile-dropdown-toggle">
+        <a href="#">Resources</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="mobile-dropdown-content">
+        <a href="blogs.html">Blogs</a>
+        <a href="hr-letter.html">HR Letters</a>
+        <a href="hr-policy.html">HR Policies</a>
+        <a href="hr-glossary.html">HR Glossary</a>
+        <a href="minimum-wages.html">Minimum Wages</a>
+        <a href="professional-tax.html">Professional Tax</a>
+        <a href="holiday-list.html">Holiday Lists</a>
+        <a href="job-descriptions.html">Job Descriptions</a>
+        <a href="labour-welfare-fund.html">Labour Welfare Fund</a>
+        <a href="okr.html">OKRs</a>
+      </div>
+    </div>
+
+    <div class="mobile-nav-item has-dropdown">
+      <div class="mobile-dropdown-toggle">
+        <a href="#">Company</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="mobile-dropdown-content">
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+        <a href="career.html">Career</a>
+      </div>
+    </div>
+
+
+    <a href="pricing-plan.html">Pricing</a>
+    <a href="https://my.ektahr.com">Login</a>
+    <a href="https://my.ektahr.com/signup" style="color:var(--primary);">Get Free Trial</a>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <main class="att-page">
+    <section class="att-hero">
+      <div class="container">
+        <div class="att-hero-grid">
+          <div data-aos="fade-right">
+            <div class="att-kicker"><i class="fas fa-location-dot"></i> Attendance Management System</div>
+            <h1 class="att-hero-title"><span>India's #1 Geo-Fencing</span>Attendance Software</h1>
+            <p class="att-hero-sub">Track employee attendance in <strong>real time</strong> &mdash; geo-fencing, facial recognition, shift management, and seamless payroll integration in one platform built for Indian businesses.</p>
+            <div class="att-actions">
+              <a href="https://my.ektahr.com/signup" class="btn btn-primary">Start Free Trial</a>
+              <a href="contact.html" class="btn btn-outline"><i class="fas fa-play" style="font-size:10px; margin-right:8px;"></i> Request Demo</a>
+            </div>
+            <div class="att-trust-row">
+              <span><i class="fas fa-circle-check"></i>Geo-fenced punches</span>
+              <span><i class="fas fa-circle-check"></i>Facial recognition</span>
+              <span><i class="fas fa-circle-check"></i>Payroll-ready attendance</span>
+            </div>
+          </div>
+
+          <div class="att-command" data-aos="fade-left" data-aos-delay="120">
+            <div class="att-command-shell">
+              <div class="att-command-top">
+                <div class="att-window-dots"><span></span><span></span><span></span></div>
+                <div class="att-kicker" style="background:rgba(255,255,255,0.08); color:var(--white); border-color:rgba(255,255,255,0.14);">Live Attendance Command Center</div>
+                <div class="att-live"><span></span>LIVE</div>
+              </div>
+              <div class="att-command-grid">
+                <div class="att-screen-panel white wide att-map">
+                  <div class="att-zone"></div>
+                  <div class="att-pin one"><i class="fas fa-user-check"></i> Office Zone</div>
+                  <div class="att-pin two"><i class="fas fa-location-crosshairs"></i> Punch Verified</div>
+                </div>
+                <div class="att-screen-panel white">
+                  <h3>Real-Time Status</h3>
+                  <div class="att-metric-list">
+                    <div><span>On-site</span><strong>248</strong></div>
+                    <div><span>Off-site</span><strong>17</strong></div>
+                    <div><span>Late alerts</span><strong>04</strong></div>
+                  </div>
+                </div>
+                <div class="att-screen-panel">
+                  <h3 style="color:var(--white);">Payroll Sync</h3>
+                  <div class="att-feed-list">
+                    <span><i class="fas fa-circle-check"></i>Present days calculated</span>
+                    <span><i class="fas fa-circle-check"></i>LOP summary ready</span>
+                    <span><i class="fas fa-circle-check"></i>OT pushed for approval</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="att-proof-strip">
+      <div class="container">
+        <div class="att-proof-box">
+          <div class="att-proof-label">Trusted by Indian teams for real-time attendance control</div>
+          <div class="att-stat-pill"><strong>100%</strong><span>Real-Time Attendance Tracking</span></div>
+          <div class="att-stat-pill"><strong>Zero</strong><span>Proxy / Attendance Theft</span></div>
+          <div class="att-stat-pill"><strong>Mobile</strong><span>First, Always On</span></div>
+          <div class="att-stat-pill"><strong>3,500+</strong><span>Businesses Trust EKTA HR</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="att-section" id="advantage">
+      <div class="container">
+        <div class="att-section-head" data-aos="fade-up">
+          <div class="att-kicker"><i class="fas fa-shield-halved"></i> EKTA Advantage</div>
+          <h2>Why Choose Our Attendance<br>Management Solution?</h2>
+          <p>A cloud-based geo-fencing attendance software that streamlines your end-to-end attendance process, saving time and compliance headaches for HR teams across India.</p>
+        </div>
+
+        <div class="att-card-grid">
+          <article class="att-card" data-aos="fade-up">
+            <div class="att-card-icon"><i class="fas fa-user-check"></i></div>
+            <h3>Simple for Employees</h3>
+            <p>From mobile clock-ins to web portals and biometric integration &mdash; marking attendance is effortless, wherever your team works.</p>
+          </article>
+          <article class="att-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="att-card-icon"><i class="fas fa-user-shield"></i></div>
+            <h3>Trusted for HR</h3>
+            <p>Role-based access, geo-fencing boundaries, and real-time validation ensure every time record is credible, compliant, and audit-ready.</p>
+          </article>
+          <article class="att-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="att-card-icon"><i class="fas fa-chart-simple"></i></div>
+            <h3>Better for Business</h3>
+            <p>Identify attendance patterns, optimise resource allocation, and cut administrative costs with analytics that actually surface insights.</p>
+          </article>
+        </div>
+
+        <div class="att-chip-list" data-aos="fade-up">
+          <span class="att-chip"><i class="fas fa-location-dot"></i>Geo-Fencing &amp; Geo-Tagging</span>
+          <span class="att-chip"><i class="fas fa-face-smile"></i>Facial Recognition</span>
+          <span class="att-chip"><i class="fas fa-camera"></i>Selfie-based Punch</span>
+          <span class="att-chip"><i class="fas fa-fingerprint"></i>Biometric Integration</span>
+          <span class="att-chip"><i class="fas fa-desktop"></i>Web Portal Clock-in</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="att-section att-soft">
+      <div class="container">
+        <div class="att-section-head" data-aos="fade-up">
+          <div class="att-kicker"><i class="fas fa-mobile-screen-button"></i> Modern Punching Methods</div>
+        </div>
+        <div class="att-split">
+          <article class="att-panel att-copy" data-aos="fade-right">
+            <h2>India's Most Trusted<br>Geo-Fencing Attendance Software</h2>
+            <p>Create virtual boundaries around your office, field site, or warehouse. Employees can mark attendance only when they are physically within the designated geo-fence &mdash; eliminating buddy punching and location fraud entirely.</p>
+            <p>Every punch is validated in real time, giving HR a live dashboard of who is on-site, off-site, or missing &mdash; no manual reconciliation required.</p>
+            <ul class="att-check-list">
+              <li><i class="fas fa-check"></i><span>Define multiple geo-fence zones per location</span></li>
+              <li><i class="fas fa-check"></i><span>Geo-tagging with GPS coordinates per punch</span></li>
+              <li><i class="fas fa-check"></i><span>Works offline &mdash; syncs when connection is restored</span></li>
+              <li><i class="fas fa-check"></i><span>Instant alerts for out-of-zone attempts</span></li>
+            </ul>
+          </article>
+          <article class="att-panel att-copy" data-aos="fade-left">
+            <h2>Mobile Attendance App<br>for Employees &mdash; Anywhere, Anytime</h2>
+            <p>Give your workforce a next-gen experience on the device they already carry. EKTA HR's mobile attendance app for employees supports selfie punch, facial verification, and geo-tagged clock-in &mdash; all from a single intuitive screen.</p>
+            <p>Admins get foolproof real-time attendance tracking data; employees get a frictionless experience that respects their time.</p>
+            <ul class="att-check-list">
+              <li><i class="fas fa-check"></i><span>iOS &amp; Android &mdash; no hardware dependency</span></li>
+              <li><i class="fas fa-check"></i><span>Offline punch with auto-sync</span></li>
+              <li><i class="fas fa-check"></i><span>Attendance regularisation requests in-app</span></li>
+              <li><i class="fas fa-check"></i><span>Push notifications for shift reminders</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="att-section">
+      <div class="container">
+        <div class="att-split">
+          <article class="att-panel att-copy" data-aos="fade-right">
+            <div class="att-kicker"><i class="fas fa-wand-magic-sparkles"></i> AI-Powered</div>
+            <h2>Facial Recognition Attendance System &mdash; Zero Proxy Punches</h2>
+            <p>EKTA HR's facial recognition attendance system uses on-device AI to verify an employee's face against the registered database before recording any punch. The match happens in under a second &mdash; no card, no PIN, no fraud.</p>
+            <p>Unlike basic selfie uploads, our liveness detection confirms a real person is present, making it the most reliable AI-based attendance method available for Indian enterprises today.</p>
+            <ul class="att-check-list">
+              <li><i class="fas fa-check"></i><span>Sub-second face match with liveness check</span></li>
+              <li><i class="fas fa-check"></i><span>Works in varied lighting &amp; angles</span></li>
+              <li><i class="fas fa-check"></i><span>Stores biometric templates securely on-cloud</span></li>
+              <li><i class="fas fa-check"></i><span>Compliance-ready: no raw image retention</span></li>
+              <li><i class="fas fa-check"></i><span>Integrates with ESSL, ZKTeco, Matrix devices</span></li>
+            </ul>
+          </article>
+          <article class="att-panel dark" data-aos="fade-left">
+            <div class="att-kicker" style="background:rgba(255,255,255,0.08); color:var(--white); border-color:rgba(255,255,255,0.14);">Live Punch Verification</div>
+            <div class="att-verification">
+              <div class="att-verify-row">
+                <i class="fas fa-circle-check"></i>
+                <div>
+                  <strong>Face matched &mdash; Rahul Sharma</strong>
+                  <span>Confidence: 98.4% &middot; Liveness: Pass &middot; 09:02 AM</span>
+                </div>
+              </div>
+              <div class="att-verify-row blocked">
+                <i class="fas fa-circle-xmark"></i>
+                <div>
+                  <strong>Proxy attempt blocked</strong>
+                  <span>Photo spoof detected &middot; HR notified instantly</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="att-section att-soft">
+      <div class="container">
+        <div class="att-section-head" data-aos="fade-up">
+          <div class="att-kicker"><i class="fas fa-money-check-dollar"></i> Payroll Integration</div>
+          <h2>Attendance Software with Direct<br>Payroll Integration &mdash; No Manual Export</h2>
+          <p>Attendance data flows directly into your payroll engine &mdash; present days, LOP deductions, overtime, and comp-off balances are calculated automatically and ready for payroll processing. No CSV. No re-entry. No errors.</p>
+        </div>
+        <div class="att-feature-grid">
+          <article class="att-mini-card" data-aos="fade-up">
+            <h3>Auto LOP Calculation</h3>
+            <p>Attendance records trigger automatic Loss of Pay calculations based on your leave and holiday policy &mdash; accurate to the minute.</p>
+          </article>
+          <article class="att-mini-card" data-aos="fade-up" data-aos-delay="80">
+            <h3>Overtime to Payroll</h3>
+            <p>Approved overtime hours are pushed directly to the payroll module with the correct rate multipliers per employee category.</p>
+          </article>
+          <article class="att-mini-card" data-aos="fade-up" data-aos-delay="160">
+            <h3>Comp-off Sync</h3>
+            <p>Holiday work is automatically logged as comp-off credits and reflected in leave balance without any HR manual intervention.</p>
+          </article>
+          <article class="att-mini-card" data-aos="fade-up" data-aos-delay="240">
+            <h3>One-Click Payroll Lock</h3>
+            <p>Close the attendance month, review the summary, and lock it for payroll &mdash; all within EKTA HR, with a complete audit trail.</p>
+          </article>
+        </div>
+        <p style="margin-top: 1.5rem; font-size: .9rem; text-align:center;">Works natively with EKTA Payroll. Also integrates with:</p>
+        <div class="att-integration-row">
+          <span class="att-intg-badge">GreytHR</span>
+          <span class="att-intg-badge">Keka</span>
+          <span class="att-intg-badge">ZohoPayroll</span>
+          <span class="att-intg-badge">QuickBooks</span>
+          <span class="att-intg-badge">SAP HCM</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="att-section">
+      <div class="container">
+        <div class="att-split">
+          <article class="att-panel att-copy" data-aos="fade-right">
+            <div class="att-kicker"><i class="fas fa-sliders"></i> Policy Management</div>
+            <h2>Flexibility with Minute Control</h2>
+            <p>Compose attendance policies that fit your organisation's unique needs. Define every parameter &mdash; from work hours to late-coming penalties &mdash; with no-code configuration.</p>
+            <div class="att-policy-grid">
+              <div class="att-policy-item">
+                <h3>Work Hour Policies</h3>
+                <p>Define day status, break durations, and net working hours &mdash; calculated automatically.</p>
+              </div>
+              <div class="att-policy-item">
+                <h3>Overtime &amp; Comp-off</h3>
+                <p>Min/max OT limits for weekdays and holidays. Per department or category.</p>
+              </div>
+              <div class="att-policy-item">
+                <h3>Late Coming &amp; Early Going</h3>
+                <p>Grace periods, deduction rules, half-day parameters &mdash; with multi-level approval workflows.</p>
+              </div>
+              <div class="att-policy-item">
+                <h3>LOP Automation</h3>
+                <p>Automatically feeds Loss of Pay data into payroll integration engine.</p>
+              </div>
+            </div>
+          </article>
+          <article class="att-panel att-copy" data-aos="fade-left">
+            <div class="att-kicker"><i class="fas fa-scale-balanced"></i> Compliance</div>
+            <h2>Built for Indian Labour Law</h2>
+            <p>From the Factories Act to state-level shop and establishment rules, EKTA HR's attendance policies are pre-configured for Indian compliance requirements &mdash; with full audit logs.</p>
+            <ul class="att-check-list">
+              <li><i class="fas fa-check"></i><span>Configurable public holiday calendars (state-wise)</span></li>
+              <li><i class="fas fa-check"></i><span>Week-off and festival carry-forward rules</span></li>
+              <li><i class="fas fa-check"></i><span>Biometric integration for factory compliance</span></li>
+              <li><i class="fas fa-check"></i><span>Export-ready reports for labour inspections</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="att-section att-soft">
+      <div class="container">
+        <div class="att-section-head" data-aos="fade-up">
+          <div class="att-kicker"><i class="fas fa-calendar-days"></i> Shift &amp; Roster</div>
+          <h2>Shift Management Software That Untangles Complex Rosters</h2>
+          <p>No more restrictions on a single shift type. EKTA HR's shift management software supports auto-shifts, fixed rosters, rotational cycles, and employee-initiated swap requests &mdash; across every department and location.</p>
+        </div>
+        <div class="att-roster-grid">
+          <article class="att-roster-card" data-aos="fade-right">
+            <h3>Multiple Shift Types</h3>
+            <p>Create auto-shifts, time-based shifts, or flexible-hour shifts for the same organisation. Configure different policies per category &mdash; field staff, office, factory floor, or remote.</p>
+            <div class="att-chip-list" style="justify-content:flex-start;">
+              <span class="att-chip">Auto Shift</span>
+              <span class="att-chip">Fixed Shift</span>
+              <span class="att-chip">Rotational Shift</span>
+              <span class="att-chip">Flexible Hours</span>
+            </div>
+          </article>
+          <article class="att-roster-card" data-aos="fade-left">
+            <h3>Roster Pattern Planning</h3>
+            <p>Plan roster patterns based on days, weeks, or months. Assign by department, team, or individual. Simplify the complexity of managing hundreds of employees across multiple timings.</p>
+            <div class="att-chip-list" style="justify-content:flex-start;">
+              <span class="att-chip">Dept-wise Assignment</span>
+              <span class="att-chip">Shift Swap Requests</span>
+              <span class="att-chip">Roster Export</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="att-section">
+      <div class="container">
+        <div class="att-faq-wrap">
+          <div data-aos="fade-right">
+            <div class="att-kicker"><i class="fas fa-circle-question"></i> Common Questions</div>
+            <h2>Attendance Solution FAQs</h2>
+          </div>
+          <div data-aos="fade-left">
+            <div class="faq-item open">
+              <div class="faq-q">What is an Attendance Management System?<i class="fas fa-chevron-down"></i></div>
+              <div class="faq-a open">
+                <p>It's a digital solution to register an employee's presence or absence according to their in-out timings, directly impacting work hours and project productivity.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">Does it integrate with existing biometric hardware?<i class="fas fa-chevron-down"></i></div>
+              <div class="faq-a">
+                <p>Yes, EKTA HR seamlessly integrates with major hardware like ESSL, ZKTeco, and Matrix via database, IP, or SDK connectivity.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">Can employees regularize their missed punches?<i class="fas fa-chevron-down"></i></div>
+              <div class="faq-a">
+                <p>Absolutely. Employees can apply for correction through the web portal or mobile app, which then routes to their manager for approval.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">How does geo-fencing attendance software work in India?<i class="fas fa-chevron-down"></i></div>
+              <div class="faq-a">
+                <p>EKTA HR's geo-fencing attendance software lets HR define virtual perimeters around any work location. Employees can only mark attendance when their device GPS is within the boundary &mdash; preventing proxy and out-of-location punches. It works for offices, factories, warehouses, and distributed field teams across India.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">Is EKTA HR a reliable facial recognition attendance system for Indian businesses?<i class="fas fa-chevron-down"></i></div>
+              <div class="faq-a">
+                <p>Yes. EKTA HR's facial recognition attendance system uses AI-based liveness detection to prevent photo spoofing, matching each employee's face to their registered profile in under a second. It is compliant with Indian data protection guidelines and does not store raw images.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">Does the attendance software offer payroll integration?<i class="fas fa-chevron-down"></i></div>
+              <div class="faq-a">
+                <p>EKTA HR is attendance software with built-in payroll integration. Attendance data &mdash; present days, LOP, overtime, comp-off &mdash; flows directly into the payroll engine without manual data entry. It also supports integration with third-party payroll tools like GreytHR, Keka, and Zoho Payroll.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">What makes EKTA HR a good mobile attendance app for employees in India?<i class="fas fa-chevron-down"></i></div>
+              <div class="faq-a">
+                <p>The EKTA HR mobile attendance app for employees supports geo-tagged clock-in, selfie punch, facial recognition, and offline sync &mdash; all from a single app available on iOS and Android. Employees can also apply for leave, view shifts, regularise punches, and check payslips from the same app.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">Can EKTA HR handle complex shift management for multi-location businesses?<i class="fas fa-chevron-down"></i></div>
+              <div class="faq-a">
+                <p>Yes. EKTA HR is designed as full-featured shift management software for businesses with auto, fixed, and rotational shifts. You can manage roster patterns by department, allow shift swap requests, and configure different overtime and attendance policies per shift type &mdash; all from a single admin dashboard.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="att-final" data-aos="zoom-in">
+      <div class="container">
+        <div class="att-final-card">
+          <div class="att-final-copy">
+            <h2>Put Attendance on Autopilot &mdash; Free for 3 Months</h2>
+            <p>Join 3,500+ Indian businesses using EKTA HR's geo-fencing attendance software to eliminate errors, stop proxy punches, and connect attendance directly to payroll.</p>
+          </div>
+          <div class="att-final-actions">
+            <a href="https://my.ektahr.com/signup" class="btn btn-primary">Start Free Trial</a>
+            <a href="contact.html" class="btn btn-outline">Request Demo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Column 1: Logo & About -->
+        <div class="footer-brand">
+          <img src="assets/images/logo/web-logo-white.png" alt="EKTA HR">
+          <p style="margin-top: 24px; line-height: 1.7;">
+            EKTA HR is an advanced Human Resource Management System designed
+            to simplify operations, enhance employee experience, and scale
+            effortlessly with growing businesses.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="partners.html">Partners</a></li>
+            <li><a href="pricing-plan.html">Pricing</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Location Map -->
+        <div class="footer-links">
+          <h4>Core Features</h4>
+          <ul>
+            <li><a href="recruitment.html">Recruitment Software</a></li>
+            <li><a href="hr-software.html">HR Software</a></li>
+            <li> <a href="onboarding-software.html">Employee Onboarding</a></li>
+            <li><a href="attendance.html">Attendance Management</a></li>
+            <li> <a href="payroll.html">Payroll Software</a></li>
+            <li> <a href="leave.html">Leave Management</a></li>
+            <li><a href="performance.html">Performance</a></li>
+            <li><a href="lms.html">Learning Management</a></li>
+            <li><a href="expense-management-software.html">Travel & Expense</a></li>
+            <li><a href="employee-self-service.html">Employee Self Service</a></li>
+            <li><a href="mobile-application.html">Mobile App</a></li>
+            <li><a href="timesheet-software.html">Timesheet Software</a></li>
+            <li><a href="integration.html">Integration</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Location Map -->
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="hr-letter.html">HR Letters</a></li>
+            <li> <a href="hr-policy.html">HR Policies</a></li>
+            <li><a href="hr-glossary.html">HR Glossary</a></li>
+            <li> <a href="minimum-wages.html">Minimum Wages </a></li>
+            <li> <a href="professional-tax.html">Professional Tax</a></li>
+            <li><a href="holiday-list.html">Holiday Lists</a></li>
+            <li><a href="job-descriptions.html">Job Descriptions</a></li>
+            <li><a href="labour-welfare-fund.html">Labour Welfare Fund</a></li>
+            <li><a href="okr.html">OKRs</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact + Newsletter -->
+        <div class="footer-links">
+          <h4>Industries</h4>
+          <ul>
+            <li><a href="manufacturing-industry.html">Manufacturing</a></li>
+            <li><a href="social-welfare.html">Social Welfare</a></li>
+            <li> <a href="finance.html">Finance</a></li>
+            <li><a href="automotive.html">Automotive</a></li>
+            <li> <a href="healthcare.html">Healthcare</a></li>
+            <li> <a href="retail.html">Retail</a></li>
+            <li><a href="information-technology.html">Information Technology</a></li>
+            <li><a href="hospitality.html">Hospitality</a></li>
+            <li><a href="startups.html">Startups</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="copyright"
+        style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+
+        <p> &copy; 2026 EKTA HR, All rights
+          reserved. </p>
+
+        <div style="display: flex; gap: 20px;">
+          <a href="https://www.linkedin.com/company/myektahr/" target="_blank" style="color: #fff;"
+            class="social-icons"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/people/Ektahr/61586428776510/" target="_blank" style="color: #fff;"
+            class="social-icons"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/my.ektahr/" target="_blank" style="color: #fff;" class="social-icons"><i
+              class="fab fa-instagram"></i></a>
+          <!-- <a href="#" style="color: #fff;" class="social-icons"><i class="fab fa-whatsapp"></i></a> -->
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true, disable: function () { return window.innerWidth < 768; } });
+
+    // Header Scroll Effect
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) header.classList.add('scrolled');
+      else header.classList.remove('scrolled');
+    });
+
+    // Mega Menu Tab Switching
+    const tabBtns = document.querySelectorAll('.mega-tab-btn');
+    const tabContents = document.querySelectorAll('.mega-menu-content');
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('mouseenter', () => {
+        const target = btn.getAttribute('data-tab');
+
+        tabBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        tabContents.forEach(content => {
+          content.classList.remove('active');
+          if (content.id === target) {
+            content.classList.add('active');
+          }
+        });
+      });
+    });
+
+    // Mobile Dropdown Accordion
+    const mobileDropdownToggles = document.querySelectorAll('.mobile-dropdown-toggle');
+
+    mobileDropdownToggles.forEach(toggle => {
+      toggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        const parent = toggle.closest('.mobile-nav-item');
+
+        document.querySelectorAll('.mobile-nav-item').forEach(item => {
+          if (item !== parent) item.classList.remove('active');
+        });
+
+        parent.classList.toggle('active');
+      });
+    });
+
+    // Mobile Menu Logic
+    const menuToggle = document.getElementById('menuToggle');
+    const menuClose = document.getElementById('menuClose');
+    const mobileNav = document.getElementById('mobileNav');
+    const overlay = document.getElementById('overlay');
+
+    const toggleMenu = () => {
+      mobileNav.classList.toggle('active');
+      overlay.classList.toggle('active');
+      document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : 'auto';
+    };
+
+    if (menuToggle) {
+      menuToggle.addEventListener('click', toggleMenu);
+      menuClose.addEventListener('click', toggleMenu);
+      overlay.addEventListener('click', toggleMenu);
+    }
+
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-q');
+      question.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        faqItems.forEach(faq => {
+          faq.classList.remove('open');
+          faq.querySelector('.faq-a').classList.remove('open');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          item.querySelector('.faq-a').classList.add('open');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

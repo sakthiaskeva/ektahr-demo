@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HR Glossary - Human Resource Terms & Definitions | EKTA HR</title>
+  <meta name="description"
+    content="A comprehensive HR glossary of human resource terminologies. Learn the most important words and phrases used in the HR industry.">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/logo/favicon-32x32.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="assets/css/ekta_style.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QF7ZSPWC0P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-QF7ZSPWC0P');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MRQFZGZT');</script>
+  <!-- End Google Tag Manager -->
+
+  <style>
+    /* Custom Styles for HR Glossary Page */
+    .resource-page {
+      padding-top: 100px;
+    }
+
+    .hero-resources {
+      background: linear-gradient(135deg, #fffdf5 0%, #ffffff 100%);
+      padding: 60px 0 60px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .breadcrumb {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    .breadcrumb a:hover {
+      color: var(--primary);
+    }
+
+    .hero-resources p {
+      max-width: 800px;
+      margin: 20px auto 30px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .search-container {
+      max-width: 600px;
+      margin: 40px auto 30px;
+      position: relative;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 16px 60px 16px 24px;
+      border-radius: 100px;
+      border: 1px solid var(--border);
+      font-size: 16px;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .search-input:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: var(--shadow-md);
+    }
+
+    .search-btn {
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: var(--primary);
+      color: var(--secondary);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .search-btn:hover {
+      background: var(--primary-dark);
+    }
+
+    .alphabet-nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .alphabet-nav a {
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--primary);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .alphabet-nav a.disabled {
+      color: #d1d5db;
+      pointer-events: none;
+    }
+
+    .alphabet-nav a:hover {
+      color: var(--secondary);
+      transform: scale(1.2);
+    }
+
+    .resource-layout {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 40px;
+      padding: 60px 0;
+    }
+
+    /* Sidebar Styles */
+    .resource-sidebar {
+      position: sticky;
+      top: 120px;
+      height: fit-content;
+    }
+
+    .sidebar-menu {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 10px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .sidebar-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+      border-radius: 10px;
+      font-weight: 500;
+      color: var(--text-main);
+      transition: var(--transition);
+      margin-bottom: 4px;
+    }
+
+    .sidebar-link:last-child {
+      margin-bottom: 0;
+    }
+
+    .sidebar-link i {
+      width: 20px;
+      color: var(--text-muted);
+      font-size: 16px;
+    }
+
+    .sidebar-link:hover {
+      background: var(--primary-light);
+      color: var(--primary-dark);
+    }
+
+    .sidebar-link:hover i {
+      color: var(--primary);
+    }
+
+    .sidebar-link.active {
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      font-weight: 600;
+    }
+
+    .sidebar-link.active i {
+      color: var(--primary);
+    }
+
+    /* Glossary Content Area */
+    .glossary-section {
+      margin-bottom: 60px;
+    }
+
+    .letter-heading {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      color: var(--secondary);
+      border-bottom: 2px solid var(--primary);
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .glossary-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .glossary-item {
+      padding: 12px;
+      transition: var(--transition);
+    }
+
+    .glossary-item a {
+      color: var(--primary-dark);
+      font-size: 15px;
+      font-weight: 500;
+      display: block;
+      line-height: 1.4;
+    }
+
+    .glossary-item a:hover {
+      color: var(--secondary);
+      text-decoration: underline;
+    }
+
+    @media (max-width: 1024px) {
+      .glossary-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .resource-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .resource-sidebar {
+        position: static;
+        margin-bottom: 40px;
+      }
+
+      .glossary-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-resources {
+        padding: 60px 0 40px;
+      }
+
+      .hero-title {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRQFZGZT" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <nav class="nav-wrap">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo/web-logo-black.png" alt="EKTA HR">
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li class="has-mega">
+            <a href="#">Product <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="mega-dropdown">
+              <div class="mega-menu-tabs">
+                <div class="mega-tab-btn active" data-tab="hrms">
+                  <span>HRMS</span>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="mega-tab-btn" data-tab="retirement">
+                  <span>Retirement Benefits</span>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+              <div class="mega-menu-content active" id="hrms">
+                <div class="mega-grid">
+                  <a href="recruitment.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-user-plus"></i></div>
+                    <div class="mega-info">
+                      <h4>Recruitment Software</h4>
+                      <p>Find the Right Talent Faster</p>
+                    </div>
+                  </a>
+                  <a href="hr-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-users-cog"></i></div>
+                    <div class="mega-info">
+                      <h4>HR Software</h4>
+                      <p>Backbone of Your HR</p>
+                    </div>
+                  </a>
+                  <a href="onboarding-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-door-open"></i></div>
+                    <div class="mega-info">
+                      <h4>Employee Onboarding</h4>
+                      <p>Positive First Impression</p>
+                    </div>
+                  </a>
+                  <a href="attendance.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-clock"></i></div>
+                    <div class="mega-info">
+                      <h4>Attendance Management</h4>
+                      <p>Put Attendance on Auto Pilot</p>
+                    </div>
+                  </a>
+                  <a href="payroll.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-money-check-dollar"></i></div>
+                    <div class="mega-info">
+                      <h4>Payroll Software</h4>
+                      <p>Payroll on Time, Every Time</p>
+                    </div>
+                  </a>
+                  <a href="leave.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-calendar-day"></i></div>
+                    <div class="mega-info">
+                      <h4>Leave Management</h4>
+                      <p>Take a Leave From Managing Leaves</p>
+                    </div>
+                  </a>
+                  <a href="performance.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="mega-info">
+                      <h4>Performance Management</h4>
+                      <p>OKR Based Performance</p>
+                    </div>
+                  </a>
+                  <a href="lms.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="mega-info">
+                      <h4>Learning Management</h4>
+                      <p>Feature Rich Learning Management</p>
+                    </div>
+                  </a>
+                  <a href="expense-management-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-plane"></i></div>
+                    <div class="mega-info">
+                      <h4>Travel & Expense</h4>
+                      <p>Control & Convenience at One Place</p>
+                    </div>
+                  </a>
+                  <a href="employee-self-service.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-user-shield"></i></div>
+                    <div class="mega-info">
+                      <h4>Employee Self Service</h4>
+                      <p>Engage Empower Workforce</p>
+                    </div>
+                  </a>
+                  <a href="mobile-application.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="mega-info">
+                      <h4>Mobile App</h4>
+                      <p>Modern App for Mobile Workforce</p>
+                    </div>
+                  </a>
+                  <a href="timesheet-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-hourglass-half"></i></div>
+                    <div class="mega-info">
+                      <h4>Timesheet Software</h4>
+                      <p>Simplified Time & Resource Tracking</p>
+                    </div>
+                  </a>
+                  <a href="integration.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-plug"></i></div>
+                    <div class="mega-info">
+                      <h4>Integration</h4>
+                      <p>Connect Your Favorite Tools</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="mega-menu-content" id="retirement">
+                <div class="mega-grid">
+                  <a href="pf-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-piggy-bank"></i></div>
+                    <div class="mega-info">
+                      <h4>Provident Fund</h4>
+                      <p>Record & track PF contributions</p>
+                    </div>
+                  </a>
+                  <a href="pension-management.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-hand-holding-dollar"></i></div>
+                    <div class="mega-info">
+                      <h4>Pension Management</h4>
+                      <p>Automate pension disbursements</p>
+                    </div>
+                  </a>
+                  <a href="gratuity.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-gift"></i></div>
+                    <div class="mega-info">
+                      <h4>Gratuity</h4>
+                      <p>Calculate gratuity with ease</p>
+                    </div>
+                  </a>
+                  <a href="benevolent-fund-trust.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-heart"></i></div>
+                    <div class="mega-info">
+                      <h4>Benevolent Fund</h4>
+                      <p>Manage employee welfare funds</p>
+                    </div>
+                  </a>
+                  <a href="gpf-trust.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-vault"></i></div>
+                    <div class="mega-info">
+                      <h4>General Provident Fund</h4>
+                      <p>Government employee PF tracking</p>
+                    </div>
+                  </a>
+                  <a href="superannuation-fund-trust.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-coins"></i></div>
+                    <div class="mega-info">
+                      <h4>Superannuation Fund</h4>
+                      <p>Retirement savings plan</p>
+                    </div>
+                  </a>
+                  <a href="unexempted-provident-fund.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-file-invoice"></i></div>
+                    <div class="mega-info">
+                      <h4>Unexempted Provident Fund</h4>
+                      <p>Trust-based PF management</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#">Industries <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown">
+              <a href="manufacturing-industry.html">Manufacturing</a>
+              <a href="social-welfare.html">Social Welfare</a>
+              <a href="finance.html">Finance</a>
+              <a href="automotive.html">Automotive</a>
+              <a href="healthcare.html">Healthcare</a>
+              <a href="retail.html">Retail</a>
+              <a href="information-technology.html">Information Technology</a>
+              <a href="hospitality.html">Hospitality</a>
+              <a href="startups.html">Startups</a>
+            </div>
+          </li>
+          <li><a href="partners.html">Partners</a></li>
+          <li>
+            <a href="#">Resources <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown">
+              <a href="blogs.html">Blogs</a>
+              <a href="hr-letter.html">HR Letters</a>
+              <a href="hr-policy.html">HR Policies</a>
+              <a href="hr-glossary.html">HR Glossary</a>
+              <a href="minimum-wages.html">Minimum Wages</a>
+              <a href="professional-tax.html">Professional Tax</a>
+              <a href="holiday-list.html">Holiday Lists</a>
+              <a href="job-descriptions.html">Job Descriptions</a>
+              <a href="labour-welfare-fund.html">Labour Welfare Fund</a>
+              <a href="okr.html">OKRs</a>
+            </div>
+          </li>
+          <li>
+            <a href="#">Company <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown">
+              <a href="contact.html">Contact Us</a>
+              <a href="about.html">About Us</a>
+              <a href="career.html">Career</a>
+            </div>
+          </li>
+
+          <li><a href="pricing-plan.html">Pricing</a></li>
+        </ul>
+        <div class="header-btns">
+          <a href="https://my.ektahr.com" class="btn btn-outline">Login</a>
+          <a href="https://my.ektahr.com/signup" class="btn btn-primary">Get Free Trial</a>
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-close" id="menuClose"><i class="fas fa-times"></i></div>
+    <a href="index.html">Home</a>
+
+    <div class="mobile-nav-item has-dropdown">
+      <div class="mobile-dropdown-toggle">
+        <a href="#">Product</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="mobile-dropdown-content">
+        <a href="recruitment.html">Recruitment Software</a>
+        <a href="hr-software.html">HR Software</a>
+        <a href="onboarding-software.html">Employee Onboarding</a>
+        <a href="attendance.html">Attendance Management</a>
+        <a href="payroll.html">Payroll Software</a>
+        <a href="leave.html">Leave Management</a>
+        <a href="performance.html">Performance Management</a>
+        <a href="lms.html">Learning Management</a>
+        <a href="expense-management-software.html">Travel & Expense</a>
+        <a href="employee-self-service.html">Employee Self Service</a>
+        <a href="mobile-application.html">Mobile App</a>
+        <a href="timesheet-software.html">Timesheet Software</a>
+        <a href="integration.html">Integration</a>
+      </div>
+    </div>
+
+    <div class="mobile-nav-item has-dropdown">
+      <div class="mobile-dropdown-toggle">
+        <a href="#">Industries</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="mobile-dropdown-content">
+        <a href="manufacturing-industry.html">Manufacturing</a>
+        <a href="social-welfare.html">Social Welfare</a>
+        <a href="finance.html">Finance</a>
+        <a href="automotive.html">Automotive</a>
+        <a href="healthcare.html">Healthcare</a>
+        <a href="retail.html">Retail</a>
+        <a href="information-technology.html">Information Technology</a>
+        <a href="hospitality.html">Hospitality</a>
+        <a href="startups.html">Startups</a>
+      </div>
+    </div>
+
+    <a href="partners.html">Partners</a>
+
+    <div class="mobile-nav-item has-dropdown">
+      <div class="mobile-dropdown-toggle">
+        <a href="#">Resources</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="mobile-dropdown-content">
+        <a href="blogs.html">Blogs</a>
+        <a href="hr-letter.html">HR Letters</a>
+        <a href="hr-policy.html">HR Policies</a>
+        <a href="hr-glossary.html">HR Glossary</a>
+        <a href="minimum-wages.html">Minimum Wages</a>
+        <a href="professional-tax.html">Professional Tax</a>
+        <a href="holiday-list.html">Holiday Lists</a>
+        <a href="job-descriptions.html">Job Descriptions</a>
+        <a href="labour-welfare-fund.html">Labour Welfare Fund</a>
+        <a href="okr.html">OKRs</a>
+      </div>
+    </div>
+
+    <div class="mobile-nav-item has-dropdown">
+      <div class="mobile-dropdown-toggle">
+        <a href="#">Company</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="mobile-dropdown-content">
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+        <a href="career.html">Career</a>
+      </div>
+    </div>
+
+
+    <a href="pricing-plan.html">Pricing</a>
+    <a href="https://my.ektahr.com">Login</a>
+    <a href="https://my.ektahr.com/signup" style="color:var(--primary);">Get Free Trial</a>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <main class="resource-page">
+    <!-- Hero Section -->
+    <section class="hero-resources">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>HR Glossary</span>
+        </div>
+        <h1 class="hero-title">HR Glossary</h1>
+        <p>The HR Glossary contains essential HR terms and definitions used by professionals and students to understand
+          everyday human resource practices.</p>
+
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="Search HR Glossaries...">
+          <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="alphabet-nav">
+          <a href="#A">A</a>
+          <a href="#B">B</a>
+          <a href="#C">C</a>
+          <a href="#D">D</a>
+          <a href="#E">E</a>
+          <a href="#F">F</a>
+          <a href="#G">G</a>
+          <a href="#H">H</a>
+          <a href="#I">I</a>
+          <a href="#J">J</a>
+          <a href="#K">K</a>
+          <a href="#L">L</a>
+          <a href="#M">M</a>
+          <a href="#N">N</a>
+          <a href="#O">O</a>
+          <a href="#P">P</a>
+          <a href="#Q" class="disabled">Q</a>
+          <a href="#R">R</a>
+          <a href="#S">S</a>
+          <a href="#T">T</a>
+          <a href="#U">U</a>
+          <a href="#V">V</a>
+          <a href="#W">W</a>
+          <a href="#X">X</a>
+          <a href="#Y" class="disabled">Y</a>
+          <a href="#Z" class="disabled">Z</a>
+          <a href="#numerical">#</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="container">
+      <div class="resource-layout">
+        <!-- Sidebar -->
+        <aside class="resource-sidebar">
+          <div class="sidebar-menu">
+            <a href="#" class="sidebar-link">
+              <i class="fas fa-chart-line"></i>
+              <span>OKR Examples</span>
+            </a>
+            <a href="hr-policy.html" class="sidebar-link">
+              <i class="fas fa-shield-alt"></i>
+              <span>Policy Templates</span>
+            </a>
+            <a href="hr-letter.html" class="sidebar-link">
+              <i class="fas fa-file-alt"></i>
+              <span>HR Letters</span>
+            </a>
+            <a href="hr-glossary.html" class="sidebar-link active">
+              <i class="fas fa-book"></i>
+              <span>HR Glossary</span>
+            </a>
+            <a href="minimum-wages.html" class="sidebar-link">
+              <i class="fas fa-money-bill-wave"></i>
+              <span>Minimum Wages</span>
+            </a>
+            <a href="professional-tax.html" class="sidebar-link">
+              <i class="fas fa-receipt"></i>
+              <span>Professional Tax</span>
+            </a>
+            <a href="holiday-list.html" class="sidebar-link">
+              <i class="fas fa-calendar-alt"></i>
+              <span>Holiday Lists</span>
+            </a>
+            <a href="job-descriptions.html" class="sidebar-link">
+              <i class="fas fa-user-tag"></i>
+              <span>Job Descriptions</span>
+            </a>
+            <a href="labour-welfare-fund.html" class="sidebar-link">
+              <i class="fas fa-hands-helping"></i>
+              <span>Labour Welfare Fund</span>
+            </a>
+          </div>
+        </aside>
+
+        <!-- Right Content -->
+        <div class="resource-content">
+
+          <!-- Section A -->
+          <div class="glossary-section" id="A">
+            <h2 class="letter-heading">A</h2>
+            <div class="glossary-grid">
+              <div class="glossary-item"><a href="#">360-degree Feedback</a></div>
+              <div class="glossary-item"><a href="#">Absconding</a></div>
+              <div class="glossary-item"><a href="#">Absent Without Leave (AWOL)</a></div>
+              <div class="glossary-item"><a href="#">Absenteeism Policy</a></div>
+              <div class="glossary-item"><a href="#">Absolute Ratings</a></div>
+              <div class="glossary-item"><a href="#">Accrued Leave</a></div>
+              <div class="glossary-item"><a href="#">Adhoc Allowance</a></div>
+              <div class="glossary-item"><a href="#">Allowance</a></div>
+              <div class="glossary-item"><a href="#">Analytical Thinking</a></div>
+              <div class="glossary-item"><a href="#">Annual Income</a></div>
+              <div class="glossary-item"><a href="#">Applicant Tracking System</a></div>
+              <div class="glossary-item"><a href="#">Appraisal</a></div>
+              <div class="glossary-item"><a href="#">Apprenticeship</a></div>
+              <div class="glossary-item"><a href="#">Assessment Year (AY)</a></div>
+              <div class="glossary-item"><a href="#">Attendance Regularization</a></div>
+            </div>
+          </div>
+
+          <!-- Section B -->
+          <div class="glossary-section" id="B">
+            <h2 class="letter-heading">B</h2>
+            <div class="glossary-grid">
+              <div class="glossary-item"><a href="#">Background Check</a></div>
+              <div class="glossary-item"><a href="#">Base Salary</a></div>
+              <div class="glossary-item"><a href="#">Behavioral Interview</a></div>
+              <div class="glossary-item"><a href="#">Benchmarking</a></div>
+              <div class="glossary-item"><a href="#">Beneficiary</a></div>
+              <div class="glossary-item"><a href="#">Bereavement Leave</a></div>
+              <div class="glossary-item"><a href="#">Biometric Attendance</a></div>
+              <div class="glossary-item"><a href="#">Blue-Collar Worker</a></div>
+            </div>
+          </div>
+
+          <!-- Section C -->
+          <div class="glossary-section" id="C">
+            <h2 class="letter-heading">C</h2>
+            <div class="glossary-grid">
+              <div class="glossary-item"><a href="#">Cafeteria Plan</a></div>
+              <div class="glossary-item"><a href="#">Career Pathing</a></div>
+              <div class="glossary-item"><a href="#">Change Management</a></div>
+              <div class="glossary-item"><a href="#">COBRA</a></div>
+              <div class="glossary-item"><a href="#">Compensation</a></div>
+              <div class="glossary-item"><a href="#">Competency Mapping</a></div>
+              <div class="glossary-item"><a href="#">Conflict Resolution</a></div>
+              <div class="glossary-item"><a href="#">Cost to Company (CTC)</a></div>
+            </div>
+          </div>
+
+          <!-- Section H -->
+          <div class="glossary-section" id="H">
+            <h2 class="letter-heading">H</h2>
+            <div class="glossary-grid">
+              <div class="glossary-item"><a href="#">HR Analytics</a></div>
+              <div class="glossary-item"><a href="#">HR Audit</a></div>
+              <div class="glossary-item"><a href="#">HR Benchmarking</a></div>
+              <div class="glossary-item"><a href="#">Human Capital Management</a></div>
+              <div class="glossary-item"><a href="#">Human Resource Information System (HRIS)</a></div>
+              <div class="glossary-item"><a href="#">Hybrid Work Model</a></div>
+            </div>
+          </div>
+
+          <!-- Section W -->
+          <div class="glossary-section" id="W">
+            <h2 class="letter-heading">W</h2>
+            <div class="glossary-grid">
+              <div class="glossary-item"><a href="#">Weekly Off</a></div>
+              <div class="glossary-item"><a href="#">Wellness Programs</a></div>
+              <div class="glossary-item"><a href="#">Work Ethics</a></div>
+              <div class="glossary-item"><a href="#">Work-Life Balance</a></div>
+              <div class="glossary-item"><a href="#">Workplace Retaliation</a></div>
+              <div class="glossary-item"><a href="#">Wrongful Termination</a></div>
+            </div>
+          </div>
+
+          <!-- Section X -->
+          <div class="glossary-section" id="X">
+            <h2 class="letter-heading">X</h2>
+            <div class="glossary-grid">
+              <div class="glossary-item"><a href="#">X-Ray Search</a></div>
+            </div>
+          </div>
+
+          <!-- Section # -->
+          <div class="glossary-section" id="numerical">
+            <h2 class="letter-heading">#</h2>
+            <div class="glossary-grid">
+              <div class="glossary-item"><a href="#">360-degree Feedback</a></div>
+              <div class="glossary-item"><a href="#">5 Whys Technique</a></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Premium CTA Section -->
+    <!-- <section class="sp" style="padding: 80px 0;">
+      <div class="container text-center">
+        <div class="glass-card"
+          style="padding: 80px 40px; background: linear-gradient(135deg, var(--secondary) 0%, #000 100%); color: var(--white); overflow: hidden; position: relative; border: none; text-align: center;"
+          data-aos="zoom-in">
+
+          <div
+            style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: var(--primary); opacity: 0.15; border-radius: 50%;">
+          </div>
+
+          <h2 style="color: var(--white); margin-bottom: 24px;" class="sp_h2">
+            Systematize Your Organizational Tasks With EKTA HR Today
+          </h2>
+
+          <p style="color: rgba(255,255,255,0.7); max-width: 650px; margin: 0 auto 48px; font-size: 1.125rem;">
+            Create customized workflows and let the automated solution follow it for developing a growing environment.
+            Experience how EKTA HR can transform your people operations.
+          </p>
+
+          <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            <a href="signup.html" class="btn btn-primary" style="padding: 18px 48px;">
+              Request Free Trial
+            </a>
+            <a href="contact.html" class="btn btn-outline"
+              style="border-color: var(--white); color: var(--white); padding: 18px 48px;">
+              Schedule a Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  </main>
+
+  <!-- Fixed CTA Banner -->
+  <section class="fixed-cta-section" data-aos="zoom-in">
+    <div class="fixed-cta-card">
+      <h5>Transform your workforce with the power of EKTA HR. — <span style="color: var(--secondary)">3 months
+          free.</span></h5>
+      <a href="https://my.ektahr.com/signup" class="btn-fixed-cta">Start 3 months free trail</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Column 1: Logo & About -->
+        <div class="footer-brand">
+          <img src="assets/images/logo/web-logo-white.png" alt="EKTA HR">
+          <p style="margin-top: 24px; line-height: 1.7;">
+            EKTA HR is an advanced Human Resource Management System designed
+            to simplify operations, enhance employee experience, and scale
+            effortlessly with growing businesses.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="partners.html">Partners</a></li>
+            <li><a href="pricing-plan.html">Pricing</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Location Map -->
+        <div class="footer-links">
+          <h4>Core Features</h4>
+          <ul>
+            <li><a href="recruitment.html">Recruitment Software</a></li>
+            <li><a href="hr-software.html">HR Software</a></li>
+            <li> <a href="onboarding-software.html">Employee Onboarding</a></li>
+            <li><a href="attendance.html">Attendance Management</a></li>
+            <li> <a href="payroll.html">Payroll Software</a></li>
+            <li> <a href="leave.html">Leave Management</a></li>
+            <li><a href="performance.html">Performance</a></li>
+            <li><a href="lms.html">Learning Management</a></li>
+            <li><a href="expense-management-software.html">Travel & Expense</a></li>
+            <li><a href="employee-self-service.html">Employee Self Service</a></li>
+            <li><a href="mobile-application.html">Mobile App</a></li>
+            <li><a href="timesheet-software.html">Timesheet Software</a></li>
+            <li><a href="integration.html">Integration</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Location Map -->
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="hr-letter.html">HR Letters</a></li>
+            <li> <a href="hr-policy.html">HR Policies</a></li>
+            <li><a href="hr-glossary.html">HR Glossary</a></li>
+            <li> <a href="minimum-wages.html">Minimum Wages </a></li>
+            <li> <a href="professional-tax.html">Professional Tax</a></li>
+            <li><a href="holiday-list.html">Holiday Lists</a></li>
+            <li><a href="job-descriptions.html">Job Descriptions</a></li>
+            <li><a href="labour-welfare-fund.html">Labour Welfare Fund</a></li>
+            <li><a href="okr.html">OKRs</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact + Newsletter -->
+        <div class="footer-links">
+          <h4>Industries</h4>
+          <ul>
+            <li><a href="manufacturing-industry.html">Manufacturing</a></li>
+            <li><a href="social-welfare.html">Social Welfare</a></li>
+            <li> <a href="finance.html">Finance</a></li>
+            <li><a href="automotive.html">Automotive</a></li>
+            <li> <a href="healthcare.html">Healthcare</a></li>
+            <li> <a href="retail.html">Retail</a></li>
+            <li><a href="information-technology.html">Information Technology</a></li>
+            <li><a href="hospitality.html">Hospitality</a></li>
+            <li><a href="startups.html">Startups</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="copyright"
+        style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+
+        <p> &copy; 2026 EKTA HR, All rights
+          reserved. </p>
+
+        <div style="display: flex; gap: 20px;">
+          <a href="https://www.linkedin.com/company/myektahr/" target="_blank" style="color: #fff;"
+            class="social-icons"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/people/Ektahr/61586428776510/" target="_blank" style="color: #fff;"
+            class="social-icons"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/my.ektahr/" target="_blank" style="color: #fff;" class="social-icons"><i
+              class="fab fa-instagram"></i></a>
+          <!-- <a href="#" style="color: #fff;" class="social-icons"><i class="fab fa-whatsapp"></i></a> -->
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true, disable: function () { return window.innerWidth < 768; } });
+
+    // Mega Menu Tab Switching
+    const tabBtns = document.querySelectorAll('.mega-tab-btn');
+    const tabContents = document.querySelectorAll('.mega-menu-content');
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('mouseenter', () => {
+        const target = btn.getAttribute('data-tab');
+
+        tabBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        tabContents.forEach(content => {
+          content.classList.remove('active');
+          if (content.id === target) {
+            content.classList.add('active');
+          }
+        });
+      });
+    });
+
+    // Mobile Dropdown Accordion
+    const mobileDropdownToggles = document.querySelectorAll('.mobile-dropdown-toggle');
+
+    mobileDropdownToggles.forEach(toggle => {
+      toggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        const parent = toggle.closest('.mobile-nav-item');
+
+        document.querySelectorAll('.mobile-nav-item').forEach(item => {
+          if (item !== parent) item.classList.remove('active');
+        });
+
+        parent.classList.toggle('active');
+      });
+    });
+
+    // Mobile Menu Logic
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    const overlay = document.getElementById('overlay');
+    const menuClose = document.getElementById('menuClose');
+
+    const toggleMenu = () => {
+      mobileNav.classList.toggle('active');
+      overlay.classList.toggle('active');
+      document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : 'auto';
+    };
+
+    menuToggle.addEventListener('click', toggleMenu);
+    menuClose.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', toggleMenu);
+
+    // Search Functionality (Visual)
+    const searchInput = document.querySelector('.search-input');
+    const glossaryItems = document.querySelectorAll('.glossary-item');
+
+    searchInput.addEventListener('input', (e) => {
+      const term = e.target.value.toLowerCase();
+      glossaryItems.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        if (text.includes(term)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+
+      // Hide empty sections
+      const sections = document.querySelectorAll('.glossary-section');
+      sections.forEach(section => {
+        const visibleItems = section.querySelectorAll('.glossary-item[style="display: block;"]').length;
+        // If all items are hidden, but we just set display: block, it might not have kicked in yet.
+        // Better way:
+        const allItems = section.querySelectorAll('.glossary-item');
+        let hasVisible = false;
+        allItems.forEach(i => {
+          if (i.style.display !== 'none') hasVisible = true;
+        });
+
+        if (!hasVisible) {
+          section.style.display = 'none';
+        } else {
+          section.style.display = 'block';
+        }
+      });
+    });
+
+    // Smooth Scroll for Alphabet Nav
+    document.querySelectorAll('.alphabet-nav a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          const headerOffset = 120;
+          const elementPosition = targetElement.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

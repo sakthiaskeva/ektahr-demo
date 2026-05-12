@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel & Expense Management Software | EKTA HR - Simplify Business Travels</title>
+  <meta name="description"
+    content="Streamline your business expenses with EKTA HR's travel and expense management software. Paperless processing, GST compliance, multi-currency support, and mobile filings.">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/logo/favicon-32x32.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="assets/css/ekta_style.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QF7ZSPWC0P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-QF7ZSPWC0P');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MRQFZGZT');</script>
+  <!-- End Google Tag Manager -->
+
+  <style>
+    /* Premium UI Patterns (Consistent with Other Product Pages) */
+
+    /* Advantage Cards */
+    .adv-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 36px 28px;
+      border: 1px solid var(--border);
+      text-align: center;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .adv-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary) 0%, #ffde8b 100%);
+      border-radius: 4px 4px 0 0;
+    }
+
+    .adv-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .adv-icon {
+      width: 64px;
+      height: 64px;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin: 0 auto 20px;
+      transition: var(--transition);
+    }
+
+    .adv-card:hover .adv-icon {
+      background: var(--primary);
+      color: var(--secondary);
+    }
+
+    .adv-card h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .adv-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.75;
+    }
+
+    /* Feature Sections */
+    .feature-section {
+      padding: 80px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .feature-section:last-of-type {
+      border-bottom: none;
+    }
+
+    .feature-section.alt {
+      background: var(--bg-light);
+    }
+
+    .feature-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .feature-wrap.reverse .feature-visual {
+      order: -1;
+    }
+
+    @media (max-width: 900px) {
+      .feature-wrap {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .feature-wrap.reverse .feature-visual {
+        order: 0;
+      }
+    }
+
+    .feature-visual {
+      background: linear-gradient(135deg, var(--primary-light) 0%, #fff8e1 100%);
+      border-radius: var(--radius-lg);
+      padding: 40px 32px;
+      min-height: 340px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: 1px solid rgba(249, 184, 36, 0.18);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .fv-icon-large {
+      font-size: 48px;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .fv-step-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 10px;
+    }
+
+    .fv-step-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--white);
+      border-radius: 10px;
+      padding: 12px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--secondary);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .fv-step-list li i {
+      color: var(--primary);
+      font-size: 16px;
+    }
+
+    /* Sub-feature items */
+    .sub-feature {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .sub-feature:last-child {
+      border-bottom: none;
+    }
+
+    .sf-icon {
+      width: 40px;
+      height: 40px;
+      min-width: 40px;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      transition: var(--transition);
+    }
+
+    .sf-text h4 {
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+
+    .sf-text p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* Stats bar */
+    .rec-stats {
+      background: #121212;
+      padding: 56px 0;
+    }
+
+    .rec-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .rec-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .rs-number {
+      font-size: 42px;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .rs-label {
+      font-size: 14px;
+      color: #aaaaaa;
+    }
+
+    /* CTA Strip */
+    .rec-cta {
+      background: var(--primary);
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .rec-cta h2 {
+      font-size: 38px;
+      color: var(--secondary);
+      margin-bottom: 14px;
+    }
+
+    .rec-cta p {
+      font-size: 16px;
+      color: rgba(18, 18, 18, 0.7);
+      max-width: 540px;
+      margin: 0 auto 36px;
+      line-height: 1.75;
+    }
+
+    .rec-cta .btn-dark {
+      background: var(--secondary);
+      color: var(--white);
+      padding: 16px 40px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: var(--transition);
+      text-decoration: none;
+    }
+
+    .rec-cta .btn-dark:hover {
+      background: #2a2a2a;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    }
+
+    /* ── FAQ ── */
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      margin-bottom: 12px;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .faq-item.open {
+      border-color: var(--primary);
+    }
+
+    .faq-q {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 22px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 15px;
+      gap: 12px;
+    }
+
+    .faq-q i {
+      color: var(--primary);
+      font-size: 13px;
+      transition: .3s;
+    }
+
+    .faq-item.open .faq-q i {
+      transform: rotate(180deg);
+    }
+
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s ease, padding .3s;
+    }
+
+    .faq-a.open {
+      max-height: 500px;
+      padding: 0 22px 18px;
+    }
+
+    .faq-a p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRQFZGZT" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <nav class="nav-wrap">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo/web-logo-black.png" alt="EKTA HR">
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li class="has-mega">
+            <a href="#" class="active">Product <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="mega-dropdown">
+              <div class="mega-menu-tabs">
+                <div class="mega-tab-btn active" data-tab="hrms">
+                  <span>HRMS</span>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="mega-tab-btn" data-tab="retirement">
+                  <span>Retirement Benefits</span>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+              <div class="mega-menu-content active" id="hrms">
+                <div class="mega-grid">
+                  <a href="recruitment.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-user-plus"></i></div>
+                    <div class="mega-info">
+                      <h4>Recruitment Software</h4>
+                      <p>Find the Right Talent Faster</p>
+                    </div>
+                  </a>
+                  <a href="hr-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-users-cog"></i></div>
+                    <div class="mega-info">
+                      <h4>HR Software</h4>
+                      <p>Backbone of Your HR</p>
+                    </div>
+                  </a>
+                  <a href="onboarding-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-door-open"></i></div>
+                    <div class="mega-info">
+                      <h4>Employee Onboarding</h4>
+                      <p>Positive First Impression</p>
+                    </div>
+                  </a>
+                  <a href="attendance.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-clock"></i></div>
+                    <div class="mega-info">
+                      <h4>Attendance Management</h4>
+                      <p>Put Attendance on Auto Pilot</p>
+                    </div>
+                  </a>
+                  <a href="payroll.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-money-check-dollar"></i></div>
+                    <div class="mega-info">
+                      <h4>Payroll Software</h4>
+                      <p>Payroll on Time, Every Time</p>
+                    </div>
+                  </a>
+                  <a href="leave.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-calendar-day"></i></div>
+                    <div class="mega-info">
+                      <h4>Leave Management</h4>
+                      <p>Take a Leave From Managing Leaves</p>
+                    </div>
+                  </a>
+                  <a href="performance.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="mega-info">
+                      <h4>Performance Management</h4>
+                      <p>OKR Based Performance</p>
+                    </div>
+                  </a>
+                  <a href="lms.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="mega-info">
+                      <h4>Learning Management</h4>
+                      <p>Feature Rich Learning Management</p>
+                    </div>
+                  </a>
+                  <a href="expense-management-software.html" class="mega-item active">
+                    <div class="mega-icon"><i class="fas fa-plane"></i></div>
+                    <div class="mega-info">
+                      <h4>Travel & Expense</h4>
+                      <p>Control & Convenience at One Place</p>
+                    </div>
+                  </a>
+                  <a href="employee-self-service.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-user-shield"></i></div>
+                    <div class="mega-info">
+                      <h4>Employee Self Service</h4>
+                      <p>Engage Empower Workforce</p>
+                    </div>
+                  </a>
+                  <a href="mobile-application.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="mega-info">
+                      <h4>Mobile App</h4>
+                      <p>Modern App for Mobile Workforce</p>
+                    </div>
+                  </a>
+                  <a href="timesheet-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-hourglass-half"></i></div>
+                    <div class="mega-info">
+                      <h4>Timesheet Software</h4>
+                      <p>Simplified Time & Resource Tracking</p>
+                    </div>
+                  </a>
+                  <a href="integration.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-plug"></i></div>
+                    <div class="mega-info">
+                      <h4>Integration</h4>
+                      <p>Connect Your Favorite Tools</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="mega-menu-content" id="retirement">
+                <div class="mega-grid">
+                  <a href="pf-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-piggy-bank"></i></div>
+                    <div class="mega-info">
+                      <h4>Provident Fund</h4>
+                      <p>Record & track PF contributions</p>
+                    </div>
+                  </a>
+                  <a href="pension-management.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-hand-holding-dollar"></i></div>
+                    <div class="mega-info">
+                      <h4>Pension Management</h4>
+                      <p>Automate pension disbursements</p>
+                    </div>
+                  </a>
+                  <a href="gratuity.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-gift"></i></div>
+                    <div class="mega-info">
+                      <h4>Gratuity</h4>
+                      <p>Calculate gratuity with ease</p>
+                    </div>
+                  </a>
+                  <a href="benevolent-fund-trust.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-heart"></i></div>
+                    <div class="mega-info">
+                      <h4>Benevolent Fund</h4>
+                      <p>Manage employee welfare funds</p>
+                    </div>
+                  </a>
+                  <a href="gpf-trust.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-vault"></i></div>
+                    <div class="mega-info">
+                      <h4>General Provident Fund</h4>
+                      <p>Government employee PF tracking</p>
+                    </div>
+                  </a>
+                  <a href="superannuation-fund-trust.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-coins"></i></div>
+                    <div class="mega-info">
+                      <h4>Superannuation Fund</h4>
+                      <p>Retirement savings plan</p>
+                    </div>
+                  </a>
+                  <a href="unexempted-provident-fund.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-file-invoice"></i></div>
+                    <div class="mega-info">
+                      <h4>Unexempted Provident Fund</h4>
+                      <p>Trust-based PF management</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#">Industries <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown">
+              <a href="manufacturing-industry.html">Manufacturing</a>
+              <a href="social-welfare.html">Social Welfare</a>
+              <a href="finance.html">Finance</a>
+              <a href="automotive.html">Automotive</a>
+              <a href="healthcare.html">Healthcare</a>
+              <a href="retail.html">Retail</a>
+              <a href="information-technology.html">Information Technology</a>
+              <a href="hospitality.html">Hospitality</a>
+              <a href="startups.html">Startups</a>
+            </div>
+          </li>
+          <li><a href="partners.html">Partners</a></li>
+          <li>
+            <a href="#">Resources <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown">
+              <a href="blogs.html">Blogs</a>
+              <a href="hr-letter.html">HR Letters</a>
+              <a href="hr-policy.html">HR Policies</a>
+              <a href="hr-glossary.html">HR Glossary</a>
+              <a href="minimum-wages.html">Minimum Wages</a>
+              <a href="professional-tax.html">Professional Tax</a>
+              <a href="holiday-list.html">Holiday Lists</a>
+              <a href="job-descriptions.html">Job Descriptions</a>
+              <a href="labour-welfare-fund.html">Labour Welfare Fund</a>
+              <a href="okr.html">OKRs</a>
+            </div>
+          </li>
+          <li>
+            <a href="#">Company <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown">
+              <a href="contact.html">Contact Us</a>
+              <a href="about.html">About Us</a>
+              <a href="career.html">Career</a>
+            </div>
+          </li>
+
+          <li><a href="pricing-plan.html">Pricing</a></li>
+        </ul>
+        <div class="header-btns">
+          <a href="https://my.ektahr.com" class="btn btn-outline">Login</a>
+          <a href="https://my.ektahr.com/signup" class="btn btn-primary">Get Free Trial</a>
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-close" id="menuClose"><i class="fas fa-times"></i></div>
+    <a href="index.html">Home</a>
+
+    <div class="mobile-nav-item has-dropdown">
+      <div class="mobile-dropdown-toggle">
+        <a href="#">Product</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="mobile-dropdown-content">
+        <a href="recruitment.html">Recruitment Software</a>
+        <a href="hr-software.html">HR Software</a>
+        <a href="onboarding-software.html">Employee Onboarding</a>
+        <a href="attendance.html">Attendance Management</a>
+        <a href="payroll.html">Payroll Software</a>
+        <a href="leave.html">Leave Management</a>
+        <a href="performance.html">Performance Management</a>
+        <a href="lms.html">Learning Management</a>
+        <a href="expense-management-software.html">Travel & Expense</a>
+        <a href="employee-self-service.html">Employee Self Service</a>
+        <a href="mobile-application.html">Mobile App</a>
+        <a href="timesheet-software.html">Timesheet Software</a>
+        <a href="integration.html">Integration</a>
+        <a href="pf-software.html">Provident Fund</a>
+        <a href="pension-management.html">Pension Management</a>
+        <a href="gratuity.html">Gratuity</a>
+        <a href="benevolent-fund-trust.html">Benevolent Fund</a>
+        <a href="gpf-trust.html">General Provident Fund</a>
+        <a href="superannuation-fund-trust.html">Superannuation Fund</a>
+        <a href="unexempted-provident-fund.html">Unexempted Provident Fund</a>
+      </div>
+    </div>
+
+    <div class="mobile-nav-item has-dropdown">
+      <div class="mobile-dropdown-toggle">
+        <a href="#">Industries</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="mobile-dropdown-content">
+        <a href="manufacturing-industry.html">Manufacturing</a>
+        <a href="social-welfare.html">Social Welfare</a>
+        <a href="finance.html">Finance</a>
+        <a href="automotive.html">Automotive</a>
+        <a href="healthcare.html">Healthcare</a>
+        <a href="retail.html">Retail</a>
+        <a href="information-technology.html">Information Technology</a>
+        <a href="hospitality.html">Hospitality</a>
+        <a href="startups.html">Startups</a>
+      </div>
+    </div>
+
+    <a href="partners.html">Partners</a>
+
+    <div class="mobile-nav-item has-dropdown">
+      <div class="mobile-dropdown-toggle">
+        <a href="#">Resources</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="mobile-dropdown-content">
+        <a href="blogs.html">Blogs</a>
+        <a href="hr-letter.html">HR Letters</a>
+        <a href="hr-policy.html">HR Policies</a>
+        <a href="hr-glossary.html">HR Glossary</a>
+        <a href="minimum-wages.html">Minimum Wages</a>
+        <a href="professional-tax.html">Professional Tax</a>
+        <a href="holiday-list.html">Holiday Lists</a>
+        <a href="job-descriptions.html">Job Descriptions</a>
+        <a href="labour-welfare-fund.html">Labour Welfare Fund</a>
+        <a href="okr.html">OKRs</a>
+      </div>
+    </div>
+
+    <div class="mobile-nav-item has-dropdown">
+      <div class="mobile-dropdown-toggle">
+        <a href="#">Company</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="mobile-dropdown-content">
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+        <a href="career.html">Career</a>
+      </div>
+    </div>
+
+
+    <a href="pricing-plan.html">Pricing</a>
+    <a href="https://my.ektahr.com">Login</a>
+    <a href="https://my.ektahr.com/signup" style="color:var(--primary);">Get Free Trial</a>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content" style="text-align:center; max-width:880px; margin:0 auto;">
+        <span class="section-tag" data-aos="fade-up">Expense Management</span>
+        <h1 data-aos="fade-up" data-aos-delay="100" class="hero-title">
+          Smart Travel &<br>
+          <span style="color:var(--primary-dark);">Expense Management.</span>
+        </h1>
+        <p data-aos="fade-up" data-aos-delay="200" class="hero-text">
+          Manage travel requests and employee expenses easily with EKTA HR’s digital platform.
+        </p>
+        <div class="header-btns-mobile" data-aos="fade-up" data-aos-delay="300">
+          <a href="contact.html" class="btn btn-primary animate-pulse-yellow">
+            <i class="fas fa-calendar-check"></i> Request Free Demo
+          </a>
+          <a href="#advantage" class="btn btn-outline">
+            <i class="fas fa-play" style="font-size:10px; margin-right:6px;"></i> See How it Works
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <div class="rec-stats">
+    <div class="container">
+      <div class="rec-stats-grid">
+        <div data-aos="fade-up">
+          <div class="rs-number">Zero</div>
+          <div class="rs-label">Paperwork Needed</div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100">
+          <div class="rs-number">100%</div>
+          <div class="rs-label">GST Compliance</div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="200">
+          <div class="rs-number">Auto</div>
+          <div class="rs-label">Currency Conversion</div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="300">
+          <div class="rs-number">Instant</div>
+          <div class="rs-label">Mobile Filings</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Advantage Section -->
+  <section class="sp" id="advantage">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">EKTA Advantage</span>
+        <h2>Why Choose Our Expense<br>Management Solution?</h2>
+        <p>A user-friendly platform designed to bring transparency and accountability to your business trip expenses.
+        </p>
+      </div>
+
+      <div class="journey-grid">
+
+        <div class="card-inverted-wrapper" data-aos="fade-up">
+          <div class="journey-icon"><i class="fas fa-leaf"></i></div>
+          <div class="card-inverted">
+            <h4>Paperless Processing</h4>
+            <p>Go green with paperless expense management. Manage all receipts and bills digitally for enhanced security
+              and sustainability.</p>
+          </div>
+        </div>
+
+        <div class="card-inverted-wrapper" data-aos="fade-up" data-aos-delay="100">
+          <div class="journey-icon"><i class="fas fa-bolt"></i></div>
+          <div class="card-inverted">
+            <h4>Instant Filing</h4>
+            <p>File claims on-the-go with our mobile app. Save valuable time for HR managers and accountants with
+              centralized claim settlement.</p>
+          </div>
+        </div>
+
+        <div class="card-inverted-wrapper" data-aos="fade-up" data-aos-delay="200">
+          <div class="journey-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+          <div class="card-inverted">
+            <h4>GST Compliance</h4>
+            <p>Efficiently manage bills to ensure GST benefits while filing returns. Keep documentation organized for
+              financial year-ends.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1 — Policy & Workflows -->
+  <div class="feature-section alt">
+    <div class="container">
+      <div class="feature-wrap">
+
+        <!-- Visual -->
+        <div class="feature-visual" data-aos="fade-right">
+          <div class="fv-icon-large"><i class="fas fa-sitemap"></i></div>
+          <p
+            style="font-size:13px; color:var(--text-muted); margin-bottom:16px; font-weight:600; text-transform:uppercase; letter-spacing:1px;">
+            Control Center</p>
+          <ul class="fv-step-list">
+            <li><i class="fas fa-check"></i> Multi-level Approval Hierarchy</li>
+            <li><i class="fas fa-check"></i> Upper Limit Cap Setting</li>
+            <li><i class="fas fa-check"></i> Real-time Deviation Alerts</li>
+          </ul>
+        </div>
+
+        <!-- Content -->
+        <div class="feature-content" data-aos="fade-left">
+          <span class="section-tag">Governance</span>
+          <h2>Extensive Policy Configuration</h2>
+          <p>Strategically configure your approval hierarchy and define authority levels for various managers to
+            maintain strict budget control.</p>
+
+          <div class="sub-feature">
+            <div class="sf-icon"><i class="fas fa-route"></i></div>
+            <div class="sf-text">
+              <h4>Group Travel Planning</h4>
+              <p>Allow employees to file group travel applications and create detailed travel plans to anticipate
+                business trip costs.</p>
+            </div>
+          </div>
+
+          <div class="sub-feature">
+            <div class="sf-icon"><i class="fas fa-user-clock"></i></div>
+            <div class="sf-text">
+              <h4>Attendance Integration</h4>
+              <p>Cross-check expense applications with attendance proofs. Ensure employee presence during claimed
+                business visits effortlessly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 2 — Workflow & Currency -->
+  <div class="feature-section">
+    <div class="container">
+      <div class="feature-wrap">
+
+        <!-- Content -->
+        <div class="feature-content" data-aos="fade-right">
+          <span class="section-tag">Automation</span>
+          <h2>Global Currency & Workflows</h2>
+          <p>Set automated reminders for filing and approvals. Handle international travels with multi-currency support
+            built directly into the core.</p>
+
+          <div class="sub-feature">
+            <div class="sf-icon"><i class="fas fa-coins"></i></div>
+            <div class="sf-text">
+              <h4>Auto-Currency Conversion</h4>
+              <p>Overcome the complexity of converting foreign currencies. EKTA HR automates the calculation, minimizing
+                manual errors.</p>
+            </div>
+          </div>
+
+          <div class="sub-feature">
+            <div class="sf-icon"><i class="fas fa-exclamation-triangle"></i></div>
+            <div class="sf-text">
+              <h4>Deviation Workflow</h4>
+              <p>Configure exceptional circumstances to allow authorities to approve expenses exceeding set limits in
+                rare, pre-defined cases.</p>
+            </div>
+          </div>
+
+          <div class="sub-feature">
+            <div class="sf-icon"><i class="fas fa-wallet"></i></div>
+            <div class="sf-text">
+              <h4>Flexible Reimbursements</h4>
+              <p>Customize reimbursement methods and mediums. Choose between settlement in salary, cheque, or cash based
+                on company policy.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual -->
+        <div class="feature-visual" data-aos="fade-left">
+          <div class="fv-icon-large"><i class="fas fa-globe"></i></div>
+          <p
+            style="font-size:13px; color:var(--text-muted); margin-bottom:16px; font-weight:600; text-transform:uppercase; letter-spacing:1px;">
+            Global Ready</p>
+          <ul class="fv-step-list">
+            <li><i class="fas fa-sync"></i> Real-time Exchange Rates</li>
+            <li><i class="fas fa-map-marker-alt"></i> Geo-tracking Enabled</li>
+            <li><i class="fas fa-shield-alt"></i> Audit-Ready Logs</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ Section -->
+  <section class="sp alt">
+    <div class="container" style="max-width:800px;">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Expense FAQs</span>
+        <h2>Common Questions</h2>
+      </div>
+
+      <div data-aos="fade-up">
+        <div class="faq-item">
+          <div class="faq-q">Can employees upload receipts from the mobile app?<i class="fas fa-chevron-down"></i></div>
+          <div class="faq-a">
+            <p>Yes, the EKTA mobile app allows
+              employees to snap a photo of their receipts and file claims instantly, eliminating the need for physical
+              paperwork.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Is the system compliant with GST regulations?<i class="fas fa-chevron-down"></i></div>
+          <div class="faq-a">
+            <p>Absolutely. The software is
+              designed to handle GST-eligible bills and provides detailed reports to ensure maximum tax benefits during
+              reconciliation.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Does it support multiple approval levels?<i class="fas fa-chevron-down"></i></div>
+          <div class="faq-a">
+            <p>Yes, you can configure multi-level
+              approval workflows based on your organizational hierarchy and set spending limits for different manager
+              roles.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section (Premium) -->
+  <!-- <section class="sp" style="padding: 80px 0;">
+    <div class="container text-center">
+      <div class="glass-card"
+        style="padding: 80px 40px; background: linear-gradient(135deg, var(--secondary) 0%, #000 100%); color: var(--white); overflow: hidden; position: relative; border: none;"
+        data-aos="zoom-in">
+
+        <div
+          style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: var(--primary); opacity: 0.15; border-radius: 50%;">
+        </div>
+
+        <h2 style="color: var(--white); margin-bottom: 24px;" class="sp_h2">
+          Energize Your Expense Management Today
+        </h2>
+
+        <p style="color: rgba(255,255,255,0.7); max-width: 650px; margin: 0 auto 48px; font-size: 1.125rem;">
+          Stop struggling with manual records and complex spreadsheets. Switch to EKTA HR’s integrated cloud solution
+          for transparent, policy-driven, and error-free reimbursements.
+        </p>
+
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+          <a href="signup.html" class="btn btn-primary" style="padding: 18px 48px;">
+            Start Your Free Trial
+          </a>
+          <a href="contact.html" class="btn btn-outline"
+            style="border-color: var(--white); color: var(--white); padding: 18px 48px;">
+            Schedule a Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Fixed CTA Banner -->
+  <section class="fixed-cta-section" data-aos="zoom-in">
+    <div class="fixed-cta-card">
+      <h5>Transform your workforce with the power of EKTA HR. — <span style="color: var(--secondary)">3 months
+          free.</span></h5>
+      <a href="https://my.ektahr.com/signup" class="btn-fixed-cta">Start 3 months free trail</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Column 1: Logo & About -->
+        <div class="footer-brand">
+          <img src="assets/images/logo/web-logo-white.png" alt="EKTA HR">
+          <p style="margin-top: 24px; line-height: 1.7;">
+            EKTA HR is an advanced Human Resource Management System designed
+            to simplify operations, enhance employee experience, and scale
+            effortlessly with growing businesses.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="partners.html">Partners</a></li>
+            <li><a href="pricing-plan.html">Pricing</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Location Map -->
+        <div class="footer-links">
+          <h4>Core Features</h4>
+          <ul>
+            <li><a href="recruitment.html">Recruitment Software</a></li>
+            <li><a href="hr-software.html">HR Software</a></li>
+            <li> <a href="onboarding-software.html">Employee Onboarding</a></li>
+            <li><a href="attendance.html">Attendance Management</a></li>
+            <li> <a href="payroll.html">Payroll Software</a></li>
+            <li> <a href="leave.html">Leave Management</a></li>
+            <li><a href="performance.html">Performance</a></li>
+            <li><a href="lms.html">Learning Management</a></li>
+            <li><a href="expense-management-software.html">Travel & Expense</a></li>
+            <li><a href="employee-self-service.html">Employee Self Service</a></li>
+            <li><a href="mobile-application.html">Mobile App</a></li>
+            <li><a href="timesheet-software.html">Timesheet Software</a></li>
+            <li><a href="integration.html">Integration</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Location Map -->
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="hr-letter.html">HR Letters</a></li>
+            <li> <a href="hr-policy.html">HR Policies</a></li>
+            <li><a href="hr-glossary.html">HR Glossary</a></li>
+            <li> <a href="minimum-wages.html">Minimum Wages </a></li>
+            <li> <a href="professional-tax.html">Professional Tax</a></li>
+            <li><a href="holiday-list.html">Holiday Lists</a></li>
+            <li><a href="job-descriptions.html">Job Descriptions</a></li>
+            <li><a href="labour-welfare-fund.html">Labour Welfare Fund</a></li>
+            <li><a href="okr.html">OKRs</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact + Newsletter -->
+        <div class="footer-links">
+          <h4>Industries</h4>
+          <ul>
+            <li><a href="manufacturing-industry.html">Manufacturing</a></li>
+            <li><a href="social-welfare.html">Social Welfare</a></li>
+            <li> <a href="finance.html">Finance</a></li>
+            <li><a href="automotive.html">Automotive</a></li>
+            <li> <a href="healthcare.html">Healthcare</a></li>
+            <li> <a href="retail.html">Retail</a></li>
+            <li><a href="information-technology.html">Information Technology</a></li>
+            <li><a href="hospitality.html">Hospitality</a></li>
+            <li><a href="startups.html">Startups</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="copyright"
+        style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+
+        <p> &copy; 2026 EKTA HR, All rights
+          reserved. </p>
+
+        <div style="display: flex; gap: 20px;">
+          <a href="https://www.linkedin.com/company/myektahr/" target="_blank" style="color: #fff;"
+            class="social-icons"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/people/Ektahr/61586428776510/" target="_blank" style="color: #fff;"
+            class="social-icons"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/my.ektahr/" target="_blank" style="color: #fff;" class="social-icons"><i
+              class="fab fa-instagram"></i></a>
+          <!-- <a href="#" style="color: #fff;" class="social-icons"><i class="fab fa-whatsapp"></i></a> -->
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true, disable: function () { return window.innerWidth < 768; } });
+
+    // Header Scroll Effect
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) header.classList.add('scrolled');
+      else header.classList.remove('scrolled');
+    });
+
+    // Mega Menu Tab Switching
+    const tabBtns = document.querySelectorAll('.mega-tab-btn');
+    const tabContents = document.querySelectorAll('.mega-menu-content');
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('mouseenter', () => {
+        const target = btn.getAttribute('data-tab');
+
+        tabBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        tabContents.forEach(content => {
+          content.classList.remove('active');
+          if (content.id === target) {
+            content.id === target ? content.classList.add('active') : null;
+          }
+        });
+      });
+    });
+
+    // Mobile Dropdown Accordion
+    const mobileDropdownToggles = document.querySelectorAll('.mobile-dropdown-toggle');
+
+    mobileDropdownToggles.forEach(toggle => {
+      toggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        const parent = toggle.closest('.mobile-nav-item');
+
+        document.querySelectorAll('.mobile-nav-item').forEach(item => {
+          if (item !== parent) item.classList.remove('active');
+        });
+
+        parent.classList.toggle('active');
+      });
+    });
+
+    // Mobile Menu Logic
+    const menuToggle = document.getElementById('menuToggle');
+    const menuClose = document.getElementById('menuClose');
+    const mobileNav = document.getElementById('mobileNav');
+    const overlay = document.getElementById('overlay');
+
+    const toggleMenu = () => {
+      mobileNav.classList.toggle('active');
+      overlay.classList.toggle('active');
+      document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : 'auto';
+    };
+
+    if (menuToggle) {
+      menuToggle.addEventListener('click', toggleMenu);
+      menuClose.addEventListener('click', toggleMenu);
+      overlay.addEventListener('click', toggleMenu);
+    }
+
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-q');
+      question.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        faqItems.forEach(faq => {
+          faq.classList.remove('open');
+          faq.querySelector('.faq-a').classList.remove('open');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          item.querySelector('.faq-a').classList.add('open');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

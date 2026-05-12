@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule a Demo | EKTA HR – HR Solution for Growth</title>
+  <meta name="description"
+    content="Request a free trial or live demo of EKTA HR. Fill in your details and experience the most powerful HRMS platform tailored for Indian businesses.">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/logo/favicon-32x32.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    :root {
+      --primary: #F9B824;
+      --primary-light: #fff8e6;
+      --primary-dark: #e6a800;
+      --secondary: #121212;
+      --white: #ffffff;
+      --text-main: #1D1D1F;
+      --text-muted: #6e6e73;
+      --border: rgba(0, 0, 0, 0.10);
+      --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.10);
+      --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.13);
+      --radius-lg: 20px;
+      --radius-md: 12px;
+      --radius-sm: 8px;
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    html,
+    body {
+      background: #eef4fb;
+      color: var(--text-main);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    /* ── Announcement Bar ── */
+    .announcement-bar {
+      background: linear-gradient(90deg, #fde8d8 0%, #fdf4ee 100%);
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 13.5px;
+      color: #3b3b3b;
+      border-bottom: 1px solid #f5cdb5;
+    }
+
+    .announcement-bar span {
+      color: #e8490e;
+      font-weight: 700;
+      margin-right: 6px;
+    }
+
+    .announcement-bar a {
+      color: #e8490e;
+      font-weight: 600;
+    }
+
+    .announcement-bar a:hover {
+      text-decoration: underline;
+    }
+
+    /* ── Minimal Header ── */
+    .demo-header {
+      background: var(--white);
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .demo-header .logo img {
+      height: 70px;
+      width: auto;
+      display: block;
+    }
+
+    /* ── Page Wrapper ── */
+    .demo-page {
+      min-height: calc(100vh - 120px);
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, #d6e9f8 0%, #eef4fb 55%, #e8eef8 100%);
+      padding: 60px 24px 80px;
+    }
+
+    .demo-container {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    /* ── LEFT: Form ── */
+    .form-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      padding: 40px 36px;
+      border: 1px solid rgba(255, 255, 255, 0.8);
+    }
+
+    .form-card h1 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 28px;
+      line-height: 1.3;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 13px 16px;
+      border: 1.5px solid #dde2ea;
+      border-radius: var(--radius-md);
+      font-size: 14px;
+      color: var(--text-main);
+      background: #fafbfc;
+      transition: var(--transition);
+      outline: none;
+      appearance: none;
+      -webkit-appearance: none;
+    }
+
+    .form-control::placeholder {
+      color: #aab0bb;
+    }
+
+    .form-control:focus {
+      border-color: var(--primary);
+      background: var(--white);
+      box-shadow: 0 0 0 3px rgba(249, 184, 36, 0.15);
+    }
+
+    /* Phone field with flag */
+    .phone-wrap {
+      display: flex;
+      gap: 10px;
+      align-items: stretch;
+    }
+
+    .phone-flag {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 12px 14px;
+      border: 1.5px solid #dde2ea;
+      border-radius: var(--radius-md);
+      background: #fafbfc;
+      font-size: 13px;
+      color: var(--text-main);
+      white-space: nowrap;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .phone-flag .flag {
+      font-size: 18px;
+    }
+
+    .phone-flag .code {
+      font-weight: 600;
+      font-size: 13px;
+    }
+
+    .phone-wrap .form-control {
+      flex: 1;
+    }
+
+    /* Captcha row */
+    .captcha-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .captcha-sum {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--text-main);
+      white-space: nowrap;
+      letter-spacing: 2px;
+    }
+
+    .captcha-input {
+      width: 120px;
+      flex-shrink: 0;
+    }
+
+    .captcha-refresh {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--primary-light);
+      border: none;
+      cursor: pointer;
+      color: var(--primary-dark);
+      font-size: 14px;
+      transition: var(--transition);
+      flex-shrink: 0;
+    }
+
+    .captcha-refresh:hover {
+      background: var(--primary);
+      color: var(--white);
+    }
+
+    /* Submit button */
+    .btn-demo {
+      width: 100%;
+      padding: 16px;
+      background: linear-gradient(135deg, #F9B824 0%, #e6a800 100%);
+      border: none;
+      border-radius: var(--radius-md);
+      color: var(--secondary);
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--transition);
+      margin-top: 8px;
+      letter-spacing: 0.3px;
+      box-shadow: 0 4px 16px rgba(249, 184, 36, 0.35);
+    }
+
+    .btn-demo:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(249, 184, 36, 0.45);
+    }
+
+    .btn-demo:active {
+      transform: translateY(0);
+    }
+
+    /* ── RIGHT: Social Proof ── */
+    .social-proof {
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+    }
+
+    /* Testimonial */
+    .testimonial-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 8px 0 0;
+    }
+
+    .testimonial-avatar {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      border: 4px solid var(--primary);
+      overflow: hidden;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 16px rgba(249, 184, 36, 0.3);
+      background: #f0f4f8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .testimonial-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .avatar-placeholder {
+      font-size: 36px;
+      color: var(--primary);
+    }
+
+    .testimonial-name {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 10px;
+    }
+
+    .testimonial-quote {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      max-width: 400px;
+    }
+
+    .quote-highlight {
+      color: var(--primary-dark);
+      font-weight: 600;
+    }
+
+    /* Trust section */
+    .trust-section h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .client-logos-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+    }
+
+    .client-logo-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 10px 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+      min-height: 48px;
+    }
+
+    .client-logo-item:hover {
+      border-color: var(--primary);
+      box-shadow: 0 2px 12px rgba(249, 184, 36, 0.15);
+    }
+
+    .client-logo-item span {
+      font-size: 11px;
+      font-weight: 700;
+      color: #555;
+      text-align: center;
+      letter-spacing: 0.5px;
+    }
+
+    /* Awards */
+    .awards-section h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 18px;
+      text-align: center;
+    }
+
+    .awards-grid {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .award-badge {
+      width: 72px;
+      height: 72px;
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 8px;
+      transition: var(--transition);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .award-badge:hover {
+      border-color: var(--primary);
+      transform: scale(1.08);
+      box-shadow: 0 4px 16px rgba(249, 184, 36, 0.2);
+    }
+
+    .award-badge i {
+      font-size: 20px;
+      color: var(--primary-dark);
+      margin-bottom: 4px;
+    }
+
+    .award-badge span {
+      font-size: 7.5px;
+      font-weight: 600;
+      color: #555;
+      line-height: 1.3;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+
+    /* ── Divider ── */
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border), transparent);
+    }
+
+    /* ── Footer note ── */
+    .demo-footer {
+      text-align: center;
+      padding: 24px;
+      background: var(--white);
+      border-top: 1px solid var(--border);
+    }
+
+    .demo-footer p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    .demo-footer a {
+      color: var(--primary-dark);
+      font-weight: 600;
+    }
+
+    .demo-footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+      .demo-container {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+
+      .social-proof {
+        order: -1;
+      }
+
+      .demo-page {
+        padding: 40px 16px 60px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .form-card {
+        padding: 28px 20px;
+      }
+
+      .client-logos-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .captcha-sum {
+        font-size: 1.3rem;
+      }
+    }
+
+    /* ── Success state ── */
+    .success-msg {
+      display: none;
+      text-align: center;
+      padding: 32px 20px;
+    }
+
+    .success-msg .success-icon {
+      width: 72px;
+      height: 72px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 32px;
+      color: var(--secondary);
+    }
+
+    .success-msg h3 {
+      font-size: 1.3rem;
+      color: var(--text-main);
+      margin-bottom: 10px;
+    }
+
+    .success-msg p {
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    /* input select arrow fix */
+    select.form-control {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%236e6e73' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      padding-right: 38px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <span>New</span>
+    India Labour Codes 2026 Compliance Guide &mdash;
+    <a href="#">Get Free Guide &rsaquo;</a>
+  </div>
+
+  <!-- Minimal Header -->
+  <header class="demo-header">
+    <a href="index.html" class="logo">
+      <img src="assets/images/logo/web-logo-black.png" alt="EKTA HR – HR Solution for Growth">
+    </a>
+  </header>
+
+  <!-- Main Page -->
+  <main class="demo-page">
+    <div class="demo-container">
+
+      <!-- LEFT COLUMN: Form -->
+      <div class="form-card">
+        <h1>Fill details to request free trial</h1>
+
+        <form id="demoForm" novalidate>
+
+          <!-- Name -->
+          <div class="form-group">
+            <input type="text" id="name" class="form-control" placeholder="Full Name" required>
+          </div>
+
+          <!-- Contact Number -->
+          <div class="form-group">
+            <div class="phone-wrap">
+              <div class="phone-flag">
+                <span class="flag">🇮🇳</span>
+                <span class="code">+91</span>
+                <i class="fas fa-chevron-down" style="font-size:9px; color:#aab0bb;"></i>
+              </div>
+              <input type="tel" id="phone" class="form-control" placeholder="Contact Number" required>
+            </div>
+          </div>
+
+          <!-- Company Email -->
+          <div class="form-group">
+            <input type="email" id="email" class="form-control" placeholder="Company Email" required>
+          </div>
+
+          <!-- Company Name -->
+          <div class="form-group">
+            <input type="text" id="company" class="form-control" placeholder="Company Name" required>
+          </div>
+
+          <!-- No. of Employees -->
+          <div class="form-group">
+            <select id="employees" class="form-control" required>
+              <option value="" disabled selected>No. of Employees</option>
+              <option value="0-20">0 – 20</option>
+              <option value="21-49">21 – 49</option>
+              <option value="50-200">50 – 200</option>
+              <option value="201-500">201 – 500</option>
+              <option value="501-1000">501 – 1,000</option>
+              <option value="1001-2000">1,001 – 2,000</option>
+              <option value="2001-5000">2,001 – 5,000</option>
+              <option value="5001+">5,001 &amp; Above</option>
+            </select>
+          </div>
+
+          <!-- Captcha -->
+          <div class="form-group">
+            <div class="captcha-row">
+              <div class="captcha-sum" id="captchaDisplay">3 + 7</div>
+              <button type="button" class="captcha-refresh" id="refreshCaptcha" title="Refresh">
+                <i class="fas fa-sync-alt"></i>
+              </button>
+              <input type="number" id="captchaInput" class="form-control captcha-input" placeholder="Enter Sum"
+                required>
+            </div>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" class="btn-demo" id="submitBtn">
+            <i class="fas fa-paper-plane" style="margin-right:8px;"></i>
+            Request Free Trial
+          </button>
+
+        </form>
+
+        <!-- Success State -->
+        <div class="success-msg" id="successMsg">
+          <div class="success-icon"><i class="fas fa-check"></i></div>
+          <h3>Thank you! We'll be in touch.</h3>
+          <p>Our team will contact you within 24 hours to schedule your personalised demo of EKTA HR.</p>
+        </div>
+
+      </div>
+
+      <!-- RIGHT COLUMN: Social Proof -->
+      <div class="social-proof">
+
+        <!-- Testimonial -->
+        <div class="testimonial-block">
+          <div class="testimonial-avatar">
+            <div class="avatar-placeholder"><i class="fas fa-user"></i></div>
+          </div>
+          <p class="testimonial-name">Mr. Mohammed Eshan </p>
+          <p class="testimonial-quote">
+            EKTA HR enables us to serve, track, and add value to our employees&rsquo; efficiency,
+            which has resulted in a <span class="quote-highlight">productivity increase of 40%</span>.
+            The payroll automation alone saved us 3 full working days every month.
+          </p>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Trust -->
+        <div class="trust-section">
+          <h2>5,000+ HR leaders trust EKTA HR</h2>
+          <div class="client-logos-grid">
+            <div class="client-logo-item"><span>Arca<br>Group</span></div>
+            <div class="client-logo-item"><span>Sunrise<br>Industries</span></div>
+            <div class="client-logo-item"><span>Kaveri<br>Seeds</span></div>
+            <div class="client-logo-item"><span>BSE<br>Listed</span></div>
+            <div class="client-logo-item"><span>Kirloskar<br>Corp.</span></div>
+            <div class="client-logo-item"><span>Muru&shy;gappa<br>Group</span></div>
+            <div class="client-logo-item"><span>Siemens<br>India</span></div>
+            <div class="client-logo-item"><span>Wipro<br>Ltd.</span></div>
+            <div class="client-logo-item"><span>Mercedes<br>India</span></div>
+            <div class="client-logo-item"><span>Susrut<br>Eye Care</span></div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Awards -->
+        <div class="awards-section">
+          <h3>Appreciation &amp; Awards</h3>
+          <div class="awards-grid">
+            <div class="award-badge">
+              <i class="fas fa-trophy"></i>
+              <span>World HRD<br>Congress</span>
+            </div>
+            <div class="award-badge">
+              <i class="fas fa-star"></i>
+              <span>G2 High<br>Performer</span>
+            </div>
+            <div class="award-badge">
+              <i class="fas fa-award"></i>
+              <span>ITV Var<br>News</span>
+            </div>
+            <div class="award-badge">
+              <i class="fas fa-smile"></i>
+              <span>Happiest<br>Users</span>
+            </div>
+            <div class="award-badge">
+              <i class="fas fa-medal"></i>
+              <span>Software<br>Suggest</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- /Right Column -->
+
+    </div>
+  </main>
+
+  <!-- Footer Note -->
+  <footer class="demo-footer">
+    <p>
+      Already have an account? <a href="https://my.ektahr.com">Log in here</a> &nbsp;|&nbsp;
+      Questions? <a href="contact.html">Contact our team</a>
+    </p>
+  </footer>
+
+  <script>
+    // ── Captcha Logic ──
+    let captchaA = 0, captchaB = 0;
+
+    function generateCaptcha() {
+      captchaA = Math.floor(Math.random() * 9) + 1;
+      captchaB = Math.floor(Math.random() * 9) + 1;
+      document.getElementById('captchaDisplay').textContent = captchaA + ' + ' + captchaB;
+      document.getElementById('captchaInput').value = '';
+    }
+
+    generateCaptcha();
+
+    document.getElementById('refreshCaptcha').addEventListener('click', generateCaptcha);
+
+    // ── Form Submission ──
+    document.getElementById('demoForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const company = document.getElementById('company').value.trim();
+      const employees = document.getElementById('employees').value;
+      const captchaVal = parseInt(document.getElementById('captchaInput').value, 10);
+
+      // Basic validation
+      if (!name || !phone || !email || !company || !employees) {
+        alert('Please fill in all required fields.');
+        return;
+      }
+
+      if (isNaN(captchaVal) || captchaVal !== (captchaA + captchaB)) {
+        alert('Incorrect captcha answer. Please try again.');
+        generateCaptcha();
+        return;
+      }
+
+      // Show success
+      const btn = document.getElementById('submitBtn');
+      btn.disabled = true;
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin" style="margin-right:8px;"></i> Submitting...';
+
+      setTimeout(() => {
+        document.getElementById('demoForm').style.display = 'none';
+        document.getElementById('successMsg').style.display = 'block';
+      }, 1200);
+    });
+
+    // ── Input focus ring ──
+    document.querySelectorAll('.form-control').forEach(el => {
+      el.addEventListener('focus', () => el.closest('.form-group')?.classList.add('focused'));
+      el.addEventListener('blur', () => el.closest('.form-group')?.classList.remove('focused'));
+    });
+  </script>
+
+</body>
+
+</html>

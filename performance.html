@@ -1,0 +1,2640 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Performance Management Software for Indian Companies | EKTA HR</title>
+  <meta name="description"
+    content="Set OKRs, run 360-degree feedback, automate bell curve appraisals and incentive payouts. India's performance management software. 3 months free.">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/logo/favicon-32x32.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="assets/css/ekta_style.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QF7ZSPWC0P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-QF7ZSPWC0P');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MRQFZGZT');</script>
+  <!-- End Google Tag Manager -->
+
+  <style>
+    /* Premium UI Patterns (Consistent with Attendance/Payroll/Leave) */
+
+    /* Advantage Cards */
+    .adv-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 36px 28px;
+      border: 1px solid var(--border);
+      text-align: center;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .adv-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary) 0%, #ffde8b 100%);
+      border-radius: 4px 4px 0 0;
+    }
+
+    .adv-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .adv-icon {
+      width: 64px;
+      height: 64px;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin: 0 auto 20px;
+      transition: var(--transition);
+    }
+
+    .adv-card:hover .adv-icon {
+      background: var(--primary);
+      color: var(--secondary);
+    }
+
+    .adv-card h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .adv-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.75;
+    }
+
+    /* Feature Sections */
+    .feature-section {
+      padding: 80px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .feature-section:last-of-type {
+      border-bottom: none;
+    }
+
+    .feature-section.alt {
+      background: var(--bg-light);
+    }
+
+    .feature-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .feature-wrap.reverse .feature-visual {
+      order: -1;
+    }
+
+    @media (max-width: 900px) {
+      .feature-wrap {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .feature-wrap.reverse .feature-visual {
+        order: 0;
+      }
+    }
+
+    .feature-visual {
+      background: linear-gradient(135deg, var(--primary-light) 0%, #fff8e1 100%);
+      border-radius: var(--radius-lg);
+      padding: 40px 32px;
+      min-height: 340px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: 1px solid rgba(249, 184, 36, 0.18);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .fv-icon-large {
+      font-size: 48px;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .fv-step-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 10px;
+    }
+
+    .fv-step-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--white);
+      border-radius: 10px;
+      padding: 12px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--secondary);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .fv-step-list li i {
+      color: var(--primary);
+      font-size: 16px;
+    }
+
+    /* Sub-feature items */
+    .sub-feature {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .sub-feature:last-child {
+      border-bottom: none;
+    }
+
+    .sf-icon {
+      width: 40px;
+      height: 40px;
+      min-width: 40px;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      transition: var(--transition);
+    }
+
+    .sf-text h4 {
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+
+    .sf-text p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* Stats bar */
+    .rec-stats {
+      background: #121212;
+      padding: 56px 0;
+    }
+
+    .rec-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .rec-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .rs-number {
+      font-size: 42px;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .rs-label {
+      font-size: 14px;
+      color: #aaaaaa;
+    }
+
+    /* CTA Strip */
+    .rec-cta {
+      background: var(--primary);
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .rec-cta h2 {
+      font-size: 38px;
+      color: var(--secondary);
+      margin-bottom: 14px;
+    }
+
+    .rec-cta p {
+      font-size: 16px;
+      color: rgba(18, 18, 18, 0.7);
+      max-width: 540px;
+      margin: 0 auto 36px;
+      line-height: 1.75;
+    }
+
+    .rec-cta .btn-dark {
+      background: var(--secondary);
+      color: var(--white);
+      padding: 16px 40px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: var(--transition);
+      text-decoration: none;
+    }
+
+    .rec-cta .btn-dark:hover {
+      background: #2a2a2a;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    }
+
+    /* â”€â”€ FAQ â”€â”€ */
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      margin-bottom: 12px;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .faq-item.open {
+      border-color: var(--primary);
+    }
+
+    .faq-q {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 22px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 15px;
+      gap: 12px;
+    }
+
+    .faq-q i {
+      color: var(--primary);
+      font-size: 13px;
+      transition: .3s;
+    }
+
+    .faq-item.open .faq-q i {
+      transform: rotate(180deg);
+    }
+
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s ease, padding .3s;
+    }
+
+    .faq-a.open {
+      max-height: 500px;
+      padding: 0 22px 18px;
+    }
+
+    .faq-a p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin: 0;
+    }
+  </style>
+  <style>
+    /* ===== PERFORMANCE PAGE REBUILD ===== */
+    .perf-page {
+      background: var(--white);
+      color: var(--secondary);
+    }
+
+    .perf-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(249, 184, 36, 0.14);
+      color: var(--secondary);
+      border: 1px solid rgba(249, 184, 36, 0.28);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .perf-kicker i,
+    .perf-check-list i {
+      color: var(--primary-dark);
+    }
+
+    .perf-hero {
+      position: relative;
+      padding: 150px 0 58px;
+      overflow: hidden;
+      background:
+        linear-gradient(rgba(249, 184, 36, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(249, 184, 36, 0.045) 1px, transparent 1px),
+        linear-gradient(180deg, #fff 0%, #fffaf0 100%);
+      background-size: 34px 34px, 34px 34px, auto;
+    }
+
+    .perf-hero::before {
+      content: '';
+      position: absolute;
+      inset: 86px 0 auto;
+      height: 280px;
+      background: linear-gradient(180deg, rgba(249, 184, 36, 0.12), transparent);
+      opacity: 0.8;
+      pointer-events: none;
+    }
+
+    .perf-hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(430px, 0.86fr);
+      gap: 48px;
+      align-items: center;
+    }
+
+    .perf-hero-title {
+      margin: 20px 0 0;
+      color: var(--secondary);
+      font-size: clamp(38px, 4.3vw, 64px);
+      line-height: 1.04;
+      font-weight: 900;
+      letter-spacing: 0;
+    }
+
+    .perf-hero-title span {
+      display: block;
+      color: var(--primary-dark);
+    }
+
+    .perf-hero-sub {
+      max-width: 760px;
+      margin: 22px 0 0;
+      color: var(--text-muted);
+      font-size: 19px;
+      line-height: 1.7;
+      font-weight: 500;
+    }
+
+    .perf-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .perf-actions .btn {
+      padding: 15px 26px;
+    }
+
+    .perf-hero-note {
+      margin-top: 18px;
+      color: var(--secondary);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .perf-command {
+      position: relative;
+      min-height: 540px;
+      padding: 20px;
+      border-radius: 38px;
+      background: linear-gradient(145deg, var(--secondary), #050505);
+      border: 1px solid rgba(249, 184, 36, 0.28);
+      box-shadow: 0 34px 80px rgba(18, 18, 18, 0.26);
+    }
+
+    .perf-command::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+      background-size: 30px 30px;
+      border-radius: inherit;
+      opacity: 0.65;
+    }
+
+    .perf-command-shell {
+      position: relative;
+      z-index: 1;
+      min-height: 500px;
+      border-radius: 28px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(14px);
+    }
+
+    .perf-command-top {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .perf-window-dots {
+      display: flex;
+      gap: 6px;
+    }
+
+    .perf-window-dots span {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.32);
+    }
+
+    .perf-live {
+      margin-left: auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: var(--primary);
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .perf-live span {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #76e5ad;
+      box-shadow: 0 0 0 6px rgba(118, 229, 173, 0.12);
+    }
+
+    .perf-command-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 14px;
+      padding: 16px;
+    }
+
+    .perf-screen-panel {
+      min-height: 150px;
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.11);
+      color: var(--white);
+    }
+
+    .perf-screen-panel.white {
+      background: var(--white);
+      color: var(--secondary);
+    }
+
+    .perf-screen-panel.wide {
+      grid-column: span 2;
+    }
+
+    .perf-screen-label {
+      color: rgba(255, 255, 255, 0.68);
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .perf-screen-panel.white .perf-screen-label {
+      color: var(--text-muted);
+    }
+
+    .perf-okr-list,
+    .perf-feed-list,
+    .perf-bars {
+      display: grid;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .perf-okr-list div,
+    .perf-feed-list div {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(18, 18, 18, 0.08);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .perf-feed-list div {
+      border-color: rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.78);
+    }
+
+    .perf-bar-row {
+      display: grid;
+      grid-template-columns: 110px 1fr 66px;
+      gap: 10px;
+      align-items: center;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .perf-bar {
+      height: 9px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .perf-bar b {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      background: var(--primary);
+    }
+
+    .perf-proof-strip {
+      padding: 0 0 24px;
+      background: linear-gradient(180deg, var(--secondary), #1a1a1a);
+      color: var(--white);
+    }
+
+    .perf-proof-box {
+      transform: translateY(20px);
+      display: grid;
+      grid-template-columns: 1.25fr repeat(4, minmax(130px, 1fr));
+      gap: 14px;
+      align-items: center;
+      padding: 18px;
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(14px);
+    }
+
+    .perf-proof-label {
+      color: rgba(255, 255, 255, 0.68);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .perf-stat-pill {
+      min-height: 84px;
+      padding: 14px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .perf-stat-pill strong {
+      display: block;
+      color: var(--primary);
+      font-size: 30px;
+      line-height: 1;
+      margin-bottom: 8px;
+      font-weight: 900;
+    }
+
+    .perf-stat-pill span {
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    .perf-section {
+      padding: 84px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .perf-soft {
+      background:
+        linear-gradient(rgba(249, 184, 36, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(249, 184, 36, 0.045) 1px, transparent 1px),
+        #fffaf0;
+      background-size: 34px 34px;
+    }
+
+    .perf-section-head {
+      max-width: 900px;
+      margin: 0 auto 34px;
+      text-align: center;
+    }
+
+    .perf-section-head h2,
+    .perf-copy h2 {
+      margin-top: 14px;
+      color: var(--secondary);
+      font-size: clamp(30px, 3vw, 44px);
+      line-height: 1.12;
+      letter-spacing: 0;
+      font-weight: 900;
+    }
+
+    .perf-section-head p,
+    .perf-copy>p,
+    .perf-panel p,
+    .perf-card p,
+    .perf-mini-card p {
+      margin-top: 14px;
+      color: var(--text-muted);
+      font-size: 15.5px;
+      line-height: 1.72;
+      font-weight: 400;
+    }
+
+    .perf-card-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 20px;
+      margin-top: 34px;
+    }
+
+    .perf-card {
+      position: relative;
+      min-height: 250px;
+      padding: 78px 22px 24px;
+      border: 1px solid rgba(18, 18, 18, 0.08);
+      border-radius: 26px;
+      border-top-left-radius: 0;
+      background: var(--white);
+      box-shadow: 0 16px 42px rgba(18, 18, 18, 0.06);
+      transition: var(--transition);
+      overflow: hidden;
+    }
+
+    .perf-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(249, 184, 36, 0.55);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .perf-card::before {
+      content: '';
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      width: 82px;
+      height: 82px;
+      background: var(--primary);
+      border-bottom-right-radius: 26px;
+    }
+
+    .perf-card-icon {
+      position: absolute;
+      top: -12px;
+      left: -12px;
+      z-index: 2;
+      width: 64px;
+      height: 64px;
+      display: grid;
+      place-items: center;
+      color: var(--secondary);
+      font-size: 24px;
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: var(--shadow-md);
+    }
+
+    .perf-card h3,
+    .perf-panel h3,
+    .perf-mini-card h3,
+    .perf-testimonial h3 {
+      margin: 0 0 12px;
+      color: var(--secondary);
+      font-size: 21px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    .perf-split {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .perf-panel {
+      min-height: 100%;
+      padding: 32px;
+      border-radius: 28px;
+      background: var(--white);
+      border: 1px solid rgba(18, 18, 18, 0.08);
+      box-shadow: var(--shadow-md);
+    }
+
+    .perf-panel.dark {
+      background: linear-gradient(145deg, var(--secondary), #050505);
+      color: var(--white);
+      border-color: rgba(249, 184, 36, 0.22);
+    }
+
+    .perf-panel.dark h3,
+    .perf-panel.dark h2 {
+      color: var(--white);
+    }
+
+    .perf-panel.dark p {
+      color: rgba(255, 255, 255, 0.68);
+    }
+
+    .perf-check-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .perf-check-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 11px;
+      color: var(--text-main);
+      font-size: 14px;
+      line-height: 1.55;
+      font-weight: 700;
+    }
+
+    .perf-panel.dark .perf-check-list li {
+      color: rgba(255, 255, 255, 0.84);
+    }
+
+    .perf-feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .perf-mini-card {
+      padding: 24px;
+      border-radius: 22px;
+      background: var(--white);
+      border: 1px solid rgba(18, 18, 18, 0.08);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .perf-mini-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(249, 184, 36, 0.5);
+      box-shadow: var(--shadow-md);
+    }
+
+    .perf-mini-card i {
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      margin-bottom: 16px;
+      border-radius: 13px;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      font-size: 17px;
+    }
+
+    .perf-industry-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 34px;
+    }
+
+    .perf-industry-card {
+      padding: 24px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.86);
+      border: 1px solid rgba(18, 18, 18, 0.08);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .perf-industry-card i {
+      color: var(--primary-dark);
+      font-size: 22px;
+      margin-bottom: 14px;
+    }
+
+    .perf-industry-card h3 {
+      margin: 0 0 10px;
+      color: var(--secondary);
+      font-size: 18px;
+    }
+
+    .perf-industry-card p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .perf-testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+      margin-top: 34px;
+    }
+
+    .perf-testimonial {
+      position: relative;
+      padding: 30px;
+      border-radius: 26px;
+      background: var(--white);
+      border: 1px solid rgba(18, 18, 18, 0.08);
+      box-shadow: var(--shadow-md);
+    }
+
+    .perf-testimonial i {
+      color: var(--primary);
+      font-size: 28px;
+      margin-bottom: 18px;
+      opacity: 0.85;
+    }
+
+    .perf-testimonial p {
+      color: var(--text-muted);
+      line-height: 1.74;
+      font-size: 15px;
+      margin: 0 0 22px;
+    }
+
+    .perf-testimonial span {
+      display: block;
+      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 800;
+      line-height: 1.45;
+    }
+
+    .perf-faq-wrap {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 44px;
+      align-items: start;
+    }
+
+    .perf-faq-wrap h2 {
+      margin-top: 16px;
+      font-size: clamp(30px, 3vw, 44px);
+      line-height: 1.12;
+      font-weight: 900;
+    }
+
+    .perf-final {
+      padding: 84px 0;
+      background: var(--white);
+    }
+
+    .perf-final-card {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 28px;
+      align-items: center;
+      padding: 44px;
+      border-radius: 30px;
+      color: var(--secondary);
+      background:
+        linear-gradient(135deg, rgba(249, 184, 36, 0.96), rgba(255, 222, 139, 0.96)),
+        var(--primary);
+      box-shadow: 0 28px 80px rgba(249, 184, 36, 0.28);
+      overflow: hidden;
+    }
+
+    .perf-final-card h2 {
+      margin: 0;
+      color: var(--secondary);
+      font-size: clamp(30px, 3vw, 44px);
+      line-height: 1.08;
+      font-weight: 900;
+    }
+
+    .perf-final-card p {
+      margin: 14px 0 0;
+      max-width: 760px;
+      color: rgba(18, 18, 18, 0.72);
+      font-size: 16px;
+      line-height: 1.68;
+      font-weight: 700;
+    }
+
+    .perf-final-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: flex-end;
+    }
+
+    .perf-final-actions .btn {
+      padding: 15px 24px;
+      white-space: nowrap;
+    }
+
+    .perf-final-actions .btn-primary {
+      background: var(--secondary);
+      color: var(--white);
+    }
+
+    .perf-final-actions .btn-outline {
+      background: var(--white);
+      color: var(--secondary) !important;
+      border-color: rgba(18, 18, 18, 0.14) !important;
+    }
+
+    @media (max-width: 1100px) {
+
+      .perf-hero-grid,
+      .perf-faq-wrap,
+      .perf-final-card {
+        grid-template-columns: 1fr;
+      }
+
+      .perf-command {
+        min-height: auto;
+      }
+
+      .perf-proof-box {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .perf-proof-label {
+        grid-column: 1 / -1;
+      }
+
+      .perf-card-grid,
+      .perf-feature-grid,
+      .perf-industry-grid,
+      .perf-testimonial-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .perf-final-actions {
+        justify-content: flex-start;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .perf-hero {
+        padding: 128px 0 44px;
+      }
+
+      .perf-hero-sub {
+        font-size: 16px;
+      }
+
+      .perf-actions .btn,
+      .perf-final-actions .btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .perf-command {
+        padding: 12px;
+        border-radius: 26px;
+      }
+
+      .perf-command-shell {
+        min-height: auto;
+        border-radius: 20px;
+      }
+
+      .perf-command-grid,
+      .perf-proof-box,
+      .perf-split,
+      .perf-card-grid,
+      .perf-feature-grid,
+      .perf-industry-grid,
+      .perf-testimonial-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .perf-screen-panel.wide {
+        grid-column: auto;
+      }
+
+      .perf-section {
+        padding: 58px 0;
+      }
+
+      .perf-panel,
+      .perf-final-card {
+        padding: 26px;
+        border-radius: 22px;
+      }
+
+      .perf-card {
+        min-height: auto;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .perf-hero-title {
+        font-size: 36px;
+      }
+
+      .perf-window-dots {
+        display: none;
+      }
+
+      .perf-command-top .perf-kicker {
+        font-size: 10px;
+        padding: 7px 10px;
+      }
+
+      .perf-live {
+        font-size: 10px;
+      }
+
+      .perf-bar-row {
+        grid-template-columns: 96px 1fr 58px;
+        font-size: 11px;
+      }
+    }
+
+    /* Advanced middle-page surfaces */
+    .perf-appraisal-lab,
+    .perf-goal-studio,
+    .perf-feedback-grid,
+    .perf-analytics-suite,
+    .perf-testimonial-stage {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+      gap: 28px;
+      align-items: stretch;
+      margin-top: 36px;
+    }
+
+    .perf-lab-board,
+    .perf-goal-insights,
+    .perf-analytics-board,
+    .perf-industry-lead {
+      position: relative;
+      min-height: 100%;
+      padding: 30px;
+      border-radius: 30px;
+      background:
+        linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+        linear-gradient(145deg, var(--secondary), #050505);
+      background-size: 28px 28px, 28px 28px, auto;
+      border: 1px solid rgba(249, 184, 36, 0.28);
+      box-shadow: 0 28px 78px rgba(18, 18, 18, 0.18);
+      color: var(--white);
+      overflow: hidden;
+    }
+
+    .perf-board-title,
+    .perf-board-topline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .perf-board-title strong,
+    .perf-board-topline strong {
+      color: var(--white);
+      font-size: 18px;
+    }
+
+    .perf-board-title span,
+    .perf-board-topline span {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(249, 184, 36, 0.14);
+      color: var(--primary);
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .perf-cycle-rail,
+    .perf-feedback-list,
+    .perf-testimonial-side {
+      display: grid;
+      gap: 16px;
+    }
+
+    .perf-cycle-step,
+    .perf-insight-row {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 15px;
+      align-items: start;
+      padding: 18px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(10px);
+    }
+
+    .perf-cycle-step i,
+    .perf-insight-row i {
+      display: grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 15px;
+      background: var(--primary);
+      color: var(--secondary);
+      font-size: 18px;
+    }
+
+    .perf-cycle-step h3,
+    .perf-insight-row h3 {
+      margin: 0 0 7px;
+      color: var(--white);
+      font-size: 18px;
+    }
+
+    .perf-cycle-step p,
+    .perf-insight-row p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.68);
+      font-size: 13.5px;
+      line-height: 1.62;
+    }
+
+    .perf-feature-matrix,
+    .perf-analytics-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .perf-feature-tile {
+      position: relative;
+      min-height: 246px;
+      padding: 26px;
+      border-radius: 26px;
+      background:
+        linear-gradient(180deg, rgba(249, 184, 36, 0.08), transparent 54%),
+        var(--white);
+      border: 1px solid rgba(18, 18, 18, 0.08);
+      box-shadow: 0 18px 52px rgba(18, 18, 18, 0.065);
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .perf-feature-tile:hover,
+    .perf-industry-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(249, 184, 36, 0.55);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .perf-feature-tile::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 88px;
+      height: 5px;
+      background: var(--primary);
+      border-radius: 0 0 12px 0;
+    }
+
+    .perf-feature-tile i,
+    .perf-mini-card i {
+      display: grid;
+      place-items: center;
+      width: 52px;
+      height: 52px;
+      margin-bottom: 20px;
+      border-radius: 16px;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      font-size: 20px;
+    }
+
+    .perf-feature-tile p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 14px;
+      line-height: 1.68;
+    }
+
+    .perf-goal-map {
+      padding: 30px;
+      border-radius: 30px;
+      background: var(--white);
+      border: 1px solid rgba(18, 18, 18, 0.08);
+      box-shadow: var(--shadow-md);
+    }
+
+    .perf-goal-node {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px;
+      border-radius: 18px;
+      background: var(--white);
+      border: 1px solid rgba(18, 18, 18, 0.08);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .perf-goal-node.top {
+      background: var(--primary);
+    }
+
+    .perf-goal-node strong {
+      display: block;
+      color: var(--secondary);
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+
+    .perf-goal-node span {
+      color: var(--text-muted);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .perf-goal-node i {
+      color: var(--primary-dark);
+      font-size: 18px;
+    }
+
+    .perf-goal-branches,
+    .perf-goal-leaves {
+      display: grid;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .perf-goal-branches {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .perf-feedback-grid {
+      grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+    }
+
+    .perf-feedback-hub {
+      position: relative;
+      min-height: 480px;
+      border-radius: 34px;
+      background:
+        linear-gradient(rgba(18, 18, 18, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(18, 18, 18, 0.05) 1px, transparent 1px),
+        #fffaf0;
+      background-size: 32px 32px;
+      border: 1px solid rgba(249, 184, 36, 0.28);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+
+    .perf-hub-center {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 164px;
+      height: 164px;
+      transform: translate(-50%, -50%);
+      display: grid;
+      place-items: center;
+      text-align: center;
+      border-radius: 50%;
+      background: var(--secondary);
+      color: var(--white);
+      box-shadow: 0 24px 70px rgba(18, 18, 18, 0.28);
+      z-index: 2;
+    }
+
+    .perf-hub-center strong {
+      display: block;
+      color: var(--primary);
+      font-size: 34px;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .perf-hub-center span {
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .perf-signal-card {
+      position: absolute;
+      width: min(220px, 42%);
+      padding: 18px;
+      border-radius: 20px;
+      background: var(--white);
+      border: 1px solid rgba(18, 18, 18, 0.08);
+      box-shadow: var(--shadow-md);
+    }
+
+    .perf-signal-card.one {
+      left: 24px;
+      top: 28px;
+    }
+
+    .perf-signal-card.two {
+      right: 24px;
+      top: 48px;
+    }
+
+    .perf-signal-card.three {
+      left: 34px;
+      bottom: 38px;
+    }
+
+    .perf-signal-card.four {
+      right: 30px;
+      bottom: 28px;
+    }
+
+    .perf-signal-card i {
+      color: var(--primary-dark);
+      margin-bottom: 12px;
+    }
+
+    .perf-signal-card h3 {
+      margin: 0 0 6px;
+      color: var(--secondary);
+      font-size: 15px;
+    }
+
+    .perf-signal-card p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 12px;
+      line-height: 1.55;
+    }
+
+    .perf-curve-bars {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 12px;
+      align-items: end;
+      min-height: 220px;
+      padding: 20px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .perf-curve-bars div {
+      display: grid;
+      align-items: end;
+      gap: 10px;
+      min-height: 180px;
+    }
+
+    .perf-curve-bars b {
+      display: block;
+      border-radius: 14px 14px 6px 6px;
+      background: linear-gradient(180deg, var(--primary), rgba(249, 184, 36, 0.35));
+    }
+
+    .perf-curve-bars span {
+      color: rgba(255, 255, 255, 0.64);
+      font-size: 11px;
+      font-weight: 900;
+      text-align: center;
+    }
+
+    .perf-industry-wrap {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      margin-top: 34px;
+      align-items: stretch;
+    }
+
+    .perf-industry-lead h3 {
+      color: var(--white);
+      font-size: 30px;
+      line-height: 1.12;
+      margin: 20px 0 14px;
+    }
+
+    .perf-industry-lead p {
+      color: rgba(255, 255, 255, 0.68);
+      line-height: 1.72;
+    }
+
+    .perf-industry-stack {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .perf-industry-card {
+      transition: var(--transition);
+    }
+
+    .perf-testimonial-stage {
+      grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+    }
+
+    .perf-testimonial-feature {
+      padding: 34px;
+      border-radius: 30px;
+      background: var(--white);
+      border: 1px solid rgba(18, 18, 18, 0.08);
+      box-shadow: var(--shadow-md);
+    }
+
+    .perf-testimonial-feature i {
+      color: var(--primary);
+      font-size: 34px;
+      margin-bottom: 20px;
+    }
+
+    .perf-testimonial-feature p {
+      color: var(--secondary);
+      font-size: clamp(22px, 2vw, 30px);
+      font-weight: 800;
+      line-height: 1.32;
+      margin: 0 0 24px;
+    }
+
+    .perf-final {
+      padding: 50px 0;
+      background: #fff;
+      border-top: 1px solid var(--border);
+    }
+
+    .perf-final-card {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 22px;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      align-items: stretch;
+      background: linear-gradient(135deg, #fffaf0, #fff);
+      border: 1px solid rgba(18, 18, 18, 0.08);
+      box-shadow: var(--shadow-premium);
+    }
+
+    .perf-final-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 32px;
+      right: 32px;
+      height: 5px;
+      background: var(--primary);
+      border-radius: 0 0 12px 12px;
+    }
+
+    .perf-final-copy {
+      padding: 28px;
+    }
+
+    .perf-final-card p {
+      color: var(--text-muted);
+      font-size: 17px;
+      line-height: 1.7;
+      font-weight: 500;
+    }
+
+    .perf-final-actions {
+      display: grid;
+      align-content: center;
+      justify-content: stretch;
+      gap: 14px;
+      padding: 30px;
+      border-radius: 22px;
+      background: var(--secondary);
+    }
+
+    .perf-final-actions .btn {
+      justify-content: center;
+      white-space: normal;
+    }
+
+    .perf-final-actions .btn-primary {
+      background: var(--primary);
+      color: var(--secondary);
+    }
+
+    .perf-final-actions .btn-outline {
+      color: var(--white) !important;
+      border-color: rgba(255, 255, 255, 0.35) !important;
+      background: transparent;
+    }
+
+    .perf-screen-label:empty,
+    .perf-okr-list span:empty,
+    .perf-okr-list strong:empty,
+    .perf-feed-list span:empty,
+    .perf-feed-list strong:empty,
+    .perf-bar-row span:empty,
+    .perf-bar-row strong:empty,
+    .perf-goal-node strong:empty,
+    .perf-goal-node span:empty,
+    .perf-hub-center strong:empty,
+    .perf-hub-center span:empty,
+    .perf-curve-bars span:empty {
+      display: block;
+      border-radius: 999px;
+      background: rgba(249, 184, 36, 0.18);
+    }
+
+    .perf-screen-label:empty,
+    .perf-okr-list span:empty,
+    .perf-feed-list span:empty,
+    .perf-bar-row span:empty,
+    .perf-goal-node strong:empty {
+      width: 72%;
+      height: 9px;
+    }
+
+    .perf-okr-list strong:empty,
+    .perf-feed-list strong:empty,
+    .perf-bar-row strong:empty,
+    .perf-goal-node span:empty {
+      width: 46px;
+      height: 9px;
+      justify-self: end;
+    }
+
+    .perf-hub-center strong:empty {
+      width: 68px;
+      height: 14px;
+      margin: 0 auto 10px;
+      background: var(--primary);
+    }
+
+    .perf-hub-center span:empty {
+      width: 92px;
+      height: 8px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.24);
+    }
+
+    .perf-curve-bars span:empty {
+      width: 80%;
+      height: 8px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.18);
+    }
+
+    @media (max-width: 1100px) {
+
+      .perf-appraisal-lab,
+      .perf-goal-studio,
+      .perf-feedback-grid,
+      .perf-analytics-suite,
+      .perf-industry-wrap,
+      .perf-testimonial-stage {
+        grid-template-columns: 1fr;
+      }
+
+      .perf-feature-matrix,
+      .perf-analytics-list,
+      .perf-industry-stack {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 768px) {
+
+      .perf-feature-matrix,
+      .perf-goal-branches,
+      .perf-analytics-list,
+      .perf-industry-stack {
+        grid-template-columns: 1fr;
+      }
+
+      .perf-feedback-hub {
+        min-height: auto;
+        display: grid;
+        gap: 14px;
+        padding: 18px;
+      }
+
+      .perf-hub-center,
+      .perf-signal-card {
+        position: static;
+        width: auto;
+        transform: none;
+      }
+
+      .perf-hub-center {
+        width: auto;
+        height: auto;
+        min-height: 130px;
+        border-radius: 24px;
+      }
+
+      .perf-final-card {
+        grid-template-columns: 1fr;
+      }
+
+      .perf-final-copy,
+      .perf-final-actions,
+      .perf-lab-board,
+      .perf-goal-map,
+      .perf-goal-insights,
+      .perf-analytics-board,
+      .perf-industry-lead,
+      .perf-testimonial-feature {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRQFZGZT" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <nav class="nav-wrap">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo/web-logo-black.png" alt="EKTA HR">
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li class="has-mega">
+            <a href="#" class="active">Product <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="mega-dropdown">
+              <div class="mega-menu-tabs">
+                <div class="mega-tab-btn active" data-tab="hrms">
+                  <span>HRMS</span>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="mega-tab-btn" data-tab="retirement">
+                  <span>Retirement Benefits</span>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+              <div class="mega-menu-content active" id="hrms">
+                <div class="mega-grid">
+                  <a href="recruitment.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-user-plus"></i></div>
+                    <div class="mega-info">
+                      <h4>Recruitment Software</h4>
+                      <p>Find the Right Talent Faster</p>
+                    </div>
+                  </a>
+                  <a href="hr-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-users-cog"></i></div>
+                    <div class="mega-info">
+                      <h4>HR Software</h4>
+                      <p>Backbone of Your HR</p>
+                    </div>
+                  </a>
+                  <a href="onboarding-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-door-open"></i></div>
+                    <div class="mega-info">
+                      <h4>Employee Onboarding</h4>
+                      <p>Positive First Impression</p>
+                    </div>
+                  </a>
+                  <a href="attendance.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-clock"></i></div>
+                    <div class="mega-info">
+                      <h4>Attendance Management</h4>
+                      <p>Put Attendance on Auto Pilot</p>
+                    </div>
+                  </a>
+                  <a href="payroll.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-money-check-dollar"></i></div>
+                    <div class="mega-info">
+                      <h4>Payroll Software</h4>
+                      <p>Payroll on Time, Every Time</p>
+                    </div>
+                  </a>
+                  <a href="leave.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-calendar-day"></i></div>
+                    <div class="mega-info">
+                      <h4>Leave Management</h4>
+                      <p>Take a Leave From Managing Leaves</p>
+                    </div>
+                  </a>
+                  <a href="performance.html" class="mega-item active">
+                    <div class="mega-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="mega-info">
+                      <h4>Performance Management</h4>
+                      <p>OKR Based Performance</p>
+                    </div>
+                  </a>
+                  <a href="lms.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="mega-info">
+                      <h4>Learning Management</h4>
+                      <p>Feature Rich Learning Management</p>
+                    </div>
+                  </a>
+                  <a href="expense-management-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-plane"></i></div>
+                    <div class="mega-info">
+                      <h4>Travel & Expense</h4>
+                      <p>Control & Convenience at One Place</p>
+                    </div>
+                  </a>
+                  <a href="employee-self-service.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-user-shield"></i></div>
+                    <div class="mega-info">
+                      <h4>Employee Self Service</h4>
+                      <p>Engage Empower Workforce</p>
+                    </div>
+                  </a>
+                  <a href="mobile-application.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="mega-info">
+                      <h4>Mobile App</h4>
+                      <p>Modern App for Mobile Workforce</p>
+                    </div>
+                  </a>
+                  <a href="timesheet-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-hourglass-half"></i></div>
+                    <div class="mega-info">
+                      <h4>Timesheet Software</h4>
+                      <p>Simplified Time & Resource Tracking</p>
+                    </div>
+                  </a>
+                  <a href="integration.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-plug"></i></div>
+                    <div class="mega-info">
+                      <h4>Integration</h4>
+                      <p>Connect Your Favorite Tools</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="mega-menu-content" id="retirement">
+                <div class="mega-grid">
+                  <a href="pf-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-piggy-bank"></i></div>
+                    <div class="mega-info">
+                      <h4>Provident Fund</h4>
+                      <p>Record & track PF contributions</p>
+                    </div>
+                  </a>
+                  <a href="pension-management.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-hand-holding-dollar"></i></div>
+                    <div class="mega-info">
+                      <h4>Pension Management</h4>
+                      <p>Automate pension disbursements</p>
+                    </div>
+                  </a>
+                  <a href="gratuity.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-gift"></i></div>
+                    <div class="mega-info">
+                      <h4>Gratuity</h4>
+                      <p>Calculate gratuity with ease</p>
+                    </div>
+                  </a>
+                  <a href="benevolent-fund-trust.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-heart"></i></div>
+                    <div class="mega-info">
+                      <h4>Benevolent Fund</h4>
+                      <p>Manage employee welfare funds</p>
+                    </div>
+                  </a>
+                  <a href="gpf-trust.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-vault"></i></div>
+                    <div class="mega-info">
+                      <h4>General Provident Fund</h4>
+                      <p>Government employee PF tracking</p>
+                    </div>
+                  </a>
+                  <a href="superannuation-fund-trust.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-coins"></i></div>
+                    <div class="mega-info">
+                      <h4>Superannuation Fund</h4>
+                      <p>Retirement savings plan</p>
+                    </div>
+                  </a>
+                  <a href="unexempted-provident-fund.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-file-invoice"></i></div>
+                    <div class="mega-info">
+                      <h4>Unexempted Provident Fund</h4>
+                      <p>Trust-based PF management</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#">Industries <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown">
+              <a href="manufacturing-industry.html">Manufacturing</a>
+              <a href="social-welfare.html">Social Welfare</a>
+              <a href="finance.html">Finance</a>
+              <a href="automotive.html">Automotive</a>
+              <a href="healthcare.html">Healthcare</a>
+              <a href="retail.html">Retail</a>
+              <a href="information-technology.html">Information Technology</a>
+              <a href="hospitality.html">Hospitality</a>
+              <a href="startups.html">Startups</a>
+            </div>
+          </li>
+          <li><a href="partners.html">Partners</a></li>
+          <li>
+            <a href="#">Resources <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown">
+              <a href="blogs.html">Blogs</a>
+              <a href="hr-letter.html">HR Letters</a>
+              <a href="hr-policy.html">HR Policies</a>
+              <a href="hr-glossary.html">HR Glossary</a>
+              <a href="minimum-wages.html">Minimum Wages</a>
+              <a href="professional-tax.html">Professional Tax</a>
+              <a href="holiday-list.html">Holiday Lists</a>
+              <a href="job-descriptions.html">Job Descriptions</a>
+              <a href="labour-welfare-fund.html">Labour Welfare Fund</a>
+              <a href="okr.html">OKRs</a>
+            </div>
+          </li>
+          <li>
+            <a href="#">Company <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown">
+              <a href="contact.html">Contact Us</a>
+              <a href="about.html">About Us</a>
+              <a href="career.html">Career</a>
+            </div>
+          </li>
+
+          <li><a href="pricing-plan.html">Pricing</a></li>
+        </ul>
+        <div class="header-btns">
+          <a href="https://my.ektahr.com" class="btn btn-outline">Login</a>
+          <a href="https://my.ektahr.com/signup" class="btn btn-primary">Get Free Trial</a>
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-close" id="menuClose"><i class="fas fa-times"></i></div>
+    <a href="index.html">Home</a>
+
+    <div class="mobile-nav-item has-dropdown">
+      <div class="mobile-dropdown-toggle">
+        <a href="#">Product</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="mobile-dropdown-content">
+        <a href="recruitment.html">Recruitment Software</a>
+        <a href="hr-software.html">HR Software</a>
+        <a href="onboarding-software.html">Employee Onboarding</a>
+        <a href="attendance.html">Attendance Management</a>
+        <a href="payroll.html">Payroll Software</a>
+        <a href="leave.html">Leave Management</a>
+        <a href="performance.html">Performance Management</a>
+        <a href="lms.html">Learning Management</a>
+        <a href="expense-management-software.html">Travel & Expense</a>
+        <a href="employee-self-service.html">Employee Self Service</a>
+        <a href="mobile-application.html">Mobile App</a>
+        <a href="timesheet-software.html">Timesheet Software</a>
+        <a href="integration.html">Integration</a>
+        <a href="pf-software.html">Provident Fund</a>
+        <a href="pension-management.html">Pension Management</a>
+        <a href="gratuity.html">Gratuity</a>
+        <a href="benevolent-fund-trust.html">Benevolent Fund</a>
+        <a href="gpf-trust.html">General Provident Fund</a>
+        <a href="superannuation-fund-trust.html">Superannuation Fund</a>
+        <a href="unexempted-provident-fund.html">Unexempted Provident Fund</a>
+      </div>
+    </div>
+
+    <div class="mobile-nav-item has-dropdown">
+      <div class="mobile-dropdown-toggle">
+        <a href="#">Industries</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="mobile-dropdown-content">
+        <a href="manufacturing-industry.html">Manufacturing</a>
+        <a href="social-welfare.html">Social Welfare</a>
+        <a href="finance.html">Finance</a>
+        <a href="automotive.html">Automotive</a>
+        <a href="healthcare.html">Healthcare</a>
+        <a href="retail.html">Retail</a>
+        <a href="information-technology.html">Information Technology</a>
+        <a href="hospitality.html">Hospitality</a>
+        <a href="startups.html">Startups</a>
+      </div>
+    </div>
+
+    <a href="partners.html">Partners</a>
+
+    <div class="mobile-nav-item has-dropdown">
+      <div class="mobile-dropdown-toggle">
+        <a href="#">Resources</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="mobile-dropdown-content">
+        <a href="blogs.html">Blogs</a>
+        <a href="hr-letter.html">HR Letters</a>
+        <a href="hr-policy.html">HR Policies</a>
+        <a href="hr-glossary.html">HR Glossary</a>
+        <a href="minimum-wages.html">Minimum Wages</a>
+        <a href="professional-tax.html">Professional Tax</a>
+        <a href="holiday-list.html">Holiday Lists</a>
+        <a href="job-descriptions.html">Job Descriptions</a>
+        <a href="labour-welfare-fund.html">Labour Welfare Fund</a>
+        <a href="okr.html">OKRs</a>
+      </div>
+    </div>
+
+    <div class="mobile-nav-item has-dropdown">
+      <div class="mobile-dropdown-toggle">
+        <a href="#">Company</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="mobile-dropdown-content">
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+        <a href="career.html">Career</a>
+      </div>
+    </div>
+
+
+    <a href="pricing-plan.html">Pricing</a>
+    <a href="https://my.ektahr.com">Login</a>
+    <a href="https://my.ektahr.com/signup" style="color:var(--primary);">Get Free Trial</a>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <main class="perf-page">
+    <section class="perf-hero">
+      <div class="container">
+        <div class="perf-hero-grid">
+          <div data-aos="fade-right">
+            <h1 class="perf-hero-title">Performance Management Software <span>for High-Growth Indian Teams</span></h1>
+            <p class="perf-hero-sub">EKTA HR's <strong>employee appraisal system</strong> is built for Indian companies
+              that have
+              outgrown spreadsheets and annual reviews. Set OKRs, track KRAs and KPIs, run anonymous 360° feedback,
+              apply bell curve appraisals, and auto-calculate performance-linked incentives all in one integrated HRMS
+              platform. Trusted by manufacturing, IT, startups, healthcare, and retail companies across India.</p>
+            <div class="perf-actions">
+              <a href="https://my.ektahr.com/signup" class="btn btn-primary">Start 3 months free &rarr;</a>
+              <a href="contact.html" class="btn btn-outline">Request a live demo</a>
+            </div>
+            <div class="perf-hero-note">No credit card required &middot; Free for 3 months &middot; Setup in under a day
+            </div>
+          </div>
+
+          <div class="perf-command" data-aos="fade-left" data-aos-delay="120">
+            <div class="perf-command-shell">
+              <div class="perf-command-top">
+                <div class="perf-window-dots"><span></span><span></span><span></span></div>
+                <div class="perf-kicker"><i class="fas fa-bullseye"></i> Review Cycle</div>
+                <div class="perf-live"><span></span> Live</div>
+              </div>
+              <div class="perf-command-grid">
+                <div class="perf-screen-panel white">
+                  <div class="perf-screen-label">Goal tracking tool</div>
+                  <div class="perf-okr-list">
+                    <div><span>Company OKRs</span><strong>Set</strong></div>
+                    <div><span>Team KRAs</span><strong>Cascade</strong></div>
+                    <div><span>Individual KPIs</span><strong>Track</strong></div>
+                  </div>
+                </div>
+                <div class="perf-screen-panel">
+                  <div class="perf-screen-label">360&deg; feedback</div>
+                  <div class="perf-feed-list">
+                    <div><span>Anonymous feedback</span><strong>Confidential</strong></div>
+                    <div><span>Continuous feedback</span><strong>Real time</strong></div>
+                    <div><span>Perception gap</span><strong>Analysis</strong></div>
+                  </div>
+                </div>
+                <div class="perf-screen-panel wide">
+                  <div class="perf-screen-label">Bell curve appraisal analytics</div>
+                  <div class="perf-bars">
+                    <div class="perf-bar-row"><span>Excellent</span>
+                      <div class="perf-bar"><b style="width: 78%;"></b></div><strong>Reward</strong>
+                    </div>
+                    <div class="perf-bar-row"><span>Average</span>
+                      <div class="perf-bar"><b style="width: 58%;"></b></div><strong>Develop</strong>
+                    </div>
+                    <div class="perf-bar-row"><span>Below-average</span>
+                      <div class="perf-bar"><b style="width: 34%;"></b></div><strong>Support</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="perf-section" id="advantage">
+      <div class="container">
+        <div class="perf-section-head" data-aos="fade-up">
+          <h2>Best Performance Appraisal Software Built for Indian Teams</h2>
+          <p>Move beyond the once-a-year review trap. EKTA HR gives HR managers complete control over appraisal cycles
+            configure quarterly, half-yearly, or annual reviews with custom approval hierarchies, automated reminders,
+            and incentive rules that link directly to your payroll run. One of the most complete <strong>HR performance
+              solutions</strong> designed specifically for Indian companies.</p>
+        </div>
+
+        <div class="perf-appraisal-lab">
+          <div class="perf-lab-board" data-aos="fade-right">
+            <div class="perf-cycle-rail">
+              <div class="perf-cycle-step">
+                <i class="fas fa-calendar-check"></i>
+                <div>
+                  <h3> Flexible review cycles</h3>
+                  <p>Configure any review period quarterly, half-yearly, annual, or project-based. Set start dates,
+                    lock windows, and approval workflows without IT help. Automate reminder emails so nothing falls
+                    through the cracks.</p>
+                </div>
+              </div>
+              <div class="perf-cycle-step">
+                <i class="fas fa-sitemap"></i>
+                <div>
+                  <h3> Multi-level approval hierarchy</h3>
+                  <p>Define reviewer chains manager, skip-level, HR with automatic escalations when deadlines are
+                    missed. Supports complex organisational structures common in Indian manufacturing and conglomerates.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="perf-feature-matrix" data-aos="fade-left">
+            <article class="perf-feature-tile">
+              <i class="fas fa-money-check-dollar"></i>
+              <h3>Performance-linked payroll integration</h3>
+              <p>Appraisal scores automatically trigger incentive and bonus calculations in the payroll module zero
+                manual entry, zero calculation errors. Configure formulas once; EKTA HR handles every payout
+                automatically.</p>
+            </article>
+            <article class="perf-feature-tile">
+              <i class="fas fa-mobile-screen-button"></i>
+              <h3>Mobile performance review access</h3>
+              <p>Complete reviews on any device smartphone, tablet, or desktop. No paperwork, no chasing, no missed
+                deadlines. India's distributed workforce stays connected to the appraisal cycle wherever they work.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="perf-section perf-soft">
+      <div class="container">
+        <div class="perf-goal-studio">
+          <article class="perf-panel perf-copy" data-aos="fade-right">
+            <h2>OKR Software and KRA & KPI Tracking Both in One Platform</h2>
+            <p>Most Indian companies run a mix of OKR-based frameworks and traditional KRA/KPI structures. EKTA HR's
+              <strong>goal tracking tool</strong> supports both without forcing you to choose one. Set company-level
+              OKRs, cascade them
+              to teams and individuals, and measure progress using both quantitative KPIs and outcome-based KRAs.
+            </p>
+            <div class="perf-goal-map">
+              <div class="perf-goal-node top">
+                <div><strong>Company-level OKRs</strong><span>Top-down business outcomes</span></div>
+                <i class="fas fa-building"></i>
+              </div>
+              <div class="perf-goal-branches">
+                <div class="perf-goal-node">
+                  <div><strong>Team KRAs</strong><span>Department targets</span></div>
+                  <i class="fas fa-users"></i>
+                </div>
+                <div class="perf-goal-node">
+                  <div><strong>Role templates</strong><span>Ready-to-use structures</span></div>
+                  <i class="fas fa-layer-group"></i>
+                </div>
+              </div>
+              <div class="perf-goal-leaves">
+                <div class="perf-goal-node">
+                  <div><strong>Individual KPIs</strong><span>Live target tracking</span></div>
+                  <i class="fas fa-gauge-high"></i>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="perf-goal-insights" data-aos="fade-left">
+            <div class="perf-board-title">
+              <strong>Goal framework support</strong>
+              <span>OKR + KRA</span>
+            </div>
+            <div class="perf-insight-row">
+              <i class="fas fa-diagram-project"></i>
+              <div>
+                <h3>Multi-level goal creation and cascading</h3>
+                <p>Build OKRs at the company, team, and individual level. Cascade targets top-down or allow bottom-up
+                  alignment so every employee understands how their work connects to business outcomes.</p>
+              </div>
+            </div>
+            <div class="perf-insight-row">
+              <i class="fas fa-clipboard-list"></i>
+              <div>
+                <h3>Role-based KRA templates</h3>
+                <p>Pre-built KRA templates for common Indian job roles sales managers, factory supervisors, engineers,
+                  and customer support leads mean HR teams spend less time configuring and more time reviewing.</p>
+              </div>
+            </div>
+            <div class="perf-insight-row">
+              <i class="fas fa-chart-line"></i>
+              <div>
+                <h3>Real-time KPI dashboards</h3>
+                <p>Track performance metrics live throughout the review period. Managers and employees both see progress
+                  against targets without waiting for cycle-end reports.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="perf-section">
+      <div class="container">
+        <div class="perf-section-head" data-aos="fade-up">
+          <h2>360-Degree Feedback Software Anonymous, Unbiased, Actionable</h2>
+          <p>Annual top-down reviews capture only one dimension of performance. EKTA HR's <strong>workforce performance
+              tool</strong>
+            collects multi-directional input from peers, subordinates, internal stakeholders, and external clients
+            with an anonymous mode that ensures honest, bias-free responses every single time.
+          </p>
+        </div>
+        <div class="perf-feedback-grid">
+          <div class="perf-feedback-hub" data-aos="fade-right">
+            <div class="perf-hub-center">
+              <div><strong>360&deg;</strong><span>Feedback loop</span></div>
+            </div>
+            <div class="perf-signal-card one">
+              <i class="fas fa-user-shield"></i>
+              <h3>Anonymous feedback option</h3>
+            </div>
+            <div class="perf-signal-card two">
+              <i class="fas fa-bolt"></i>
+              <h3>Continuous real-time feedback</h3>
+            </div>
+            <div class="perf-signal-card three">
+              <i class="fas fa-arrows-left-right"></i>
+              <h3>Perception gap analysis</h3>
+            </div>
+            <div class="perf-signal-card four">
+              <i class="fas fa-handshake"></i>
+              <h3>1:1 meeting tracker for managers</h3>
+            </div>
+          </div>
+
+          <div class="perf-feedback-list" data-aos="fade-left">
+            <article class="perf-mini-card">
+              <i class="fas fa-user-shield"></i>
+              <h3> Anonymous feedback option</h3>
+              <p>Respondents stay confidential managers, peers, and subordinates give honest feedback without fear of
+                repercussion. Research shows anonymous 360° feedback yields 35% more candid responses than named
+                reviews.</p>
+            </article>
+            <article class="perf-mini-card">
+              <i class="fas fa-bolt"></i>
+              <h3>Continuous real-time feedback</h3>
+              <p>Enable anyone in the organisation to give or receive continuous feedback in real time not just at the
+                end of a review cycle. Regular communication helps take corrective action before small issues become
+                performance problems.</p>
+            </article>
+            <article class="perf-mini-card">
+              <i class="fas fa-arrows-left-right"></i>
+              <h3>Perception gap analysis</h3>
+              <p>Compare self-review scores with manager and peer scores to surface alignment issues instantly. EKTA
+                HR's perception gap analysis gives HR leaders a clear view of reality vs. expectations before it affects
+                team performance.</p>
+            </article>
+            <article class="perf-mini-card">
+              <i class="fas fa-handshake"></i>
+              <h3> 1:1 meeting tracker for managers</h3>
+              <p>Log objectives, action items, and discussion points from every manager-employee meeting. Searchable
+                meeting records keep everyone accountable and help managers track progress between formal review cycles.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="perf-section perf-soft">
+      <div class="container">
+        <div class="perf-section-head" data-aos="fade-up">
+          <h2> Bell Curve Appraisal Analytics and Actionable Workforce Insights</h2>
+          <p>Make talent decisions backed by data, not gut instinct. EKTA HR's analytics layer gives HR leaders a
+            complete picture of workforce performance distribution using bell curve distribution, perception gap charts,
+            and automated MIS reports so you always know who to reward, develop, or support.</p>
+        </div>
+        <div class="perf-analytics-suite">
+          <div class="perf-analytics-board" data-aos="fade-right">
+            <div class="perf-board-topline">
+              <strong>Bell Curve Distribution</strong>
+              <span>Analytics</span>
+            </div>
+            <div class="perf-curve-bars">
+              <div><b style="height: 36%;"></b><span>Below</span></div>
+              <div><b style="height: 64%;"></b><span>Develop</span></div>
+              <div><b style="height: 92%;"></b><span>Average</span></div>
+              <div><b style="height: 70%;"></b><span>High</span></div>
+              <div><b style="height: 42%;"></b><span>Top</span></div>
+            </div>
+          </div>
+
+          <div class="perf-analytics-list" data-aos="fade-left">
+            <article class="perf-feature-tile">
+              <i class="fas fa-chart-area"></i>
+              <h3>Bell curve distribution view</h3>
+              <p>Visualise how your team's performance ratings distribute across excellent, average, and below-average
+                bands. This classic <strong> performance review platform</strong> feature helps HR identify whom to
+                reward for high
+                performance and who requires further training and development support.</p>
+            </article>
+            <article class="perf-feature-tile">
+              <i class="fas fa-file-export"></i>
+              <h3>Automated MIS performance reports</h3>
+              <p>Generate cycle-end summaries automatically. No spreadsheet collation export-ready reports for
+                leadership reviews, board presentations, and HR planning sessions. Schedule reports to land in your
+                inbox on review day.</p>
+            </article>
+            <article class="perf-feature-tile">
+              <i class="fas fa-calculator"></i>
+              <h3>Performance-linked incentive calculation</h3>
+              <p>Configure formulas for incentives and bonuses against goal scores. EKTA HR automatically calculates
+                payouts based on normalised performance data linking your payroll module directly to appraisal
+                outcomes with no manual intervention.</p>
+            </article>
+            <article class="perf-feature-tile">
+              <i class="fas fa-people-arrows"></i>
+              <h3>Talent identification and succession planning</h3>
+              <p>Use performance data to identify high-potential employees for leadership development, promotion
+                pathways, and succession planning. Build a talent pipeline grounded in measurable outcomes not
+                seniority alone.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="perf-section">
+      <div class="container">
+        <div class="perf-section-head" data-aos="fade-up">
+          <h2> Built for Every Industry in India</h2>
+          <p>Whether you are a 25-person startup in Bengaluru or a 5,000-employee manufacturer in Gujarat, EKTA HR's
+            <strong>employee appraisal system</strong> adapts to your team's structure, review culture, and goal
+            framework. Ready-to-use
+            OKR templates and a 3-month free trial mean Indian startups can go live in under a day.
+          </p>
+        </div>
+        <div class="perf-industry-wrap">
+          <div class="perf-industry-stack" data-aos="fade-left">
+            <article class="perf-industry-card"><i class="fas fa-laptop-code"></i>
+              <h3>Information Technology</h3>
+              <p>Sprint-based OKRs, continuous feedback loops, and tech-team goal templates.</p>
+            </article>
+            <article class="perf-industry-card"><i class="fas fa-industry"></i>
+              <h3>Manufacturing</h3>
+              <p>Shift-based KRAs, production KPIs, and bell curve appraisals for large workforces.</p>
+            </article>
+            <article class="perf-industry-card"><i class="fas fa-rocket"></i>
+              <h3>Startups</h3>
+              <p>Fast setup, OKR templates, 3-month free trial a workforce performance tool that scales with your
+                headcount.</p>
+            </article>
+            <article class="perf-industry-card"><i class="fas fa-hospital"></i>
+              <h3>Healthcare</h3>
+              <p>Competency-based appraisals and compliance-ready review cycles for medical teams.</p>
+            </article>
+            <article class="perf-industry-card"><i class="fas fa-store"></i>
+              <h3>Retail</h3>
+              <p>Sales KPI tracking, target-vs-achievement dashboards, and incentive automation.</p>
+            </article>
+            <article class="perf-industry-card"><i class="fas fa-building-columns"></i>
+              <h3>Finance</h3>
+              <p>Regulatory-aligned performance cycles with structured review documentation.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="perf-section perf-soft">
+      <div class="container">
+        <div class="perf-section-head" data-aos="fade-up">
+          <h2>What HR Leaders Say About EKTA HR</h2>
+        </div>
+        <div class="perf-testimonial-stage">
+          <article class="perf-testimonial-feature" data-aos="fade-right">
+            <i class="fas fa-quote-left"></i>
+            <p>"We moved from annual Excel-based appraisals to quarterly OKR reviews in EKTA HR. The bell curve
+              distribution and performance-linked payroll features alone saved our HR team 3 days every review cycle."
+            </p>
+            <h3>&mdash; Rajesh Kumar, Head of HR, Manufacturing company, Pune</h3>
+          </article>
+          <div class="perf-testimonial-side" data-aos="fade-left">
+            <article class="perf-testimonial">
+              <i class="fas fa-quote-left"></i>
+              <p>"The anonymous 360° feedback feature transformed how our teams communicate. Managers get genuinely
+                honest input now, and the perception gap analysis has helped us identify hidden high performers."
+              </p>
+              <h3>&mdash; Priya Sharma, VP People Operations, IT company, Bengaluru</h3>
+            </article>
+            <article class="perf-testimonial">
+              <i class="fas fa-quote-left"></i>
+              <p>"As a startup, we needed an HR performance solution that was fast to set up and didn't require a
+                consultant to configure. EKTA HR's OKR templates had us live in one afternoon."</p>
+              <h3>&mdash; Ananya Mehta, Co-Founder, SaaS startup, Hyderabad</h3>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="perf-section">
+      <div class="container">
+        <div class="perf-faq-wrap">
+          <div data-aos="fade-right">
+            <h2>Frequently Asked Questions</h2>
+          </div>
+          <div data-aos="fade-left">
+            <div class="faq-item open">
+              <div class="faq-q">What is cloud-based Performance Management Software?<i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-a open">
+                <p>It's a mechanism for tracking employee performance consistently across the organization to ensure
+                  everyone is working effectively toward strategic goals.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">What is the difference between KRAs and KPIs?<i class="fas fa-chevron-down"></i></div>
+              <div class="faq-a">
+                <p>KRAs (Key Result Areas) define the scope and prime outcomes of a job, while KPIs (Key Performance
+                  Indicators) are the specific metrics used to measure if those goals are being met.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">How does the Bell Curve help in assessments?<i class="fas fa-chevron-down"></i></div>
+              <div class="faq-a">
+                <p>The bell curve provides a distribution view of ratings (excellent, average, poor), helping HR
+                  identify whom to reward for high performance and who requires further training.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="perf-final" data-aos="zoom-in">
+      <div class="container">
+        <div class="perf-final-card">
+          <div class="perf-final-copy">
+            <h2>Start Your Performance Management Journey 3 Months Free</h2>
+            <p>No credit card. No long-term contract. India's goal tracking tool with OKRs, 360° feedback, KRA & KPI
+              tracking, bell curve appraisals, and payroll integration ready in under a day.</p>
+            <p>Trusted by companies across India in Manufacturing, IT, Healthcare, Retail, Finance, and Startups</p>
+          </div>
+          <div class="perf-final-actions">
+            <a href="https://my.ektahr.com/signup" class="btn btn-primary">Start 3 months free &rarr;</a>
+            <a href="contact.html" class="btn btn-outline">Request a live demo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Column 1: Logo & About -->
+        <div class="footer-brand">
+          <img src="assets/images/logo/web-logo-white.png" alt="EKTA HR">
+          <p style="margin-top: 24px; line-height: 1.7;">
+            EKTA HR is an advanced Human Resource Management System designed
+            to simplify operations, enhance employee experience, and scale
+            effortlessly with growing businesses.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="partners.html">Partners</a></li>
+            <li><a href="pricing-plan.html">Pricing</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Location Map -->
+        <div class="footer-links">
+          <h4>Core Features</h4>
+          <ul>
+            <li><a href="recruitment.html">Recruitment Software</a></li>
+            <li><a href="hr-software.html">HR Software</a></li>
+            <li> <a href="onboarding-software.html">Employee Onboarding</a></li>
+            <li><a href="attendance.html">Attendance Management</a></li>
+            <li> <a href="payroll.html">Payroll Software</a></li>
+            <li> <a href="leave.html">Leave Management</a></li>
+            <li><a href="performance.html">Performance</a></li>
+            <li><a href="lms.html">Learning Management</a></li>
+            <li><a href="expense-management-software.html">Travel & Expense</a></li>
+            <li><a href="employee-self-service.html">Employee Self Service</a></li>
+            <li><a href="mobile-application.html">Mobile App</a></li>
+            <li><a href="timesheet-software.html">Timesheet Software</a></li>
+            <li><a href="integration.html">Integration</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Location Map -->
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="hr-letter.html">HR Letters</a></li>
+            <li> <a href="hr-policy.html">HR Policies</a></li>
+            <li><a href="hr-glossary.html">HR Glossary</a></li>
+            <li> <a href="minimum-wages.html">Minimum Wages </a></li>
+            <li> <a href="professional-tax.html">Professional Tax</a></li>
+            <li><a href="holiday-list.html">Holiday Lists</a></li>
+            <li><a href="job-descriptions.html">Job Descriptions</a></li>
+            <li><a href="labour-welfare-fund.html">Labour Welfare Fund</a></li>
+            <li><a href="okr.html">OKRs</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact + Newsletter -->
+        <div class="footer-links">
+          <h4>Industries</h4>
+          <ul>
+            <li><a href="manufacturing-industry.html">Manufacturing</a></li>
+            <li><a href="social-welfare.html">Social Welfare</a></li>
+            <li> <a href="finance.html">Finance</a></li>
+            <li><a href="automotive.html">Automotive</a></li>
+            <li> <a href="healthcare.html">Healthcare</a></li>
+            <li> <a href="retail.html">Retail</a></li>
+            <li><a href="information-technology.html">Information Technology</a></li>
+            <li><a href="hospitality.html">Hospitality</a></li>
+            <li><a href="startups.html">Startups</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="copyright"
+        style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+
+        <p> &copy; 2026 EKTA HR, All rights
+          reserved. </p>
+
+        <div style="display: flex; gap: 20px;">
+          <a href="https://www.linkedin.com/company/myektahr/" target="_blank" style="color: #fff;"
+            class="social-icons"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/people/Ektahr/61586428776510/" target="_blank" style="color: #fff;"
+            class="social-icons"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/my.ektahr/" target="_blank" style="color: #fff;" class="social-icons"><i
+              class="fab fa-instagram"></i></a>
+          <!-- <a href="#" style="color: #fff;" class="social-icons"><i class="fab fa-whatsapp"></i></a> -->
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true, disable: function () { return window.innerWidth < 768; } });
+
+    // Header Scroll Effect
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) header.classList.add('scrolled');
+      else header.classList.remove('scrolled');
+    });
+
+    // Mega Menu Tab Switching
+    const tabBtns = document.querySelectorAll('.mega-tab-btn');
+    const tabContents = document.querySelectorAll('.mega-menu-content');
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('mouseenter', () => {
+        const target = btn.getAttribute('data-tab');
+
+        tabBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        tabContents.forEach(content => {
+          content.classList.remove('active');
+          if (content.id === target) {
+            content.id === target ? content.classList.add('active') : null;
+          }
+        });
+      });
+    });
+
+    // Mobile Dropdown Accordion
+    const mobileDropdownToggles = document.querySelectorAll('.mobile-dropdown-toggle');
+
+    mobileDropdownToggles.forEach(toggle => {
+      toggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        const parent = toggle.closest('.mobile-nav-item');
+
+        document.querySelectorAll('.mobile-nav-item').forEach(item => {
+          if (item !== parent) item.classList.remove('active');
+        });
+
+        parent.classList.toggle('active');
+      });
+    });
+
+    // Mobile Menu Logic
+    const menuToggle = document.getElementById('menuToggle');
+    const menuClose = document.getElementById('menuClose');
+    const mobileNav = document.getElementById('mobileNav');
+    const overlay = document.getElementById('overlay');
+
+    const toggleMenu = () => {
+      mobileNav.classList.toggle('active');
+      overlay.classList.toggle('active');
+      document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : 'auto';
+    };
+
+    if (menuToggle) {
+      menuToggle.addEventListener('click', toggleMenu);
+      menuClose.addEventListener('click', toggleMenu);
+      overlay.addEventListener('click', toggleMenu);
+    }
+
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-q');
+      question.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        faqItems.forEach(faq => {
+          faq.classList.remove('open');
+          faq.querySelector('.faq-a').classList.remove('open');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          item.querySelector('.faq-a').classList.add('open');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

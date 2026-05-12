@@ -1,0 +1,3881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI-Powered HRMS Software India | EKTA HR</title>
+  <meta name="description"
+    content="EKTA is India's leading AI-powered HRMS software, a hire-to-retire HCM platform with payroll compliance, SOC2 Type II security, and cloud HR for growing businesses.">
+  <link rel="canonical" href="https://ektahr.com/">
+  <meta property="og:title" content="AI-Powered HRMS Software India | EKTA HR">
+  <meta property="og:description"
+    content="Run your entire people operations on one AI-powered HRMS. EKTA HR covers payroll compliance, attendance, performance, and more for growing businesses in India.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ektahr.com/">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/logo/favicon-32x32.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="assets/css/ekta_style.css">
+
+  <!-- Google Search Console -->
+  <meta name="google-site-verification" content="UFCyELFkWojCwvXmUMNR4LrlzQtV84XVcQOjgSTFZTw" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QF7ZSPWC0P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-QF7ZSPWC0P');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MRQFZGZT');</script>
+  <!-- End Google Tag Manager -->
+
+  <style>
+    /* Premium UI Patterns */
+    .adv-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 36px 28px;
+      border: 1px solid var(--border);
+      text-align: center;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+    }
+
+    .adv-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary) 0%, #ffde8b 100%);
+      border-radius: 4px 4px 0 0;
+    }
+
+    .adv-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--primary);
+    }
+
+    .adv-icon {
+      width: 64px;
+      height: 64px;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin: 0 auto 20px;
+      transition: var(--transition);
+    }
+
+    .adv-card:hover .adv-icon {
+      background: var(--primary);
+      color: var(--secondary);
+    }
+
+    .adv-card h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    .adv-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.75;
+    }
+
+    .feature-section {
+      padding: 80px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .feature-section.alt {
+      background: var(--bg-light);
+    }
+
+    .feature-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    /* Unique Bento Grid Layout */
+    /* Staggered Stacking UI */
+    .staggered-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      margin-top: 80px;
+    }
+
+    .stagger-item {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 100px;
+      align-items: center;
+    }
+
+    .stagger-item:nth-child(even) {
+      direction: rtl;
+    }
+
+    .stagger-item:nth-child(even) .stagger-text {
+      direction: ltr;
+    }
+
+    .stagger-visual {
+      position: relative;
+      background: #f8fafc;
+      border-radius: 40px;
+      padding: 50px;
+      border: 1px solid var(--border);
+      transition: all 0.5s ease;
+    }
+
+    .stagger-item:hover .stagger-visual {
+      transform: translateY(-10px);
+      border-color: var(--primary);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.06);
+    }
+
+    .stagger-text h3 {
+      font-size: 40px;
+      font-weight: 800;
+      margin-bottom: 24px;
+      line-height: 1.2;
+    }
+
+    .stagger-text p {
+      font-size: 18px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    .feature-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .feature-tag {
+      padding: 8px 16px;
+      background: var(--bg-light);
+      border-radius: 100px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--secondary);
+      border: 1px solid var(--border);
+    }
+
+    @media (max-width: 900px) {
+      .stagger-item {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .stagger-item:nth-child(even) {
+        direction: ltr;
+      }
+
+      .stagger-text h3 {
+        font-size: 32px;
+      }
+    }
+
+    /* Light Mode Industry Switcher */
+    .industry-switcher-wrap {
+      display: grid;
+      grid-template-columns: 350px 1fr;
+      gap: 50px;
+      margin-top: 60px;
+      align-items: start;
+    }
+
+    .industry-tab-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .industry-tab {
+      padding: 24px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+      text-align: left;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    }
+
+    .industry-tab i {
+      font-size: 24px;
+      color: var(--text-muted);
+      transition: all 0.4s ease;
+    }
+
+    .industry-tab h4 {
+      margin: 0;
+      font-size: 16px;
+      color: var(--secondary);
+      font-weight: 700;
+      transition: all 0.4s ease;
+    }
+
+    .industry-tab:hover {
+      background: var(--primary-light);
+      border-color: var(--primary);
+    }
+
+    .industry-tab.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      transform: translateX(10px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .industry-tab.active i {
+      color: var(--secondary);
+    }
+
+    .industry-tab.active h4 {
+      color: var(--secondary);
+    }
+
+    .industry-content-display {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 40px;
+      padding: 60px;
+      min-height: 560px;
+      position: relative;
+      box-shadow: 0 40px 80px rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(249, 184, 36, 0.2);
+    }
+
+    .industry-pane {
+      display: none;
+      height: 100%;
+    }
+
+    .industry-pane.active {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 50px;
+      align-items: center;
+      animation: industryFade 0.6s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    }
+
+    .feature-viz {
+      position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .insight-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 30px;
+      width: 100%;
+      position: relative;
+      box-shadow: 0 30px 60px rgba(249, 184, 36, 0.1);
+      overflow: hidden;
+    }
+
+    .insight-card::after {
+      content: '';
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      width: 60px;
+      height: 60px;
+      background: var(--primary);
+      opacity: 0.1;
+      border-radius: 50%;
+    }
+
+    .insight-badge {
+      display: inline-block;
+      padding: 6px 12px;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      font-size: 11px;
+      font-weight: 800;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .insight-stat {
+      font-size: 36px;
+      font-weight: 800;
+      color: var(--secondary);
+      margin: 10px 0;
+    }
+
+    .insight-stat span {
+      color: var(--primary);
+    }
+
+    .insight-description {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    @keyframes industryFade {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .industry-info h3 {
+      font-size: 36px;
+      color: var(--secondary);
+      margin-bottom: 24px;
+      font-weight: 800;
+    }
+
+    .industry-info ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 30px;
+      display: grid;
+      gap: 15px;
+    }
+
+    .industry-info li {
+      display: flex;
+      gap: 12px;
+      color: var(--secondary);
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .industry-info li i {
+      color: var(--primary);
+      margin-top: 4px;
+    }
+
+    @media (max-width: 1024px) {
+      .industry-switcher-wrap {
+        grid-template-columns: 1fr;
+      }
+
+      .industry-tab-list {
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 15px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      .industry-tab-list::-webkit-scrollbar {
+        display: none;
+      }
+
+      .industry-tab {
+        min-width: 280px;
+        flex-shrink: 0;
+      }
+
+      .industry-tab.active {
+        transform: none;
+      }
+
+      .industry-pane.active {
+        grid-template-columns: 1fr;
+        padding: 0;
+        text-align: center;
+      }
+
+      .industry-info li {
+        justify-content: center;
+      }
+    }
+
+    /* Animated Blobs */
+    .blob-wrap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .blob {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(249, 184, 36, 0.15) 0%, transparent 70%);
+      filter: blur(50px);
+      border-radius: 50%;
+      animation: blob-float 20s infinite alternate;
+    }
+
+    .blob-1 {
+      top: -100px;
+      right: -100px;
+    }
+
+    .blob-2 {
+      bottom: -100px;
+      left: -100px;
+      animation-delay: -5s;
+    }
+
+    @keyframes blob-float {
+      0% {
+        transform: translate(0, 0) scale(1);
+      }
+
+      100% {
+        transform: translate(50px, 100px) scale(1.2);
+      }
+    }
+
+    /* Light Hub Section */
+    .hub-card {
+      background: #fff;
+      border-radius: 40px;
+      padding: 60px;
+      color: var(--secondary);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: 0 40px 100px rgba(249, 184, 36, 0.1);
+    }
+
+    .hub-card::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 300px;
+      height: 300px;
+      background: var(--primary);
+      filter: blur(120px);
+      opacity: 0.1;
+    }
+
+    @media (max-width: 900px) {
+      .hub-card {
+        grid-template-columns: 1fr;
+        padding: 40px;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .feature-wrap {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+
+    .feature-visual {
+      background: linear-gradient(135deg, var(--primary-light) 0%, #fff8e1 100%);
+      border-radius: var(--radius-lg);
+      padding: 40px 32px;
+      min-height: 340px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: 1px solid rgba(249, 184, 36, 0.18);
+      position: relative;
+    }
+
+    .fv-icon-large {
+      font-size: 48px;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .fv-step-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 10px;
+      padding: 0;
+    }
+
+    .fv-step-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--white);
+      border-radius: 10px;
+      padding: 12px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--secondary);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .fv-step-list li i {
+      color: var(--primary);
+      font-size: 16px;
+    }
+
+    .sub-feature {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .sub-feature:last-child {
+      border-bottom: none;
+    }
+
+    .sf-icon {
+      width: 40px;
+      height: 40px;
+      min-width: 40px;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+    }
+
+    .sf-text h4 {
+      font-size: 16px;
+      margin-bottom: 4px;
+      font-weight: 700;
+    }
+
+    .sf-text p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin: 0;
+    }
+
+    /* Refined Inverted Edge Cards */
+    .journey-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 35px;
+      margin-top: 60px;
+    }
+
+    .card-inverted {
+      background: #fff;
+      padding: 60px 35px 40px;
+      position: relative;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      border-radius: 30px;
+      /* Concave Cutout at Top-Left */
+      -webkit-mask-image: radial-gradient(circle 45px at 0 0, transparent 100%, black 100%);
+      mask-image: radial-gradient(circle 45px at 0 0, transparent 100%, black 100%);
+      z-index: 1;
+    }
+
+    /* Proper Inverted Edge using Mask and Offset Icon */
+    .card-inverted {
+      overflow: visible;
+      -webkit-mask: none;
+      mask: none;
+      border-radius: 30px;
+      border-top-left-radius: 0;
+      /* Make room for the inverted curve */
+    }
+
+    .card-inverted-wrapper {
+      position: relative;
+      padding-top: 20px;
+    }
+
+    .journey-icon {
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      width: 80px;
+      height: 80px;
+      background: var(--primary);
+      color: var(--secondary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      z-index: 10;
+      box-shadow: 0 10px 20px rgba(249, 184, 36, 0.3);
+      transition: all 0.4s ease;
+      border: 8px solid #fff;
+      /* This creates the 'bite' look against the card */
+    }
+
+    .card-inverted:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 40px 80px rgba(0, 0, 0, 0.08);
+      border-color: var(--primary);
+    }
+
+    .card-inverted:hover .journey-icon {
+      transform: scale(1.1) rotate(15deg);
+      background: var(--secondary);
+      color: var(--primary);
+    }
+
+    /* Hero Redesign Styles */
+    .hero {
+      padding: 160px 0 100px;
+      background: radial-gradient(circle at 70% 30%, rgba(249, 184, 36, 0.1) 0%, transparent 50%);
+    }
+
+    .split-hero {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero-img-div {
+      transform: scale(1.3);
+    }
+
+    @media (max-width: 1024px) {
+      .split-hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero-content {
+        margin: 0 auto;
+      }
+
+      .hero-mockup-wrapper {
+        margin-top: 40px;
+      }
+
+      .hero-img-div {
+        transform: scale(1);
+      }
+
+    }
+
+    .hero-mockup-wrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .device-frame {
+      background: #f1f5f9;
+      padding: 8px;
+      border-radius: 20px;
+      border: 4px solid #fff;
+      box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.15);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .device-frame img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      display: block;
+      object-fit: cover;
+    }
+
+    .floating-stats {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      padding: 18px 24px;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+      z-index: 2;
+    }
+
+    .stats-left {
+      bottom: 10%;
+      left: -10%;
+    }
+
+    .stats-right {
+      top: 15%;
+      right: -10%;
+    }
+
+    @media (max-width: 1100px) {
+      .stats-left {
+        left: 0;
+      }
+
+      .stats-right {
+        right: 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .floating-stats {
+        display: none;
+      }
+    }
+
+    .testimonial-card {
+      background: var(--bg-light);
+      padding: 40px;
+      border-radius: 24px;
+      position: relative;
+    }
+
+    .testimonial-card i.fa-quote-left {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      font-size: 40px;
+      color: var(--primary);
+      opacity: 0.2;
+    }
+
+    .client-info {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .client-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--primary-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: var(--primary-dark);
+    }
+
+    /* Marquee Styles */
+    .marquee-wrapper {
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 20px 0;
+      position: relative;
+    }
+
+    .marquee-content {
+      display: inline-block;
+      animation: marquee 30s linear infinite;
+    }
+
+    .marquee-content span {
+      display: inline-block;
+      padding: 0 40px;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--secondary);
+      opacity: 0.6;
+      text-transform: uppercase;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* Rotating Text Innovation */
+    .rotating-text {
+      display: inline-block;
+      color: var(--primary-dark);
+      font-weight: 800;
+      transition: opacity 0.5s ease;
+      min-width: 150px;
+    }
+
+
+    /* SEO Homepage Rebuild */
+    .home-section {
+      padding: 65px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .home-section.home-soft {
+      background:
+        linear-gradient(135deg, rgba(249, 184, 36, 0.08), transparent 30%),
+        linear-gradient(315deg, rgba(18, 18, 18, 0.04), transparent 28%),
+        var(--bg-light);
+    }
+
+    .home-section.home-dark {
+      background: var(--secondary);
+      color: var(--white);
+    }
+
+    .home-section.home-dark .home-title-line,
+    .home-section.home-dark h2,
+    .home-section.home-dark h3 {
+      color: var(--white);
+    }
+
+    .home-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      border: 1px solid rgba(249, 184, 36, 0.28);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      box-shadow: 0 12px 30px rgba(249, 184, 36, 0.14);
+    }
+
+    .home-kicker i {
+      color: var(--primary-dark);
+    }
+
+    .home-title-line {
+      margin: 16px 0 0;
+      color: var(--secondary);
+      font-size: 40px;
+      line-height: 1.15;
+      font-weight: 800;
+      letter-spacing: 0;
+      white-space: nowrap;
+    }
+
+    .home-section-copy {
+      max-width: 850px;
+      margin: 12px 0 0;
+      color: var(--text-muted);
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    .home-center {
+      text-align: center;
+      max-width: 1060px;
+      margin: 0 auto 34px;
+    }
+
+    .home-center .home-kicker {
+      margin: 0 auto;
+    }
+
+    .home-center .home-section-copy {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .home-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .home-actions.center {
+      justify-content: center;
+    }
+
+    .home-hero {
+      position: relative;
+      padding: 150px 0 58px;
+      overflow: hidden;
+      background:
+        linear-gradient(rgba(249, 184, 36, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(249, 184, 36, 0.045) 1px, transparent 1px),
+        radial-gradient(circle at 82% 12%, rgba(249, 184, 36, 0.22), transparent 34%),
+        radial-gradient(circle at 6% 85%, rgba(18, 18, 18, 0.07), transparent 30%),
+        #fff;
+      background-size: 42px 42px, 42px 42px, auto, auto, auto;
+    }
+
+    .home-hero::before {
+      content: '';
+      position: absolute;
+      inset: 86px 0 auto;
+      height: 280px;
+      background: linear-gradient(180deg, rgba(249, 184, 36, 0.12), transparent);
+      opacity: 0.8;
+      pointer-events: none;
+    }
+
+    .home-hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(560px, 1fr);
+      gap: 48px;
+      align-items: center;
+    }
+
+    .home-hero-title {
+      margin: 20px 0 0;
+      color: var(--secondary);
+      font-size: clamp(36px, 4vw, 56px);
+      line-height: 1.08;
+      font-weight: 900;
+      letter-spacing: 0;
+      max-width: 680px;
+    }
+
+    .home-hero-title span {
+      display: block;
+      color: var(--primary-dark);
+    }
+
+    .home-hero-title .home-hero-title-line {
+      color: var(--secondary);
+      white-space: nowrap;
+    }
+
+    .home-hero-subtitle {
+      max-width: 720px;
+      margin: 22px 0 0;
+      color: var(--text-muted);
+      font-size: 20px;
+      line-height: 1.7;
+      font-weight: 500;
+    }
+
+    .home-hero-support {
+      margin: 14px 0 0;
+      color: var(--secondary);
+      font-size: 16px;
+      font-weight: 800;
+    }
+
+    .home-trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .home-trust-row span,
+    .home-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: #fff;
+      color: var(--secondary);
+      font-size: 13px;
+      font-weight: 750;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .home-trust-row i,
+    .home-pill i {
+      color: var(--primary-dark);
+    }
+
+    .home-command {
+      position: relative;
+      min-height: 660px;
+      padding: 20px;
+      border-radius: 38px;
+      background: linear-gradient(145deg, var(--secondary), #050505);
+      border: 1px solid rgba(249, 184, 36, 0.28);
+      box-shadow: 0 42px 110px rgba(0, 0, 0, 0.24), 0 18px 60px rgba(249, 184, 36, 0.16);
+      overflow: hidden;
+    }
+
+    .home-command::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 22% 16%, rgba(249, 184, 36, 0.22), transparent 26%),
+        linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+      background-size: auto, 34px 34px, 34px 34px;
+      pointer-events: none;
+    }
+
+    .home-command-shell {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      min-height: 620px;
+      border-radius: 28px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.105), rgba(255, 255, 255, 0.035));
+      -webkit-backdrop-filter: blur(18px);
+      backdrop-filter: blur(18px);
+    }
+
+    .home-command-top {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .home-window-dots {
+      display: flex;
+      gap: 7px;
+    }
+
+    .home-window-dots span {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--primary);
+    }
+
+    .home-ai-prompt {
+      flex: 1;
+      padding: 11px 14px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.08);
+      color: rgba(255, 255, 255, 0.74);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .home-live {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      background: var(--primary);
+      color: var(--secondary);
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .home-live span {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--secondary);
+    }
+
+    .home-command-grid {
+      display: grid;
+      grid-template-columns: 1fr 0.82fr;
+      gap: 14px;
+      padding: 16px;
+    }
+
+    .home-panel {
+      position: relative;
+      border-radius: 20px;
+      padding: 18px;
+      background:
+        linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.045));
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: var(--white);
+      overflow: hidden;
+    }
+
+    .home-panel::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+      background-size: 24px 24px;
+      opacity: 0.8;
+      pointer-events: none;
+    }
+
+    .home-panel.white {
+      background:
+        linear-gradient(150deg, rgba(255, 255, 255, 0.98), rgba(255, 248, 224, 0.82) 48%, rgba(255, 255, 255, 0.96));
+      color: var(--secondary);
+    }
+
+    .home-panel>* {
+      position: relative;
+      z-index: 1;
+    }
+
+    .home-panel.wide {
+      grid-column: 1 / -1;
+    }
+
+    .home-panel h3 {
+      color: inherit;
+      font-size: 15px;
+      margin-bottom: 14px;
+    }
+
+    .home-product-img {
+      display: block;
+      width: 100%;
+      height: 245px;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+    }
+
+    .home-kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .home-kpi-grid div {
+      padding: 15px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .home-kpi-grid strong {
+      display: block;
+      color: var(--primary);
+      font-size: 32px;
+      line-height: 1;
+    }
+
+    .home-kpi-grid div>span {
+      display: block;
+      margin-top: 7px;
+      color: rgba(255, 255, 255, 0.64);
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .home-risk-list,
+    .home-feed-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .home-risk-list span,
+    .home-feed-list span {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: rgba(255, 255, 255, 0.76);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .home-feed-list i {
+      color: var(--primary);
+    }
+
+    .home-risk-bar {
+      height: 8px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.11);
+      overflow: hidden;
+    }
+
+    .home-risk-bar b {
+      display: block;
+      height: 100%;
+      background: var(--primary);
+      border-radius: inherit;
+    }
+
+    .home-proof-strip {
+      padding: 0 0 24px;
+      background: linear-gradient(180deg, var(--secondary), #1a1a1a);
+      color: var(--white);
+    }
+
+    .home-proof-box {
+      transform: translateY(20px);
+      display: grid;
+      grid-template-columns: 1.35fr repeat(4, minmax(130px, 1fr));
+      gap: 14px;
+      align-items: center;
+      padding: 18px;
+      border-radius: 26px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.2);
+    }
+
+    .home-proof-label {
+      color: rgba(255, 255, 255, 0.68);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .home-stat-pill {
+      position: relative;
+      padding: 18px 16px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      overflow: hidden;
+    }
+
+    .home-stat-pill::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(249, 184, 36, 0.08), transparent);
+      opacity: 1;
+      pointer-events: none;
+    }
+
+    .home-stat-pill strong {
+      display: block;
+      color: var(--primary);
+      font-size: 34px;
+      line-height: 1;
+    }
+
+    .home-count {
+      display: inline-block;
+      color: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      font-weight: inherit;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .home-stat-pill>span {
+      display: block;
+      margin-top: 7px;
+      color: rgba(255, 255, 255, 0.62);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .home-feature-shell {
+      position: relative;
+      padding: 28px;
+      border-radius: 30px;
+      background: var(--secondary);
+      box-shadow: 0 34px 90px rgba(18, 18, 18, 0.14);
+      overflow: hidden;
+    }
+
+    .home-feature-shell::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+      background-size: 28px 28px;
+      pointer-events: none;
+    }
+
+    .home-feature-slider-top {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 14px;
+    }
+
+    .home-feature-slider-top span {
+      color: rgba(255, 255, 255, 0.68);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .home-module-tabs {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 0 0 34px;
+    }
+
+    .home-module-tab {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 11px 17px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.04);
+      color: rgba(255, 255, 255, 0.66);
+      font-size: 13px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .home-module-tab i {
+      color: inherit;
+      font-size: 14px;
+    }
+
+    .home-module-tab:hover,
+    .home-module-tab.active {
+      background: rgba(249, 184, 36, 0.13);
+      border-color: rgba(249, 184, 36, 0.42);
+      color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    .home-module-panel {
+      position: relative;
+      z-index: 1;
+      display: none;
+      grid-template-columns: minmax(0, 1fr) minmax(420px, 1fr);
+      gap: 46px;
+      align-items: center;
+      animation: homeModuleIn 0.35s ease;
+    }
+
+    .home-module-panel.active {
+      display: grid;
+    }
+
+    @keyframes homeModuleIn {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .home-module-content {
+      color: var(--white);
+    }
+
+    .home-module-label {
+      display: inline-flex;
+      width: fit-content;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(249, 184, 36, 0.12);
+      color: var(--primary);
+      border: 1px solid rgba(249, 184, 36, 0.28);
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .home-module-title {
+      margin: 18px 0 14px;
+      color: var(--white);
+      font-size: 36px;
+      line-height: 1.12;
+      font-weight: 900;
+      letter-spacing: 0;
+    }
+
+    .home-module-title span {
+      color: var(--primary);
+    }
+
+    .home-module-desc {
+      color: rgba(255, 255, 255, 0.66);
+      font-size: 16px;
+      line-height: 1.7;
+      margin: 0 0 26px;
+    }
+
+    .home-module-bullets {
+      display: grid;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .home-module-bullet {
+      display: grid;
+      grid-template-columns: 34px 1fr;
+      gap: 13px;
+      align-items: start;
+    }
+
+    .home-module-bullet i {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      background: rgba(249, 184, 36, 0.12);
+      border: 1px solid rgba(249, 184, 36, 0.22);
+      color: var(--primary);
+      font-size: 13px;
+    }
+
+    .home-module-bullet strong {
+      display: block;
+      color: var(--white);
+      font-size: 15px;
+      margin-bottom: 3px;
+    }
+
+    .home-module-bullet span {
+      display: block;
+      color: rgba(255, 255, 255, 0.56);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .home-module-screen {
+      border-radius: 22px;
+      overflow: hidden;
+      background: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 34px 90px rgba(0, 0, 0, 0.38);
+    }
+
+    .home-module-screen-bar {
+      display: flex;
+      gap: 7px;
+      padding: 13px 15px;
+      background: #f0f2f4;
+      border-bottom: 1px solid #e4e7eb;
+    }
+
+    .home-module-screen-bar span {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .home-module-ui {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 18px;
+      min-height: 390px;
+      padding: 22px;
+      background: #f8fafc;
+    }
+
+    .home-module-side,
+    .home-module-main {
+      display: grid;
+      gap: 12px;
+      align-content: start;
+    }
+
+    .home-module-ui-card {
+      padding: 15px;
+      border-radius: 14px;
+      background: #fff;
+      border: 1px solid #e9edf2;
+      box-shadow: 0 10px 28px rgba(18, 18, 18, 0.05);
+    }
+
+    .home-module-ui-card strong {
+      display: block;
+      color: var(--secondary);
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .home-module-ui-card span {
+      color: var(--text-muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .home-module-progress {
+      height: 8px;
+      border-radius: 999px;
+      overflow: hidden;
+      background: #eef1f5;
+      margin-top: 12px;
+    }
+
+    .home-module-progress b {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      background: var(--primary);
+    }
+
+    .home-module-kanban {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .home-module-kanban div {
+      min-height: 112px;
+      padding: 12px;
+      border-radius: 14px;
+      background: #fff;
+      border: 1px solid #e9edf2;
+    }
+
+    .home-module-kanban strong {
+      display: block;
+      color: var(--secondary);
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    .home-module-kanban span {
+      display: block;
+      height: 9px;
+      border-radius: 999px;
+      background: #eceff3;
+      margin-bottom: 8px;
+    }
+
+    .home-lifecycle-track {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .home-lifecycle-step {
+      position: relative;
+      padding: 14px 14px 14px 42px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .home-lifecycle-step::before {
+      content: attr(data-step);
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 22px;
+      height: 22px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--primary);
+      color: var(--secondary);
+      font-size: 11px;
+      font-weight: 900;
+    }
+
+    .home-slider-controls {
+      display: flex;
+      gap: 10px;
+    }
+
+    .home-slider-btn {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--white);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .home-slider-btn:hover {
+      background: var(--primary);
+      color: var(--secondary);
+      transform: translateY(-2px);
+    }
+
+    .home-feature-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: minmax(260px, 31%);
+      gap: 16px;
+      overflow-x: auto;
+      padding: 4px 2px 20px;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: thin;
+      scrollbar-color: var(--primary) rgba(255, 255, 255, 0.1);
+    }
+
+    .home-feature-card {
+      scroll-snap-align: start;
+      min-height: 270px;
+      padding: 28px 24px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 22px;
+      background: #fff;
+      box-shadow: 0 20px 54px rgba(0, 0, 0, 0.14);
+      position: relative;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .home-feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 7px;
+      height: 100%;
+      background: var(--primary);
+      transition: var(--transition);
+    }
+
+    .home-feature-stage {
+      display: inline-flex;
+      width: fit-content;
+      margin-bottom: 18px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: var(--secondary);
+      color: var(--primary);
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .home-feature-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 22px;
+    }
+
+    .home-feature-meta span {
+      padding: 7px 9px;
+      border-radius: 999px;
+      background: var(--bg-light);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .home-feature-card::after {
+      content: '';
+      position: absolute;
+      left: 20px;
+      right: 20px;
+      bottom: 0;
+      height: 1px;
+      background: rgba(18, 18, 18, 0.1);
+    }
+
+    .home-feature-card:nth-child(even) {
+      transform: none;
+    }
+
+    .home-feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 28px 70px rgba(0, 0, 0, 0.2);
+    }
+
+    .home-feature-card:hover::before {
+      width: 11px;
+    }
+
+    .home-feature-card:nth-child(even):hover {
+      transform: translateY(-8px);
+    }
+
+    .home-icon-box {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      background:
+        linear-gradient(145deg, rgba(249, 184, 36, 0.35), rgba(255, 255, 255, 0.7));
+      border: 1px solid rgba(249, 184, 36, 0.34);
+      color: var(--primary-dark);
+      font-size: 18px;
+      margin-bottom: 18px;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 10px 24px rgba(249, 184, 36, 0.18);
+    }
+
+    .home-feature-card h3,
+    .home-ai-card h3,
+    .home-growth-card h3,
+    .home-testimonial h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .home-testimonial h3{
+      margin-top: 10px;
+    }
+
+    .home-feature-card p,
+    .home-growth-card p,
+    .home-testimonial p {
+      color: var(--text-muted);
+      font-size: 14px;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .home-ai-layout {
+      display: grid;
+      grid-template-columns: 3fr 1.5fr;
+      gap: 30px;
+      align-items: stretch;
+    }
+
+    .home-ai-copy {
+      position: relative;
+      padding: 38px;
+      border-radius: 30px;
+      background: #181818;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      overflow: hidden;
+    }
+
+    .home-ai-copy::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+      background-size: 30px 30px;
+      pointer-events: none;
+    }
+
+    .home-ai-copy p {
+      color: rgba(255, 255, 255, 0.68);
+    }
+
+    .home-ai-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .home-ai-card {
+      position: relative;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 18px;
+      min-height: auto;
+      padding: 22px;
+      border-radius: 20px;
+      background: #171717;
+      border: 1px solid rgba(255, 255, 255, 0.11);
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .home-ai-card::before {
+      content: '';
+      position: absolute;
+      top: 22px;
+      bottom: 22px;
+      left: 70px;
+      width: 1px;
+      background: rgba(249, 184, 36, 0.24);
+    }
+
+    .home-ai-card::after {
+      content: '';
+      display: none;
+    }
+
+    .home-ai-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.24), 0 12px 34px rgba(249, 184, 36, 0.15);
+    }
+
+    .home-ai-card h3 {
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .home-ai-card p {
+      color: rgba(255, 255, 255, 0.68);
+      margin: 0;
+    }
+
+    .home-ai-card-body {
+      position: relative;
+      z-index: 1;
+    }
+
+    .home-ai-number {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: var(--primary);
+      color: var(--secondary);
+      font-weight: 900;
+      margin: 0;
+      box-shadow: 0 10px 28px rgba(249, 184, 36, 0.28);
+    }
+
+    .home-ai-console {
+      position: relative;
+      z-index: 1;
+      margin-top: 30px;
+      padding: 18px;
+      border-radius: 20px;
+      background: #0f0f0f;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .home-ai-console-row {
+      display: grid;
+      grid-template-columns: 110px 1fr auto;
+      gap: 12px;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .home-ai-console-row:last-child {
+      border-bottom: 0;
+    }
+
+    .home-ai-line {
+      height: 8px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.12);
+      overflow: hidden;
+    }
+
+    .home-ai-line b {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      background: var(--primary);
+    }
+
+    .home-ai-card>*,
+    .home-ai-copy>* {
+      position: relative;
+      z-index: 1;
+    }
+
+    .home-two-col {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 54px;
+      align-items: center;
+    }
+
+    .home-check-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .home-check-grid li,
+    .home-trust-badge {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 16px;
+      border-radius: 16px;
+      background: #fff;
+      border: 1px solid var(--border);
+      color: var(--secondary);
+      font-weight: 700;
+      font-size: 14px;
+      box-shadow: 0 14px 34px rgba(18, 18, 18, 0.05);
+    }
+
+    .home-check-grid i,
+    .home-trust-badge i {
+      color: var(--primary-dark);
+      margin-top: 3px;
+    }
+
+    .home-proof-card {
+      position: relative;
+      overflow: hidden;
+      min-height: 390px;
+      padding: 36px;
+      border-radius: 30px;
+      background: #fff;
+      border: 1px solid rgba(249, 184, 36, 0.22);
+      box-shadow: 0 30px 76px rgba(18, 18, 18, 0.13), 0 14px 38px rgba(249, 184, 36, 0.17);
+    }
+
+    .home-proof-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(249, 184, 36, 0.1), transparent);
+      opacity: 1;
+      pointer-events: none;
+    }
+
+    .home-proof-card::after {
+      content: '';
+      position: absolute;
+      right: -42px;
+      top: -42px;
+      width: 158px;
+      height: 158px;
+      border-radius: 50%;
+      background: rgba(249, 184, 36, 0.18);
+    }
+
+    .home-proof-card strong {
+      display: block;
+      color: var(--primary-dark);
+      font-size: 56px;
+      line-height: 1;
+      margin-bottom: 14px;
+    }
+
+    .home-growth-grid,
+    .home-testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .home-growth-card,
+    .home-testimonial {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 26px;
+      background: #fff;
+      box-shadow: 0 18px 42px rgba(18, 18, 18, 0.07);
+      transition: var(--transition);
+    }
+
+    .home-growth-card::before,
+    .home-testimonial::before,
+    .home-industry-grid a::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(249, 184, 36, 0.12), transparent 58%);
+      opacity: 1;
+      pointer-events: none;
+      transition: var(--transition);
+    }
+
+    .home-growth-card:hover,
+    .home-testimonial:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 28px 70px rgba(18, 18, 18, 0.13), 0 12px 34px rgba(249, 184, 36, 0.18);
+    }
+
+    .home-growth-card:hover::before,
+    .home-testimonial:hover::before,
+    .home-industry-grid a:hover::before {
+      opacity: 0.95;
+    }
+
+    .home-security-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 30px;
+      align-items: stretch;
+    }
+
+    .home-security-panel {
+      position: relative;
+      overflow: hidden;
+      padding: 36px;
+      border-radius: 30px;
+      background: var(--secondary);
+      color: var(--white);
+      border: 1px solid rgba(249, 184, 36, 0.24);
+      min-height: 380px;
+    }
+
+    .home-security-panel::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+      background-size: 32px 32px;
+      pointer-events: none;
+    }
+
+    .home-security-panel h2 {
+      color: var(--white);
+    }
+
+    .home-security-panel p {
+      color: rgba(255, 255, 255, 0.68);
+    }
+
+    .home-trust-badges {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .home-trust-badge {
+      min-height: 112px;
+      align-items: center;
+      background: #fff;
+    }
+
+    .home-trust-badge i {
+      width: 44px;
+      height: 44px;
+      flex: 0 0 44px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: var(--secondary);
+      color: var(--primary);
+      margin-top: 0;
+    }
+
+    .home-trust-badge strong {
+      display: block;
+      color: var(--secondary);
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+
+    .home-trust-badge span {
+      display: block;
+      color: var(--text-muted);
+      font-size: 12px;
+      line-height: 1.45;
+      font-weight: 700;
+    }
+
+    .home-security-status {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    .home-security-status div {
+      padding: 14px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .home-security-status strong {
+      display: block;
+      color: var(--primary);
+      font-size: 30px;
+      line-height: 1;
+    }
+
+    .home-security-status div>span {
+      display: block;
+      margin-top: 8px;
+      color: rgba(255, 255, 255, 0.64);
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .home-security-board {
+      padding: 24px;
+      border-radius: 30px;
+      background: #fff;
+      border: 1px solid var(--border);
+      box-shadow: 0 28px 80px rgba(18, 18, 18, 0.1);
+    }
+
+    .home-security-board-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: center;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .home-security-board-top>div:not(.home-security-score)>span {
+      display: block;
+      color: var(--text-muted);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .home-security-board-top>div:not(.home-security-score)>strong {
+      display: block;
+      color: var(--secondary);
+      font-size: 22px;
+      line-height: 1.2;
+    }
+
+    .home-security-score {
+      width: 86px;
+      height: 86px;
+      display: grid;
+      place-items: center;
+      border-radius: 22px;
+      background: var(--secondary);
+      color: var(--primary);
+      font-size: 24px;
+      font-weight: 900;
+      flex: 0 0 86px;
+    }
+
+    .home-control-list {
+      display: grid;
+      gap: 12px;
+      margin: 18px 0;
+    }
+
+    .home-control-row {
+      display: grid;
+      grid-template-columns: 150px 1fr auto;
+      align-items: center;
+      gap: 12px;
+      padding: 14px;
+      border-radius: 16px;
+      background: var(--bg-light);
+      border: 1px solid var(--border);
+      color: var(--secondary);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .home-control-bar {
+      height: 8px;
+      border-radius: 999px;
+      background: #e9ecef;
+      overflow: hidden;
+    }
+
+    .home-control-bar b {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      background: var(--primary);
+    }
+
+    .home-industry-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .home-industry-grid a {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-height: 92px;
+      padding: 18px;
+      border-radius: 22px;
+      border: 1px solid var(--border);
+      background: #fff;
+      color: var(--secondary);
+      font-weight: 800;
+      box-shadow: 0 16px 38px rgba(18, 18, 18, 0.06);
+      transition: var(--transition);
+    }
+
+    .home-industry-grid a:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 24px 56px rgba(18, 18, 18, 0.11), 0 10px 28px rgba(249, 184, 36, 0.14);
+    }
+
+    .home-feature-card>*,
+    .home-growth-card>*,
+    .home-testimonial>*,
+    .home-proof-card>*,
+    .home-security-panel>*,
+    .home-industry-grid a>*,
+    .home-stat-pill>*,
+    .home-trust-badge>*,
+    .home-check-grid li>* {
+      position: relative;
+      z-index: 1;
+    }
+
+    .home-industry-grid i {
+      color: var(--primary-dark);
+      font-size: 18px;
+    }
+
+    .home-testimonial i {
+      color: var(--primary);
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+
+    .home-final {
+      position: relative;
+      z-index: 1;
+      padding: 50px 0 50px;
+      background: #fff;
+      color: var(--secondary);
+      border-top: 1px solid var(--border);
+    }
+
+    .home-final-card {
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.65fr);
+      gap: 28px;
+      align-items: center;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 22px;
+      background: #fff;
+      box-shadow: 0 30px 90px rgba(18, 18, 18, 0.1);
+    }
+
+    .home-final-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 32px;
+      right: 32px;
+      height: 5px;
+      background: var(--primary);
+      border-radius: 0 0 10px 10px;
+      pointer-events: none;
+    }
+
+    .home-final-card::after {
+      content: none;
+    }
+
+    .home-final-card>* {
+      position: relative;
+      z-index: 1;
+    }
+
+    .home-final-card h2 {
+      color: var(--secondary);
+      font-size: 38px;
+      line-height: 1.15;
+      margin-bottom: 14px;
+      white-space: normal;
+    }
+
+    .home-final-card p {
+      color: var(--text-muted);
+      max-width: 760px;
+      font-size: 17px;
+    }
+
+    .home-final-copy {
+      padding: 34px 30px;
+    }
+
+    .home-final .home-actions {
+      align-self: stretch;
+      display: grid;
+      align-content: center;
+      gap: 14px;
+      margin-top: 0 !important;
+      padding: 30px;
+      border-radius: 22px;
+      background: var(--secondary);
+      border: 1px solid rgba(18, 18, 18, 0.08);
+    }
+
+    .home-final .btn-primary {
+      background: var(--primary) !important;
+      background-image: none !important;
+      color: var(--secondary) !important;
+      border-color: var(--primary) !important;
+      justify-content: center;
+    }
+
+    .home-final .btn-outline {
+      background: transparent !important;
+      background-image: none !important;
+      border-color: rgba(255, 255, 255, 0.32) !important;
+      color: var(--white) !important;
+      justify-content: center;
+    }
+
+    .home-final+footer {
+      margin-top: 0;
+    }
+
+    footer {
+      position: relative;
+      z-index: 0;
+      clear: both;
+      margin: 0;
+      padding: 74px 0 30px;
+      background: #101010;
+      color: var(--white);
+      border-top: 1px solid rgba(249, 184, 36, 0.18);
+    }
+
+    footer .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr repeat(4, minmax(150px, 1fr));
+      gap: 34px;
+      align-items: start;
+    }
+
+    footer .footer-brand img {
+      max-width: 150px;
+      height: auto;
+    }
+
+    footer .footer-brand p,
+    footer .footer-links a,
+    footer .copyright p {
+      color: rgba(255, 255, 255, 0.68);
+    }
+
+    footer .footer-links h4 {
+      color: var(--white);
+      margin-bottom: 16px;
+      font-size: 15px;
+    }
+
+    footer .footer-links ul {
+      display: grid;
+      gap: 9px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    footer .footer-links a {
+      font-size: 14px;
+      transition: var(--transition);
+    }
+
+    footer .footer-links a:hover {
+      color: var(--primary);
+    }
+
+    footer .copyright {
+      margin-top: 46px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    @media (max-width: 1180px) {
+
+      .home-hero-grid,
+      .home-two-col,
+      .home-security-grid,
+      .home-ai-layout,
+      .home-module-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .home-command {
+        max-width: 860px;
+      }
+
+      .home-title-line {
+        white-space: normal;
+      }
+
+      .home-proof-box {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .home-lifecycle-track {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .home-module-panel.active {
+        display: grid;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .home-section {
+        padding: 58px 0;
+      }
+
+      .home-hero {
+        padding: 112px 0 46px;
+      }
+
+      .home-command,
+      .home-command-shell {
+        min-height: auto;
+      }
+
+      .home-command-grid,
+      .home-kpi-grid,
+      .home-growth-grid,
+      .home-testimonial-grid,
+      .home-trust-badges,
+      .home-check-grid,
+      .home-industry-grid,
+      .home-final-card,
+      footer .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .home-control-row {
+        grid-template-columns: 1fr;
+      }
+
+      .home-feature-card:nth-child(even),
+      .home-feature-card:nth-child(even):hover {
+        transform: none;
+      }
+
+      .home-module-title {
+        font-size: 34px;
+      }
+
+      .home-module-ui {
+        grid-template-columns: 1fr;
+        min-height: auto;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .home-hero-title {
+        font-size: clamp(25px, 7.2vw, 34px);
+        line-height: 1.1;
+      }
+
+      .home-hero-subtitle {
+        font-size: 17px;
+      }
+
+      .home-title-line,
+      .home-final-card h2 {
+        font-size: 30px;
+      }
+
+      .home-actions .btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .home-proof-box {
+        grid-template-columns: 1fr;
+      }
+
+      .home-lifecycle-track {
+        grid-template-columns: 1fr;
+      }
+
+      .home-ai-console-row,
+      .home-security-board-top,
+      .home-security-status {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .home-security-score {
+        width: 100%;
+        height: auto;
+        min-height: 72px;
+      }
+
+      .home-module-tabs {
+        gap: 8px;
+      }
+
+      .home-module-tab {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .home-module-screen {
+        border-radius: 18px;
+      }
+
+      .home-module-kanban {
+        grid-template-columns: 1fr;
+      }
+
+      .home-command,
+      .home-ai-copy,
+      .home-proof-card,
+      .home-security-panel,
+      .home-security-board,
+      .home-final-card {
+        padding: 24px;
+      }
+
+      .home-final-copy,
+      .home-final .home-actions {
+        padding: 22px;
+      }
+    }
+
+    /* Glassmorphism Header Refinement */
+    header.scrolled {
+      background: rgba(255, 255, 255, 0.85) !important;
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border-bottom: 1px solid rgba(249, 184, 36, 0.1);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      padding: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRQFZGZT" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <nav class="nav-wrap">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo/web-logo-black.png" alt="EKTA HR">
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li class="has-mega">
+            <a href="#">Product <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="mega-dropdown">
+              <div class="mega-menu-tabs">
+                <div class="mega-tab-btn active" data-tab="hrms">
+                  <span>HRMS</span>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="mega-tab-btn" data-tab="retirement">
+                  <span>Retirement Benefits</span>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+              <div class="mega-menu-content active" id="hrms">
+                <div class="mega-grid">
+                  <a href="recruitment.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-user-plus"></i></div>
+                    <div class="mega-info">
+                      <h4>Recruitment Software</h4>
+                      <p>Find the Right Talent Faster</p>
+                    </div>
+                  </a>
+                  <a href="hr-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-users-cog"></i></div>
+                    <div class="mega-info">
+                      <h4>HR Software</h4>
+                      <p>Backbone of Your HR</p>
+                    </div>
+                  </a>
+                  <a href="onboarding-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-door-open"></i></div>
+                    <div class="mega-info">
+                      <h4>Employee Onboarding</h4>
+                      <p>Positive First Impression</p>
+                    </div>
+                  </a>
+                  <a href="attendance.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-clock"></i></div>
+                    <div class="mega-info">
+                      <h4>Attendance Management</h4>
+                      <p>Put Attendance on Auto Pilot</p>
+                    </div>
+                  </a>
+                  <a href="payroll.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-money-check-dollar"></i></div>
+                    <div class="mega-info">
+                      <h4>Payroll Software</h4>
+                      <p>Payroll on Time, Every Time</p>
+                    </div>
+                  </a>
+                  <a href="leave.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-calendar-day"></i></div>
+                    <div class="mega-info">
+                      <h4>Leave Management</h4>
+                      <p>Take a Leave From Managing Leaves</p>
+                    </div>
+                  </a>
+                  <a href="performance.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="mega-info">
+                      <h4>Performance Management</h4>
+                      <p>OKR Based Performance</p>
+                    </div>
+                  </a>
+                  <a href="lms.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="mega-info">
+                      <h4>Learning Management</h4>
+                      <p>Feature Rich Learning Management</p>
+                    </div>
+                  </a>
+                  <a href="expense-management-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-plane"></i></div>
+                    <div class="mega-info">
+                      <h4>Travel & Expense</h4>
+                      <p>Control & Convenience at One Place</p>
+                    </div>
+                  </a>
+                  <a href="employee-self-service.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-user-shield"></i></div>
+                    <div class="mega-info">
+                      <h4>Employee Self Service</h4>
+                      <p>Engage Empower Workforce</p>
+                    </div>
+                  </a>
+                  <a href="mobile-application.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="mega-info">
+                      <h4>Mobile App</h4>
+                      <p>Modern App for Mobile Workforce</p>
+                    </div>
+                  </a>
+                  <a href="timesheet-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-hourglass-half"></i></div>
+                    <div class="mega-info">
+                      <h4>Timesheet Software</h4>
+                      <p>Simplified Time & Resource Tracking</p>
+                    </div>
+                  </a>
+                  <a href="integration.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-plug"></i></div>
+                    <div class="mega-info">
+                      <h4>Integration</h4>
+                      <p>Connect Your Favorite Tools</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="mega-menu-content" id="retirement">
+                <div class="mega-grid">
+                  <a href="pf-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-piggy-bank"></i></div>
+                    <div class="mega-info">
+                      <h4>Provident Fund</h4>
+                      <p>Record & track PF contributions</p>
+                    </div>
+                  </a>
+                  <a href="pension-management.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-hand-holding-dollar"></i></div>
+                    <div class="mega-info">
+                      <h4>Pension Management</h4>
+                      <p>Automate pension disbursements</p>
+                    </div>
+                  </a>
+                  <a href="gratuity.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-gift"></i></div>
+                    <div class="mega-info">
+                      <h4>Gratuity</h4>
+                      <p>Calculate gratuity with ease</p>
+                    </div>
+                  </a>
+                  <a href="benevolent-fund-trust.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-heart"></i></div>
+                    <div class="mega-info">
+                      <h4>Benevolent Fund</h4>
+                      <p>Manage employee welfare funds</p>
+                    </div>
+                  </a>
+                  <a href="gpf-trust.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-vault"></i></div>
+                    <div class="mega-info">
+                      <h4>General Provident Fund</h4>
+                      <p>Government employee PF tracking</p>
+                    </div>
+                  </a>
+                  <a href="superannuation-fund-trust.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-coins"></i></div>
+                    <div class="mega-info">
+                      <h4>Superannuation Fund</h4>
+                      <p>Retirement savings plan</p>
+                    </div>
+                  </a>
+                  <a href="unexempted-provident-fund.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-file-invoice"></i></div>
+                    <div class="mega-info">
+                      <h4>Unexempted Provident Fund</h4>
+                      <p>Trust-based PF management</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#">Industries <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown">
+              <a href="manufacturing-industry.html">Manufacturing</a>
+              <a href="social-welfare.html">Social Welfare</a>
+              <a href="finance.html">Finance</a>
+              <a href="automotive.html">Automotive</a>
+              <a href="healthcare.html">Healthcare</a>
+              <a href="retail.html">Retail</a>
+              <a href="information-technology.html">Information Technology</a>
+              <a href="hospitality.html">Hospitality</a>
+              <a href="startups.html">Startups</a>
+            </div>
+          </li>
+          <li><a href="partners.html">Partners</a></li>
+          <li>
+            <a href="#">Resources <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown">
+              <a href="blogs.html">Blogs</a>
+              <a href="hr-letter.html">HR Letters</a>
+              <a href="hr-policy.html">HR Policies</a>
+              <a href="hr-glossary.html">HR Glossary</a>
+              <a href="minimum-wages.html">Minimum Wages</a>
+              <a href="professional-tax.html">Professional Tax</a>
+              <a href="holiday-list.html">Holiday Lists</a>
+              <a href="job-descriptions.html">Job Descriptions</a>
+              <a href="labour-welfare-fund.html">Labour Welfare Fund</a>
+              <a href="okr.html">OKRs</a>
+            </div>
+          </li>
+          <li>
+            <a href="#">Company <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown">
+              <a href="contact.html">Contact Us</a>
+              <a href="about.html">About Us</a>
+              <a href="career.html">Career</a>
+            </div>
+          </li>
+
+          <li><a href="pricing-plan.html">Pricing</a></li>
+        </ul>
+        <div class="header-btns">
+          <a href="https://my.ektahr.com" class="btn btn-outline">Login</a>
+          <a href="https://my.ektahr.com/signup" class="btn btn-primary">Get Free Trial</a>
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-close" id="menuClose"><i class="fas fa-times"></i></div>
+    <a href="index.html">Home</a>
+
+    <div class="mobile-nav-item has-dropdown">
+      <div class="mobile-dropdown-toggle">
+        <a href="#">Product</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="mobile-dropdown-content">
+        <a href="recruitment.html">Recruitment Software</a>
+        <a href="hr-software.html">HR Software</a>
+        <a href="onboarding-software.html">Employee Onboarding</a>
+        <a href="attendance.html">Attendance Management</a>
+        <a href="payroll.html">Payroll Software</a>
+        <a href="leave.html">Leave Management</a>
+        <a href="performance.html">Performance Management</a>
+        <a href="lms.html">Learning Management</a>
+        <a href="expense-management-software.html">Travel & Expense</a>
+        <a href="employee-self-service.html">Employee Self Service</a>
+        <a href="mobile-application.html">Mobile App</a>
+        <a href="timesheet-software.html">Timesheet Software</a>
+        <a href="integration.html">Integration</a>
+        <a href="pf-software.html">Provident Fund</a>
+        <a href="pension-management.html">Pension Management</a>
+        <a href="gratuity.html">Gratuity</a>
+        <a href="benevolent-fund-trust.html">Benevolent Fund</a>
+        <a href="gpf-trust.html">General Provident Fund</a>
+        <a href="superannuation-fund-trust.html">Superannuation Fund</a>
+        <a href="unexempted-provident-fund.html">Unexempted Provident Fund</a>
+      </div>
+    </div>
+
+    <div class="mobile-nav-item has-dropdown">
+      <div class="mobile-dropdown-toggle">
+        <a href="#">Industries</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="mobile-dropdown-content">
+        <a href="manufacturing-industry.html">Manufacturing</a>
+        <a href="social-welfare.html">Social Welfare</a>
+        <a href="finance.html">Finance</a>
+        <a href="automotive.html">Automotive</a>
+        <a href="healthcare.html">Healthcare</a>
+        <a href="retail.html">Retail</a>
+        <a href="information-technology.html">Information Technology</a>
+        <a href="hospitality.html">Hospitality</a>
+        <a href="startups.html">Startups</a>
+      </div>
+    </div>
+
+    <a href="partners.html">Partners</a>
+
+    <div class="mobile-nav-item has-dropdown">
+      <div class="mobile-dropdown-toggle">
+        <a href="#">Resources</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="mobile-dropdown-content">
+        <a href="blogs.html">Blogs</a>
+        <a href="hr-letter.html">HR Letters</a>
+        <a href="hr-policy.html">HR Policies</a>
+        <a href="hr-glossary.html">HR Glossary</a>
+        <a href="minimum-wages.html">Minimum Wages</a>
+        <a href="professional-tax.html">Professional Tax</a>
+        <a href="holiday-list.html">Holiday Lists</a>
+        <a href="job-descriptions.html">Job Descriptions</a>
+        <a href="labour-welfare-fund.html">Labour Welfare Fund</a>
+        <a href="okr.html">OKRs</a>
+      </div>
+    </div>
+
+    <div class="mobile-nav-item has-dropdown">
+      <div class="mobile-dropdown-toggle">
+        <a href="#">Company</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="mobile-dropdown-content">
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+        <a href="career.html">Career</a>
+      </div>
+    </div>
+
+
+    <a href="pricing-plan.html">Pricing</a>
+    <a href="https://my.ektahr.com">Login</a>
+    <a href="https://my.ektahr.com/signup" style="color:var(--primary);">Get Free Trial</a>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <!-- SEO Homepage Rebuild -->
+  <section class="home-hero">
+    <div class="container">
+      <div class="home-hero-grid">
+        <div data-aos="fade-right">
+          <div class="home-kicker"><i class="fas fa-shield-halved"></i> SOC2 Type II Certified &middot; Hire to Retire
+            HCM Platform</div>
+          <h1 class="home-hero-title"><span class="home-hero-title-line">India's #1 AI-Powered</span><span>HRMS
+              Software</span></h1>
+          <h2 class="home-hero-subtitle">The cloud HRMS for growing businesses in India &mdash; automate payroll, stay
+            compliant, and manage every stage of the employee lifecycle in one place.</h2>
+          <p class="home-hero-support">From first offer letter to final settlement &mdash; EKTA handles it all.</p>
+          <div class="home-actions">
+            <a href="https://my.ektahr.com/signup" class="btn btn-primary" style="padding: 16px 30px;">Start 14-Day Free
+              Trial &rarr;</a>
+            <a href="schedule-demo.html" class="btn btn-outline" style="padding: 16px 30px;"><i class="fas fa-play"
+                style="font-size: 10px; margin-right: 8px;"></i> Book a Live Demo</a>
+          </div>
+          <div class="home-trust-row">
+            <span><i class="fas fa-circle-check"></i>No credit card required</span>
+            <span><i class="fas fa-circle-check"></i>Setup in under 2 hours</span>
+            <span><i class="fas fa-circle-check"></i>3,500+ companies across 20+ countries</span>
+          </div>
+        </div>
+
+        <div class="home-command" data-aos="fade-left" data-aos-delay="120">
+          <div class="home-command-shell">
+            <div class="home-command-top">
+              <div class="home-window-dots"><span></span><span></span><span></span></div>
+              <div class="home-ai-prompt">Ask EKTA AI: Which payroll inputs need attention before payday?</div>
+              <div class="home-live"><span></span>LIVE</div>
+            </div>
+            <div class="home-command-grid">
+              <div class="home-panel white wide">
+                <h3>EKTA HR Command Center</h3>
+                <img class="home-product-img" src="assets/images/home/hero-img.png"
+                  alt="EKTA HR dashboard showing payroll processing, attendance tracking, and HR analytics">
+              </div>
+              <!-- <div class="home-panel wide">
+                <div class="home-kpi-grid">
+                  <div><strong><span class="home-count" data-count="3500"
+                        data-suffix="+">3,500+</span></strong><span>Companies</span></div>
+                  <div><strong><span class="home-count" data-count="20"
+                        data-suffix="+">20+</span></strong><span>Countries</span></div>
+                  <div><strong><span class="home-count" data-count="90" data-suffix="%">90%</span></strong><span>Manual
+                      effort reduced</span></div>
+                  <div><strong>SOC2</strong><span>Type II certified</span></div>
+                </div>
+              </div> -->
+              <div class="home-panel">
+                <h3>AI Risk Score</h3>
+                <div class="home-risk-list">
+                  <span>Attrition signal</span>
+                  <div class="home-risk-bar"><b style="width:54%;"></b></div>
+                  <span>Payroll anomaly risk</span>
+                  <div class="home-risk-bar"><b style="width:18%;"></b></div>
+                </div>
+              </div>
+              <div class="home-panel">
+                <h3>Compliance Feed</h3>
+                <div class="home-feed-list">
+                  <span><i class="fas fa-circle-check"></i>PF, ESIC, PT, TDS checked</span>
+                  <span><i class="fas fa-file-invoice"></i>Form 16 and ECR ready</span>
+                  <span><i class="fas fa-lock"></i>SOC2 audit controls active</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-proof-strip">
+    <div class="container">
+      <div class="home-proof-box">
+        <div class="home-proof-label">Trusted by HR teams at India's fastest-growing companies</div>
+        <div class="home-stat-pill"><strong><span class="home-count" data-count="3500"
+              data-suffix="+">3,500+</span></strong><span>Companies</span></div>
+        <div class="home-stat-pill"><strong><span class="home-count" data-count="20"
+              data-suffix="+">20+</span></strong><span>Countries</span></div>
+        <div class="home-stat-pill"><strong><span class="home-count" data-count="90"
+              data-suffix="%">90%</span></strong><span>Reduction in Manual HR Effort</span></div>
+        <div class="home-stat-pill"><strong>SOC2</strong><span>Type II Certified</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section">
+    <div class="container">
+      <div class="home-center" data-aos="fade-up">
+        <span class="home-kicker"><i class="fas fa-layer-group"></i> Hire to Retire HCM Platform</span>
+        <h2 class="home-title-line">One Platform. Every Stage. Zero Gaps.</h2>
+        <p class="home-section-copy">Stop stitching together 7 different tools. EKTA's all-in-one HR payroll software
+          covers the complete employee journey &mdash; from sourcing to separation &mdash; on a single, unified cloud
+          platform built for India.</p>
+      </div>
+      <div class="home-feature-shell" data-aos="fade-up">
+        <div class="home-feature-slider-top">
+          <span>Product Modules</span>
+        </div>
+
+        <div class="home-module-tabs" aria-label="Product module tabs">
+          <button class="home-module-tab active" type="button" data-module="recruitment"><i
+              class="fas fa-user-plus"></i>Recruitment</button>
+          <button class="home-module-tab" type="button" data-module="onboarding"><i
+              class="fas fa-door-open"></i>Onboarding</button>
+          <button class="home-module-tab" type="button" data-module="core"><i class="fas fa-id-card"></i>Core
+            HR</button>
+          <button class="home-module-tab" type="button" data-module="attendance"><i
+              class="fas fa-location-dot"></i>Attendance</button>
+          <button class="home-module-tab" type="button" data-module="payroll"><i
+              class="fas fa-money-check-dollar"></i>Payroll</button>
+          <button class="home-module-tab" type="button" data-module="performance"><i
+              class="fas fa-chart-line"></i>Performance</button>
+        </div>
+
+        <div class="home-module-panel active" id="module-recruitment">
+          <div class="home-module-content">
+            <div class="home-module-label">Recruitment</div>
+            <h3 class="home-module-title">AI-Powered Recruitment Software <span>Find and Hire the Right Talent
+                Faster</span></h3>
+            <p class="home-module-desc">Manage your entire hiring pipeline with an AI-assisted ATS from requisition to
+              offer letter, with candidate screening, interview scheduling, feedback, and approvals in one place.</p>
+            <div class="home-module-bullets">
+              <div class="home-module-bullet"><i class="fas fa-check"></i>
+                <div><strong>Real-time candidate pipeline</strong><span>Track every applicant from applied to joined in
+                    one unified view.</span></div>
+              </div>
+              <div class="home-module-bullet"><i class="fas fa-check"></i>
+                <div><strong>Interview scheduling</strong><span>Coordinate panels, rounds, and candidate communication
+                    faster.</span></div>
+              </div>
+              <div class="home-module-bullet"><i class="fas fa-check"></i>
+                <div><strong>Offer-ready workflow</strong><span>Move selected candidates into onboarding without
+                    duplicate data entry.</span></div>
+              </div>
+            </div>
+            <a href="recruitment.html" class="btn btn-primary" style="padding: 14px 24px;">Explore Recruitment Software
+              &rarr;</a>
+          </div>
+          <div class="home-module-screen">
+            <div class="home-module-screen-bar"><span style="background:#ff5f57;"></span><span
+                style="background:#febc2e;"></span><span style="background:#28c840;"></span></div>
+            <div class="home-module-ui">
+              <div class="home-module-side">
+                <div class="home-module-ui-card"><strong>Open Roles</strong><span><span class="home-count"
+                      data-count="18">18</span> active requisitions</span>
+                  <div class="home-module-progress"><b style="width:72%;"></b></div>
+                </div>
+                <div class="home-module-ui-card"><strong>Interviews</strong><span>12 scheduled this week</span>
+                  <div class="home-module-progress"><b style="width:58%;"></b></div>
+                </div>
+              </div>
+              <div class="home-module-main">
+                <div class="home-module-kanban">
+                  <div><strong>Applied</strong><span></span><span></span><span></span></div>
+                  <div><strong>Interview</strong><span></span><span></span></div>
+                  <div><strong>Offer</strong><span></span></div>
+                </div>
+                <div class="home-module-ui-card"><strong>AI shortlist ready</strong><span>Top-fit candidates ranked by
+                    skills, experience, and availability.</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-module-panel" id="module-onboarding">
+          <div class="home-module-content">
+            <div class="home-module-label">Onboarding</div>
+            <h3 class="home-module-title">Employee Onboarding Software <span>Paperless, Automated Workflows for a
+                Perfect
+                Day One</span> </h3>
+            <p class="home-module-desc">Automate joining formalities, document collection, asset requests, and task
+              assignments for a seamless, paperless onboarding experience before the employee even walks in.</p>
+            <div class="home-module-bullets">
+              <div class="home-module-bullet"><i class="fas fa-check"></i>
+                <div><strong>Digital joining kit</strong><span>Collect forms, documents, and declarations in one secure,
+                    centralised flow.</span></div>
+              </div>
+              <div class="home-module-bullet"><i class="fas fa-check"></i>
+                <div><strong>Task orchestration </strong><span> Automatically assign onboarding tasks to HR, IT,
+                    managers, and admin teams.</span></div>
+              </div>
+              <div class="home-module-bullet"><i class="fas fa-check"></i>
+                <div><strong>Employee profile creation</strong><span> Convert onboarding data into Core HR records
+                    instantly, with zero re-entry.</span></div>
+              </div>
+            </div>
+            <a href="onboarding-software.html" class="btn btn-primary" style="padding: 14px 24px;">Explore Onboarding
+              Software
+              &rarr;</a>
+          </div>
+          <div class="home-module-screen">
+            <div class="home-module-screen-bar"><span style="background:#ff5f57;"></span><span
+                style="background:#febc2e;"></span><span style="background:#28c840;"></span></div>
+            <div class="home-module-ui">
+              <div class="home-module-side">
+                <div class="home-module-ui-card"><strong>Joining Progress</strong><span><span class="home-count"
+                      data-count="86" data-suffix="%">86%</span> complete</span>
+                  <div class="home-module-progress"><b style="width:86%;"></b></div>
+                </div>
+                <div class="home-module-ui-card"><strong>Pending Docs</strong><span>3 documents need review</span>
+                  <div class="home-module-progress"><b style="width:42%;"></b></div>
+                </div>
+              </div>
+              <div class="home-module-main">
+                <div class="home-module-kanban">
+                  <div><strong>HR Tasks</strong><span></span><span></span></div>
+                  <div><strong>IT Setup</strong><span></span><span></span></div>
+                  <div><strong>Manager</strong><span></span></div>
+                </div>
+                <div class="home-module-ui-card"><strong>Welcome workflow active</strong><span>Email, policy
+                    acknowledgement, and profile setup are queued.</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-module-panel" id="module-core">
+          <div class="home-module-content">
+            <div class="home-module-label">Core HR</div>
+            <h3 class="home-module-title">Core HR Software <span>Centralised Employee Records, Documents & Org
+                Chart</span> </h3>
+            <p class="home-module-desc">Maintain a single, governed HR database for employee records, documents, org
+              structure, and lifecycle events the backbone of your people operations in one place.</p>
+            <div class="home-module-bullets">
+              <div class="home-module-bullet"><i class="fas fa-check"></i>
+                <div><strong>Employee master records </strong><span>Keep personal, job, payroll, and statutory data
+                    accurate and consistent.</span></div>
+              </div>
+              <div class="home-module-bullet"><i class="fas fa-check"></i>
+                <div><strong>Document vault </strong><span>Store offer letters, IDs, contracts, and compliance files
+                    securely in one place.</span></div>
+              </div>
+              <div class="home-module-bullet"><i class="fas fa-check"></i>
+                <div><strong>Org visibility</strong><span> Manage reporting structures, departments, designations, and
+                    roles clearly.</span></div>
+              </div>
+            </div>
+            <a href="hr-software.html" class="btn btn-primary" style="padding: 14px 24px;">Explore Core HR Software
+              &rarr;</a>
+          </div>
+          <div class="home-module-screen">
+            <div class="home-module-screen-bar"><span style="background:#ff5f57;"></span><span
+                style="background:#febc2e;"></span><span style="background:#28c840;"></span></div>
+            <div class="home-module-ui">
+              <div class="home-module-side">
+                <div class="home-module-ui-card"><strong>Employee Records</strong><span><span class="home-count"
+                      data-count="3500" data-suffix="+">3,500+</span> managed</span>
+                  <div class="home-module-progress"><b style="width:94%;"></b></div>
+                </div>
+                <div class="home-module-ui-card"><strong>Document Vault</strong><span>Policy-ready repository</span>
+                  <div class="home-module-progress"><b style="width:78%;"></b></div>
+                </div>
+              </div>
+              <div class="home-module-main">
+                <div class="home-module-kanban">
+                  <div><strong>Profile</strong><span></span><span></span></div>
+                  <div><strong>Job</strong><span></span><span></span></div>
+                  <div><strong>Letters</strong><span></span></div>
+                </div>
+                <div class="home-module-ui-card"><strong>Org data unified</strong><span>Departments, managers, grades,
+                    and policies stay connected.</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-module-panel" id="module-attendance">
+          <div class="home-module-content">
+            <div class="home-module-label">Attendance</div>
+            <h3 class="home-module-title">Attendance Management Software <span>Geo-Fencing, Facial Recognition & Mobile
+                Punch-In</span></h3>
+            <p class="home-module-desc">Capture attendance across office, field, remote, and shift teams with
+              geo-fencing, facial recognition, and mobile punch-in live exceptions flagged and payroll-ready data
+              generated automatically.</p>
+            <div class="home-module-bullets">
+              <div class="home-module-bullet"><i class="fas fa-check"></i>
+                <div><strong>Geo-fenced punches</strong><span>Validate employee location in real time before attendance
+                    is recorded.</span></div>
+              </div>
+              <div class="home-module-bullet"><i class="fas fa-check"></i>
+                <div><strong>Shift intelligence </strong><span>Handle late marks, overtime, weekly offs, and shift
+                    rosters effortlessly.</span></div>
+              </div>
+              <div class="home-module-bullet"><i class="fas fa-check"></i>
+                <div><strong>Payroll-ready data </strong><span> Approved attendance flows directly into salary
+                    processing no manual transfer.</span></div>
+              </div>
+            </div>
+            <a href="attendance.html" class="btn btn-primary" style="padding: 14px 24px;">Explore Attendance Management
+              Software &rarr;</a>
+          </div>
+          <div class="home-module-screen">
+            <div class="home-module-screen-bar"><span style="background:#ff5f57;"></span><span
+                style="background:#febc2e;"></span><span style="background:#28c840;"></span></div>
+            <div class="home-module-ui">
+              <div class="home-module-side">
+                <div class="home-module-ui-card"><strong>Today Present</strong><span><span class="home-count"
+                      data-count="94" data-suffix="%">94%</span> workforce</span>
+                  <div class="home-module-progress"><b style="width:94%;"></b></div>
+                </div>
+                <div class="home-module-ui-card"><strong>Exceptions</strong><span>7 need approval</span>
+                  <div class="home-module-progress"><b style="width:30%;"></b></div>
+                </div>
+              </div>
+              <div class="home-module-main">
+                <div class="home-module-kanban">
+                  <div><strong>On Time</strong><span></span><span></span></div>
+                  <div><strong>Late</strong><span></span></div>
+                  <div><strong>Remote</strong><span></span><span></span></div>
+                </div>
+                <div class="home-module-ui-card"><strong>Attendance locked</strong><span>Shift, leave, and overtime
+                    exceptions are ready for payroll.</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-module-panel" id="module-payroll">
+          <div class="home-module-content">
+            <div class="home-module-label">Payroll</div>
+            <h3 class="home-module-title">Payroll Software India <span>100% Accurate Salary Processing with Full
+                Statutory
+                Compliance</span></h3>
+            <p class="home-module-desc">Process salaries, deductions, reimbursements, and taxes with India-ready payroll
+              compliance built in PF, ESIC, PT, TDS, Form 16, and ECR filings handled automatically, every cycle.</p>
+            <div class="home-module-bullets">
+              <div class="home-module-bullet"><i class="fas fa-check"></i>
+                <div><strong>PF, ESIC, PT, TDS automation</strong><span>Statutory calculations stay accurate and aligned
+                    with the latest payroll rules.</span></div>
+              </div>
+              <div class="home-module-bullet"><i class="fas fa-check"></i>
+                <div><strong>Pre-payday anomaly checks</strong><span>Detect missing inputs and unusual salary changes
+                    before they reach employees.</span></div>
+              </div>
+              <div class="home-module-bullet"><i class="fas fa-check"></i>
+                <div><strong>Employee-ready outputs</strong><span>Payslips, Form 16, and compliance reports generated on
+                    time, every time.</span></div>
+              </div>
+            </div>
+            <a href="payroll.html" class="btn btn-primary" style="padding: 14px 24px;">Explore Payroll Software
+              &rarr;</a>
+          </div>
+          <div class="home-module-screen">
+            <div class="home-module-screen-bar"><span style="background:#ff5f57;"></span><span
+                style="background:#febc2e;"></span><span style="background:#28c840;"></span></div>
+            <div class="home-module-ui">
+              <div class="home-module-side">
+                <div class="home-module-ui-card"><strong>Payroll Accuracy</strong><span><span class="home-count"
+                      data-count="100" data-suffix="%">100%</span> target</span>
+                  <div class="home-module-progress"><b style="width:100%;"></b></div>
+                </div>
+                <div class="home-module-ui-card"><strong>Compliance</strong><span>PF, ESIC, PT, TDS ready</span>
+                  <div class="home-module-progress"><b style="width:88%;"></b></div>
+                </div>
+              </div>
+              <div class="home-module-main">
+                <div class="home-module-kanban">
+                  <div><strong>Inputs</strong><span></span><span></span></div>
+                  <div><strong>Review</strong><span></span></div>
+                  <div><strong>Payout</strong><span></span><span></span></div>
+                </div>
+                <div class="home-module-ui-card"><strong>Payroll run clean</strong><span>Salary inputs, attendance, and
+                    tax rules are cross-checked.</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-module-panel" id="module-performance">
+          <div class="home-module-content">
+            <div class="home-module-label">Performance</div>
+            <h3 class="home-module-title">Performance Management Software <span>OKR-Driven Appraisals, 360° Feedback &
+                Real-Time Analytics</span> </h3>
+            <p class="home-module-desc">Run structured OKR appraisal cycles, 360-degree feedback, and real-time
+              performance analytics that connect individual goals to business priorities and identify your best people
+              early.</p>
+            <div class="home-module-bullets">
+              <div class="home-module-bullet"><i class="fas fa-check"></i>
+                <div><strong>OKR alignment</strong><span>Link employee goals directly to team and company-level
+                    objectives.</span>
+                </div>
+              </div>
+              <div class="home-module-bullet"><i class="fas fa-check"></i>
+                <div><strong>Structured review cycles</strong><span>Automate appraisal reminders, ratings, feedback
+                    collection, and approvals.</span></div>
+              </div>
+              <div class="home-module-bullet"><i class="fas fa-check"></i>
+                <div><strong>Growth insights </strong><span>Identify high performers, skill gaps, and coaching
+                    opportunities with live analytics.</span></div>
+              </div>
+            </div>
+            <a href="performance.html" class="btn btn-primary" style="padding: 14px 24px;">Explore Performance
+              Management Software
+              &rarr;</a>
+          </div>
+          <div class="home-module-screen">
+            <div class="home-module-screen-bar"><span style="background:#ff5f57;"></span><span
+                style="background:#febc2e;"></span><span style="background:#28c840;"></span></div>
+            <div class="home-module-ui">
+              <div class="home-module-side">
+                <div class="home-module-ui-card"><strong>Goal Progress</strong><span><span class="home-count"
+                      data-count="72" data-suffix="%">72%</span> average</span>
+                  <div class="home-module-progress"><b style="width:72%;"></b></div>
+                </div>
+                <div class="home-module-ui-card"><strong>Review Cycle</strong><span>Managers reviewing now</span>
+                  <div class="home-module-progress"><b style="width:64%;"></b></div>
+                </div>
+              </div>
+              <div class="home-module-main">
+                <div class="home-module-kanban">
+                  <div><strong>Goals</strong><span></span><span></span></div>
+                  <div><strong>Feedback</strong><span></span></div>
+                  <div><strong>Rating</strong><span></span><span></span></div>
+                </div>
+                <div class="home-module-ui-card"><strong>Performance story ready</strong><span>OKRs, feedback, and
+                    appraisal outcomes are connected.</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home-actions center">
+        <a href="features.html" class="btn btn-primary" style="padding: 15px 28px;">Explore All Modules &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section home-dark">
+    <div class="container">
+      <div class="home-ai-layout">
+        <div class="home-ai-copy" data-aos="fade-right">
+          <span class="home-kicker"><i class="fas fa-robot"></i> Next-Gen AI</span>
+          <h2 class="home-title-line">Not Just HRMS. AI-Powered HRMS <br> Software That Thinks Ahead.</h2>
+          <p class="home-section-copy">Most HR platforms collect data. EKTA uses it. Our AI engine identifies attrition
+            risks before they become resignations, automates payroll anomaly checks before payday, and verifies
+            attendance through real-time facial recognition &mdash; so your HR team focuses on people, not paperwork.
+          </p>
+          <div class="home-ai-console" aria-label="AI insight preview">
+            <div class="home-ai-console-row"><span>Attrition</span>
+              <div class="home-ai-line"><b style="width: 64%;"></b></div><strong>Live</strong>
+            </div>
+            <div class="home-ai-console-row"><span>Payroll</span>
+              <div class="home-ai-line"><b style="width: 82%;"></b></div><strong>Checked</strong>
+            </div>
+            <div class="home-ai-console-row"><span>Queries</span>
+              <div class="home-ai-line"><b style="width: 76%;"></b></div><strong>Auto</strong>
+            </div>
+          </div>
+        </div>
+        <div class="home-ai-grid">
+          <div class="home-ai-card" data-aos="fade-up">
+            <div class="home-ai-number">1</div>
+            <div class="home-ai-card-body">
+              <h3>Predictive Attrition Scoring</h3>
+              <p>Get a live risk score for every employee before they start looking elsewhere. Act early, retain longer.
+              </p>
+            </div>
+          </div>
+          <div class="home-ai-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="home-ai-number">2</div>
+            <div class="home-ai-card-body">
+              <h3>Auto Payroll Intelligence</h3>
+              <p>EKTA's AI cross-checks salary inputs, attendance data, and compliance rules automatically &mdash;
+                catching errors before they reach employees.</p>
+            </div>
+          </div>
+          <div class="home-ai-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="home-ai-number">3</div>
+            <div class="home-ai-card-body">
+              <h3>Factobot HR Assistant</h3>
+              <p>An always-on AI chatbot that handles employee queries 24/7. Cut helpdesk load by up to 90%.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section">
+    <div class="container home-two-col">
+      <div data-aos="fade-right">
+        <span class="home-kicker"><i class="fas fa-scale-balanced"></i> HRMS with Payroll Compliance India</span>
+        <h2 class="home-title-line">India's Compliance Complexity? Handled.</h2>
+        <p class="home-section-copy">Labour laws in India aren't forgiving &mdash; and they change constantly. EKTA's
+          HRMS with payroll compliance keeps you ahead of every update, automating PF, ESIC, PT, TDS, Form 16, and ECR
+          filings so you're always audit-ready.</p>
+        <ul class="home-check-grid">
+          <li><i class="fas fa-circle-check"></i>Automated ECR generation for PF &amp; ESIC</li>
+          <li><i class="fas fa-circle-check"></i>Professional Tax (PT) across all states</li>
+          <li><i class="fas fa-circle-check"></i>Form 16 auto-generation</li>
+          <li><i class="fas fa-circle-check"></i>Gratuity, Bonus, and LWF calculations</li>
+          <li><i class="fas fa-circle-check"></i>100% accuracy guarantee on tax filings</li>
+          <li><i class="fas fa-circle-check"></i>Minimum Wages tracking by state and category</li>
+        </ul>
+      </div>
+      <div class="home-proof-card" data-aos="fade-left">
+        <strong><span class="home-count" data-count="0">0</span></strong>
+        <h3>Payroll errors reduced to zero.</h3>
+        <p style="color: var(--text-muted);">"Payroll workforce reduced by 50%. Errors reduced to zero." &mdash; Kelvin
+          Plastics</p>
+        <a href="payroll.html" class="btn btn-primary" style="margin-top: 26px; padding: 15px 26px;">See How Compliance
+          Works &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section home-soft">
+    <div class="container">
+      <div class="home-center" data-aos="fade-up">
+        <span class="home-kicker"><i class="fas fa-cloud"></i> Cloud HRMS for Growing Businesses India</span>
+        <h2 class="home-title-line">Built to Grow With You &mdash; From 50 Employees to 5,000.</h2>
+        <p class="home-section-copy">Most HRMS platforms are either too simple for where you're headed or too
+          enterprise-heavy to afford right now. EKTA's cloud HRMS for growing businesses meets you exactly where you are
+          &mdash; with modular pricing, rapid setup, and infrastructure that scales alongside your headcount, not
+          against it.</p>
+      </div>
+      <div class="home-growth-grid">
+        <div class="home-growth-card" data-aos="fade-up">
+          <div class="home-icon-box"><i class="fas fa-cubes"></i></div>
+          <h3>Modular &amp; Scalable</h3>
+          <p>Start with core HR and payroll. Add performance, LMS, or expense management as your team grows. No
+            rip-and-replace.</p>
+        </div>
+        <div class="home-growth-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="home-icon-box"><i class="fas fa-bolt"></i></div>
+          <h3>Fast Implementation</h3>
+          <p>Go live in days, not months. Our onboarding team handles configuration, data migration, and training
+            &mdash; so you're productive from day one.</p>
+        </div>
+        <div class="home-growth-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="home-icon-box"><i class="fas fa-plug"></i></div>
+          <h3>API-First Integration</h3>
+          <p>Connect EKTA to your existing ERP, accounting software, or CRM through 100+ pre-built integrations and a
+            robust open API.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section">
+    <div class="container">
+      <div class="home-security-grid">
+        <div class="home-security-panel" data-aos="fade-right">
+          <span class="home-kicker"><i class="fas fa-lock"></i> SOC2 Certified HRMS India</span>
+          <h2 class="home-title-line">Enterprise-Grade Security. <br>Rare in India. <br>Standard at EKTA.</h2>
+          <p class="home-section-copy">Your employee data is more sensitive than your financial data. We take that
+            seriously. EKTA is SOC2 Type II certified &mdash; a distinction fewer than 1% of Indian HRMS vendors can
+            claim &mdash; meaning your data security has been independently audited and verified, not just promised.</p>
+          <p style="color: rgba(255,255,255,0.78); font-weight: 800; margin-top: 18px;">Enterprise buyers: EKTA meets
+            your InfoSec team's checklist &mdash; out of the box.</p>
+          <div class="home-security-status">
+            <div><strong><span class="home-count" data-count="24" data-suffix="/7">24/7</span></strong><span>Control
+                Monitoring</span></div>
+            <div><strong><span class="home-count" data-count="256">256</span></strong><span>Bit Encryption</span></div>
+            <div><strong><span class="home-count" data-count="99.9" data-decimals="1"
+                  data-suffix="%">99.9%</span></strong><span>Availability Target</span></div>
+          </div>
+          <a href="contact.html" class="btn btn-primary" style="margin-top: 24px; padding: 15px 26px;">Download Our
+            Security Overview &rarr;</a>
+        </div>
+        <div class="home-security-board" data-aos="fade-left">
+          <div class="home-security-board-top">
+            <div><span>Security Control Board</span><strong>Audit-ready controls mapped for enterprise HR data</strong>
+            </div>
+            <div class="home-security-score"><span class="home-count" data-count="100" data-suffix="%">100%</span></div>
+          </div>
+          <div class="home-control-list">
+            <div class="home-control-row"><span>Access Control</span>
+              <div class="home-control-bar"><b style="width:96%;"></b></div><strong>Active</strong>
+            </div>
+            <div class="home-control-row"><span>Encryption</span>
+              <div class="home-control-bar"><b style="width:100%;"></b></div><strong>AES-256</strong>
+            </div>
+            <div class="home-control-row"><span>Audit Logs</span>
+              <div class="home-control-bar"><b style="width:92%;"></b></div><strong>Tracked</strong>
+            </div>
+          </div>
+          <div class="home-trust-badges">
+            <div class="home-trust-badge"><i class="fas fa-shield-halved"></i>
+              <div><strong>SOC2 Type II Certified</strong><span>Audited controls for data security and operational
+                  trust.</span></div>
+            </div>
+            <div class="home-trust-badge"><i class="fas fa-server"></i>
+              <div><strong>India Data Residency</strong><span>Deployment choices aligned to enterprise data
+                  policies.</span></div>
+            </div>
+            <div class="home-trust-badge"><i class="fas fa-key"></i>
+              <div><strong>AES-256 Encryption</strong><span>Employee records protected at rest and in transit.</span>
+              </div>
+            </div>
+            <div class="home-trust-badge"><i class="fas fa-globe"></i>
+              <div><strong>GDPR Compliant</strong><span>Privacy-ready workflows for distributed HR teams.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section home-soft">
+    <div class="container">
+      <div class="home-center" data-aos="fade-up">
+        <h2 class="home-title-line">Purpose-Built Workflows for Every Industry</h2>
+        <p class="home-section-copy">One size fits nobody. EKTA ships with industry-specific HR logic so manufacturers,
+          IT companies, hospitals, and retailers all feel like the platform was made for them.</p>
+      </div>
+      <div class="home-industry-grid">
+        <a href="manufacturing-industry.html"><i class="fas fa-industry"></i>Manufacturing</a>
+        <a href="information-technology.html"><i class="fas fa-laptop-code"></i>Information Technology</a>
+        <a href="healthcare.html"><i class="fas fa-hospital"></i>Healthcare</a>
+        <a href="retail.html"><i class="fas fa-store"></i>Retail</a>
+        <a href="hospitality.html"><i class="fas fa-hotel"></i>Hospitality</a>
+        <a href="finance.html"><i class="fas fa-building-columns"></i>Finance</a>
+        <a href="automotive.html"><i class="fas fa-car"></i>Automotive</a>
+        <a href="startups.html"><i class="fas fa-rocket"></i>Startups</a>
+        <a href="social-welfare.html"><i class="fas fa-hands-helping"></i>Social Welfare</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section">
+    <div class="container">
+      <div class="home-center" data-aos="fade-up">
+        <h2 class="home-title-line">Hear It From India's HR Leaders</h2>
+      </div>
+      <div class="home-testimonial-grid">
+        <div class="home-testimonial" data-aos="fade-up"><i class="fas fa-quote-left"></i>
+          <p>"EKTA HR enables us to track and add value to our employees' efficiency, resulting in a 40% productivity
+            increase."</p>
+          <h3>Operations Head</h3><span style="color: var(--text-muted); font-weight: 700;">Cycle Agarbatti</span>
+        </div>
+        <div class="home-testimonial" data-aos="fade-up" data-aos-delay="120"><i class="fas fa-quote-left"></i>
+          <p>"We halved our payroll team's workload and improved efficiency by 50% by unifying all HR data on one
+            platform."</p>
+          <h3>HR Manager</h3><span style="color: var(--text-muted); font-weight: 700;">Kelvin Plastics</span>
+        </div>
+        <div class="home-testimonial" data-aos="fade-up" data-aos-delay="240">
+          <i class="fas fa-quote-left"></i>
+          <p>"Managing attendance, shifts, and employee records across multiple branches became effortless with EKTA HR.
+            Our HR operations are now faster and more organized."</p>
+          <h3>Admin Director</h3>
+          <span style="color: var(--text-muted); font-weight: 700;">Sri Meenakshi Retail Group</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="home-final">
+    <div class="container">
+      <div class="home-final-card" data-aos="zoom-in">
+        <div class="home-final-copy">
+          <h2>The Hire-to-Retire HCM Platform India's Growing Businesses Choose</h2>
+          <p>Join 3,500+ companies that have replaced scattered HR tools with one AI-powered HRMS &mdash; built for
+            Indian compliance, built for growth.</p>
+          <p style="color: var(--primary); font-weight: 800; margin-top: 14px;">EKTA HR &mdash; Cloud HRMS for Growing
+            Businesses in India &middot; SOC2 Type II Certified</p>
+        </div>
+        <div class="home-actions" style="margin-top: 0;">
+          <a href="https://my.ektahr.com/signup" class="btn btn-primary" style="padding: 16px 28px;">Start Free &mdash;
+            No Credit Card Needed</a>
+          <a href="schedule-demo.html" class="btn btn-outline" style="padding: 16px 28px;">Talk to a Product Expert</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Column 1: Logo & About -->
+        <div class="footer-brand">
+          <img src="assets/images/logo/web-logo-white.png" alt="EKTA HR">
+          <p style="margin-top: 24px; line-height: 1.7;">
+            EKTA HR is an advanced Human Resource Management System designed
+            to simplify operations, enhance employee experience, and scale
+            effortlessly with growing businesses.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="partners.html">Partners</a></li>
+            <li><a href="pricing-plan.html">Pricing</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Location Map -->
+        <div class="footer-links">
+          <h4>Core Features</h4>
+          <ul>
+            <li><a href="recruitment.html">Recruitment Software</a></li>
+            <li><a href="hr-software.html">HR Software</a></li>
+            <li> <a href="onboarding-software.html">Employee Onboarding</a></li>
+            <li><a href="attendance.html">Attendance Management</a></li>
+            <li> <a href="payroll.html">Payroll Software</a></li>
+            <li> <a href="leave.html">Leave Management</a></li>
+            <li><a href="performance.html">Performance</a></li>
+            <li><a href="lms.html">Learning Management</a></li>
+            <li><a href="expense-management-software.html">Travel & Expense</a></li>
+            <li><a href="employee-self-service.html">Employee Self Service</a></li>
+            <li><a href="mobile-application.html">Mobile App</a></li>
+            <li><a href="timesheet-software.html">Timesheet Software</a></li>
+            <li><a href="integration.html">Integration</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Location Map -->
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="hr-letter.html">HR Letters</a></li>
+            <li> <a href="hr-policy.html">HR Policies</a></li>
+            <li><a href="hr-glossary.html">HR Glossary</a></li>
+            <li> <a href="minimum-wages.html">Minimum Wages </a></li>
+            <li> <a href="professional-tax.html">Professional Tax</a></li>
+            <li><a href="holiday-list.html">Holiday Lists</a></li>
+            <li><a href="job-descriptions.html">Job Descriptions</a></li>
+            <li><a href="labour-welfare-fund.html">Labour Welfare Fund</a></li>
+            <li><a href="okr.html">OKRs</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact + Newsletter -->
+        <div class="footer-links">
+          <h4>Industries</h4>
+          <ul>
+            <li><a href="manufacturing-industry.html">Manufacturing</a></li>
+            <li><a href="social-welfare.html">Social Welfare</a></li>
+            <li> <a href="finance.html">Finance</a></li>
+            <li><a href="automotive.html">Automotive</a></li>
+            <li> <a href="healthcare.html">Healthcare</a></li>
+            <li> <a href="retail.html">Retail</a></li>
+            <li><a href="information-technology.html">Information Technology</a></li>
+            <li><a href="hospitality.html">Hospitality</a></li>
+            <li><a href="startups.html">Startups</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="copyright"
+        style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+
+        <p> &copy; 2026 EKTA HR, All rights
+          reserved. </p>
+
+        <div style="display: flex; gap: 20px;">
+          <a href="https://www.linkedin.com/company/myektahr/" target="_blank" style="color: #fff;"
+            class="social-icons"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/people/Ektahr/61586428776510/" target="_blank" style="color: #fff;"
+            class="social-icons"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/my.ektahr/" target="_blank" style="color: #fff;" class="social-icons"><i
+              class="fab fa-instagram"></i></a>
+          <!-- <a href="#" style="color: #fff;" class="social-icons"><i class="fab fa-whatsapp"></i></a> -->
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true, disable: function () { return window.innerWidth < 768; } });
+
+    // Header Scroll Effect
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) header.classList.add('scrolled');
+      else header.classList.remove('scrolled');
+    });
+
+    // Mega Menu Tab Switching
+    const tabBtns = document.querySelectorAll('.mega-tab-btn');
+    const tabContents = document.querySelectorAll('.mega-menu-content');
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('mouseenter', () => {
+        const target = btn.getAttribute('data-tab');
+
+        tabBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        tabContents.forEach(content => {
+          content.classList.remove('active');
+          if (content.id === target) {
+            content.classList.add('active');
+          }
+        });
+      });
+    });
+
+    // Mobile Dropdown Accordion
+    const mobileDropdownToggles = document.querySelectorAll('.mobile-dropdown-toggle');
+
+    mobileDropdownToggles.forEach(toggle => {
+      toggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        const parent = toggle.closest('.mobile-nav-item');
+
+        // Close other open accordions
+        document.querySelectorAll('.mobile-nav-item').forEach(item => {
+          if (item !== parent) item.classList.remove('active');
+        });
+
+        parent.classList.toggle('active');
+      });
+    });
+
+    // Mobile Menu Logic
+    const menuToggle = document.getElementById('menuToggle');
+    const menuClose = document.getElementById('menuClose');
+    const mobileNav = document.getElementById('mobileNav');
+    const overlay = document.getElementById('overlay');
+
+    const toggleMenu = () => {
+      mobileNav.classList.toggle('active');
+      overlay.classList.toggle('active');
+      document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : 'auto';
+    };
+
+    menuToggle.addEventListener('click', toggleMenu);
+    menuClose.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', toggleMenu);
+    // Perspective Content Switcher Logic
+    const vpItems = document.querySelectorAll('.vp-item');
+    const vpVisuals = document.querySelectorAll('.vp-visual-item');
+
+    vpItems.forEach(item => {
+      item.addEventListener('mouseenter', () => {
+        const target = item.getAttribute('data-target');
+
+        vpItems.forEach(i => i.classList.remove('active'));
+        item.classList.add('active');
+
+        vpVisuals.forEach(visual => {
+          visual.classList.remove('active');
+          if (visual.id === target) {
+            visual.classList.add('active');
+          }
+        });
+      });
+    });
+
+    // Industry Switcher Logic
+    const industryTabs = document.querySelectorAll('.industry-tab');
+    const industryPanes = document.querySelectorAll('.industry-pane');
+
+    industryTabs.forEach(tab => {
+      const activateIndustry = () => {
+        const target = tab.getAttribute('data-industry');
+
+        industryTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        industryPanes.forEach(pane => {
+          pane.classList.remove('active');
+          if (pane.id === target) {
+            pane.classList.add('active');
+          }
+        });
+      };
+
+      tab.addEventListener('mouseenter', activateIndustry);
+      tab.addEventListener('click', activateIndustry);
+    });
+
+
+    // Homepage Module Switcher
+    const homeModuleTabs = document.querySelectorAll('.home-module-tab');
+    const homeModulePanels = document.querySelectorAll('.home-module-panel');
+
+    homeModuleTabs.forEach(tab => {
+      const activateModule = () => {
+        const target = `module-${tab.getAttribute('data-module')}`;
+        homeModuleTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        homeModulePanels.forEach(panel => {
+          panel.classList.toggle('active', panel.id === target);
+        });
+      };
+      tab.addEventListener('click', activateModule);
+      tab.addEventListener('mouseenter', activateModule);
+    });
+
+    // Count-up Metrics
+    const homeCounters = document.querySelectorAll('.home-count');
+
+    const formatCounterValue = (value, decimals) => {
+      if (decimals > 0) return value.toFixed(decimals);
+      return Math.round(value).toLocaleString('en-IN');
+    };
+
+    const runCounter = counter => {
+      if (counter.dataset.counted === 'true') return;
+      counter.dataset.counted = 'true';
+
+      const target = Number(counter.dataset.count || 0);
+      const decimals = Number(counter.dataset.decimals || 0);
+      const prefix = counter.dataset.prefix || '';
+      const suffix = counter.dataset.suffix || '';
+      const duration = Number(counter.dataset.duration || 1400);
+      const startTime = performance.now();
+
+      const tick = now => {
+        const progress = Math.min((now - startTime) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const current = target * eased;
+        counter.textContent = `${prefix}${formatCounterValue(current, decimals)}${suffix}`;
+        if (progress < 1) requestAnimationFrame(tick);
+      };
+
+      requestAnimationFrame(tick);
+    };
+
+    if ('IntersectionObserver' in window) {
+      const counterObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            runCounter(entry.target);
+            counterObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.35 });
+
+      homeCounters.forEach(counter => counterObserver.observe(counter));
+    } else {
+      homeCounters.forEach(runCounter);
+    }
+    // Rotating Text Logic
+    const words = ["Scalable", "Intelligent", "Error-Free"];
+    let i = 0;
+    let timer;
+
+    function rotateWord() {
+      const el = document.getElementById('rotate');
+      if (!el) return;
+      el.style.opacity = '0';
+      setTimeout(() => {
+        i = (i + 1) % words.length;
+        el.innerText = words[i];
+        el.style.opacity = '1';
+      }, 500);
+    }
+    setInterval(rotateWord, 3000);
+  </script>
+</body>
+
+</html>

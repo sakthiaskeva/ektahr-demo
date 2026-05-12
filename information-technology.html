@@ -1,0 +1,1252 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HR Software for IT & ITES Industry | EKTA HR</title>
+  <meta name="description"
+    content="EKTA HR helps IT and ITES companies simplify flexible shift management, project timesheet tracking, digital onboarding, performance OKRs, and mobile attendance.">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/logo/favicon-32x32.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="assets/css/ekta_style.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QF7ZSPWC0P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-QF7ZSPWC0P');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MRQFZGZT');</script>
+  <!-- End Google Tag Manager -->
+
+  <style>
+    /* ── IT Industry Page Styles ── */
+    .ind-hero {
+      background: linear-gradient(135deg, #f0f4ff 0%, #fff 60%);
+      padding: 180px 0 100px;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero-title {
+      font-size: 48px !important;
+      line-height: 1.2;
+      margin-bottom: 24px;
+      color: var(--secondary);
+    }
+
+    .hero-desc {
+      font-size: 18px;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      line-height: 1.7;
+    }
+
+    .hero-image-wrap img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: var(--shadow-premium);
+      border: 1px solid var(--border);
+    }
+
+    .section-header h2 {
+      font-size: 36px !important;
+      margin-bottom: 16px;
+    }
+
+    /* Stats */
+    .industry-stats {
+      background: var(--secondary);
+      padding: 60px 0;
+      color: var(--white);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      text-align: center;
+    }
+
+    .stat-card h3 {
+      font-size: 42px;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .stat-card p {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.7);
+      margin: 0;
+    }
+
+    /* Segments */
+    .segment-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 20px;
+    }
+
+    .segment-btn {
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .segment-btn:hover {
+      background: var(--primary-light);
+      border-color: var(--primary);
+    }
+
+    .segment-btn i {
+      font-size: 18px;
+      color: var(--primary);
+    }
+
+    .segment-btn h4 {
+      font-size: 15px;
+      margin: 0;
+    }
+
+    /* Challenge-Solution paired layout */
+    .challenge-sol-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    .cs-card {
+      background: #fff;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .cs-card:hover {
+      box-shadow: var(--shadow-md);
+      border-color: var(--primary);
+    }
+
+    .cs-header {
+      padding: 28px 30px 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .cs-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+
+    .cs-header h3 {
+      font-size: 19px;
+      margin-bottom: 10px;
+    }
+
+    .cs-header p {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    .cs-solution {
+      padding: 20px 30px;
+      background: var(--bg-light);
+    }
+
+    .cs-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .cs-solution p {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin: 0;
+      line-height: 1.7;
+    }
+
+    /* Solution Feature blocks */
+    .sol-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+      margin-bottom: 80px;
+    }
+
+    .sol-block:last-child {
+      margin-bottom: 0;
+    }
+
+    .sol-block:nth-child(even) {
+      direction: rtl;
+    }
+
+    .sol-block:nth-child(even) .sol-text {
+      direction: ltr;
+    }
+
+    .sol-image img {
+      width: 100%;
+      border-radius: 24px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .sol-text h3 {
+      font-size: 28px;
+      margin-bottom: 18px;
+    }
+
+    .sol-list {
+      margin-top: 24px;
+    }
+
+    .sol-list-item {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 15px;
+    }
+
+    .sol-list-item i {
+      color: var(--primary);
+      margin-top: 4px;
+      flex-shrink: 0;
+    }
+
+    .sol-list-item p {
+      margin: 0;
+      font-size: 15px;
+      color: var(--text-muted);
+    }
+
+    /* FAQ */
+    .faq-wrapper {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .faq-box {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 15px;
+      overflow: hidden;
+    }
+
+    .faq-q {
+      padding: 20px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .faq-a {
+      padding: 0 25px;
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.3s ease;
+      color: var(--text-muted);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .faq-box.active .faq-a {
+      padding: 0 25px 20px;
+      max-height: 280px;
+    }
+
+    .faq-box.active .faq-q i {
+      transform: rotate(180deg);
+      color: var(--primary);
+    }
+
+    /* Responsive */
+    @media (max-width: 991px) {
+
+      .hero-grid,
+      .sol-block {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+      }
+
+      .sol-block:nth-child(even) {
+        direction: ltr;
+      }
+
+      .sol-list-item {
+        text-align: left;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 32px !important;
+      }
+
+      .section-header h2 {
+        font-size: 28px !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRQFZGZT" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <nav class="nav-wrap">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo/web-logo-black.png" alt="EKTA HR">
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li class="has-mega">
+            <a href="#">Product <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="mega-dropdown">
+              <div class="mega-menu-tabs">
+                <div class="mega-tab-btn active" data-tab="hrms">
+                  <span>HRMS</span>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="mega-tab-btn" data-tab="retirement">
+                  <span>Retirement Benefits</span>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+              <div class="mega-menu-content active" id="hrms">
+                <div class="mega-grid">
+                  <a href="recruitment.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-user-plus"></i></div>
+                    <div class="mega-info">
+                      <h4>Recruitment Software</h4>
+                      <p>Find the Right Talent Faster</p>
+                    </div>
+                  </a>
+                  <a href="hr-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-users-cog"></i></div>
+                    <div class="mega-info">
+                      <h4>HR Software</h4>
+                      <p>Backbone of Your HR</p>
+                    </div>
+                  </a>
+                  <a href="onboarding-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-door-open"></i></div>
+                    <div class="mega-info">
+                      <h4>Employee Onboarding</h4>
+                      <p>Positive First Impression</p>
+                    </div>
+                  </a>
+                  <a href="attendance.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-clock"></i></div>
+                    <div class="mega-info">
+                      <h4>Attendance Management</h4>
+                      <p>Put Attendance on Auto Pilot</p>
+                    </div>
+                  </a>
+                  <a href="payroll.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-money-check-dollar"></i></div>
+                    <div class="mega-info">
+                      <h4>Payroll Software</h4>
+                      <p>Payroll on Time, Every Time</p>
+                    </div>
+                  </a>
+                  <a href="leave.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-calendar-day"></i></div>
+                    <div class="mega-info">
+                      <h4>Leave Management</h4>
+                      <p>Take a Leave From Managing Leaves</p>
+                    </div>
+                  </a>
+                  <a href="performance.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="mega-info">
+                      <h4>Performance Management</h4>
+                      <p>OKR Based Performance</p>
+                    </div>
+                  </a>
+                  <a href="lms.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="mega-info">
+                      <h4>Learning Management</h4>
+                      <p>Feature Rich Learning Management</p>
+                    </div>
+                  </a>
+                  <a href="expense-management-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-plane"></i></div>
+                    <div class="mega-info">
+                      <h4>Travel &amp; Expense</h4>
+                      <p>Control &amp; Convenience at One Place</p>
+                    </div>
+                  </a>
+                  <a href="employee-self-service.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-user-shield"></i></div>
+                    <div class="mega-info">
+                      <h4>Employee Self Service</h4>
+                      <p>Engage Empower Workforce</p>
+                    </div>
+                  </a>
+                  <a href="mobile-application.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="mega-info">
+                      <h4>Mobile App</h4>
+                      <p>Modern App for Mobile Workforce</p>
+                    </div>
+                  </a>
+                  <a href="timesheet-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-hourglass-half"></i></div>
+                    <div class="mega-info">
+                      <h4>Timesheet Software</h4>
+                      <p>Simplified Time &amp; Resource Tracking</p>
+                    </div>
+                  </a>
+                  <a href="integration.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-plug"></i></div>
+                    <div class="mega-info">
+                      <h4>Integration</h4>
+                      <p>Connect Your Favorite Tools</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="mega-menu-content" id="retirement">
+                <div class="mega-grid">
+                  <a href="pf-software.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-piggy-bank"></i></div>
+                    <div class="mega-info">
+                      <h4>Provident Fund</h4>
+                      <p>Record &amp; track PF contributions</p>
+                    </div>
+                  </a>
+                  <a href="pension-management.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-hand-holding-dollar"></i></div>
+                    <div class="mega-info">
+                      <h4>Pension Management</h4>
+                      <p>Automate pension disbursements</p>
+                    </div>
+                  </a>
+                  <a href="gratuity.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-gift"></i></div>
+                    <div class="mega-info">
+                      <h4>Gratuity</h4>
+                      <p>Calculate gratuity with ease</p>
+                    </div>
+                  </a>
+                  <a href="benevolent-fund-trust.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-heart"></i></div>
+                    <div class="mega-info">
+                      <h4>Benevolent Fund</h4>
+                      <p>Manage employee welfare funds</p>
+                    </div>
+                  </a>
+                  <a href="gpf-trust.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-vault"></i></div>
+                    <div class="mega-info">
+                      <h4>General Provident Fund</h4>
+                      <p>Government employee PF tracking</p>
+                    </div>
+                  </a>
+                  <a href="superannuation-fund-trust.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-coins"></i></div>
+                    <div class="mega-info">
+                      <h4>Superannuation Fund</h4>
+                      <p>Retirement savings plan</p>
+                    </div>
+                  </a>
+                  <a href="unexempted-provident-fund.html" class="mega-item">
+                    <div class="mega-icon"><i class="fas fa-file-invoice"></i></div>
+                    <div class="mega-info">
+                      <h4>Unexempted Provident Fund</h4>
+                      <p>Trust-based PF management</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="active">Industries <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown">
+              <a href="manufacturing-industry.html">Manufacturing</a>
+              <a href="social-welfare.html">Social Welfare</a>
+              <a href="finance.html">Finance</a>
+              <a href="automotive.html">Automotive</a>
+              <a href="healthcare.html">Healthcare</a>
+              <a href="retail.html">Retail</a>
+              <a href="information-technology.html" class="active">Information Technology</a>
+              <a href="hospitality.html">Hospitality</a>
+              <a href="startups.html">Startups</a>
+            </div>
+          </li>
+          <li><a href="partners.html">Partners</a></li>
+          <li>
+            <a href="#">Resources <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown">
+              <a href="blogs.html">Blogs</a>
+              <a href="hr-letter.html">HR Letters</a>
+              <a href="hr-policy.html">HR Policies</a>
+              <a href="hr-glossary.html">HR Glossary</a>
+              <a href="minimum-wages.html">Minimum Wages</a>
+              <a href="professional-tax.html">Professional Tax</a>
+              <a href="holiday-list.html">Holiday Lists</a>
+              <a href="job-descriptions.html">Job Descriptions</a>
+              <a href="labour-welfare-fund.html">Labour Welfare Fund</a>
+              <a href="okr.html">OKRs</a>
+            </div>
+          </li>
+          <li>
+            <a href="#">Company <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown">
+              <a href="contact.html">Contact Us</a>
+              <a href="about.html">About Us</a>
+              <a href="career.html">Career</a>
+            </div>
+          </li>
+
+          <li><a href="pricing-plan.html">Pricing</a></li>
+        </ul>
+        <div class="header-btns">
+          <a href="https://my.ektahr.com" class="btn btn-outline">Login</a>
+          <a href="https://my.ektahr.com/signup" class="btn btn-primary">Get Free Trial</a>
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-close" id="menuClose"><i class="fas fa-times"></i></div>
+    <a href="index.html">Home</a>
+
+    <div class="mobile-nav-item has-dropdown">
+      <div class="mobile-dropdown-toggle">
+        <a href="#">Product</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="mobile-dropdown-content">
+        <a href="recruitment.html">Recruitment Software</a>
+        <a href="hr-software.html">HR Software</a>
+        <a href="onboarding-software.html">Employee Onboarding</a>
+        <a href="attendance.html">Attendance Management</a>
+        <a href="payroll.html">Payroll Software</a>
+        <a href="leave.html">Leave Management</a>
+        <a href="performance.html">Performance Management</a>
+        <a href="lms.html">Learning Management</a>
+        <a href="expense-management-software.html">Travel &amp; Expense</a>
+        <a href="employee-self-service.html">Employee Self Service</a>
+        <a href="mobile-application.html">Mobile App</a>
+        <a href="timesheet-software.html">Timesheet Software</a>
+        <a href="integration.html">Integration</a>
+        <a href="pf-software.html">Provident Fund</a>
+        <a href="pension-management.html">Pension Management</a>
+        <a href="gratuity.html">Gratuity</a>
+        <a href="benevolent-fund-trust.html">Benevolent Fund</a>
+        <a href="gpf-trust.html">General Provident Fund</a>
+        <a href="superannuation-fund-trust.html">Superannuation Fund</a>
+        <a href="unexempted-provident-fund.html">Unexempted Provident Fund</a>
+      </div>
+    </div>
+
+    <div class="mobile-nav-item has-dropdown active">
+      <div class="mobile-dropdown-toggle">
+        <a href="#">Industries</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="mobile-dropdown-content">
+        <a href="manufacturing-industry.html">Manufacturing</a>
+        <a href="social-welfare.html">Social Welfare</a>
+        <a href="finance.html">Finance</a>
+        <a href="automotive.html">Automotive</a>
+        <a href="healthcare.html">Healthcare</a>
+        <a href="retail.html">Retail</a>
+        <a href="information-technology.html">Information Technology</a>
+        <a href="hospitality.html">Hospitality</a>
+        <a href="startups.html">Startups</a>
+      </div>
+    </div>
+
+    <a href="partners.html">Partners</a>
+
+    <div class="mobile-nav-item has-dropdown">
+      <div class="mobile-dropdown-toggle">
+        <a href="#">Resources</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="mobile-dropdown-content">
+        <a href="blogs.html">Blogs</a>
+        <a href="hr-letter.html">HR Letters</a>
+        <a href="hr-policy.html">HR Policies</a>
+        <a href="hr-glossary.html">HR Glossary</a>
+        <a href="minimum-wages.html">Minimum Wages</a>
+        <a href="professional-tax.html">Professional Tax</a>
+        <a href="holiday-list.html">Holiday Lists</a>
+        <a href="job-descriptions.html">Job Descriptions</a>
+        <a href="labour-welfare-fund.html">Labour Welfare Fund</a>
+        <a href="okr.html">OKRs</a>
+      </div>
+    </div>
+
+    <div class="mobile-nav-item has-dropdown">
+      <div class="mobile-dropdown-toggle">
+        <a href="#">Company</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="mobile-dropdown-content">
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+        <a href="career.html">Career</a>
+      </div>
+    </div>
+
+
+    <a href="pricing-plan.html">Pricing</a>
+    <a href="https://my.ektahr.com">Login</a>
+    <a href="https://my.ektahr.com/signup" style="color:var(--primary);">Get Free Trial</a>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+
+  <!-- ═══ HERO ═══ -->
+  <section class="ind-hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content" data-aos="fade-right">
+          <span class="section-tag">IT & ITES Industry</span>
+          <h1 class="hero-title">
+            Smarter HR for <span style="color: var(--primary);">IT Teams</span>
+          </h1>
+          <p class="hero-desc">
+            Manage shifts, timesheets, attendance, and performance easily with EKTA HR — built for modern IT workplaces.
+          </p>
+          <div class="hero-actions">
+            <a href="https://my.ektahr.com/signup" class="btn btn-primary" style="padding: 16px 35px;">Start Free
+              Trial</a>
+            <a href="contact.html" class="btn btn-outline" style="padding: 16px 35px; margin-left: 15px;">Book Demo</a>
+          </div>
+        </div>
+        <div class="hero-image-wrap" data-aos="fade-left">
+          <img src="assets/images/industries/information tech/about-img1.png" alt="IT HR Management">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ STATS ═══ -->
+  <section class="industry-stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card" data-aos="fade-up">
+          <h3>Flexi</h3>
+          <p>Shift Configuration for Developers</p>
+        </div>
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+          <h3>100%</h3>
+          <p>Digital Onboarding & Records</p>
+        </div>
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+          <h3>OKR</h3>
+          <p>Performance Measurement System</p>
+        </div>
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+          <h3>Zero</h3>
+          <p>Manual Attendance Effort</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ OVERVIEW ═══ -->
+  <section class="sp" style="background: var(--bg-light);">
+    <div class="container">
+      <div class="section-header" style="text-align: center; margin-bottom: 50px;" data-aos="fade-up">
+        <span class="section-tag">Industry Overview</span>
+        <h2>HR Activities in IT & ITES Industries</h2>
+        <p style="max-width: 760px; margin: 0 auto;">With emerging technologies, IT and ITES industries have achieved
+          greater targets over the years. But with this growth came challenges in monotonous management operations —
+          shift planning, workforce engagement, time tracking, and more. These repetitive tasks divert focus away from
+          primary business goals. EKTA HR reduces these hurdles so your teams can build, ship, and grow.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CHALLENGES & SOLUTIONS (paired cards) ═══ -->
+  <section class="sp">
+    <div class="container">
+      <div class="section-header" style="text-align: center; margin-bottom: 50px;" data-aos="fade-up">
+        <span class="section-tag">Challenges & Solutions</span>
+        <h2>IT Industry Challenges — Solved by EKTA HR</h2>
+        <p>Each challenge the IT sector faces has a uniquely crafted solution built into EKTA HR.</p>
+      </div>
+
+      <div class="challenge-sol-grid">
+
+        <!-- 1 -->
+        <div class="cs-card" data-aos="fade-up">
+          <div class="cs-header">
+            <div class="cs-icon"><i class="fas fa-clock"></i></div>
+            <h3>Managing Flexible Working Hours</h3>
+            <p>Developers, designers, and team members operate on flexible schedules, making manual attendance
+              reconciliation time-consuming and error-prone for HR and managers.</p>
+          </div>
+          <div class="cs-solution">
+            <div class="cs-label">✦ EKTA HR Solution</div>
+            <p><strong>Flexible Shift Configuration:</strong> Configure flexi-shifts where employees complete total
+              required hours on their own schedule — without following a fixed clock-in/out. EKTA HR auto-reconciles all
+              data for payroll.</p>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="cs-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="cs-header">
+            <div class="cs-icon"><i class="fas fa-list-check"></i></div>
+            <h3>Tracking Employees' Time & Tasks</h3>
+            <p>IT companies run multiple concurrent projects. Manually tracking time spent per task per team member for
+              client billing and productivity reporting was difficult and inaccurate.</p>
+          </div>
+          <div class="cs-solution">
+            <div class="cs-label">✦ EKTA HR Solution</div>
+            <p><strong>Timesheet Management:</strong> Managers can list all tasks per employee per day. The timesheet
+              reviews total time per task, measures productivity, and maintains a complete record for client projects.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="cs-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="cs-header">
+            <div class="cs-icon"><i class="fas fa-user-plus"></i></div>
+            <h3>Managing Information of New Recruits</h3>
+            <p>Manual onboarding required HR to collect, store, and maintain employee information in paper files or
+              spreadsheets — insecure, time-consuming, and difficult to search or audit.</p>
+          </div>
+          <div class="cs-solution">
+            <div class="cs-label">✦ EKTA HR Solution</div>
+            <p><strong>Online Employee Onboarding:</strong> Employees add, update, and manage their own information and
+              documents on a secure centralized platform, eliminating HR's manual collection effort entirely.</p>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="cs-card" data-aos="fade-up" data-aos-delay="240">
+          <div class="cs-header">
+            <div class="cs-icon"><i class="fas fa-chart-line"></i></div>
+            <h3>Measuring Employees' Performance</h3>
+            <p>Setting team objectives, tracking progress, and storing performance data manually in spreadsheets was
+              tedious and made it hard to act on insights or spot top performers early.</p>
+          </div>
+          <div class="cs-solution">
+            <div class="cs-label">✦ EKTA HR Solution</div>
+            <p><strong>Intuitive Performance OKR System:</strong> Create and assign custom OKRs with different rating
+              techniques. Review progress regularly and download detailed review reports to analyze targets achieved and
+              improvement areas.</p>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="cs-card" data-aos="fade-up" data-aos-delay="320">
+          <div class="cs-header">
+            <div class="cs-icon"><i class="fas fa-people-group"></i></div>
+            <h3>Lack of Engagement in Workforce</h3>
+            <p>In distributed and remote work environments, isolation grew and genuine interaction dropped. Sharing
+              company updates and maintaining morale across teams became increasingly difficult.</p>
+          </div>
+          <div class="cs-solution">
+            <div class="cs-label">✦ EKTA HR Solution</div>
+            <p><strong>Robust Workforce Engagement:</strong> EKTA HR's ESS portal and mobile app enable company-wide
+              communication. Leadership can share updates instantly with all employees, and AI mood surveys help HR
+              identify and improve team wellbeing.</p>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="cs-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="cs-header">
+            <div class="cs-icon"><i class="fas fa-fingerprint"></i></div>
+            <h3>Managing Attendance Manually</h3>
+            <p>The industry needed a contactless, hygienic attendance system that worked for both on-site employees and
+              traveling/remote staff — without biometric devices or manual data sharing.</p>
+          </div>
+          <div class="cs-solution">
+            <div class="cs-label">✦ EKTA HR Solution</div>
+            <p><strong>Mobile-Driven Geo-Fence Attendance:</strong> EKTA HR's geo-fencing lets employees mark attendance
+              via mobile without biometrics. Off-site travel staff data is captured and stored centrally for seamless
+              payroll integration.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SEGMENTS ═══ -->
+  <section class="sp" style="background: var(--bg-light);">
+    <div class="container">
+      <div class="section-header" style="text-align: center; margin-bottom: 40px;" data-aos="fade-up">
+        <span class="section-tag">Verticals</span>
+        <h2>IT Segments We Serve</h2>
+      </div>
+      <div class="segment-grid" data-aos="fade-up">
+        <div class="segment-btn"><i class="fas fa-laptop-code"></i>
+          <h4>Software Development</h4>
+        </div>
+        <div class="segment-btn"><i class="fas fa-headset"></i>
+          <h4>BPO / ITES</h4>
+        </div>
+        <div class="segment-btn"><i class="fas fa-cloud"></i>
+          <h4>Cloud & SaaS</h4>
+        </div>
+        <div class="segment-btn"><i class="fas fa-shield-halved"></i>
+          <h4>Cybersecurity</h4>
+        </div>
+        <div class="segment-btn"><i class="fas fa-robot"></i>
+          <h4>AI & Data Science</h4>
+        </div>
+        <div class="segment-btn"><i class="fas fa-mobile-screen"></i>
+          <h4>Mobile & App Dev</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SOLUTION DEEP DIVE ═══ -->
+  <section class="sp">
+    <div class="container">
+      <div class="section-header" style="text-align: center; margin-bottom: 60px;" data-aos="fade-up">
+        <span class="section-tag">Uniquely Crafted Solutions</span>
+        <h2>Built for Every Dimension of IT Workforce Management</h2>
+      </div>
+
+      <!-- Sol 1 -->
+      <div class="sol-block">
+        <div class="sol-text" data-aos="fade-right">
+          <span class="section-tag">Flexible Shifts</span>
+          <h3>Flexible Shift Configuration</h3>
+          <p>IT teams don't work 9-to-5 — and your HR software shouldn't either. EKTA HR's dynamic shift planning lets
+            employees complete their required hours flexibly, without fixed schedules.</p>
+          <div class="sol-list">
+            <div class="sol-list-item"><i class="fas fa-check-circle"></i>
+              <p>Configure flexi-shift windows per team or individual.</p>
+            </div>
+            <div class="sol-list-item"><i class="fas fa-check-circle"></i>
+              <p>Auto-calculate daily hours against configured targets.</p>
+            </div>
+            <div class="sol-list-item"><i class="fas fa-check-circle"></i>
+              <p>Overtime and late-coming alerts sent to managers in real time.</p>
+            </div>
+          </div>
+        </div>
+        <div class="sol-image" data-aos="fade-left">
+          <img src="assets/images/industries/information tech/01-01.png" alt="Flexible Shift Configuration">
+        </div>
+      </div>
+
+      <!-- Sol 2 -->
+      <div class="sol-block">
+        <div class="sol-text" data-aos="fade-left">
+          <span class="section-tag">Project Timesheets</span>
+          <h3>Monitor Employees' Tasks with Timesheet</h3>
+          <p>Keep full visibility on project progress and individual productivity. Managers can review time spent per
+            task and generate reports for client billing with a single click.</p>
+          <div class="sol-list">
+            <div class="sol-list-item"><i class="fas fa-check-circle"></i>
+              <p>List tasks per employee for each project or day.</p>
+            </div>
+            <div class="sol-list-item"><i class="fas fa-check-circle"></i>
+              <p>Review time taken vs. estimated for productivity analysis.</p>
+            </div>
+            <div class="sol-list-item"><i class="fas fa-check-circle"></i>
+              <p>Export timesheet reports for client project documentation.</p>
+            </div>
+          </div>
+        </div>
+        <div class="sol-image" data-aos="fade-right">
+          <img src="assets/images/industries/information tech/01-02.png" alt="Timesheet Tracking">
+        </div>
+      </div>
+
+      <!-- Sol 3 -->
+      <div class="sol-block">
+        <div class="sol-text" data-aos="fade-right">
+          <span class="section-tag">Digital Onboarding</span>
+          <h3>Online Employee Onboarding</h3>
+          <p>Let new hires manage their own information securely. No more paperwork piles, email chains, or manual data
+            entry — everything happens digitally on a centralized, secure platform.</p>
+          <div class="sol-list">
+            <div class="sol-list-item"><i class="fas fa-check-circle"></i>
+              <p>Employees self-fill personal, tax, and banking details.</p>
+            </div>
+            <div class="sol-list-item"><i class="fas fa-check-circle"></i>
+              <p>Digital document uploads with verification workflow.</p>
+            </div>
+            <div class="sol-list-item"><i class="fas fa-check-circle"></i>
+              <p>Role-based access ensures data security and privacy.</p>
+            </div>
+          </div>
+        </div>
+        <div class="sol-image" data-aos="fade-left">
+          <img src="assets/images/industries/information tech/Online Onboarding.png" alt="Online Onboarding">
+        </div>
+      </div>
+
+      <!-- Sol 4 -->
+      <div class="sol-block">
+        <div class="sol-text" data-aos="fade-left">
+          <span class="section-tag">OKR Performance</span>
+          <h3>Intuitive Performance Measurement with OKRs</h3>
+          <p>Replace spreadsheet reviews with a structured OKR system. Set clear objectives, track key results, and
+            generate meaningful performance reports that drive growth.</p>
+          <div class="sol-list">
+            <div class="sol-list-item"><i class="fas fa-check-circle"></i>
+              <p>Create and assign OKRs with custom rating scales.</p>
+            </div>
+            <div class="sol-list-item"><i class="fas fa-check-circle"></i>
+              <p>Regular check-in reminders and continuous feedback loops.</p>
+            </div>
+            <div class="sol-list-item"><i class="fas fa-check-circle"></i>
+              <p>Download review reports highlighting targets and gaps.</p>
+            </div>
+          </div>
+        </div>
+        <div class="sol-image" data-aos="fade-right">
+          <img src="assets/images/industries/information tech/Employee - 2.png" alt="Performance OKR">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ FAQ ═══ -->
+  <section class="sp" style="background: var(--bg-light);">
+    <div class="container">
+      <div class="section-header" style="text-align: center; margin-bottom: 50px;" data-aos="fade-up">
+        <span class="section-tag">IT Support</span>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-wrapper">
+        <div class="faq-box active" data-aos="fade-up">
+          <div class="faq-q">How does EKTA HR handle flexible working hours for developers? <i
+              class="fas fa-chevron-down"></i></div>
+          <div class="faq-a">EKTA HR's flexi-shift configuration lets you define a daily hour target for each employee
+            rather than fixed clock-in times. Employees complete their hours within a configurable window, and the
+            system auto-reconciles all records for attendance and payroll — no manual tracking needed.</div>
+        </div>
+        <div class="faq-box" data-aos="fade-up" data-aos-delay="60">
+          <div class="faq-q">Can managers track time spent on specific client projects? <i
+              class="fas fa-chevron-down"></i></div>
+          <div class="faq-a">Yes. EKTA HR's timesheet module allows managers to assign tasks to employees linked to
+            specific projects. Time logs are captured per task, and managers can generate project-wise reports for
+            client billing, productivity analysis, and delivery tracking.</div>
+        </div>
+        <div class="faq-box" data-aos="fade-up" data-aos-delay="120">
+          <div class="faq-q">How does EKTA HR improve remote workforce engagement? <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-a">EKTA HR's ESS portal and mobile app keep your distributed teams connected. Company-wide
+            announcements, policy updates, and HR communications reach every employee instantly. Built-in mood surveys
+            help HR identify disengagement early and act before it escalates.</div>
+        </div>
+        <div class="faq-box" data-aos="fade-up" data-aos-delay="180">
+          <div class="faq-q">Is geo-fencing suitable for remote and hybrid IT teams? <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-a">Yes. EKTA HR's geo-fencing allows employees to mark attendance from any location via mobile
+            — whether at office, client site, or working remotely. All data syncs centrally in real time, eliminating
+            the need for physical biometric devices.</div>
+        </div>
+        <div class="faq-box" data-aos="fade-up" data-aos-delay="240">
+          <div class="faq-q">Can EKTA HR handle performance reviews for engineering teams? <i
+              class="fas fa-chevron-down"></i></div>
+          <div class="faq-a">Absolutely. The OKR-based performance module lets you create custom objectives and key
+            results per team or individual, assign rating scales, set review cycles, and generate downloadable reports —
+            all within the EKTA HR platform without needing separate tools.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA ═══ -->
+  <!-- <section class="sp" style="padding: 80px 0;">
+    <div class="container" style="text-align: center;">
+      <div class="glass-card"
+        style="padding: 80px 40px; background: linear-gradient(135deg, var(--secondary) 0%, #000 100%); color: var(--white); overflow: hidden; position: relative; border: none;"
+        data-aos="zoom-in">
+
+        <div
+          style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: var(--primary); opacity: 0.15; border-radius: 50%;">
+        </div>
+
+        <h2 style="color: var(--white); margin-bottom: 24px;" class="sp_h2">
+          Build an Enthusiastic Workforce <br>with EKTA HR Today
+        </h2>
+
+        <p style="color: rgba(255,255,255,0.7); max-width: 650px; margin: 0 auto 48px; font-size: 1.125rem;">
+          Join leading IT and ITES companies that have reinvigorated their workforce management using EKTA HR — and
+          freed their teams to focus on what matters most: building great products.
+        </p>
+
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+          <a href="https://my.ektahr.com/signup" class="btn btn-primary" style="padding: 18px 48px;">
+            Start Your Free Trial
+          </a>
+          <a href="contact.html" class="btn btn-outline"
+            style="border-color: var(--white); color: var(--white); padding: 18px 48px;">
+            Schedule a Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+  <!-- Fixed CTA Banner -->
+  <section class="fixed-cta-section" data-aos="zoom-in">
+    <div class="fixed-cta-card">
+      <h5>Transform your workforce with the power of EKTA HR. — <span style="color: var(--secondary)">3 months
+          free.</span></h5>
+      <a href="https://my.ektahr.com/signup" class="btn-fixed-cta">Start 3 months free trail</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Column 1: Logo & About -->
+        <div class="footer-brand">
+          <img src="assets/images/logo/web-logo-white.png" alt="EKTA HR">
+          <p style="margin-top: 24px; line-height: 1.7;">
+            EKTA HR is an advanced Human Resource Management System designed
+            to simplify operations, enhance employee experience, and scale
+            effortlessly with growing businesses.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="partners.html">Partners</a></li>
+            <li><a href="pricing-plan.html">Pricing</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Location Map -->
+        <div class="footer-links">
+          <h4>Core Features</h4>
+          <ul>
+            <li><a href="recruitment.html">Recruitment Software</a></li>
+            <li><a href="hr-software.html">HR Software</a></li>
+            <li> <a href="onboarding-software.html">Employee Onboarding</a></li>
+            <li><a href="attendance.html">Attendance Management</a></li>
+            <li> <a href="payroll.html">Payroll Software</a></li>
+            <li> <a href="leave.html">Leave Management</a></li>
+            <li><a href="performance.html">Performance</a></li>
+            <li><a href="lms.html">Learning Management</a></li>
+            <li><a href="expense-management-software.html">Travel & Expense</a></li>
+            <li><a href="employee-self-service.html">Employee Self Service</a></li>
+            <li><a href="mobile-application.html">Mobile App</a></li>
+            <li><a href="timesheet-software.html">Timesheet Software</a></li>
+            <li><a href="integration.html">Integration</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Location Map -->
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="hr-letter.html">HR Letters</a></li>
+            <li> <a href="hr-policy.html">HR Policies</a></li>
+            <li><a href="hr-glossary.html">HR Glossary</a></li>
+            <li> <a href="minimum-wages.html">Minimum Wages </a></li>
+            <li> <a href="professional-tax.html">Professional Tax</a></li>
+            <li><a href="holiday-list.html">Holiday Lists</a></li>
+            <li><a href="job-descriptions.html">Job Descriptions</a></li>
+            <li><a href="labour-welfare-fund.html">Labour Welfare Fund</a></li>
+            <li><a href="okr.html">OKRs</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact + Newsletter -->
+        <div class="footer-links">
+          <h4>Industries</h4>
+          <ul>
+            <li><a href="manufacturing-industry.html">Manufacturing</a></li>
+            <li><a href="social-welfare.html">Social Welfare</a></li>
+            <li> <a href="finance.html">Finance</a></li>
+            <li><a href="automotive.html">Automotive</a></li>
+            <li> <a href="healthcare.html">Healthcare</a></li>
+            <li> <a href="retail.html">Retail</a></li>
+            <li><a href="information-technology.html">Information Technology</a></li>
+            <li><a href="hospitality.html">Hospitality</a></li>
+            <li><a href="startups.html">Startups</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="copyright"
+        style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+
+        <p> &copy; 2026 EKTA HR, All rights
+          reserved. </p>
+
+        <div style="display: flex; gap: 20px;">
+          <a href="https://www.linkedin.com/company/myektahr/" target="_blank" style="color: #fff;"
+            class="social-icons"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/people/Ektahr/61586428776510/" target="_blank" style="color: #fff;"
+            class="social-icons"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/my.ektahr/" target="_blank" style="color: #fff;" class="social-icons"><i
+              class="fab fa-instagram"></i></a>
+          <!-- <a href="#" style="color: #fff;" class="social-icons"><i class="fab fa-whatsapp"></i></a> -->
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true, disable: function () { return window.innerWidth < 768; } });
+
+    // Header Scroll Effect
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) header.classList.add('scrolled');
+      else header.classList.remove('scrolled');
+    });
+
+    // Mega Menu Tab Switching
+    const tabBtns = document.querySelectorAll('.mega-tab-btn');
+    const tabContents = document.querySelectorAll('.mega-menu-content');
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('mouseenter', () => {
+        const target = btn.getAttribute('data-tab');
+
+        tabBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        tabContents.forEach(content => {
+          content.classList.remove('active');
+          if (content.id === target) {
+            content.classList.add('active');
+          }
+        });
+      });
+    });
+
+    // Mobile Dropdown Accordion
+    const mobileDropdownToggles = document.querySelectorAll('.mobile-dropdown-toggle');
+
+    mobileDropdownToggles.forEach(toggle => {
+      toggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        const parent = toggle.closest('.mobile-nav-item');
+
+        // Close other open accordions
+        document.querySelectorAll('.mobile-nav-item').forEach(item => {
+          if (item !== parent) item.classList.remove('active');
+        });
+
+        parent.classList.toggle('active');
+      });
+    });
+
+    // Mobile Menu Logic
+    const menuToggle = document.getElementById('menuToggle');
+    const menuClose = document.getElementById('menuClose');
+    const mobileNav = document.getElementById('mobileNav');
+    const overlay = document.getElementById('overlay');
+
+    const toggleMenu = () => {
+      mobileNav.classList.toggle('active');
+      overlay.classList.toggle('active');
+      document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : 'auto';
+    };
+
+    menuToggle.addEventListener('click', toggleMenu);
+    menuClose.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', toggleMenu);
+
+    // FAQ Logic
+    const faqBoxes = document.querySelectorAll('.faq-box');
+    faqBoxes.forEach(box => {
+      box.querySelector('.faq-q').addEventListener('click', () => {
+        const isActive = box.classList.contains('active');
+        faqBoxes.forEach(b => b.classList.remove('active'));
+        if (!isActive) box.classList.add('active');
+      });
+    });
+  </script>
+</body>
+
+</html>
