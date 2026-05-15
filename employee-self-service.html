@@ -295,6 +295,93 @@
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
     }
 
+
+    .home-final-card {
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.65fr);
+      gap: 28px;
+      align-items: center;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 22px;
+      background: #fff;
+      box-shadow: 0 30px 90px rgba(18, 18, 18, 0.1);
+      margin: 50px 0px ;
+    }
+
+    .home-final-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 32px;
+      right: 32px;
+      height: 5px;
+      background: var(--primary);
+      border-radius: 0 0 10px 10px;
+      pointer-events: none;
+    }
+
+    .home-final-card::after {
+      content: none;
+    }
+
+    .home-final-card>* {
+      position: relative;
+      z-index: 1;
+    }
+
+    .home-final-card h2 {
+      color: var(--secondary);
+      font-size: 38px;
+      line-height: 1.15;
+      margin-bottom: 14px;
+      white-space: normal;
+    }
+
+    .home-final-card p {
+      color: var(--text-muted);
+      max-width: 760px;
+      font-size: 17px;
+    }
+
+    .home-final-copy {
+      padding: 34px 30px;
+    }
+
+    .home-final .home-actions {
+      align-self: stretch;
+      display: grid;
+      align-content: center;
+      gap: 14px;
+      margin-top: 0 !important;
+      padding: 30px;
+      border-radius: 22px;
+      background: var(--secondary);
+      border: 1px solid rgba(18, 18, 18, 0.08);
+    }
+
+    .home-final .btn-primary {
+      background: var(--primary) !important;
+      background-image: none !important;
+      color: var(--secondary) !important;
+      border-color: var(--primary) !important;
+      justify-content: center;
+    }
+
+    .home-final .btn-outline {
+      background: transparent !important;
+      background-image: none !important;
+      border-color: rgba(255, 255, 255, 0.32) !important;
+      color: var(--white) !important;
+      justify-content: center;
+    }
+
+    .home-final+footer {
+      margin-top: 0;
+    }
+
     /* ── FAQ ── */
     .faq-item {
       border: 1px solid var(--border);
@@ -345,6 +432,942 @@
       color: var(--text-muted);
       line-height: 1.8;
       margin: 0;
+    }
+
+    /* Employee Self Service refresh */
+    .ess-page {
+      overflow: hidden;
+      background: var(--white);
+    }
+
+    .ess-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 13px;
+      border-radius: 999px;
+      background: rgba(249, 184, 36, .14);
+      border: 1px solid rgba(249, 184, 36, .32);
+      color: var(--secondary);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .ess-kicker i,
+    .ess-icon {
+      color: var(--primary-dark);
+    }
+
+    .ess-hero {
+      position: relative;
+      padding: 150px 0 58px;
+      background: linear-gradient(rgba(249, 184, 36, .045) 1px, transparent 1px), linear-gradient(90deg, rgba(249, 184, 36, .045) 1px, transparent 1px), linear-gradient(180deg, #fff 0%, #fffaf0 100%);
+      background-size: 34px 34px, 34px 34px, auto;
+    }
+
+    .ess-hero::before {
+      content: '';
+      position: absolute;
+      inset: 86px 0 auto;
+      height: 280px;
+      background: linear-gradient(180deg, rgba(249, 184, 36, .12), transparent);
+      pointer-events: none;
+    }
+
+    .ess-hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(430px, .92fr);
+      gap: 48px;
+      align-items: center;
+    }
+
+    .ess-hero h1 {
+      margin: 20px 0 0;
+      color: var(--secondary);
+      font-size: clamp(38px, 4.3vw, 64px);
+      line-height: 1.04;
+      font-weight: 900;
+      letter-spacing: 0;
+    }
+
+    .ess-hero h1 em,
+    .ess-section h2 em,
+    .ess-copy h2 em {
+      color: var(--primary-dark);
+      font-style: normal;
+    }
+
+    .ess-hero-sub {
+      max-width: 760px;
+      margin: 22px 0 0;
+      color: var(--text-muted);
+      font-size: 19px;
+      line-height: 1.7;
+      font-weight: 500;
+    }
+
+    .ess-actions,
+    .ess-final-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .ess-trust,
+    .ess-notes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      margin-top: 22px;
+      color: var(--secondary);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .ess-trust span {
+      color: var(--text-muted);
+    }
+
+    .ess-portal-shell {
+      position: relative;
+      min-height: 540px;
+      padding: 20px;
+      border-radius: 38px;
+      background: linear-gradient(145deg, var(--secondary), #050505);
+      border: 1px solid rgba(249, 184, 36, .28);
+      box-shadow: 0 34px 80px rgba(18, 18, 18, .26);
+    }
+
+    .ess-portal-shell::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: linear-gradient(rgba(255, 255, 255, .045) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, .045) 1px, transparent 1px);
+      background-size: 30px 30px;
+    }
+
+    .ess-portal-card {
+      position: relative;
+      z-index: 1;
+      border-radius: 28px;
+      overflow: hidden;
+      background: var(--white);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .ess-card-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 20px;
+      background: var(--secondary);
+      color: var(--white);
+    }
+
+    .ess-card-top h4 {
+      margin: 0 0 6px;
+      color: var(--white);
+      font-size: 16px;
+    }
+
+    .ess-card-top p,
+    .ess-att-detail p {
+      margin: 0;
+      color: rgba(255, 255, 255, .68);
+      font-size: 13px;
+    }
+
+    .ess-window-dots {
+      display: flex;
+      gap: 6px;
+      padding-top: 4px;
+    }
+
+    .ess-window-dots span {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .34);
+    }
+
+    .ess-card-tabs {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .ess-card-tab {
+      padding: 13px 8px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 12px;
+      font-weight: 900;
+      border-right: 1px solid var(--border);
+    }
+
+    .ess-card-tab:last-child {
+      border-right: 0;
+    }
+
+    .ess-card-tab.active {
+      background: var(--primary);
+      color: var(--secondary);
+    }
+
+    .ess-card-body {
+      padding: 20px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .ess-pay-row,
+    .ess-preview-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(18, 18, 18, .08);
+      color: var(--secondary);
+      font-size: 14px;
+      font-weight: 800;
+      overflow-wrap: anywhere;
+    }
+
+    .ess-pay-row span:first-child,
+    .ess-preview-row span:first-child {
+      color: var(--text-muted);
+      font-weight: 700;
+    }
+
+    .ess-pay-row .deduct,
+    .ess-preview-row.deduct span:last-child {
+      color: #d9483f;
+    }
+
+    .ess-pay-row.net {
+      margin-top: 4px;
+      padding: 16px;
+      border: 0;
+      border-radius: 16px;
+      background: var(--primary-light);
+    }
+
+    .ess-floating-pill {
+      position: absolute;
+      z-index: 2;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 14px;
+      border-radius: 999px;
+      color: var(--secondary);
+      background: var(--primary);
+      box-shadow: var(--shadow-md);
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .ess-floating-pill.one {
+      left: -10px;
+      top: 38px;
+    }
+
+    .ess-floating-pill.two {
+      right: -12px;
+      bottom: 42px;
+      background: var(--white);
+    }
+
+    .ess-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #35c878;
+      box-shadow: 0 0 0 6px rgba(53, 200, 120, .13);
+    }
+
+    .ess-stats {
+      padding: 0 0 24px;
+      background: linear-gradient(180deg, var(--secondary), #1a1a1a);
+      color: var(--white);
+    }
+
+    .ess-stats-grid {
+      transform: translateY(20px);
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      padding: 18px;
+      border-radius: 24px;
+      background: rgba(255, 255, 255, .08);
+      border: 1px solid rgba(255, 255, 255, .12);
+      backdrop-filter: blur(14px);
+    }
+
+    .ess-stat-card {
+      min-height: 92px;
+      padding: 14px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, .08);
+    }
+
+    .ess-stat-card strong {
+      display: block;
+      color: var(--primary);
+      font-size: 34px;
+      line-height: 1;
+      margin-bottom: 8px;
+      font-weight: 900;
+    }
+
+    .ess-stat-card span {
+      color: rgba(255, 255, 255, .72);
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+
+    .ess-section {
+      position: relative;
+      padding: 84px 0;
+      overflow: hidden;
+    }
+
+    .ess-soft {
+      background: linear-gradient(rgba(249, 184, 36, .045) 1px, transparent 1px), linear-gradient(90deg, rgba(249, 184, 36, .045) 1px, transparent 1px), #fffaf0;
+      background-size: 34px 34px;
+    }
+
+    .ess-section-head {
+      max-width: 900px;
+      margin: 0 auto 34px;
+      text-align: center;
+    }
+
+    .ess-section h2,
+    .ess-section-head h2,
+    .ess-copy h2,
+    .ess-final-card h2 {
+      margin-top: 14px;
+      color: var(--secondary);
+      font-size: clamp(30px, 3vw, 44px);
+      line-height: 1.12;
+      letter-spacing: 0;
+      font-weight: 900;
+    }
+
+    .ess-section-sub,
+    .ess-copy>p,
+    .ess-compliance-card p,
+    .ess-testimonial p {
+      margin-top: 14px;
+      color: var(--text-muted);
+      font-size: 15.5px;
+      line-height: 1.72;
+      font-weight: 400;
+    }
+
+    .ess-split {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 34px;
+      align-items: center;
+    }
+
+    .ess-feature-list,
+    .ess-leave-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .ess-feature-list li,
+    .ess-leave-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 18px;
+      border-radius: 20px;
+      background: var(--white);
+      border: 1px solid rgba(18, 18, 18, .08);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .ess-feature-list h4,
+    .ess-leave-list h4 {
+      margin: 0 0 6px;
+      color: var(--secondary);
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .ess-feature-list p,
+    .ess-leave-list p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .ess-feature-icon,
+    .ess-check,
+    .ess-card-icon {
+      flex: 0 0 auto;
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      font-size: 17px;
+    }
+
+    .ess-check {
+      border-radius: 50%;
+      background: var(--primary);
+      color: var(--secondary);
+      font-size: 14px;
+    }
+
+    .ess-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 24px;
+      color: var(--primary-dark);
+      font-size: 14px;
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    .ess-preview-card,
+    .ess-att-card,
+    .ess-leave-panel {
+      padding: 28px;
+      border-radius: 28px;
+      background: var(--white);
+      border: 1px solid rgba(18, 18, 18, .08);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .ess-preview-head {
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .ess-preview-head h3,
+    .ess-att-card h4,
+    .ess-leave-panel h4 {
+      margin: 0 0 8px;
+      color: var(--secondary);
+      font-size: 20px;
+      line-height: 1.25;
+    }
+
+    .ess-preview-head p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+
+    .ess-badge,
+    .ess-comp-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      margin-top: 14px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      background: var(--primary-light);
+      color: var(--secondary);
+      font-size: 11px;
+      font-weight: 900;
+    }
+
+    .ess-preview-body {
+      display: grid;
+      gap: 2px;
+      padding: 16px 0;
+    }
+
+    .ess-preview-net {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 18px;
+      border-radius: 18px;
+      background: var(--secondary);
+      color: var(--white);
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    .ess-preview-net span:last-child {
+      color: var(--primary);
+    }
+
+    .ess-preview-actions,
+    .ess-leave-form-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .ess-ui-btn,
+    .ess-select {
+      border: 1px solid rgba(18, 18, 18, .1);
+      border-radius: 14px;
+      background: var(--white);
+      color: var(--secondary);
+      padding: 12px 14px;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .ess-ui-btn.primary,
+    .ess-reg-btn,
+    .ess-apply-btn {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: var(--secondary);
+    }
+
+    .ess-att-card {
+      background: linear-gradient(145deg, var(--secondary), #050505);
+      color: var(--white);
+      border-color: rgba(249, 184, 36, .24);
+    }
+
+    .ess-att-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .ess-att-card h4,
+    .ess-att-detail h5 {
+      color: var(--white);
+    }
+
+    .ess-status,
+    .ess-att-tag {
+      display: inline-flex;
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: rgba(249, 184, 36, .16);
+      color: var(--primary);
+      font-size: 11px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .ess-att-row {
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 16px;
+      padding: 16px 0;
+      border-top: 1px solid rgba(255, 255, 255, .1);
+    }
+
+    .ess-att-time {
+      color: rgba(255, 255, 255, .56);
+      font-size: 12px;
+      line-height: 1.5;
+      font-weight: 800;
+    }
+
+    .ess-att-detail h5 {
+      margin: 0 0 6px;
+      font-size: 14px;
+    }
+
+    .ess-att-tag {
+      margin-top: 10px;
+      background: rgba(118, 229, 173, .13);
+      color: #76e5ad;
+    }
+
+    .ess-att-tag.warn {
+      background: rgba(249, 184, 36, .16);
+      color: var(--primary);
+    }
+
+    .ess-reg-btn,
+    .ess-apply-btn {
+      width: 100%;
+      margin-top: 20px;
+      border: 0;
+      border-radius: 16px;
+      padding: 14px 18px;
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    .ess-leave-balance-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .ess-balance {
+      min-height: 130px;
+      padding: 18px;
+      border-radius: 22px;
+      background: var(--secondary);
+      color: var(--white);
+    }
+
+    .ess-balance span {
+      color: rgba(255, 255, 255, .58);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .ess-balance strong {
+      display: block;
+      margin: 12px 0 6px;
+      color: var(--primary);
+      font-size: 38px;
+      line-height: 1;
+    }
+
+    .ess-balance p {
+      margin: 0;
+      color: rgba(255, 255, 255, .74);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .ess-select {
+      flex: 1 1 180px;
+      min-width: 0;
+    }
+
+    .ess-compliance-grid,
+    .ess-testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+      margin-top: 34px;
+    }
+
+    .ess-compliance-card,
+    .ess-testimonial {
+      position: relative;
+      padding: 28px;
+      border-radius: 26px;
+      background: var(--white);
+      border: 1px solid rgba(18, 18, 18, .08);
+      box-shadow: var(--shadow-md);
+      transition: var(--transition);
+    }
+
+    .ess-compliance-card:hover,
+    .ess-testimonial:hover {
+      transform: translateY(-5px);
+      border-color: rgba(249, 184, 36, .55);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .ess-card-icon {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 18px;
+      border-radius: 16px;
+      font-size: 18px;
+    }
+
+    .ess-compliance-card h3 {
+      margin: 0;
+      color: var(--secondary);
+      font-size: 20px;
+      line-height: 1.25;
+    }
+
+    .ess-table-wrap {
+      overflow-x: auto;
+      margin-top: 34px;
+      border-radius: 26px;
+      background: var(--white);
+      border: 1px solid rgba(18, 18, 18, .08);
+      box-shadow: var(--shadow-md);
+    }
+
+    .ess-table {
+      width: 100%;
+      min-width: 780px;
+      border-collapse: collapse;
+    }
+
+    .ess-table th,
+    .ess-table td {
+      padding: 18px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      color: var(--secondary);
+      font-size: 14px;
+      line-height: 1.5;
+      overflow-wrap: anywhere;
+    }
+
+    .ess-table th {
+      background: var(--secondary);
+      color: var(--white);
+      font-weight: 900;
+    }
+
+    .ess-table th.highlight,
+    .ess-table td.highlight {
+      background: var(--primary-light);
+      color: var(--secondary);
+      font-weight: 900;
+    }
+
+    .ess-table .good {
+      color: #217a48;
+      font-weight: 900;
+    }
+
+    .ess-table .bad {
+      color: #b94138;
+      font-weight: 800;
+    }
+
+    .ess-testimonial p {
+      margin: 0 0 24px;
+      font-size: 15px;
+    }
+
+    .ess-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .ess-avatar {
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: var(--secondary);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .ess-author h5 {
+      margin: 0 0 4px;
+      color: var(--secondary);
+      font-size: 15px;
+    }
+
+    .ess-author span {
+      color: var(--text-muted);
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.45;
+    }
+
+    .ess-faq-wrap {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 44px;
+      align-items: start;
+    }
+
+    .ess-faq-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .ess-page .faq-item {
+      border: 1px solid rgba(18, 18, 18, .08);
+      border-radius: 18px;
+      margin: 0;
+      background: var(--white);
+      box-shadow: 0 14px 34px rgba(18, 18, 18, .05);
+    }
+
+    .ess-page .faq-item.open {
+      border-color: rgba(249, 184, 36, .65);
+    }
+
+    .ess-page .faq-q {
+      padding: 18px 20px;
+      color: var(--secondary);
+      font-weight: 900;
+      line-height: 1.45;
+    }
+
+    .ess-page .faq-a.open {
+      max-height: 720px;
+      padding: 0 20px 18px;
+    }
+
+    .ess-final {
+      padding: 84px 0;
+      background: var(--white);
+    }
+
+    .ess-final-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 28px;
+      align-items: center;
+      padding: 44px;
+      border-radius: 30px;
+      background: linear-gradient(135deg, rgba(249, 184, 36, .96), rgba(255, 222, 139, .96)), var(--primary);
+      color: var(--secondary);
+      box-shadow: 0 28px 80px rgba(249, 184, 36, .28);
+      overflow: hidden;
+    }
+
+    .ess-final-card h2 {
+      margin: 0;
+    }
+
+    .ess-final-card p {
+      margin: 14px 0 0;
+      max-width: 760px;
+      color: rgba(18, 18, 18, .72);
+      font-size: 16px;
+      line-height: 1.68;
+      font-weight: 700;
+    }
+
+    .ess-final-actions {
+      justify-content: flex-end;
+    }
+
+    .ess-final-actions .btn-primary {
+      background: var(--secondary);
+      color: var(--white);
+      border-color: var(--secondary);
+    }
+
+    .ess-final-actions .btn-outline {
+      background: var(--white);
+      color: var(--secondary) !important;
+      border-color: rgba(18, 18, 18, .14) !important;
+    }
+
+    .ess-notes {
+      color: rgba(18, 18, 18, .7);
+      font-size: 12px;
+    }
+
+    @media (max-width:1100px) {
+
+      .ess-hero-grid,
+      .ess-split,
+      .ess-faq-wrap,
+      .ess-final-card {
+        grid-template-columns: 1fr;
+      }
+
+      .ess-portal-shell {
+        max-width: 620px;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .ess-compliance-grid,
+      .ess-testimonial-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .ess-final-actions {
+        justify-content: flex-start;
+      }
+    }
+
+    @media (max-width:760px) {
+      .ess-hero {
+        padding: 118px 0 42px;
+      }
+
+      .ess-hero-grid {
+        gap: 34px;
+      }
+
+      .ess-hero h1 {
+        font-size: 38px;
+      }
+
+      .ess-hero-sub {
+        font-size: 16px;
+      }
+
+      .ess-actions,
+      .ess-final-actions {
+        display: grid;
+      }
+
+      .ess-actions .btn,
+      .ess-final-actions .btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .ess-portal-shell {
+        min-height: auto;
+        padding: 12px;
+        border-radius: 24px;
+      }
+
+      .ess-floating-pill {
+        position: static;
+        margin: 0 0 12px;
+      }
+
+      .ess-card-tabs {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .ess-stats-grid,
+      .ess-leave-balance-grid,
+      .ess-compliance-grid,
+      .ess-testimonial-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .ess-section,
+      .ess-final {
+        padding: 62px 0;
+      }
+
+      .ess-att-row {
+        grid-template-columns: 1fr;
+      }
+
+      .ess-preview-card,
+      .ess-att-card,
+      .ess-leave-panel,
+      .ess-compliance-card,
+      .ess-testimonial,
+      .ess-final-card {
+        padding: 22px;
+        border-radius: 22px;
+      }
+
+      .ess-section h2,
+      .ess-section-head h2,
+      .ess-copy h2,
+      .ess-final-card h2 {
+        font-size: 30px;
+      }
     }
   </style>
 </head>
@@ -672,280 +1695,558 @@
   </div>
   <div class="overlay" id="overlay"></div>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-content" style="text-align:center; max-width:880px; margin:0 auto;">
-        <span class="section-tag" data-aos="fade-up">Employee Self-Service</span>
-        <h1 data-aos="fade-up" data-aos-delay="100" class="hero-title">
-          Empower Your Workforce<br>
-          <span style="color:var(--primary-dark);">with Self-Service.</span>
-        </h1>
-        <p data-aos="fade-up" data-aos-delay="200" class="hero-text">
-          Let employees manage HR, payroll, and performance data anytime, anywhere.
-        </p>
-        <div class="header-btns-mobile" data-aos="fade-up" data-aos-delay="300">
-          <a href="contact.html" class="btn btn-primary animate-pulse-yellow">
-            <i class="fas fa-calendar-check"></i> Request Free Demo
-          </a>
-          <a href="#advantage" class="btn btn-outline">
-            <i class="fas fa-play" style="font-size:10px; margin-right:6px;"></i> See How it Works
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Stats Bar -->
-  <div class="rec-stats">
-    <div class="container">
-      <div class="rec-stats-grid">
-        <div data-aos="fade-up">
-          <div class="rs-number">60%</div>
-          <div clas`s="rs-label">Reduction in HR Burden</div>
-        </div>
-        <div data-aos="fade-up" data-aos-delay="100">
-          <div class="rs-number">24/7</div>
-          <div class="rs-label">Information Accessibility</div>
-        </div>
-        <div data-aos="fade-up" data-aos-delay="200">
-          <div class="rs-number">100%</div>
-          <div class="rs-label">Data Transparency</div>
-        </div>
-        <div data-aos="fade-up" data-aos-delay="300">
-          <div class="rs-number">Go</div>
-          <div class="rs-label">Paperless with ESS</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Advantage Section -->
-  <section class="sp" id="advantage">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <span class="section-tag">EKTA Advantage</span>
-        <h2>Created for Empowering<br>Modern Workforces</h2>
-        <p>Allow your employees to store and access varied information through a centralized portal, fostering a
-          transparent work culture.</p>
-      </div>
-
-      <div class="journey-grid">
-
-        <div class="card-inverted-wrapper" data-aos="fade-up">
-          <div class="journey-icon"><i class="fas fa-hands-helping"></i></div>
-          <div class="card-inverted">
-            <h4>Reduces HR Burden</h4>
-            <p>Employees can update profiles, apply for leave, and view payslips independently, freeing HR from
-              repetitive manual coordination.</p>
-          </div>
-        </div>
-
-        <div class="card-inverted-wrapper" data-aos="fade-up" data-aos-delay="100">
-          <div class="journey-icon"><i class="fas fa-heart"></i></div>
-          <div class="card-inverted">
-            <h4>Increase Engagement</h4>
-            <p>Autonomy in daily tasks motivates employees and strengthens their connection with the organization
-              through interactive features.</p>
-          </div>
-        </div>
-
-        <div class="card-inverted-wrapper" data-aos="fade-up" data-aos-delay="200">
-          <div class="journey-icon"><i class="fas fa-shield-alt"></i></div>
-          <div class="card-inverted">
-            <h4>Tightened Security</h4>
-            <p>Equipped with cloud storage and separate login credentials, ensuring highly secure access to sensitive
-              personal and financial data.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Section 1 — Daily Operations -->
-  <div class="feature-section alt">
-    <div class="container">
-      <div class="feature-wrap">
-
-        <!-- Visual -->
-        <div class="feature-visual" data-aos="fade-right">
-          <div class="fv-icon-large"><i class="fas fa-user-check"></i></div>
-          <p
-            style="font-size:13px; color:var(--text-muted); margin-bottom:16px; font-weight:600; text-transform:uppercase; letter-spacing:1px;">
-            Self-Service Hub</p>
-          <ul class="fv-step-list">
-            <li><i class="fas fa-fingerprint"></i> Online Punch & Time Tracking</li>
-            <li><i class="fas fa-calendar-minus"></i> Real-time Leave Applications</li>
-            <li><i class="fas fa-file-invoice-dollar"></i> Instant Payslip Downloads</li>
-          </ul>
-        </div>
-
-        <!-- Content -->
-        <div class="feature-content" data-aos="fade-left">
-          <span class="section-tag">Operations</span>
-          <h2>A Unified Gateway for Employees</h2>
-          <p>Manage all daily administrative tasks from one place. No more waiting for emails or approvals for basic HR
-            updates.</p>
-
-          <div class="sub-feature">
-            <div class="sf-icon"><i class="fas fa-clock-rotate-left"></i></div>
-            <div class="sf-text">
-              <h4>Attendance Regularization</h4>
-              <p>Found a missed punch? Request regularization directly through the portal for manager approval in
-                seconds.</p>
+  <main class="ess-page">
+    <!-- HERO -->
+    <section class="ess-hero">
+      <div class="container">
+        <div class="ess-hero-grid">
+          <div data-aos="fade-right">
+            <div class="ess-kicker"><i class="fas fa-user-shield"></i> India's #1 ESS Portal · 1,000+ Companies</div>
+            <h1>Employee Self Service <em>Portal</em> for Indian Businesses</h1>
+            <p class="ess-hero-sub">Give every employee instant access to payslips, leave, attendance regularisation,
+              Form 16, and PF — all from one secure dashboard. No HR follow-ups. No paper.</p>
+            <div class="ess-actions">
+              <a href="https://my.ektahr.com/signup" class="btn btn-primary"><i class="fas fa-rocket"></i> Start 3
+                Months Free</a>
+              <a href="contact.html" class="btn btn-outline"><i class="fas fa-calendar-check"></i> Request Demo</a>
+            </div>
+            <div class="ess-trust">
+              <strong>₹49/emp/month</strong><span>·</span> No credit card <span>·</span> Cancel anytime <span>·</span>
+              India compliant
             </div>
           </div>
 
-          <div class="sub-feature">
-            <div class="sf-icon"><i class="fas fa-piggy-bank"></i></div>
-            <div class="sf-text">
-              <h4>Investment Declaration</h4>
-              <p>Easily upload investment proofs and declarations for tax purposes without multiple HR follow-ups.</p>
+          <div class="ess-portal-shell" data-aos="fade-left">
+            <div class="ess-floating-pill one"><span class="ess-dot"></span>Payslip processed — April 2025</div>
+            <div class="ess-portal-card">
+              <div class="ess-card-top">
+                <div>
+                  <h4>Arjun Mehta · EK-10042</h4>
+                  <p>Senior Developer · Pune Office</p>
+                </div>
+                <div class="ess-window-dots"><span></span><span></span><span></span></div>
+              </div>
+              <div class="ess-card-tabs">
+                <div class="ess-card-tab active">Payslip</div>
+                <div class="ess-card-tab">Leave</div>
+                <div class="ess-card-tab">Attendance</div>
+                <div class="ess-card-tab">Form 16</div>
+              </div>
+              <div class="ess-card-body">
+                <div class="ess-pay-row"><span>Basic Salary</span><span>₹45,000</span></div>
+                <div class="ess-pay-row"><span>HRA</span><span>₹18,000</span></div>
+                <div class="ess-pay-row"><span>Special Allowance</span><span>₹9,500</span></div>
+                <div class="ess-pay-row"><span>PF Deduction</span><span class="deduct">−₹5,400</span></div>
+                <div class="ess-pay-row"><span>TDS (Sec 192)</span><span class="deduct">−₹3,200</span></div>
+                <div class="ess-pay-row"><span>Professional Tax</span><span class="deduct">−₹200</span></div>
+                <div class="ess-pay-row net"><span>Net Pay</span><span>₹63,700</span></div>
+              </div>
+            </div>
+            <div class="ess-floating-pill two"><span class="ess-dot"></span>Leave approved in 4 min</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="ess-stats">
+      <div class="container">
+        <div class="ess-stats-grid">
+          <div class="ess-stat-card"><strong>60%</strong><span>Reduction in HR<br>queries per month</span></div>
+          <div class="ess-stat-card"><strong>24/7</strong><span>Employee access to<br>payslips &amp; documents</span>
+          </div>
+          <div class="ess-stat-card"><strong>100%</strong><span>Data transparency<br>for every employee</span></div>
+          <div class="ess-stat-card"><strong>0</strong><span>Paper. Fully digital<br>from day one</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAYSLIP DOWNLOAD SECTION -->
+    <section class="ess-section ess-soft" id="payslip">
+      <div class="container">
+        <div class="ess-split">
+          <div class="ess-copy" data-aos="fade-right">
+            <div class="ess-kicker"><i class="fas fa-file-invoice-dollar"></i> Payroll self-service</div>
+            <h2>ESS Portal with Payslip Download — <em>Instant, Every Month</em></h2>
+            <p>No more employee emails asking for salary slips. The moment payroll closes, every employee can view and
+              download their payslip — on mobile or web.</p>
+            <ul class="ess-feature-list">
+              <li>
+                <div class="ess-feature-icon"><i class="fas fa-file-pdf"></i></div>
+                <div>
+                  <h4>Instant payslip download</h4>
+                  <p>Password-protected PDF payslip available the second payroll is processed — not a day later.</p>
+                </div>
+              </li>
+              <li>
+                <div class="ess-feature-icon"><i class="fas fa-folder-open"></i></div>
+                <div>
+                  <h4>24-month payslip history</h4>
+                  <p>Employees can access and download any payslip from the last 24 months — no HR needed.</p>
+                </div>
+              </li>
+              <li>
+                <div class="ess-feature-icon"><i class="fas fa-chart-column"></i></div>
+                <div>
+                  <h4>Indian salary slip compliance</h4>
+                  <p>Every payslip follows Indian standards — earnings, PF, ESI, TDS, professional tax, and LOP all
+                    correctly itemised under the EPF Act 1952 and Income Tax Act.</p>
+                </div>
+              </li>
+              <li>
+                <div class="ess-feature-icon"><i class="fas fa-mobile-screen-button"></i></div>
+                <div>
+                  <h4>Mobile-first access</h4>
+                  <p>Download payslips from EKTA's mobile app — no desktop, no login to a separate payroll tool.</p>
+                </div>
+              </li>
+            </ul>
+            <div style="margin: 20px 0px;">
+              <a href="payroll.html" class="btn btn-primary">Explore full Payroll Software <i
+                  class="fas fa-arrow-right"></i></a>
+
+            </div>
+          </div>
+
+          <div class="ess-preview-card" data-aos="fade-left">
+            <div class="ess-preview-head">
+              <h3>Payslip — April 2025</h3>
+              <p>Employee ID: EK-10042 · Arjun Mehta</p>
+              <span class="ess-badge"><i class="fas fa-circle-check"></i> Compliant · EPF Act 1952 · Income Tax
+                Act</span>
+            </div>
+            <div class="ess-preview-body">
+              <div class="ess-preview-row"><span>Basic Salary</span><span>₹45,000</span></div>
+              <div class="ess-preview-row"><span>HRA (Metro)</span><span>₹18,000</span></div>
+              <div class="ess-preview-row"><span>Special Allowance</span><span>₹9,500</span></div>
+              <div class="ess-preview-row deduct"><span>PF Deduction (12%)</span><span>−₹5,400</span></div>
+              <div class="ess-preview-row deduct"><span>TDS (Section 192)</span><span>−₹3,200</span></div>
+              <div class="ess-preview-row deduct"><span>Professional Tax (MH)</span><span>−₹200</span></div>
+            </div>
+            <div class="ess-preview-net"><span>Net Pay</span><span>₹63,700</span></div>
+            <div class="ess-preview-actions">
+              <button class="ess-ui-btn primary"><i class="fas fa-download"></i> Download PDF</button>
+              <button class="ess-ui-btn">View Form 16</button>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <!-- Section 2 — Engagement & Social -->
-  <div class="feature-section">
-    <div class="container">
-      <div class="feature-wrap">
+    <!-- ATTENDANCE REGULARISATION SECTION -->
+    <section class="ess-section" id="attendance">
+      <div class="container">
+        <div class="ess-split">
+          <div class="ess-att-card" data-aos="fade-right">
+            <div class="ess-att-head">
+              <h4>Attendance Log — Arjun Mehta</h4>
+              <span class="ess-status">Regularisation pending</span>
+            </div>
+            <div class="ess-att-row">
+              <div class="ess-att-time">Today · 09:04 AM</div>
+              <div class="ess-att-detail">
+                <h5>Punch In — Pune Office</h5>
+                <p>Punch Out: Missing</p><span class="ess-att-tag warn">Regularisation required</span>
+              </div>
+            </div>
+            <div class="ess-att-row">
+              <div class="ess-att-time">Yesterday · 08:58 AM – 06:32 PM</div>
+              <div class="ess-att-detail">
+                <h5>Full Day Present</h5>
+                <p>7h 34m · On time</p><span class="ess-att-tag">Verified</span>
+              </div>
+            </div>
+            <div class="ess-att-row">
+              <div class="ess-att-time">03 May · 09:15 AM</div>
+              <div class="ess-att-detail">
+                <h5>Punch In — Remote</h5>
+                <p>Punch Out: 05:45 PM</p><span class="ess-att-tag">Approved</span>
+              </div>
+            </div>
+            <button class="ess-reg-btn"><i class="fas fa-plus"></i> Request Attendance Regularisation</button>
+          </div>
 
-        <!-- Content -->
-        <div class="feature-content" data-aos="fade-right">
-          <span class="section-tag">Engagement</span>
-          <h2>Connect & Communicate Directly</h2>
-          <p>Foster a vibrant office culture with social and professional communication tools built directly into the
-            portal.</p>
+          <div class="ess-copy" data-aos="fade-left">
+            <div class="ess-kicker"><i class="fas fa-fingerprint"></i> Attendance management</div>
+            <h2>ESS Portal Attendance Regularisation <em>Built for India</em></h2>
+            <p>Missed a punch-in? Employees submit a correction request directly from the portal. Managers approve in
+              one click. Every change is audit-trailed and synced to payroll — no manual LOP corrections needed.</p>
+            <ul class="ess-feature-list">
+              <li>
+                <div class="ess-feature-icon"><i class="fas fa-rotate"></i></div>
+                <div>
+                  <h4>Self-service regularisation</h4>
+                  <p>Request missed punch corrections via mobile or web — no paper forms, no HR middleman.</p>
+                </div>
+              </li>
+              <li>
+                <div class="ess-feature-icon"><i class="fas fa-circle-check"></i></div>
+                <div>
+                  <h4>Manager approval workflow</h4>
+                  <p>Auto-routed to the reporting manager. One-click approval with full context — date, location,
+                    reason.</p>
+                </div>
+              </li>
+              <li>
+                <div class="ess-feature-icon"><i class="fas fa-indian-rupee-sign"></i></div>
+                <div>
+                  <h4>Linked to payroll — no LOP errors</h4>
+                  <p>Approved regularisations sync to payroll automatically. LOP is re-calculated without manual HR
+                    intervention.</p>
+                </div>
+              </li>
+              <li>
+                <div class="ess-feature-icon"><i class="fas fa-clipboard-list"></i></div>
+                <div>
+                  <h4>Compliance audit trail</h4>
+                  <p>Every regularisation request, approval, and rejection is logged — Shops &amp; Establishments Act
+                    compliant.</p>
+                </div>
+              </li>
+            </ul>
+            <div style="margin: 20px 0px;">
+              <a href="attendance.html" class="btn btn-primary">Explore full Attendance Management <i
+                  class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="sub-feature">
-            <div class="sf-icon"><i class="fas fa-cake-candles"></i></div>
-            <div class="sf-text">
-              <h4>Social Celebrations</h4>
-              <p>Stay updated on peer birthdays and work anniversaries. Make every special day meaningful within the
-                team.</p>
+    <!-- LEAVE MANAGEMENT SECTION -->
+    <section class="ess-section ess-soft" id="leave">
+      <div class="container">
+        <div class="ess-split">
+          <div class="ess-copy" data-aos="fade-right">
+            <div class="ess-kicker"><i class="fas fa-calendar-days"></i> Leave self-service</div>
+            <h2>ESS Portal Leave Management India — <em>Real-time, Zero Follow-ups</em></h2>
+            <p>Complete visibility into leave balances, pending approvals, and history — updated in real time. Supports
+              all Indian leave types including CL, PL, SL, and Compensatory Off.</p>
+            <ul class="ess-leave-list">
+              <li>
+                <div class="ess-check"><i class="fas fa-check"></i></div>
+                <div>
+                  <h4>CL, PL, SL &amp; CompOff support</h4>
+                  <p>All standard Indian leave types plus custom leave policies configured per organisation.</p>
+                </div>
+              </li>
+              <li>
+                <div class="ess-check"><i class="fas fa-check"></i></div>
+                <div>
+                  <h4>State-wise public holiday calendars</h4>
+                  <p>Holiday calendars built in for every Indian state — no manual holiday setup.</p>
+                </div>
+              </li>
+              <li>
+                <div class="ess-check"><i class="fas fa-check"></i></div>
+                <div>
+                  <h4>LOP auto-calculated &amp; synced to payroll</h4>
+                  <p>Loss of Pay calculated from approved leaves and directly pushed to the payroll module.</p>
+                </div>
+              </li>
+              <li>
+                <div class="ess-check"><i class="fas fa-check"></i></div>
+                <div>
+                  <h4>Apply, cancel &amp; track in one place</h4>
+                  <p>Real-time leave status — employees always know where their application stands.</p>
+                </div>
+              </li>
+            </ul>
+            <div style="margin: 20px 0px ;">
+              <a href="leave.html" class="btn btn-outline">Explore full Leave Management module <i
+                  class="fas fa-arrow-right"></i></a>
             </div>
           </div>
 
-          <div class="sub-feature">
-            <div class="sf-icon"><i class="fas fa-bullhorn"></i></div>
-            <div class="sf-text">
-              <h4>CEO & HR Announcements</h4>
-              <p>Direct communication from the leadership team. CEOs can share vision and HR can broadcast policy
-                updates instantly.</p>
+          <div data-aos="fade-left">
+            <div class="ess-leave-balance-grid">
+              <div class="ess-balance"><span>12 total</span><strong>8</strong>
+                <p>Casual (CL)</p>
+              </div>
+              <div class="ess-balance"><span>15 total</span><strong>11</strong>
+                <p>Privilege (PL)</p>
+              </div>
+              <div class="ess-balance"><span>7 total</span><strong>7</strong>
+                <p>Sick (SL)</p>
+              </div>
+            </div>
+            <div class="ess-leave-panel">
+              <h4>Apply for Leave</h4>
+              <div class="ess-leave-form-row"><select class="ess-select">
+                  <option>Casual Leave (CL)</option>
+                  <option>Privilege Leave (PL)</option>
+                  <option>Sick Leave (SL)</option>
+                  <option>Compensatory Off</option>
+                </select></div>
+              <div class="ess-leave-form-row"><select class="ess-select">
+                  <option>From: 10 May 2025</option>
+                </select><select class="ess-select">
+                  <option>To: 12 May 2025</option>
+                </select></div>
+              <button class="ess-apply-btn">Submit Leave Application</button>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="sub-feature">
-            <div class="sf-icon"><i class="fas fa-face-smile"></i></div>
-            <div class="sf-text">
-              <h4>Mood Analysis & Surveys</h4>
-              <p>Participate in anonymous mood surveys to help HR optimize the working environment based on real
-                sentiment.</p>
+    <!-- COMPLIANCE SECTION -->
+    <section class="ess-section" id="compliance">
+      <div class="container">
+        <div class="ess-section-head" data-aos="fade-up">
+          <div class="ess-kicker"><i class="fas fa-scale-balanced"></i> India compliance</div>
+          <h2>Stay Compliant with Indian Payroll &amp; Tax Regulations — <em>Automatically</em></h2>
+          <p class="ess-section-sub">Built around the compliance requirements every Indian employee encounters — from
+            Form 16 to PF statements — accessible in one place, no HR follow-ups needed.</p>
+        </div>
+        <div class="ess-compliance-grid">
+          <div class="ess-compliance-card" data-aos="fade-up">
+            <div class="ess-card-icon"><i class="fas fa-file-lines"></i></div>
+            <h3>Form 16 Download</h3>
+            <p>Employees access and download their Form 16 directly from the portal the moment it's generated after TDS
+              filing under the Income Tax Act, Section 192.</p><span class="ess-comp-tag">Income Tax Act</span>
+          </div>
+          <div class="ess-compliance-card" data-aos="fade-up" data-aos-delay="80">
+            <div class="ess-card-icon"><i class="fas fa-pen-to-square"></i></div>
+            <h3>IT Investment Declaration</h3>
+            <p>Submit IT investment proofs — LIC, PPF, HRA, home loan — directly via the portal. No physical forms
+              during declaration season.</p><span class="ess-comp-tag">Section 80C / 80D</span>
+          </div>
+          <div class="ess-compliance-card" data-aos="fade-up" data-aos-delay="160">
+            <div class="ess-card-icon"><i class="fas fa-building-columns"></i></div>
+            <h3>PF &amp; ESI Visibility</h3>
+            <p>Real-time PF contribution statements (EPF Act 1952) and ESI deduction summaries visible every month
+              alongside the payslip — fully transparent.</p><span class="ess-comp-tag">EPF Act 1952</span>
+          </div>
+          <div class="ess-compliance-card" data-aos="fade-up">
+            <div class="ess-card-icon"><i class="fas fa-map-location-dot"></i></div>
+            <h3>Professional Tax (State-wise)</h3>
+            <p>State-specific professional tax slabs for Maharashtra, Karnataka, Tamil Nadu, West Bengal, and others —
+              automatically computed and deducted.</p><span class="ess-comp-tag">State PT Slabs</span>
+          </div>
+          <div class="ess-compliance-card" data-aos="fade-up" data-aos-delay="80">
+            <div class="ess-card-icon"><i class="fas fa-briefcase"></i></div>
+            <h3>Gratuity Statements</h3>
+            <p>Gratuity accumulation statements visible per employee — calculated as per the Payment of Gratuity Act. No
+              manual reconciliation required.</p><span class="ess-comp-tag">Gratuity Act</span>
+          </div>
+          <div class="ess-compliance-card" data-aos="fade-up" data-aos-delay="160">
+            <div class="ess-card-icon"><i class="fas fa-calendar-minus"></i></div>
+            <h3>LOP Calculation</h3>
+            <p>Loss of Pay automatically calculated from approved leave and attendance data — linked directly to
+              payroll. No spreadsheet reconciliation.</p><span class="ess-comp-tag">Auto-synced to payroll</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPARISON TABLE -->
+    <section class="ess-section ess-soft" id="comparison">
+      <div class="container">
+        <div class="ess-section-head" data-aos="fade-up">
+          <div class="ess-kicker"><i class="fas fa-code-compare"></i> Why switch</div>
+          <h2>EKTA ESS vs Traditional Email-Based HR India</h2>
+          <p class="ess-section-sub">Most Indian companies still run HR over WhatsApp, email chains, and spreadsheets.
+            Here's what the switch to an ESS portal actually means for your team.</p>
+        </div>
+        <div class="ess-table-wrap" data-aos="fade-up">
+          <table class="ess-table">
+            <thead>
+              <tr>
+                <th>HR task</th>
+                <th>Traditional / Email-based HRMS</th>
+                <th class="highlight">EKTA ESS Portal</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Payslip access</td>
+                <td class="bad">Email HR, wait 1–3 days</td>
+                <td class="good highlight">Download instantly, any time</td>
+              </tr>
+              <tr>
+                <td>Leave application</td>
+                <td class="bad">Email / WhatsApp manager, follow up</td>
+                <td class="good highlight">Apply in portal, real-time status</td>
+              </tr>
+              <tr>
+                <td>Attendance correction</td>
+                <td class="bad">Paper form, submit to HR manually</td>
+                <td class="good highlight">Regularise in-app, auto-routed</td>
+              </tr>
+              <tr>
+                <td>IT investment declaration</td>
+                <td class="bad">Physical forms, scan &amp; email annually</td>
+                <td class="good highlight">Upload proofs digitally, auto-computed</td>
+              </tr>
+              <tr>
+                <td>Form 16 &amp; PF statement</td>
+                <td class="bad">Request HR, wait till year-end</td>
+                <td class="good highlight">Always in dashboard, downloadable</td>
+              </tr>
+              <tr>
+                <td>HR visibility</td>
+                <td class="bad">Zero — employees in the dark</td>
+                <td class="good highlight">Full transparency, 24/7</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="ess-section">
+      <div class="container">
+        <div class="ess-section-head" data-aos="fade-up">
+          <div class="ess-kicker"><i class="fas fa-quote-left"></i> Customer stories</div>
+          <h2>What HR Leaders Across India Say</h2>
+          <p class="ess-section-sub">Trusted by 1,000+ Indian companies across manufacturing, IT, finance, and more.</p>
+        </div>
+        <div class="ess-testimonial-grid">
+          <div class="ess-testimonial" data-aos="fade-up">
+            <p>"The attendance regularisation feature alone saved our HR team hours every week. Employees love that they
+              can sort it out themselves — no more WhatsApp messages to the HR team."</p>
+            <div class="ess-author">
+              <div class="ess-avatar">RS</div>
+              <div>
+                <h5>Rajesh Sharma</h5><span>HR Head · Pune Manufacturing Co.</span>
+              </div>
+            </div>
+          </div>
+          <div class="ess-testimonial" data-aos="fade-up" data-aos-delay="100">
+            <p>"Payslip downloads used to be a monthly circus. Now employees get them the moment payroll closes —
+              including Form 16 at year-end. Our HR team gets those two hours back every month."</p>
+            <div class="ess-author">
+              <div class="ess-avatar">PM</div>
+              <div>
+                <h5>Priya Menon</h5><span>CHRO · Bengaluru IT Services</span>
+              </div>
+            </div>
+          </div>
+          <div class="ess-testimonial" data-aos="fade-up" data-aos-delay="200">
+            <p>"Finally an Indian HR software that handles CL, PL, SL, IT declarations, and PF statements in one place.
+              Our employees actually trust the data now — that's a first."</p>
+            <div class="ess-author">
+              <div class="ess-avatar">AK</div>
+              <div>
+                <h5>Anita Kulkarni</h5><span>VP HR · Mumbai Finance Firm</span>
+              </div>
             </div>
           </div>
         </div>
-
-        <!-- Visual -->
-        <div class="feature-visual" data-aos="fade-left">
-          <div class="fv-icon-large"><i class="fas fa-users"></i></div>
-          <p
-            style="font-size:13px; color:var(--text-muted); margin-bottom:16px; font-weight:600; text-transform:uppercase; letter-spacing:1px;">
-            Workforce Connect</p>
-          <ul class="fv-step-list">
-            <li><i class="fas fa-comments"></i> Continuous Feedback Loops</li>
-            <li><i class="fas fa-file-signature"></i> Digital Acknowledgements</li>
-            <li><i class="fas fa-folder-open"></i> Secure Document Sharing</li>
-          </ul>
-        </div>
-
       </div>
-    </div>
-  </div>
+    </section>
 
-  <!-- FAQ Section -->
-  <section class="sp alt">
-    <div class="container" style="max-width:800px;">
-      <div class="section-header" data-aos="fade-up">
-        <span class="section-tag">Portal FAQs</span>
-        <h2>Common Questions</h2>
-      </div>
-
-      <div data-aos="fade-up">
-        <div class="faq-item">
-          <div class="faq-q">What is an Employee Self-Service (ESS) Portal?<i class="fas fa-chevron-down"></i></div>
-          <div class="faq-a">
-            <p>It’s a web-based tool allowing
-              employees to manage their own HR, payroll, and benefits data independently, reducing the need for constant
-              HR interaction.</p>
+    <!-- FAQ -->
+    <section class="ess-section ess-soft" id="faq">
+      <div class="container">
+        <div class="ess-faq-wrap">
+          <div data-aos="fade-right">
+            <div class="ess-kicker"><i class="fas fa-circle-question"></i> FAQ</div>
+            <h2>Common Questions About EKTA's ESS Portal</h2>
+            <p class="ess-section-sub">Everything Indian HR teams and employees ask before switching to a self-service
+              portal.</p>
+          </div>
+          <div class="ess-faq-list" data-aos="fade-left">
+            <div class="faq-item open">
+              <div class="faq-q">What is an Employee Self Service (ESS) portal?<i class="fas fa-chevron-down"></i></div>
+              <div class="faq-a open">
+                <p>An ESS portal is a web-based tool that allows employees to manage their own HR, payroll, and benefits
+                  data — applying for leave, downloading payslips, regularising attendance — without contacting HR
+                  directly. EKTA's ESS portal is built specifically for Indian businesses, covering Indian leave types,
+                  Form 16, PF, ESI, and professional tax.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">How does Form 16 download work in EKTA's ESS portal?<i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-a">
+                <p>Once TDS filing is complete, EKTA automatically generates Form 16 and makes it available for download
+                  in each employee's dashboard. No waiting for HR to email it — employees access it the moment it's
+                  ready. This is compliant with the Income Tax Act requirements for Form 16 issuance.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">What Indian leave types does EKTA ESS support?<i class="fas fa-chevron-down"></i></div>
+              <div class="faq-a">
+                <p>EKTA supports all standard Indian leave types: Casual Leave (CL), Privilege/Earned Leave (PL), Sick
+                  Leave (SL), Compensatory Off, and Maternity/Paternity Leave. You can also configure custom leave
+                  policies per your organisation. State-wise public holiday calendars are built in — no manual setup
+                  required.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">Is attendance regularisation linked to payroll?<i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-a">
+                <p>Yes. Every approved attendance regularisation in EKTA ESS is automatically synced to the payroll
+                  module. LOP (Loss of Pay) is re-calculated without manual HR intervention — so your payroll is always
+                  accurate, even after late regularisations are approved.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">What is the price of ESS software in India?<i class="fas fa-chevron-down"></i></div>
+              <div class="faq-a">
+                <p>EKTA's Employee Self Service software starts at ₹49 per employee per month. New customers get 3
+                  months free with no credit card required. The pricing is per-seat and transparent — no hidden
+                  implementation fees. View full pricing at ektahr.com/pricing-plan.html.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">Can employees view PF and ESI contributions in the portal?<i
+                  class="fas fa-chevron-down"></i></div>
+              <div class="faq-a">
+                <p>Yes. Real-time PF contribution statements (under the EPF Act 1952) and ESI deduction summaries are
+                  visible every month alongside the payslip — fully transparent and downloadable. Employees don't need
+                  to log into the EPFO portal separately for their contribution history.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">How does IT investment declaration work in EKTA ESS?<i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-a">
+                <p>Employees can submit IT investment proofs — LIC, PPF, HRA, home loan, NPS, and other Section 80C/80D
+                  instruments — directly through the portal. Tax is auto-computed once declarations are submitted. No
+                  physical forms, no scanning, no repeated HR follow-ups during declaration season.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">Is EKTA's ESS portal accessible on mobile?<i class="fas fa-chevron-down"></i></div>
+              <div class="faq-a">
+                <p>Yes — fully. EKTA's ESS portal is available as a dedicated mobile app (Android and iOS) and is also
+                  fully responsive on mobile browsers. Employees can download payslips, apply for leave, regularise
+                  attendance, and view PF statements from their phone without needing a desktop.</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="faq-item">
-          <div class="faq-q">Is my personal and financial data secure?<i class="fas fa-chevron-down"></i></div>
-          <div class="faq-a">
-            <p>Yes, EKTA HR uses banking-level
-              encryption and unique login credentials for every employee, ensuring that sensitive data is only visible
-              to
-              authorized users.</p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="home-final">
+      <div class="container">
+        <div class="home-final-card" data-aos="zoom-in">
+          <div class="home-final-copy">
+            <h2>Ready to Empower Your Indian Workforce?</h2>
+            <p>Join 1,000+ Indian companies giving employees self-service access to payslips, leave, attendance, and
+              compliance documents — from day one.</p>
+            <div class="ess-notes">
+              <span>₹49/employee/month</span><span>No credit card required</span><span>Cancel
+                anytime</span><span>India compliant from day one</span>
+            </div>
           </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">Can I access the portal on my mobile phone?<i class="fas fa-chevron-down"></i></div>
-          <div class="faq-a">
-            <p>Absolutely. Our portal is fully
-              responsive and also available as a dedicated mobile app, ensuring you can manage your HR tasks on the go.
-            </p>
+          <div class="home-actions" style="margin-top: 0;">
+            <a href="https://my.ektahr.com/signup" class="btn btn-primary" style="padding: 16px 28px;">Start 3 Months
+              Free</a>
+            <a href="contact.html" class="btn btn-outline" style="padding: 16px 28px;">Book a Demo</a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CTA Section (Premium) -->
-  <!-- <section class="sp" style="padding: 80px 0;">
-    <div class="container text-center">
-      <div class="glass-card"
-        style="padding: 80px 40px; background: linear-gradient(135deg, var(--secondary) 0%, #000 100%); color: var(--white); overflow: hidden; position: relative; border: none;"
-        data-aos="zoom-in">
-
-        <div
-          style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: var(--primary); opacity: 0.15; border-radius: 50%;">
-        </div>
-
-        <h2 style="color: var(--white); margin-bottom: 24px;" class="sp_h2">
-          Empower Your Team Today
-        </h2>
-
-        <p style="color: rgba(255,255,255,0.7); max-width: 650px; margin: 0 auto 48px; font-size: 1.125rem;">
-          Give your employees the independence they deserve. Switch to EKTA HR’s portal for a more productive,
-          transparent, and high-functioning gateway for all their HR needs.
-        </p>
-
-        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-          <a href="signup.html" class="btn btn-primary" style="padding: 18px 48px;">
-            Start Your Free Trial
-          </a>
-          <a href="contact.html" class="btn btn-outline"
-            style="border-color: var(--white); color: var(--white); padding: 18px 48px;">
-            Schedule a Live Demo
-          </a>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- Fixed CTA Banner -->
-  <section class="fixed-cta-section" data-aos="zoom-in">
-    <div class="fixed-cta-card">
-      <h5>Transform your workforce with the power of EKTA HR. — <span style="color: var(--secondary)">3 months
-          free.</span></h5>
-      <a href="https://my.ektahr.com/signup" class="btn-fixed-cta">Start 3 months free trail</a>
-    </div>
-  </section>
-
+  </main>
   <!-- FOOTER -->
   <footer>
     <div class="container">

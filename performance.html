@@ -27,7 +27,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-QF7ZSPWC0P');
   </script>
 
@@ -362,7 +361,7 @@
       padding: 8px 14px;
       border-radius: 999px;
       background: rgba(249, 184, 36, 0.14);
-      color: var(--secondary);
+      color: var(--white);
       border: 1px solid rgba(249, 184, 36, 0.28);
       font-size: 12px;
       font-weight: 900;
@@ -1178,6 +1177,10 @@
       backdrop-filter: blur(10px);
     }
 
+    .perf-insight-row {
+      margin: 10px 0px;
+    }
+
     .perf-cycle-step i,
     .perf-insight-row i {
       display: grid;
@@ -1412,6 +1415,396 @@
       margin: 0;
       color: var(--text-muted);
       font-size: 12px;
+      line-height: 1.55;
+    }
+
+    /* ── New Feedback Grid v2 (2x2 card layout) ── */
+    .perf-feedback-grid-v2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 28px;
+      margin-top: 34px;
+    }
+
+    @media (max-width: 900px) {
+      .perf-feedback-grid-v2 {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+    }
+
+    .perf-feedback-card {
+      position: relative;
+      padding: 36px 32px;
+      border-radius: 28px;
+      background: var(--white);
+      border: 1px solid rgba(18, 18, 18, 0.08);
+      box-shadow: 0 12px 32px rgba(18, 18, 18, 0.06);
+      transition: var(--transition);
+      overflow: hidden;
+    }
+
+    .perf-feedback-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary) 0%, #ffde8b 100%);
+    }
+
+    .perf-feedback-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(249, 184, 36, 0.5);
+      box-shadow: 0 20px 48px rgba(18, 18, 18, 0.12);
+    }
+
+    .perf-feedback-card-icon {
+      width: 56px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      border-radius: 16px;
+      font-size: 22px;
+      margin-bottom: 20px;
+      transition: var(--transition);
+    }
+
+    .perf-feedback-card:hover .perf-feedback-card-icon {
+      background: var(--primary);
+      color: var(--secondary);
+      transform: scale(1.08);
+    }
+
+    .perf-feedback-card h3 {
+      margin: 0 0 14px;
+      color: var(--secondary);
+      font-size: 19px;
+      line-height: 1.3;
+      font-weight: 700;
+    }
+
+    .perf-feedback-card p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 14px;
+      line-height: 1.72;
+      font-weight: 400;
+    }
+
+    .perf-feedback-card p strong {
+      color: var(--secondary);
+      font-weight: 700;
+    }
+
+    /* ── Analytics Grid v2 (2x2 numbered card workflow) ── */
+    /* ── Analytics Dashboard Layout ── */
+    .perf-analytics-dashboard {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 28px;
+      margin-top: 32px;
+      align-items: stretch;
+    }
+
+    @media (max-width: 1100px) {
+      .perf-analytics-dashboard {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+    }
+
+    .perf-analytics-panel {
+      padding: 32px;
+      border-radius: 28px;
+      background: var(--white);
+      border: 1px solid rgba(18, 18, 18, 0.08);
+      box-shadow: 0 12px 36px rgba(18, 18, 18, 0.07);
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .perf-dashboard-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(18, 18, 18, 0.06);
+    }
+
+    .perf-dashboard-header h3 {
+      margin: 0;
+      color: var(--secondary);
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .perf-live-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #f9b824;
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .perf-live-badge i {
+      animation: pulse-dot 2s infinite;
+    }
+
+    @keyframes pulse-dot {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.5;
+      }
+    }
+
+    /* Bell Curve Chart */
+    .perf-bell-chart {
+      position: relative;
+      display: grid;
+      gap: 14px;
+      padding: 24px 20px 16px;
+      border-radius: 24px;
+      background:
+        linear-gradient(rgba(18, 18, 18, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(18, 18, 18, 0.045) 1px, transparent 1px),
+        linear-gradient(180deg, #fffdf7 0%, var(--white) 100%);
+      background-size: 100% 48px, 72px 100%, auto;
+      border: 1px solid rgba(249, 184, 36, 0.28);
+      overflow: hidden;
+    }
+
+    .perf-bell-plot {
+      position: relative;
+      height: 194px;
+      min-width: 0;
+    }
+
+    .perf-bell-plot::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 1px;
+      background: rgba(18, 18, 18, 0.14);
+      z-index: 1;
+    }
+
+    .perf-bell-curve {
+      position: absolute;
+      inset: 0;
+      z-index: 3;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: visible;
+    }
+
+    .perf-curve-fill {
+      fill: rgba(249, 184, 36, 0.12);
+    }
+
+    .perf-curve-line {
+      fill: none;
+      stroke: var(--primary);
+      stroke-width: 5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      filter: drop-shadow(0 5px 10px rgba(249, 184, 36, 0.2));
+    }
+
+    .perf-bell-bars {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      align-items: end;
+      gap: 14px;
+      height: 100%;
+    }
+
+    .perf-bar-group {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      height: 100%;
+      min-width: 0;
+    }
+
+    .perf-bar-wrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding: 0 5px;
+    }
+
+    .perf-bell-bar {
+      position: relative;
+      width: min(100%, 46px);
+      height: var(--bar-height);
+      min-height: 24px;
+      border-radius: 14px 14px 7px 7px;
+      background: linear-gradient(180deg, #ffd56a 0%, var(--primary) 54%, #d7950f 100%);
+      box-shadow: 0 10px 22px rgba(249, 184, 36, 0.28);
+      transition: var(--transition);
+    }
+
+    .perf-bell-bar::after {
+      content: '';
+      position: absolute;
+      inset: 7px 7px auto;
+      height: 32%;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.34);
+    }
+
+    .perf-bar-group:hover .perf-bell-bar {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 30px rgba(249, 184, 36, 0.34);
+    }
+
+    .perf-bell-labels {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 14px;
+      align-items: start;
+    }
+
+    .perf-bell-labels div {
+      display: grid;
+      gap: 4px;
+      justify-items: center;
+      min-width: 0;
+    }
+
+    .perf-bar-label {
+      color: var(--text-muted);
+      font-size: 12px;
+      font-weight: 600;
+      text-align: center;
+      line-height: 1.3;
+    }
+
+    .perf-bell-labels strong {
+      color: var(--secondary);
+      font-size: 16px;
+      font-weight: 800;
+    }
+
+    /* Metrics Row */
+    .perf-metrics-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(18, 18, 18, 0.06);
+    }
+
+    .perf-metric {
+      text-align: center;
+      padding: 12px;
+      border-radius: 12px;
+      background: var(--primary-light);
+      transition: var(--transition);
+    }
+
+    .perf-metric:hover {
+      background: rgba(249, 184, 36, 0.18);
+    }
+
+    .perf-metric strong {
+      display: block;
+      color: var(--primary-dark);
+      font-size: 20px;
+      font-weight: 900;
+      margin-bottom: 4px;
+    }
+
+    .perf-metric span {
+      color: var(--text-muted);
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    /* Features Stack */
+    .perf-features-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .perf-feature-item {
+      padding: 20px;
+      border-radius: 20px;
+      background: var(--white);
+      border: 1px solid rgba(18, 18, 18, 0.08);
+      box-shadow: 0 8px 24px rgba(18, 18, 18, 0.05);
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 16px;
+      align-items: flex-start;
+      transition: var(--transition);
+    }
+
+    .perf-feature-item:hover {
+      transform: translateX(6px);
+      border-color: rgba(249, 184, 36, 0.4);
+      box-shadow: 0 12px 32px rgba(18, 18, 18, 0.08);
+    }
+
+    .perf-feature-item.feature-item-1,
+    .perf-feature-item.feature-item-2,
+    .perf-feature-item.feature-item-3,
+    .perf-feature-item.feature-item-4 {
+      border-left: 4px solid var(--primary);
+    }
+
+    .perf-feature-icon {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      border-radius: 14px;
+      font-size: 20px;
+      flex-shrink: 0;
+      transition: var(--transition);
+    }
+
+    .perf-feature-item:hover .perf-feature-icon {
+      transform: scale(1.1);
+    }
+
+    .perf-feature-text h4 {
+      margin: 0 0 6px;
+      color: var(--secondary);
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .perf-feature-text p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 13px;
       line-height: 1.55;
     }
 
@@ -1674,6 +2067,64 @@
 
       .perf-final-card {
         grid-template-columns: 1fr;
+      }
+
+      .perf-analytics-panel {
+        padding: 22px;
+        border-radius: 22px;
+        gap: 22px;
+      }
+
+      .perf-dashboard-header {
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      .perf-bell-chart {
+        padding: 20px 12px 14px;
+        background-size: 100% 42px, 54px 100%, auto;
+      }
+
+      .perf-bell-plot {
+        height: 164px;
+      }
+
+      .perf-bell-bars,
+      .perf-bell-labels {
+        gap: 7px;
+      }
+
+      .perf-bar-wrapper {
+        padding: 0 2px;
+      }
+
+      .perf-bell-bar {
+        width: min(100%, 34px);
+        min-height: 20px;
+        border-radius: 10px 10px 5px 5px;
+      }
+
+      .perf-bar-label {
+        font-size: 10.5px;
+      }
+
+      .perf-bell-labels strong {
+        font-size: 14px;
+      }
+
+      .perf-metrics-row {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+
+      .perf-feature-item {
+        grid-template-columns: 44px 1fr;
+        padding: 18px;
+      }
+
+      .perf-feature-icon {
+        width: 44px;
+        height: 44px;
       }
 
       .perf-final-copy,
@@ -2140,28 +2591,6 @@
               OKRs, cascade them
               to teams and individuals, and measure progress using both quantitative KPIs and outcome-based KRAs.
             </p>
-            <div class="perf-goal-map">
-              <div class="perf-goal-node top">
-                <div><strong>Company-level OKRs</strong><span>Top-down business outcomes</span></div>
-                <i class="fas fa-building"></i>
-              </div>
-              <div class="perf-goal-branches">
-                <div class="perf-goal-node">
-                  <div><strong>Team KRAs</strong><span>Department targets</span></div>
-                  <i class="fas fa-users"></i>
-                </div>
-                <div class="perf-goal-node">
-                  <div><strong>Role templates</strong><span>Ready-to-use structures</span></div>
-                  <i class="fas fa-layer-group"></i>
-                </div>
-              </div>
-              <div class="perf-goal-leaves">
-                <div class="perf-goal-node">
-                  <div><strong>Individual KPIs</strong><span>Live target tracking</span></div>
-                  <i class="fas fa-gauge-high"></i>
-                </div>
-              </div>
-            </div>
           </article>
           <article class="perf-goal-insights" data-aos="fade-left">
             <div class="perf-board-title">
@@ -2197,72 +2626,60 @@
       </div>
     </section>
 
+
+
     <section class="perf-section">
       <div class="container">
         <div class="perf-section-head" data-aos="fade-up">
-          <h2>360-Degree Feedback Software Anonymous, Unbiased, Actionable</h2>
-          <p>Annual top-down reviews capture only one dimension of performance. EKTA HR's <strong>workforce performance
+          <h2>360-Degree Feedback Software — Anonymous, Unbiased, Actionable</h2>
+          <p>Annual top-down reviews capture only one dimension of performance.<strong> EKTA HR's workforce performance
               tool</strong>
-            collects multi-directional input from peers, subordinates, internal stakeholders, and external clients
+            collects multi-directional input from peers, subordinates, internal stakeholders, and external clients —
             with an anonymous mode that ensures honest, bias-free responses every single time.
           </p>
         </div>
-        <div class="perf-feedback-grid">
-          <div class="perf-feedback-hub" data-aos="fade-right">
-            <div class="perf-hub-center">
-              <div><strong>360&deg;</strong><span>Feedback loop</span></div>
-            </div>
-            <div class="perf-signal-card one">
+        <div class="perf-feedback-grid-v2">
+          <article class="perf-feedback-card" data-aos="fade-up">
+            <div class="perf-feedback-card-icon">
               <i class="fas fa-user-shield"></i>
-              <h3>Anonymous feedback option</h3>
             </div>
-            <div class="perf-signal-card two">
+            <h3> Anonymous feedback option</h3>
+            <p>Respondents stay confidential — managers, peers, and subordinates give honest feedback without fear of
+              repercussion. Research shows anonymous 360° feedback yields 35% more candid responses than named reviews.
+            </p>
+          </article>
+          <article class="perf-feedback-card" data-aos="fade-up" data-aos-delay="80">
+            <div class="perf-feedback-card-icon">
               <i class="fas fa-bolt"></i>
-              <h3>Continuous real-time feedback</h3>
             </div>
-            <div class="perf-signal-card three">
+            <h3>Continuous real-time feedback</h3>
+            <p>Enable anyone in the organisation to give or receive continuous feedback in real time — not just at the
+              end of a review cycle. Regular communication helps take corrective action before small issues become
+              performance problems.</p>
+          </article>
+          <article class="perf-feedback-card" data-aos="fade-up" data-aos-delay="160">
+            <div class="perf-feedback-card-icon">
               <i class="fas fa-arrows-left-right"></i>
-              <h3>Perception gap analysis</h3>
             </div>
-            <div class="perf-signal-card four">
+            <h3>Perception gap analysis</h3>
+            <p>Compare self-review scores with manager and peer scores to surface alignment issues instantly. EKTA HR's
+              perception gap analysis gives HR leaders a clear view of reality vs. expectations before it affects team
+              performance.</p>
+          </article>
+          <article class="perf-feedback-card" data-aos="fade-up" data-aos-delay="240">
+            <div class="perf-feedback-card-icon">
               <i class="fas fa-handshake"></i>
-              <h3>1:1 meeting tracker for managers</h3>
             </div>
-          </div>
-
-          <div class="perf-feedback-list" data-aos="fade-left">
-            <article class="perf-mini-card">
-              <i class="fas fa-user-shield"></i>
-              <h3> Anonymous feedback option</h3>
-              <p>Respondents stay confidential managers, peers, and subordinates give honest feedback without fear of
-                repercussion. Research shows anonymous 360° feedback yields 35% more candid responses than named
-                reviews.</p>
-            </article>
-            <article class="perf-mini-card">
-              <i class="fas fa-bolt"></i>
-              <h3>Continuous real-time feedback</h3>
-              <p>Enable anyone in the organisation to give or receive continuous feedback in real time not just at the
-                end of a review cycle. Regular communication helps take corrective action before small issues become
-                performance problems.</p>
-            </article>
-            <article class="perf-mini-card">
-              <i class="fas fa-arrows-left-right"></i>
-              <h3>Perception gap analysis</h3>
-              <p>Compare self-review scores with manager and peer scores to surface alignment issues instantly. EKTA
-                HR's perception gap analysis gives HR leaders a clear view of reality vs. expectations before it affects
-                team performance.</p>
-            </article>
-            <article class="perf-mini-card">
-              <i class="fas fa-handshake"></i>
-              <h3> 1:1 meeting tracker for managers</h3>
-              <p>Log objectives, action items, and discussion points from every manager-employee meeting. Searchable
-                meeting records keep everyone accountable and help managers track progress between formal review cycles.
-              </p>
-            </article>
-          </div>
+            <h3>1:1 meeting tracker for managers</h3>
+            <p>Log objectives, action items, and discussion points from every manager–employee meeting. Searchable
+              meeting records keep everyone accountable and help managers track progress between formal review cycles.
+            </p>
+          </article>
         </div>
       </div>
     </section>
+
+
 
     <section class="perf-section perf-soft">
       <div class="container">
@@ -2270,52 +2687,145 @@
           <h2> Bell Curve Appraisal Analytics and Actionable Workforce Insights</h2>
           <p>Make talent decisions backed by data, not gut instinct. EKTA HR's analytics layer gives HR leaders a
             complete picture of workforce performance distribution using bell curve distribution, perception gap charts,
-            and automated MIS reports so you always know who to reward, develop, or support.</p>
+            and automated MIS reports — so you always know who to reward, develop, or support.</p>
         </div>
-        <div class="perf-analytics-suite">
-          <div class="perf-analytics-board" data-aos="fade-right">
-            <div class="perf-board-topline">
-              <strong>Bell Curve Distribution</strong>
-              <span>Analytics</span>
+
+        <div class="perf-analytics-dashboard">
+          <!-- Left: Analytics Dashboard -->
+          <div class="perf-analytics-panel" data-aos="fade-right">
+            <div class="perf-dashboard-header">
+              <h3>Performance Distribution</h3>
+              <span class="perf-live-badge"><i class="fas fa-circle"></i> Live</span>
             </div>
-            <div class="perf-curve-bars">
-              <div><b style="height: 36%;"></b><span>Below</span></div>
-              <div><b style="height: 64%;"></b><span>Develop</span></div>
-              <div><b style="height: 92%;"></b><span>Average</span></div>
-              <div><b style="height: 70%;"></b><span>High</span></div>
-              <div><b style="height: 42%;"></b><span>Top</span></div>
+
+            <!-- Bell Curve Chart -->
+            <div class="perf-bell-chart" aria-label="Performance distribution bell curve">
+              <div class="perf-bell-plot">
+                <svg class="perf-bell-curve" viewBox="0 0 500 194" preserveAspectRatio="none" aria-hidden="true">
+                  <path class="perf-curve-fill"
+                    d="M18 188 C88 188 130 156 166 96 C204 40 296 40 334 96 C370 156 412 188 482 188 L482 194 L18 194 Z" />
+                  <path class="perf-curve-line"
+                    d="M18 188 C88 188 130 156 166 96 C204 40 296 40 334 96 C370 156 412 188 482 188" />
+                </svg>
+
+                <div class="perf-bell-bars">
+                  <div class="perf-bar-group" style="--bar-height: 32%;">
+                    <div class="perf-bar-wrapper">
+                      <div class="perf-bell-bar"></div>
+                    </div>
+                  </div>
+                  <div class="perf-bar-group" style="--bar-height: 64%;">
+                    <div class="perf-bar-wrapper">
+                      <div class="perf-bell-bar"></div>
+                    </div>
+                  </div>
+                  <div class="perf-bar-group" style="--bar-height: 90%;">
+                    <div class="perf-bar-wrapper">
+                      <div class="perf-bell-bar"></div>
+                    </div>
+                  </div>
+                  <div class="perf-bar-group" style="--bar-height: 66%;">
+                    <div class="perf-bar-wrapper">
+                      <div class="perf-bell-bar"></div>
+                    </div>
+                  </div>
+                  <div class="perf-bar-group" style="--bar-height: 34%;">
+                    <div class="perf-bar-wrapper">
+                      <div class="perf-bell-bar"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="perf-bell-labels">
+                <div>
+                  <span class="perf-bar-label">Below</span>
+                  <strong>8%</strong>
+                </div>
+                <div>
+                  <span class="perf-bar-label">Developing</span>
+                  <strong>24%</strong>
+                </div>
+                <div>
+                  <span class="perf-bar-label">Average</span>
+                  <strong>54%</strong>
+                </div>
+                <div>
+                  <span class="perf-bar-label">High</span>
+                  <strong>11%</strong>
+                </div>
+                <div>
+                  <span class="perf-bar-label">Top</span>
+                  <strong>3%</strong>
+                </div>
+              </div>
+            </div>
+
+            <!-- Key Metrics -->
+            <div class="perf-metrics-row">
+              <div class="perf-metric">
+                <strong>2,847</strong>
+                <span>Employees Rated</span>
+              </div>
+              <div class="perf-metric">
+                <strong>94%</strong>
+                <span>Review Completion</span>
+              </div>
+              <div class="perf-metric">
+                <strong>4.2x</strong>
+                <span>Avg Rating</span>
+              </div>
             </div>
           </div>
 
-          <div class="perf-analytics-list" data-aos="fade-left">
-            <article class="perf-feature-tile">
-              <i class="fas fa-chart-area"></i>
-              <h3>Bell curve distribution view</h3>
-              <p>Visualise how your team's performance ratings distribute across excellent, average, and below-average
-                bands. This classic <strong> performance review platform</strong> feature helps HR identify whom to
-                reward for high
-                performance and who requires further training and development support.</p>
+          <!-- Right: Feature Highlights -->
+          <div class="perf-features-stack" data-aos="fade-left">
+            <article class="perf-feature-item feature-item-1">
+              <div class="perf-feature-icon">
+                <i class="fas fa-chart-area"></i>
+              </div>
+              <div class="perf-feature-text">
+                <h4>Bell curve distribution view</h4>
+                <p>Visualise how your team's performance ratings distribute across excellent, average, and below-average
+                  bands. This classic performance review platform feature helps HR identify whom to reward for high
+                  performance and who requires further training and development support.</p>
+              </div>
             </article>
-            <article class="perf-feature-tile">
-              <i class="fas fa-file-export"></i>
-              <h3>Automated MIS performance reports</h3>
-              <p>Generate cycle-end summaries automatically. No spreadsheet collation export-ready reports for
-                leadership reviews, board presentations, and HR planning sessions. Schedule reports to land in your
-                inbox on review day.</p>
+
+            <article class="perf-feature-item feature-item-2">
+              <div class="perf-feature-icon">
+                <i class="fas fa-file-export"></i>
+              </div>
+              <div class="perf-feature-text">
+                <h4>Automated MIS performance reports</h4>
+                <p>Generate cycle-end summaries automatically. No spreadsheet collation — export-ready reports for
+                  leadership reviews, board presentations, and HR planning sessions. Schedule reports to land in your
+                  inbox on review day.</p>
+              </div>
             </article>
-            <article class="perf-feature-tile">
-              <i class="fas fa-calculator"></i>
-              <h3>Performance-linked incentive calculation</h3>
-              <p>Configure formulas for incentives and bonuses against goal scores. EKTA HR automatically calculates
-                payouts based on normalised performance data linking your payroll module directly to appraisal
-                outcomes with no manual intervention.</p>
+
+            <article class="perf-feature-item feature-item-3">
+              <div class="perf-feature-icon">
+                <i class="fas fa-calculator"></i>
+              </div>
+              <div class="perf-feature-text">
+                <h4>Performance-linked incentive calculation</h4>
+                <p>Configure formulas for incentives and bonuses against goal scores. EKTA HR automatically calculates
+                  payouts based on normalised performance data — linking your payroll module directly to appraisal
+                  outcomes with no manual intervention.</p>
+              </div>
             </article>
-            <article class="perf-feature-tile">
-              <i class="fas fa-people-arrows"></i>
-              <h3>Talent identification and succession planning</h3>
-              <p>Use performance data to identify high-potential employees for leadership development, promotion
-                pathways, and succession planning. Build a talent pipeline grounded in measurable outcomes not
-                seniority alone.</p>
+
+            <article class="perf-feature-item feature-item-4">
+              <div class="perf-feature-icon">
+                <i class="fas fa-people-arrows"></i>
+              </div>
+              <div class="perf-feature-text">
+                <h4>Talent identification and succession planning</h4>
+                <p>Use performance data to identify high-potential employees for leadership development, promotion
+                  pathways, and succession planning. Build a talent pipeline grounded in measurable outcomes — not
+                  seniority alone.</p>
+              </div>
             </article>
           </div>
         </div>

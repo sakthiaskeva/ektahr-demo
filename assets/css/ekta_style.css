@@ -1004,7 +1004,8 @@ p a {
   .hero-badge {
     font-size: 10px !important;
     padding: 6px 12px;
-  }}
+  }
+}
 
 @media (max-width: 768px) {
   .hero-badge {
@@ -1585,3 +1586,178 @@ table {
   height: 45px;
   width: auto;
 }
+
+.modules-btn-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width:768px) {
+  .modules-btn-div {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.security-section {
+  padding: 80px 0;
+  background: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.security-wrapper {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.security-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  border: 1px solid rgba(249, 184, 36, 0.28);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  box-shadow: 0 12px 30px rgba(249, 184, 36, 0.14);
+  margin: 20px 0px;
+}
+
+.security-label i {
+  font-size: 13px;
+}
+
+.security-content h2 {
+  font-size: 40px;
+  line-height: 1.08;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 28px;
+  letter-spacing: -1.8px;
+}
+
+.security-description {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 17px;
+  line-height: 1.9;
+  margin-bottom: 24px;
+  max-width: 720px;
+}
+
+.security-support {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 34px;
+}
+
+.security-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 28px;
+  border-radius: 14px;
+  background: #f9b824;
+  color: #000;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 800;
+  transition: 0.35s ease;
+}
+
+.security-btn:hover {
+  background: #fff;
+  color: #000;
+  transform: translateY(-4px);
+}
+
+.security-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.trust-card {
+  background: #0d0d0d;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 30px 26px;
+  transition: 0.35s ease;
+}
+
+.trust-card:hover, .trust-card.active {
+  transform: translateY(-5px);
+  border-color: rgba(249, 184, 36, 0.35);
+  box-shadow: 0 0 30px rgba(249, 184, 36, 0.08);
+}
+
+.trust-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  background: rgba(249, 184, 36, 0.1);
+  border: 1px solid rgba(249, 184, 36, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.trust-icon i {
+  font-size: 20px;
+  color: #f9b824;
+}
+
+.trust-card h4 {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 700;
+  margin: 0;
+}
+
+@media(max-width:1199px) {
+
+  .security-content h2 {
+    font-size: 40px;
+  }
+
+}
+
+@media(max-width:991px) {
+
+  .security-wrapper {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .security-content h2 {
+    font-size: 40px;
+  }
+
+}
+
+@media(max-width:767px) {
+
+  .security-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .security-content h2 {
+    font-size: 30px;
+    line-height: 1.15;
+  }
+
+  .security-section {
+    padding: 60px 0;
+  }
+
+}
+
