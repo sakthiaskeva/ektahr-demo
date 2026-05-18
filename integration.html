@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Integrations | EKTA HR - Seamlessly Connect Your Workflow</title>
+  <title>HR Software Integration India | Connect EKTA HR with Your Entire Stack</title>
   <meta name="description"
-    content="Connect EKTA HR with your favorite tools. From ERPs and accounting software to SSO and communication apps, experience a connected HR ecosystem.">
+    content="Integrate EKTA HR with Tally, SAP, QuickBooks, biometric devices, Okta SSO, and more. Real-time payroll sync, ERP integration, and API connectivity built for Indian businesses. Start free for 3 months.">
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="assets/images/logo/favicon-32x32.png">
@@ -242,6 +242,1017 @@
       background: var(--secondary);
       color: var(--white);
       transform: translateY(-3px);
+    }
+
+    .integration-page {
+      background: #fff;
+      color: var(--secondary);
+      overflow: hidden;
+    }
+
+    .integration-page section {
+      padding: 50px 0;
+      position: relative;
+    }
+
+    .integration-page .section-header {
+      max-width: 780px;
+      margin: 0 auto 44px;
+      text-align: center;
+    }
+
+    .integration-page .section-label,
+    .integration-page .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(249, 184, 36, 0.14);
+      color: var(--primary-dark);
+      border: 1px solid rgba(249, 184, 36, 0.32);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .integration-page .section-label {
+      margin: 0 auto 14px;
+    }
+
+    .integration-page .section-title {
+      color: var(--secondary);
+      font-size: clamp(32px, 4.6vw, 54px);
+      line-height: 1.04;
+      font-weight: 950;
+      letter-spacing: 0;
+      margin: 0 0 16px;
+    }
+
+    .integration-page .section-title em,
+    .integration-page h1 em,
+    .integration-page .cta-card h2 em {
+      font-style: normal;
+      color: var(--primary-dark);
+    }
+
+    .integration-page .section-desc {
+      color: var(--text-muted);
+      font-size: 17px;
+      line-height: 1.75;
+      margin: 0;
+    }
+
+    .integration-hero {
+      padding: 148px 0 70px !important;
+      background:
+        linear-gradient(135deg, rgba(249, 184, 36, 0.22), transparent 36%),
+        linear-gradient(315deg, rgba(18, 18, 18, 0.06), transparent 30%),
+        #fff;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .integration-hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.02fr) minmax(360px, 0.98fr);
+      gap: 58px;
+      align-items: center;
+    }
+
+    .integration-hero h1 {
+      color: var(--secondary);
+      font-size: clamp(36px, 4vw, 56px);
+      line-height: 1.08;
+      letter-spacing: 0;
+      font-weight: 900;
+      max-width: 680px;
+      margin: 22px 0 22px;
+    }
+
+    .integration-hero .hero-sub {
+      max-width: 680px;
+      color: var(--text-muted);
+      font-size: 18px;
+      line-height: 1.75;
+      margin: 0 0 30px;
+    }
+
+    .integration-page .hero-actions,
+    .integration-page .cta-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .integration-page .btn-primary,
+    .integration-page .btn-secondary,
+    .integration-page .btn-white,
+    .integration-page .btn-ghost,
+    .integration-page .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 52px;
+      padding: 15px 24px;
+      border-radius: 12px;
+      font-weight: 850;
+      text-decoration: none;
+      transition: var(--transition);
+      border: 1px solid transparent;
+      line-height: 1.2;
+    }
+
+    .integration-page .btn-primary {
+      background: var(--primary);
+      color: var(--secondary);
+      border-color: var(--primary);
+      box-shadow: 0 14px 34px rgba(249, 184, 36, 0.26);
+    }
+
+    .integration-page .btn-secondary {
+      background: #fff;
+      color: var(--secondary);
+      border-color: var(--border);
+    }
+
+    .integration-page .btn-primary:hover,
+    .integration-page .btn-secondary:hover,
+    .integration-page .btn-white:hover,
+    .integration-page .btn-ghost:hover,
+    .integration-page .btn-outline:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 34px rgba(18, 18, 18, 0.14);
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 34px;
+    }
+
+    .stat-item {
+      padding: 18px 16px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid var(--border);
+      box-shadow: 0 16px 42px rgba(18, 18, 18, 0.06);
+    }
+
+    .stat-num {
+      color: var(--secondary);
+      font-size: 24px;
+      font-weight: 950;
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    .stat-num span {
+      color: var(--primary-dark);
+      font-size: 15px;
+    }
+
+    .stat-label {
+      color: var(--text-muted);
+      font-size: 12px;
+      line-height: 1.45;
+      margin-top: 9px;
+      font-weight: 700;
+    }
+
+    .integration-visual {
+      position: relative;
+    }
+
+    .integration-visual-card {
+      position: relative;
+      padding: 18px;
+      border-radius: 34px;
+      background: #fff;
+      border: 1px solid var(--border);
+      box-shadow: 0 34px 90px rgba(18, 18, 18, 0.14);
+    }
+
+    .integration-visual-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 36px;
+      right: 36px;
+      height: 6px;
+      background: var(--primary);
+      border-radius: 0 0 14px 14px;
+    }
+
+    .integration-visual img {
+      width: 100%;
+      display: block;
+      border-radius: 24px;
+      background: var(--bg-light);
+    }
+
+    .sync-panel {
+      position: absolute;
+      left: -24px;
+      bottom: 24px;
+      width: min(280px, 62%);
+      padding: 18px;
+      border-radius: 18px;
+      background: var(--secondary);
+      color: #fff;
+      box-shadow: 0 24px 50px rgba(18, 18, 18, 0.25);
+      display: none;
+    }
+
+    .sync-panel strong {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .sync-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 12px;
+      padding-top: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .logos-strip {
+      padding: 20px 0;
+      background: var(--secondary);
+    }
+
+    .logos-inner {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      overflow-x: auto;
+      padding: 4px 2px;
+      scrollbar-width: none;
+    }
+
+    .logos-inner::-webkit-scrollbar {
+      display: none;
+    }
+
+    .logo-pill {
+      flex: 0 0 auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .logo-icon,
+    .int-logo {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .logo-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      font-size: 11px;
+      font-weight: 950;
+    }
+
+    .integration-soft {
+      background:
+        linear-gradient(135deg, rgba(249, 184, 36, 0.1), transparent 34%),
+        var(--bg-light);
+    }
+
+    .why-section {
+      background:
+        linear-gradient(rgba(249, 184, 36, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(249, 184, 36, 0.06) 1px, transparent 1px),
+        radial-gradient(circle at 12% 18%, rgba(249, 184, 36, 0.2), transparent 30%),
+        radial-gradient(circle at 88% 72%, rgba(18, 18, 18, 0.06), transparent 26%),
+        var(--bg-light);
+      background-size: 44px 44px, 44px 44px, auto, auto, auto;
+    }
+
+    .why-section .section-title {
+      color: var(--secondary);
+    }
+
+    .why-section .section-desc {
+      color: var(--text-muted);
+    }
+
+    .why-section .section-label {
+      background: rgba(249, 184, 36, 0.14);
+      border-color: rgba(249, 184, 36, 0.3);
+      color: var(--primary-dark);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .why-card,
+    .int-card,
+    .usecase-card,
+    .faq-item {
+      background: #fff;
+      border: 1px solid var(--border);
+      box-shadow: 0 18px 48px rgba(18, 18, 18, 0.06);
+      transition: var(--transition);
+    }
+
+    .why-card {
+      position: relative;
+      grid-column: span 4;
+      padding: 28px;
+      border-radius: 20px;
+      min-height: 100%;
+      overflow: hidden;
+    }
+
+    .why-section .why-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 265px;
+      background: #fff;
+      border-color: var(--border);
+      box-shadow: 0 18px 48px rgba(18, 18, 18, 0.06);
+    }
+
+    .why-section .why-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(249, 184, 36, 0.18), transparent 42%);
+      opacity: 0;
+      transition: opacity .25s ease;
+      pointer-events: none;
+    }
+
+    .why-section .why-card:hover::before {
+      opacity: 1;
+    }
+
+    .why-section .why-card:nth-child(1) {
+      grid-column: span 4;
+      background: #fff;
+      border-color: var(--border);
+    }
+
+    .why-section .why-card:nth-child(2) {
+      grid-column: span 4;
+    }
+
+    .why-section .why-card:nth-child(3) {
+      grid-column: span 4;
+    }
+
+    .why-section .why-card:nth-child(4) {
+      grid-column: span 4;
+    }
+
+    .why-section .why-card:nth-child(5) {
+      grid-column: span 4;
+      background: #fff;
+      border-color: var(--border);
+    }
+
+    .why-section .why-card:nth-child(6) {
+      grid-column: span 4;
+    }
+
+    .why-section .why-card>* {
+      position: relative;
+      z-index: 1;
+    }
+
+    .why-card:hover,
+    .int-card:hover,
+    .usecase-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 24px 60px rgba(18, 18, 18, 0.1);
+      border-color: rgba(249, 184, 36, 0.6);
+    }
+
+    .why-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+      color: var(--secondary);
+      font-size: 20px;
+    }
+
+    .why-section .why-icon {
+      background: var(--primary);
+      color: var(--secondary);
+      box-shadow: 0 14px 28px rgba(249, 184, 36, 0.18);
+    }
+
+    .why-card h3,
+    .int-card h3,
+    .usecase-card h3 {
+      color: var(--secondary);
+      font-size: 19px;
+      line-height: 1.35;
+      font-weight: 900;
+      margin: 0 0 10px;
+    }
+
+    .why-section .why-card h3 {
+      color: var(--secondary);
+      font-size: clamp(18px, 1.45vw, 22px);
+    }
+
+    .why-section .why-card p {
+      color: var(--text-muted);
+    }
+
+    .why-section .why-card:nth-child(1) h3 {
+      color: var(--secondary);
+    }
+
+    .why-section .why-card:nth-child(1) p {
+      color: var(--text-muted);
+    }
+
+    .why-card p,
+    .int-card p,
+    .usecase-card p,
+    .benefit-item p,
+    .faq-a p {
+      color: var(--text-muted);
+      font-size: 14px;
+      line-height: 1.76;
+      margin: 0;
+    }
+
+    .tab-nav {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 0 auto 34px;
+    }
+
+    .integration-filter {
+      padding: 11px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: #fff;
+      color: var(--secondary);
+      font-size: 13px;
+      font-weight: 850;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .integration-filter.active,
+    .integration-filter:hover {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: var(--secondary);
+      box-shadow: 0 12px 26px rgba(249, 184, 36, 0.2);
+    }
+
+    .int-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .int-card {
+      position: relative;
+      border-radius: 22px;
+      padding: 24px;
+      text-align: left;
+      overflow: hidden;
+    }
+
+    .int-card[hidden] {
+      display: none;
+    }
+
+    .int-card-header {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      margin-bottom: 16px;
+      min-height: 58px;
+    }
+
+    .int-logo {
+      width: 56px;
+      height: 56px;
+      border-radius: 16px;
+    }
+
+    .int-type {
+      color: var(--primary-dark);
+      font-size: 12px;
+      font-weight: 850;
+      text-transform: uppercase;
+    }
+
+    .int-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .int-feature {
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: var(--bg-light);
+      color: var(--secondary);
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .badge-new {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--primary);
+      color: var(--secondary);
+      font-size: 11px;
+      font-weight: 900;
+    }
+
+    .biometric-section,
+    .api-section {
+      margin-top: 28px;
+      border-radius: 28px;
+      padding: 36px;
+      overflow: hidden;
+    }
+
+    .biometric-section {
+      background: #fff;
+      border: 1px solid var(--border);
+      box-shadow: 0 18px 48px rgba(18, 18, 18, 0.06);
+    }
+
+    .biometric-inner,
+    .api-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
+      gap: 28px;
+      align-items: center;
+    }
+
+    .biometric-section h3,
+    .api-section h3 {
+      color: var(--secondary);
+      font-size: clamp(27px, 3.2vw, 40px);
+      line-height: 1.1;
+      font-weight: 950;
+      margin: 0 0 16px;
+    }
+
+    .biometric-section h3 em,
+    .api-section h3 em {
+      color: var(--primary-dark);
+      font-style: normal;
+    }
+
+    .device-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .device-card {
+      padding: 18px;
+      border-radius: 18px;
+      background: var(--bg-light);
+      border: 1px solid var(--border);
+    }
+
+    .device-name {
+      color: var(--secondary);
+      font-weight: 950;
+      margin-bottom: 8px;
+    }
+
+    .device-desc {
+      color: var(--text-muted);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .api-section {
+      background: var(--secondary);
+      color: #fff;
+      box-shadow: 0 28px 70px rgba(18, 18, 18, 0.16);
+    }
+
+    .api-section h3,
+    .api-section p {
+      color: #fff;
+    }
+
+    .api-section p,
+    .api-feature {
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 14px;
+      line-height: 1.76;
+    }
+
+    .api-features {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .api-feature {
+      padding-left: 18px;
+      position: relative;
+    }
+
+    .api-feature::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--primary);
+      position: absolute;
+      left: 0;
+      top: 10px;
+    }
+
+    .code-block {
+      padding: 24px;
+      border-radius: 20px;
+      background: #060606;
+      color: rgba(255, 255, 255, 0.78);
+      font-family: Consolas, Monaco, monospace;
+      font-size: 13px;
+      line-height: 1.55;
+      overflow-x: auto;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .c-key {
+      color: var(--primary);
+    }
+
+    .c-str {
+      color: #7dd3fc;
+    }
+
+    .c-val {
+      color: #86efac;
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      max-width: 1040px;
+      margin: 0 auto;
+    }
+
+    .benefit-item {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 16px;
+      padding: 22px;
+      border-radius: 20px;
+      background: var(--bg-light);
+      border: 1px solid var(--border);
+    }
+
+    .benefit-num {
+      width: 38px;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: var(--primary);
+      color: var(--secondary);
+      font-weight: 950;
+    }
+
+    .benefit-item h4 {
+      color: var(--secondary);
+      font-size: 16px;
+      line-height: 1.35;
+      margin: 0 0 6px;
+      font-weight: 900;
+    }
+
+    .usecase-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .usecase-card {
+      border-radius: 24px;
+      padding: 28px;
+    }
+
+    .uc-industry {
+      color: var(--primary-dark);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .uc-metric {
+      margin-top: 18px;
+      padding: 13px 14px;
+      border-radius: 14px;
+      background: rgba(249, 184, 36, 0.14);
+      color: var(--secondary);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .faq-section {
+      background:
+        linear-gradient(135deg, rgba(249, 184, 36, 0.08), transparent 30%),
+        var(--bg-light);
+    }
+
+    .faq-list {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border-radius: 18px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+
+    .faq-item.open {
+      border-color: var(--primary);
+      box-shadow: 0 16px 34px rgba(249, 184, 36, 0.12);
+    }
+
+    .faq-q {
+      width: 100%;
+      padding: 20px 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      color: var(--secondary);
+      font-size: 15px;
+      font-weight: 900;
+      background: transparent;
+      border: 0;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .faq-q i {
+      color: var(--primary-dark);
+      transition: transform .25s ease;
+      flex-shrink: 0;
+    }
+
+    .faq-item.open .faq-q i {
+      transform: rotate(180deg);
+    }
+
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .35s ease, padding .25s ease;
+      padding: 0 22px;
+    }
+
+    .faq-item.open .faq-a {
+      max-height: 1200px;
+      padding: 0 22px 20px;
+    }
+
+    .cta-band {
+      padding: 56px 0 66px;
+      background: #fff;
+      border-top: 1px solid var(--border);
+    }
+
+    .cta-card {
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.65fr);
+      gap: 28px;
+      align-items: center;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 22px;
+      background: #fff;
+      box-shadow: 0 30px 90px rgba(18, 18, 18, 0.1);
+    }
+
+    .cta-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 32px;
+      right: 32px;
+      height: 5px;
+      background: var(--primary);
+      border-radius: 0 0 10px 10px;
+    }
+
+    .cta-copy {
+      padding: 34px 30px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta-card h2 {
+      color: var(--secondary);
+      font-size: clamp(30px, 4vw, 42px);
+      line-height: 1.12;
+      font-weight: 950;
+      margin: 0 0 14px;
+    }
+
+    .cta-card p {
+      color: var(--text-muted);
+      font-size: 17px;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .cta-actions {
+      align-self: stretch;
+      display: grid;
+      align-content: center;
+      gap: 14px;
+      padding: 30px;
+      border-radius: 22px;
+      background: var(--secondary);
+      position: relative;
+      z-index: 1;
+    }
+
+    .integration-page .cta-card .cta-actions {
+      display: grid;
+      align-content: center;
+      align-items: stretch;
+      justify-items: stretch;
+    }
+
+    .integration-page .btn-white {
+      background: var(--primary);
+      color: var(--secondary);
+      border-color: var(--primary);
+    }
+
+    .integration-page .btn-ghost {
+      background: transparent;
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.32);
+    }
+
+    .cta-band .btn-primary {
+      background: var(--primary) !important;
+      background-image: none !important;
+      color: var(--secondary) !important;
+      border-color: var(--primary) !important;
+      justify-content: center;
+      box-shadow: none;
+      width: 100%;
+      min-height: 56px;
+    }
+
+    .cta-band .btn-outline {
+      background: transparent !important;
+      background-image: none !important;
+      border-color: rgba(255, 255, 255, 0.32) !important;
+      color: var(--white) !important;
+      justify-content: center;
+      box-shadow: none;
+      width: 100%;
+      min-height: 56px;
+    }
+
+    @media (max-width: 1120px) {
+
+      .integration-hero-grid,
+      .biometric-inner,
+      .api-inner,
+      .cta-card {
+        grid-template-columns: 1fr;
+      }
+
+      .int-grid,
+      .why-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .why-section .why-card,
+      .why-section .why-card:nth-child(n) {
+        grid-column: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .integration-page section {
+        padding: 62px 0;
+      }
+
+      .integration-hero {
+        padding: 144px 0 52px;
+      }
+
+      .integration-hero h1 {
+        font-size: clamp(32px, 10vw, 44px);
+      }
+
+      .integration-hero .hero-sub {
+        font-size: 16px;
+      }
+
+      .hero-stats,
+      .why-grid,
+      .int-grid,
+      .benefits-grid,
+      .usecase-grid,
+      .device-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .integration-page .hero-actions a,
+      .cta-actions a {
+        width: 100%;
+      }
+
+      .sync-panel {
+        position: static;
+        width: auto;
+        margin: -8px 12px 12px;
+      }
+
+      .biometric-section,
+      .api-section,
+      .cta-card {
+        border-radius: 22px;
+        padding: 20px;
+      }
+
+      .cta-copy,
+      .cta-actions {
+        padding: 22px;
+      }
+
+      .faq-q {
+        font-size: 14px;
+        padding: 18px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .integration-visual-card {
+        border-radius: 22px;
+        padding: 10px;
+      }
+
+      .integration-visual img {
+        border-radius: 16px;
+      }
+
+      .int-card,
+      .why-card,
+      .usecase-card,
+      .benefit-item {
+        padding: 20px;
+      }
     }
   </style>
 </head>
@@ -569,155 +1580,764 @@
   </div>
   <div class="overlay" id="overlay"></div>
 
-  <!-- Hero Section (Standardized UI) -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-content" style="text-align: center; max-width: 850px; margin: 0 auto;">
-        <span class="section-tag" data-aos="fade-up">Integrations</span>
-        <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
-          Connect EKTA HR with<br>
-          <span style="color:var(--primary-dark);">Your Favorite Tools</span>
-        </h1>
-        <p class="hero-text" data-aos="fade-up" data-aos-delay="200">
-          Integrate HR, payroll, and business tools into one seamless platform.
-        </p>
-        <div class="header-btns-mobile" data-aos="fade-up" data-aos-delay="300" style="justify-content: center;">
-          <a href="https://my.ektahr.com/signup" class="btn btn-primary animate-pulse-yellow">Get Started Free</a>
-          <a href="#integrations" class="btn btn-outline">Browse Integrations</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Why Integrate (Advantages Style) -->
-  <section class="sp" style="background: var(--bg-light);">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <span class="section-tag">Value Proposition</span>
-        <h2>Why Integrate with EKTA HR?</h2>
-        <p>A connected system is a smarter system. Experience the power of unified data flow.</p>
-      </div>
-
-      <div class="journey-grid">
-        <!-- Card 1 -->
-        <div class="card-inverted-wrapper" data-aos="fade-up">
-          <div class="journey-icon"><i class="fas fa-bullseye"></i></div>
-          <div class="card-inverted">
-            <h4>Centralized Operations</h4>
-            <p>Connect to a single source of truth for employee data, payroll, and attendance—making your organization
-              smarter and more efficient.</p>
+  <main class="integration-page">
+    <section class="integration-hero" aria-labelledby="integration-hero-title">
+      <div class="container">
+        <div class="integration-hero-grid">
+          <div data-aos="fade-right">
+            <div class="hero-eyebrow">50+ integrations &middot; India's connected HRMS</div>
+            <h1 id="integration-hero-title">HR Software Integration India &mdash;<br>Connect <em>EKTA HR</em>
+              with<br>Your Entire Stack</h1>
+            <p class="hero-sub">Sync payroll with Tally. Connect SAP or Oracle HCM. Automate attendance with biometric
+              devices. EKTA HR's HRMS integration connects every tool in your stack &mdash; built for how Indian
+              businesses actually work.</p>
+            <div class="hero-actions">
+              <a href="https://my.ektahr.com/signup" class="btn-primary">Start Free Trial <i
+                  class="fas fa-arrow-right"></i></a>
+              <a href="#integrations" class="btn-secondary">Browse Integrations</a>
+            </div>
+            <div class="hero-stats" aria-label="Integration highlights">
+              <div class="stat-item">
+                <div class="stat-num">50<span>+</span></div>
+                <div class="stat-label">Native integrations</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-num"><span>~</span>0</div>
+                <div class="stat-label">Manual data entry</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-num">Real<span>-</span>time</div>
+                <div class="stat-label">Data sync across systems</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-num">REST<span> API</span></div>
+                <div class="stat-label">Open API + webhooks</div>
+              </div>
+            </div>
           </div>
-        </div>
-        <!-- Card 2 -->
-        <div class="card-inverted-wrapper" data-aos="fade-up" data-aos-delay="100">
-          <div class="journey-icon"><i class="fas fa-sync"></i></div>
-          <div class="card-inverted">
-            <h4>Real-Time Data Sync</h4>
-            <p>Sync data instantly to avoid manual entry, reduce errors, and enable live updates across all your
-              business platforms effortlessly.</p>
-          </div>
-        </div>
-        <!-- Card 3 -->
-        <div class="card-inverted-wrapper" data-aos="fade-up" data-aos-delay="200">
-          <div class="journey-icon"><i class="fas fa-puzzle-piece"></i></div>
-          <div class="card-inverted">
-            <h4>Ultimate Flexibility</h4>
-            <p>EKTA HR is designed to integrate with a wide range of third-party platforms—ERPs, Biometric systems,
-              Accounting software, and more.</p>
+          <div class="integration-visual" data-aos="fade-left" data-aos-delay="120">
+            <div class="integration-visual-card">
+              <img src="assets/images/home/hero-img.png" alt="EKTA HR integration dashboard">
+              <div class="sync-panel" aria-label="Live integration sync">
+                <strong>Payroll sync ready</strong>
+                <div class="sync-row"><span>Tally</span><span>1.2s</span></div>
+                <div class="sync-row"><span>SAP ERP</span><span>Live</span></div>
+                <div class="sync-row"><span>Biometric</span><span>Auto</span></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Integrations Grid (Feature Cards Style) -->
-  <section class="sp" id="integrations">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <span class="section-tag">Explore Connectivity</span>
-        <h2>Integrations that Power Up Your Workflow</h2>
-      </div>
-
-      <!-- Filter Buttons -->
-      <div class="int-cats" data-aos="fade-up">
-        <button class="cat-btn active" data-filter="all">All Tools</button>
-        <button class="cat-btn" data-filter="erp">ERP & HCM</button>
-        <button class="cat-btn" data-filter="accounting">Accounting</button>
-        <button class="cat-btn" data-filter="security">Security & SSO</button>
-        <button class="cat-btn" data-filter="collaboration">Collaboration</button>
-      </div>
-
-      <div class="features-grid">
-        <!-- ERP -->
-        <div class="feature-card glass-card int-card" data-category="erp" data-aos="fade-up">
-          <div class="int-logo-box"><i class="fas fa-database"></i></div>
-          <h3>SAP Integration</h3>
-          <p>Connect with SAP ERP solutions to manage finance, logistics, and HR data with enterprise-grade efficiency.
-          </p>
-        </div>
-
-        <div class="feature-card glass-card int-card" data-category="erp" data-aos="fade-up" data-aos-delay="100">
-          <div class="int-logo-box"><i class="fas fa-cloud"></i></div>
-          <h3>Oracle HCM Cloud</h3>
-          <p>Global HR, payroll, and talent management synchronization for complex workforce lifecycles.</p>
-        </div>
-
-        <!-- Accounting -->
-        <div class="feature-card glass-card int-card" data-category="accounting" data-aos="fade-up"
-          data-aos-delay="200">
-          <div class="int-logo-box"><i class="fas fa-calculator"></i></div>
-          <h3>Tally Solutions</h3>
-          <p>Simplify business finances by syncing payroll data directly with Tally for accurate, error-free accounting.
-          </p>
-        </div>
-
-        <div class="feature-card glass-card int-card" data-category="accounting" data-aos="fade-up">
-          <div class="int-logo-box"><i class="fas fa-file-invoice-dollar"></i></div>
-          <h3>QuickBooks</h3>
-          <p>Track expenses and run payroll with easy-to-use accounting tools connected directly to EKTA HR.</p>
-        </div>
-
-        <!-- Security -->
-        <div class="feature-card glass-card int-card" data-category="security" data-aos="fade-up" data-aos-delay="100">
-          <div class="int-logo-box"><i class="fas fa-shield-alt"></i></div>
-          <h3>Okta SSO</h3>
-          <p>Seamless Single Sign-On and automated user provisioning for enhanced organizational security and control.
-          </p>
-        </div>
-
-        <div class="feature-card glass-card int-card" data-category="security" data-aos="fade-up" data-aos-delay="200">
-          <div class="int-logo-box"><i class="fab fa-google"></i></div>
-          <h3>Google Workspace</h3>
-          <p>Streamline authentication using Google credentials for easy access to your EKTA HR dashboard.</p>
-        </div>
-
-        <!-- Collaboration -->
-        <div class="feature-card glass-card int-card" data-category="collaboration" data-aos="fade-up">
-          <div class="int-logo-box"><i class="fas fa-video"></i></div>
-          <h3>Virtual Meetings</h3>
-          <p>Enable one-click Zoom or Meet interviews and onboarding meetings scheduled directly within EKTA.</p>
-        </div>
-
-        <div class="feature-card glass-card int-card" data-category="collaboration" data-aos="fade-up"
-          data-aos-delay="100">
-          <div class="int-logo-box"><i class="fab fa-microsoft"></i></div>
-          <h3>Microsoft Teams</h3>
-          <p>Integrate with MS Teams to facilitate seamless interview scheduling and internal team collaboration.</p>
-        </div>
-
-        <!-- Verification/Rewards -->
-        <div class="feature-card glass-card int-card" data-category="collaboration" data-aos="fade-up"
-          data-aos-delay="200">
-          <div class="int-logo-box"><i class="fas fa-user-check"></i></div>
-          <h3>SpringVerify</h3>
-          <p>Automated background checks and candidate verification directly within the onboarding module.</p>
+    <div class="logos-strip" aria-label="Supported integration partners">
+      <div class="container">
+        <div class="logos-inner">
+          <div class="logo-pill">
+            <div class="logo-icon" style="background:#0070D4;color:#fff;">S</div>SAP
+          </div>
+          <div class="logo-pill">
+            <div class="logo-icon" style="background:#f80000;color:#fff;">O</div>Oracle HCM
+          </div>
+          <div class="logo-pill">
+            <div class="logo-icon" style="background:#22272e;color:#fff;">T</div>Tally
+          </div>
+          <div class="logo-pill">
+            <div class="logo-icon" style="background:#2CA01C;color:#fff;">Q</div>QuickBooks
+          </div>
+          <div class="logo-pill">
+            <div class="logo-icon" style="background:#007DC1;color:#fff;">Ok</div>Okta
+          </div>
+          <div class="logo-pill">
+            <div class="logo-icon" style="background:#EA4335;color:#fff;">G</div>Google
+          </div>
+          <div class="logo-pill">
+            <div class="logo-icon" style="background:#6264A7;color:#fff;">T</div>Teams
+          </div>
+          <div class="logo-pill">
+            <div class="logo-icon" style="background:#2D8CFF;color:#fff;">Z</div>Zoom
+          </div>
+          <div class="logo-pill">
+            <div class="logo-icon" style="background:#1B4F72;color:#fff;">Sp</div>SpringVerify
+          </div>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- CTA Section (Premium) -->
-  <!-- <section class="sp" style="padding: 80px 0;">
+    <section class="integration-soft why-section" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-label">Why HRMS integration matters</div>
+          <h2 class="section-title" id="why-heading">A connected HRMS is a <em>smarter</em> HRMS</h2>
+          <p class="section-desc">Indian businesses run on a patchwork of tools. EKTA HR ties them together so your data
+            flows &mdash; not your team's time.</p>
+        </div>
+        <div class="why-grid">
+          <div class="why-card" data-aos="fade-up">
+            <div class="why-icon"><i class="fas fa-arrows-rotate"></i></div>
+            <h3>Real-time data sync across payroll, attendance &amp; accounting</h3>
+            <p>Every attendance punch, leave approval, and salary revision instantly reflects in your payroll and
+              accounting system &mdash; no manual exports, no Excel gymnastics, no month-end scramble.</p>
+          </div>
+          <div class="why-card" data-aos="fade-up" data-aos-delay="80">
+            <div class="why-icon"><i class="fas fa-database"></i></div>
+            <h3>Single source of truth for employee data</h3>
+            <p>From onboarding to exit, every employee record stays consistent across HR, payroll, ERP, and your
+              communication tools. One update, everywhere updated. No duplicate data, no reconciliation headaches.</p>
+          </div>
+          <div class="why-card" data-aos="fade-up" data-aos-delay="160">
+            <div class="why-icon"><i class="fas fa-bolt"></i></div>
+            <h3>Eliminate manual data entry &amp; payroll errors</h3>
+            <p>Manual entry is where payroll errors are born. EKTA HR's HRMS integrations automate the data flow between
+              systems &mdash; cutting errors at the source and saving your HR team hours every pay cycle.</p>
+          </div>
+          <div class="why-card" data-aos="fade-up">
+            <div class="why-icon"><i class="fas fa-shield-halved"></i></div>
+            <h3>Enterprise-grade security with SSO &amp; automated provisioning</h3>
+            <p>Give employees one-click access via Google Workspace or Okta SSO. Automatically provision and deprovision
+              accounts when people join or leave &mdash; no IT tickets, no access limbo.</p>
+          </div>
+          <div class="why-card" data-aos="fade-up" data-aos-delay="80">
+            <div class="why-icon"><i class="fas fa-chart-simple"></i></div>
+            <h3>ERP-connected HR for Indian enterprises</h3>
+            <p>Whether you run SAP, Oracle HCM Cloud, or Tally, EKTA HR syncs HR and financial data bidirectionally
+              &mdash; so your CFO's ERP and your CHRO's HRMS are always in agreement.</p>
+          </div>
+          <div class="why-card" data-aos="fade-up" data-aos-delay="160">
+            <div class="why-icon"><i class="fas fa-location-dot"></i></div>
+            <h3>Built for the Indian HR &amp; payroll ecosystem</h3>
+            <p>Tally is the accounting backbone of Indian SMEs. Biometric attendance is standard in Indian factories and
+              offices. WhatsApp is how employees actually communicate. EKTA HR integrates with all of them natively.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="integrations" aria-labelledby="integrations-heading">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-label">Integration directory</div>
+          <h2 class="section-title" id="integrations-heading">Integrations that <em>power up</em> your workflow</h2>
+          <p class="section-desc">Filter by category to find the right connection for your stack. Every integration is
+            pre-built &mdash; no custom development required.</p>
+        </div>
+
+        <div class="tab-nav" data-aos="fade-up">
+          <button class="integration-filter active" type="button" data-filter="all">All integrations</button>
+          <button class="integration-filter" type="button" data-filter="erp">ERP &amp; HCM</button>
+          <button class="integration-filter" type="button" data-filter="payroll">Payroll &amp; Accounting</button>
+          <button class="integration-filter" type="button" data-filter="biometric">Biometric &amp; Attendance</button>
+          <button class="integration-filter" type="button" data-filter="sso">Security &amp; SSO</button>
+          <button class="integration-filter" type="button" data-filter="collab">Collaboration</button>
+          <button class="integration-filter" type="button" data-filter="bgv">Background Verification</button>
+        </div>
+
+        <div class="int-grid">
+          <div class="int-card" data-category="erp" data-aos="fade-up">
+            <div class="int-card-header">
+              <div class="int-logo" style="background:#e8f0f8;"><span
+                  style="color:#0070D4;font-size:16px;font-weight:800;">SAP</span></div>
+              <div>
+                <h3>SAP ERP Integration</h3>
+                <div class="int-type">ERP &amp; HCM</div>
+              </div>
+            </div>
+            <p>Connect EKTA HR with SAP ERP to synchronise employee master data, cost centre assignments, and payroll
+              journals &mdash; bidirectionally. Ideal for mid-market and enterprise manufacturers, FMCG, and
+              infrastructure companies running SAP as their financial backbone.</p>
+            <div class="int-features">
+              <span class="int-feature">Bidirectional sync</span>
+              <span class="int-feature">Employee master data</span>
+              <span class="int-feature">Cost centre mapping</span>
+              <span class="int-feature">Payroll journals</span>
+            </div>
+          </div>
+
+          <div class="int-card" data-category="erp" data-aos="fade-up" data-aos-delay="80">
+            <div class="int-card-header">
+              <div class="int-logo" style="background:#fff0f0;"><span
+                  style="color:#f80000;font-size:20px;font-weight:800;">O</span></div>
+              <div>
+                <h3>Oracle HCM Cloud</h3>
+                <div class="int-type">ERP &amp; HCM</div>
+              </div>
+            </div>
+            <p>Sync global HR, payroll, and talent management data between Oracle HCM Cloud and EKTA HR. Built for
+              Indian enterprises with international operations that need a local HRMS compliant with Indian labour laws
+              while maintaining global workforce visibility in Oracle.</p>
+            <div class="int-features">
+              <span class="int-feature">Global workforce sync</span>
+              <span class="int-feature">Indian compliance</span>
+              <span class="int-feature">Talent data</span>
+              <span class="int-feature">REST API</span>
+            </div>
+          </div>
+
+          <div class="int-card" data-category="payroll" data-aos="fade-up" data-aos-delay="160">
+            <span class="badge-new">Most popular</span>
+            <div class="int-card-header">
+              <div class="int-logo" style="background:#f5f5f5;"><span
+                  style="color:#22272e;font-size:15px;font-weight:800;">Tally</span></div>
+              <div>
+                <h3>Tally Payroll Integration</h3>
+                <div class="int-type">Payroll &amp; Accounting</div>
+              </div>
+            </div>
+            <p>Stop exporting payroll to Excel and manually importing it into Tally. EKTA HR syncs processed payroll
+              data &mdash; salary, deductions, PF, ESI, and PT &mdash; directly into Tally Solutions with the correct
+              ledger mapping. No manual entry. No mismatch at month-end.</p>
+            <div class="int-features">
+              <span class="int-feature">Auto payroll sync</span>
+              <span class="int-feature">Ledger mapping</span>
+              <span class="int-feature">PF / ESI / PT</span>
+              <span class="int-feature">No manual export</span>
+            </div>
+          </div>
+
+          <div class="int-card" data-category="payroll" data-aos="fade-up">
+            <div class="int-card-header">
+              <div class="int-logo" style="background:#e8f7e8;"><span
+                  style="color:#2CA01C;font-size:14px;font-weight:800;">QB</span></div>
+              <div>
+                <h3>QuickBooks Integration</h3>
+                <div class="int-type">Payroll &amp; Accounting</div>
+              </div>
+            </div>
+            <p>Connect EKTA HR with QuickBooks to sync payroll runs, employee expense claims, and reimbursements
+              directly into your books. Purpose-built for Indian SMBs that use QuickBooks for accounting but need a
+              dedicated HRMS for attendance, leave, and compliance.</p>
+            <div class="int-features">
+              <span class="int-feature">Payroll sync</span>
+              <span class="int-feature">Expense claims</span>
+              <span class="int-feature">Reimbursements</span>
+              <span class="int-feature">SMB-ready</span>
+            </div>
+          </div>
+
+          <div class="int-card" data-category="sso" data-aos="fade-up" data-aos-delay="80">
+            <div class="int-card-header">
+              <div class="int-logo" style="background:#e6f3fb;"><span
+                  style="color:#007DC1;font-size:14px;font-weight:800;">Okta</span></div>
+              <div>
+                <h3>Okta SSO Integration</h3>
+                <div class="int-type">Security &amp; SSO</div>
+              </div>
+            </div>
+            <p>Enable seamless Single Sign-On for EKTA HR via Okta. Automatically provision EKTA HR accounts when
+              employees are added in Okta &mdash; and deprovision instantly when they leave. Eliminates access gaps and
+              reduces IT overhead for growing Indian tech teams and enterprises.</p>
+            <div class="int-features">
+              <span class="int-feature">SAML 2.0 SSO</span>
+              <span class="int-feature">Auto-provisioning</span>
+              <span class="int-feature">SCIM sync</span>
+              <span class="int-feature">Deprovisioning</span>
+            </div>
+          </div>
+
+          <div class="int-card" data-category="sso" data-aos="fade-up" data-aos-delay="160">
+            <div class="int-card-header">
+              <div class="int-logo" style="background:#fce8e8;"><span
+                  style="color:#EA4335;font-size:18px;font-weight:800;">G</span></div>
+              <div>
+                <h3>Google Workspace SSO</h3>
+                <div class="int-type">Security &amp; SSO</div>
+              </div>
+            </div>
+            <p>Let employees log into EKTA HR with their existing Google Workspace credentials &mdash; no separate
+              password to remember. Ideal for startups and SMBs already on Google Workspace who want to extend single
+              sign-on to their HRMS without complex IT setup.</p>
+            <div class="int-features">
+              <span class="int-feature">One-click login</span>
+              <span class="int-feature">Google OAuth</span>
+              <span class="int-feature">Zero extra passwords</span>
+              <span class="int-feature">Startup-friendly</span>
+            </div>
+          </div>
+
+          <div class="int-card" data-category="collab" data-aos="fade-up">
+            <div class="int-card-header">
+              <div class="int-logo" style="background:#eeeeff;"><span
+                  style="color:#6264A7;font-size:13px;font-weight:800;">Teams</span></div>
+              <div>
+                <h3>Microsoft Teams Integration</h3>
+                <div class="int-type">Collaboration</div>
+              </div>
+            </div>
+            <p>Schedule interviews, send interview reminders, and get leave approval notifications &mdash; all within
+              Microsoft Teams. HR teams and hiring managers stay informed without switching between tools. Reduce
+              time-to-hire and keep your team in the loop inside the app they already use.</p>
+            <div class="int-features">
+              <span class="int-feature">Interview scheduling</span>
+              <span class="int-feature">Leave alerts</span>
+              <span class="int-feature">Onboarding reminders</span>
+              <span class="int-feature">HR notifications</span>
+            </div>
+          </div>
+
+          <div class="int-card" data-category="collab" data-aos="fade-up" data-aos-delay="80">
+            <div class="int-card-header">
+              <div class="int-logo" style="background:#e8f1ff;"><span
+                  style="color:#2D8CFF;font-size:14px;font-weight:800;">Zoom</span></div>
+              <div>
+                <h3>Zoom &amp; Google Meet</h3>
+                <div class="int-type">Collaboration</div>
+              </div>
+            </div>
+            <p>Create and send Zoom or Google Meet interview links directly from within EKTA HR's recruitment module.
+              One-click virtual meeting scheduling &mdash; no copy-pasting links, no calendar juggling. Candidates
+              receive the meeting link automatically with their interview invite.</p>
+            <div class="int-features">
+              <span class="int-feature">One-click interviews</span>
+              <span class="int-feature">Auto meeting links</span>
+              <span class="int-feature">Candidate auto-notify</span>
+              <span class="int-feature">Recruitment-native</span>
+            </div>
+          </div>
+
+          <div class="int-card" data-category="bgv" data-aos="fade-up" data-aos-delay="160">
+            <span class="badge-new">Onboarding</span>
+            <div class="int-card-header">
+              <div class="int-logo" style="background:#eef5ff;"><span
+                  style="color:#1B4F72;font-size:12px;font-weight:800;">SVfy</span></div>
+              <div>
+                <h3>SpringVerify BGV</h3>
+                <div class="int-type">Background Verification</div>
+              </div>
+            </div>
+            <p>Trigger automated background verification checks on new hires directly within EKTA HR's onboarding
+              module. No separate logins, no switching tabs. Identity, education, employment, and criminal checks are
+              initiated and tracked from the same onboarding dashboard your HR team already uses.</p>
+            <div class="int-features">
+              <span class="int-feature">In-flow BGV trigger</span>
+              <span class="int-feature">Identity checks</span>
+              <span class="int-feature">Employment history</span>
+              <span class="int-feature">Status tracking</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="biometric-section" data-section-category="biometric" data-aos="fade-up">
+          <div class="biometric-inner">
+            <div>
+              <div class="section-label" style="margin-left:0;margin-bottom:12px;">Biometric &amp; attendance hardware
+              </div>
+              <h3>Biometric integration with HRMS India &mdash; <em>ZKTeco, eSSL &amp; Matrix supported</em></h3>
+              <p>India runs on biometric attendance. EKTA HR connects directly with the most widely used biometric
+                device brands in Indian offices and factories &mdash; so punch data flows into attendance records
+                automatically, and from there into payroll. No manual downloading, no USB transfers.</p>
+              <p>LOP deductions, overtime calculations, and shift regularisations are computed from live biometric data
+                &mdash; not from Excel files your security guard emails to HR every Monday.</p>
+              <a href="https://my.ektahr.com/signup" class="btn-primary" style="margin-top:18px;">Connect your biometric
+                device <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="device-grid">
+              <div class="device-card">
+                <div class="device-name">ZKTeco</div>
+                <div class="device-desc">Face recognition, fingerprint &amp; card devices &mdash; fully supported</div>
+              </div>
+              <div class="device-card">
+                <div class="device-name">eSSL</div>
+                <div class="device-desc">India's most widely deployed biometric brand &mdash; plug-and-play integration
+                </div>
+              </div>
+              <div class="device-card">
+                <div class="device-name">Matrix</div>
+                <div class="device-desc">Enterprise-grade access control and attendance hardware</div>
+              </div>
+              <div class="device-card">
+                <div class="device-name">Other devices</div>
+                <div class="device-desc">PUSH API support for additional biometric hardware brands</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="api-section" data-section-category="api" data-aos="fade-up">
+          <div class="api-inner">
+            <div>
+              <div class="section-label"
+                style="margin-left:0;margin-bottom:12px;color:rgba(255,255,255,0.82);background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.14);">
+                Developer &amp; IT integration</div>
+              <h3>HR Software <em>API Integration</em> &mdash; REST, Webhooks &amp; Real-time Sync</h3>
+              <p>Building a custom integration or connecting an in-house system? EKTA HR's open REST API lets your IT
+                team or implementation partner connect any tool in your stack &mdash; with full control over what data
+                flows where.</p>
+              <div class="api-features">
+                <div class="api-feature">REST API with comprehensive endpoint coverage for employees, payroll,
+                  attendance, and leave</div>
+                <div class="api-feature">Webhooks for real-time event notifications &mdash; new hires, payroll runs,
+                  leave approvals</div>
+                <div class="api-feature">Configurable sync frequency &mdash; real-time, hourly, or daily depending on
+                  your system's needs</div>
+                <div class="api-feature">OAuth 2.0 authentication with scoped API keys for security-conscious IT teams
+                </div>
+                <div class="api-feature">Sandbox environment available for testing before production go-live</div>
+              </div>
+            </div>
+            <div class="code-block" aria-label="API sync example">
+              <span class="c-key">POST</span> /v1/employees/sync<br><br>{<br> <span class="c-key">"employee_id"</span>:
+              <span class="c-str">"EMP-1042"</span>,<br> <span class="c-key">"event"</span>: <span
+                class="c-str">"payroll_processed"</span>,<br> <span class="c-key">"sync_to"</span>: <span
+                class="c-str">"tally"</span>,<br> <span class="c-key">"data"</span>: {<br> <span
+                class="c-key">"gross_salary"</span>: <span class="c-val">85000</span>,<br> <span
+                class="c-key">"pf_deduction"</span>: <span class="c-val">3600</span>,<br> <span
+                class="c-key">"net_payable"</span>: <span class="c-val">78400</span><br> }<br>}<br><br><span
+                style="color:rgba(255,255,255,0.35);">// Response: 200 OK &mdash; synced in 1.2s</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="integration-soft" aria-labelledby="benefits-heading">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-label">Benefits of HR software integration</div>
+          <h2 class="section-title" id="benefits-heading">7 reasons Indian companies integrate their <em>HRMS</em></h2>
+          <p class="section-desc">From eliminating payroll errors to passing audits faster &mdash; here's what a
+            connected HR system actually unlocks.</p>
+        </div>
+        <div class="benefits-grid">
+          <div class="benefit-item" data-aos="fade-up">
+            <div class="benefit-num">1</div>
+            <div>
+              <h4>Zero manual data entry between systems</h4>
+              <p>Attendance, leave, and payroll data flows automatically &mdash; your HR team stops being a human API.
+              </p>
+            </div>
+          </div>
+          <div class="benefit-item" data-aos="fade-up">
+            <div class="benefit-num">2</div>
+            <div>
+              <h4>Payroll processed faster &amp; with fewer errors</h4>
+              <p>When HRMS and payroll are connected, salary calculation errors caused by stale data become a thing of
+                the past.</p>
+            </div>
+          </div>
+          <div class="benefit-item" data-aos="fade-up">
+            <div class="benefit-num">3</div>
+            <div>
+              <h4>Consistent financial data across ERP &amp; HRMS</h4>
+              <p>Your SAP or Tally books and EKTA HR stay in sync &mdash; so month-end reconciliation takes minutes, not
+                days.</p>
+            </div>
+          </div>
+          <div class="benefit-item" data-aos="fade-up">
+            <div class="benefit-num">4</div>
+            <div>
+              <h4>Stronger security with automated user provisioning</h4>
+              <p>SSO and SCIM integration mean no orphaned accounts, no access limbo for leavers, no security audit
+                headaches.</p>
+            </div>
+          </div>
+          <div class="benefit-item" data-aos="fade-up">
+            <div class="benefit-num">5</div>
+            <div>
+              <h4>Faster onboarding &amp; background verification</h4>
+              <p>Trigger SpringVerify BGV checks, send Teams notifications, and create SSO access &mdash; all in one
+                onboarding flow.</p>
+            </div>
+          </div>
+          <div class="benefit-item" data-aos="fade-up">
+            <div class="benefit-num">6</div>
+            <div>
+              <h4>Real-time visibility for HR, Finance &amp; IT leaders</h4>
+              <p>Connected systems mean every stakeholder sees the same live data &mdash; no more version conflicts
+                between departments.</p>
+            </div>
+          </div>
+          <div class="benefit-item" data-aos="fade-up">
+            <div class="benefit-num">7</div>
+            <div>
+              <h4>Scales with your business without extra headcount</h4>
+              <p>As your team grows, integrated systems handle the complexity &mdash; your HR team doesn't need to grow
+                at the same rate.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="usecases-heading">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-label">How Indian companies use it</div>
+          <h2 class="section-title" id="usecases-heading">HRMS integration in <em>the real world</em></h2>
+        </div>
+        <div class="usecase-grid">
+          <div class="usecase-card" data-aos="fade-up">
+            <div class="uc-industry">Manufacturing &middot; 500+ employees</div>
+            <h3>SAP HRMS Integration &mdash; connected in 2 weeks</h3>
+            <p>A Pune-based auto components manufacturer needed their HR data in EKTA HR to reflect in SAP FI-CO without
+              nightly batch jobs. After integrating EKTA HR with SAP via REST API, employee cost centre changes,
+              promotions, and payroll journals sync bidirectionally in real-time.</p>
+            <div class="uc-metric">Month-end close: 3 days &rarr; 4 hours</div>
+          </div>
+          <div class="usecase-card" data-aos="fade-up" data-aos-delay="80">
+            <div class="uc-industry">Retail &middot; 200 employees &middot; 12 locations</div>
+            <h3>Biometric + Tally &mdash; attendance to payroll, no Excel</h3>
+            <p>A Delhi retail chain had attendance on ZKTeco devices, salaries in Tally, and HR in spreadsheets. After
+              deploying EKTA HR, biometric punch data flows into attendance &rarr; payroll &rarr; Tally automatically.
+              Payroll that took 4 days now runs in an afternoon.</p>
+            <div class="uc-metric">Payroll processing: 4 days &rarr; 6 hours</div>
+          </div>
+          <div class="usecase-card" data-aos="fade-up">
+            <div class="uc-industry">IT / SaaS &middot; 80 employees</div>
+            <h3>Google Workspace SSO + Teams &mdash; HR inside the tools your team uses</h3>
+            <p>A Bengaluru SaaS company wanted employees to access EKTA HR without another password and get leave
+              approvals without leaving Teams. SSO via Google and Teams integration deployed in a day &mdash; zero IT
+              tickets, 100% adoption in the first week.</p>
+            <div class="uc-metric">IT onboarding time per employee: -60%</div>
+          </div>
+          <div class="usecase-card" data-aos="fade-up" data-aos-delay="80">
+            <div class="uc-industry">NBFC &middot; 300 employees</div>
+            <h3>Okta SSO + SpringVerify &mdash; compliant onboarding at scale</h3>
+            <p>An NBFC hiring 30+ employees per month needed BGV automated into onboarding, with SSO access provisioned
+              only after BGV cleared. EKTA HR + Okta + SpringVerify created a gated onboarding flow &mdash; compliant by
+              default, with full audit trail for RBI requirements.</p>
+            <div class="uc-metric">Onboarding compliance: fully automated</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-label">Common questions</div>
+          <h2 class="section-title" id="faq-heading">HR software integration <em>FAQ</em></h2>
+        </div>
+        <div class="faq-list" role="list">
+          <div class="faq-item open" role="listitem">
+            <button class="faq-q" type="button" aria-expanded="true">How do I integrate EKTA HR with Tally for
+              payroll?<i class="fas fa-chevron-down"></i></button>
+            <div class="faq-a">
+              <p>EKTA HR's Tally integration uses Tally's XML/REST interface to push processed payroll data &mdash;
+                including salary components, PF, ESI, and professional tax &mdash; directly into the correct Tally
+                ledgers. Setup takes under 2 hours: you configure your ledger mapping once, and every subsequent payroll
+                run syncs automatically. No manual exports, no CSV imports.</p>
+            </div>
+          </div>
+          <div class="faq-item" role="listitem">
+            <button class="faq-q" type="button" aria-expanded="false">Which biometric devices are supported for HRMS
+              integration?<i class="fas fa-chevron-down"></i></button>
+            <div class="faq-a">
+              <p>EKTA HR natively supports ZKTeco, eSSL, and Matrix biometric devices &mdash; the three most widely
+                deployed brands in Indian workplaces. Punch data from fingerprint, face recognition, and card-based
+                devices syncs directly into EKTA HR's attendance module in real time. For other device brands, our PUSH
+                API allows custom integration.</p>
+            </div>
+          </div>
+          <div class="faq-item" role="listitem">
+            <button class="faq-q" type="button" aria-expanded="false">What is HRMS API integration and do I need a
+              developer?<i class="fas fa-chevron-down"></i></button>
+            <div class="faq-a">
+              <p>HRMS API integration means connecting your HRMS to other business systems (ERP, accounting software,
+                custom apps) via programmatic APIs rather than manual data export. For EKTA HR's pre-built integrations
+                with Tally, SAP, QuickBooks, Okta, and others, no developer is needed &mdash; they're configured through
+                the admin panel. For custom integrations using our REST API, your IT team or a system integrator can
+                connect any system using our API documentation.</p>
+            </div>
+          </div>
+          <div class="faq-item" role="listitem">
+            <button class="faq-q" type="button" aria-expanded="false">How does attendance data sync to payroll in an
+              integrated HRMS?<i class="fas fa-chevron-down"></i></button>
+            <div class="faq-a">
+              <p>In EKTA HR, attendance data from biometric devices, the mobile app, or manual marking is processed
+                against your shift schedules to calculate present days, absences, LOP (Loss of Pay), overtime, and late
+                marks. This processed attendance data feeds directly into the payroll engine &mdash; no manual transfer
+                needed. Payroll picks up the attendance figures for the pay period automatically when you run payroll,
+                applying your configured LOP rules, overtime rates, and regularisation policies.</p>
+            </div>
+          </div>
+          <div class="faq-item" role="listitem">
+            <button class="faq-q" type="button" aria-expanded="false">Can EKTA HR integrate with SAP and Oracle HCM
+              simultaneously?<i class="fas fa-chevron-down"></i></button>
+            <div class="faq-a">
+              <p>Yes. EKTA HR can maintain bidirectional sync with multiple ERP or HCM systems simultaneously &mdash;
+                useful for organisations mid-migration between SAP and Oracle, or companies running SAP for finance and
+                Oracle HCM for global workforce management. Data mappings are configured independently for each
+                integration.</p>
+            </div>
+          </div>
+          <div class="faq-item" role="listitem">
+            <button class="faq-q" type="button" aria-expanded="false">Does EKTA HR support SSO for small and medium
+              businesses?<i class="fas fa-chevron-down"></i></button>
+            <div class="faq-a">
+              <p>Absolutely. Google Workspace SSO is available on all EKTA HR plans and takes about 30 minutes to
+                configure &mdash; no dedicated IT team required. Okta SSO with SCIM provisioning is available for larger
+                teams that need automated user lifecycle management. Both options eliminate the need for employees to
+                manage a separate HRMS password.</p>
+            </div>
+          </div>
+          <div class="faq-item" role="listitem">
+            <button class="faq-q" type="button" aria-expanded="false">Is there a checklist for ERP + HRMS integration in
+              India?<i class="fas fa-chevron-down"></i></button>
+            <div class="faq-a">
+              <p>Key things to verify before go-live: (1) data field mapping between both systems is complete and
+                reviewed, (2) sync direction is configured correctly — one-way or bidirectional per data type, (3)
+                conflict resolution rules are set for when data changes in both systems simultaneously, (4) historical
+                data migration scope is agreed upon, (5) a rollback plan exists for the first 30 days, (6) user
+                acceptance testing is done with real payroll data from a previous month, (7) IT and HR teams are trained
+                on how to handle sync errors. Get in touch with our implementation team for a full pre-go-live checklist
+                tailored to your stack.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="cta-card" data-aos="zoom-in">
+          <div class="cta-copy">
+            <h2 id="cta-heading">Connect your entire HR stack &mdash;<br><em>free for 3 months</em></h2>
+            <p>Join Indian companies that have eliminated manual data entry between HR, payroll, and their business
+              tools.</p>
+          </div>
+          <div class="cta-actions">
+            <a href="https://my.ektahr.com/signup" class="btn btn-primary" style="padding: 16px 28px;">Start 3-month free trial</a>
+            <a href="https://ektahr.com/contact.html" class="btn btn-outline" style="padding: 16px 28px;">Talk to an integration expert</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div hidden>
+    <!-- Why Integrate (Advantages Style) -->
+    <section class="sp" style="background: var(--bg-light);">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Value Proposition</span>
+          <h2>Why Integrate with EKTA HR?</h2>
+          <p>A connected system is a smarter system. Experience the power of unified data flow.</p>
+        </div>
+
+        <div class="journey-grid">
+          <!-- Card 1 -->
+          <div class="card-inverted-wrapper" data-aos="fade-up">
+            <div class="journey-icon"><i class="fas fa-bullseye"></i></div>
+            <div class="card-inverted">
+              <h4>Centralized Operations</h4>
+              <p>Connect to a single source of truth for employee data, payroll, and attendance—making your organization
+                smarter and more efficient.</p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="card-inverted-wrapper" data-aos="fade-up" data-aos-delay="100">
+            <div class="journey-icon"><i class="fas fa-sync"></i></div>
+            <div class="card-inverted">
+              <h4>Real-Time Data Sync</h4>
+              <p>Sync data instantly to avoid manual entry, reduce errors, and enable live updates across all your
+                business platforms effortlessly.</p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="card-inverted-wrapper" data-aos="fade-up" data-aos-delay="200">
+            <div class="journey-icon"><i class="fas fa-puzzle-piece"></i></div>
+            <div class="card-inverted">
+              <h4>Ultimate Flexibility</h4>
+              <p>EKTA HR is designed to integrate with a wide range of third-party platforms—ERPs, Biometric systems,
+                Accounting software, and more.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Integrations Grid (Feature Cards Style) -->
+    <section class="sp" id="integrations">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Explore Connectivity</span>
+          <h2>Integrations that Power Up Your Workflow</h2>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="int-cats" data-aos="fade-up">
+          <button class="cat-btn active" data-filter="all">All Tools</button>
+          <button class="cat-btn" data-filter="erp">ERP & HCM</button>
+          <button class="cat-btn" data-filter="accounting">Accounting</button>
+          <button class="cat-btn" data-filter="security">Security & SSO</button>
+          <button class="cat-btn" data-filter="collaboration">Collaboration</button>
+        </div>
+
+        <div class="features-grid">
+          <!-- ERP -->
+          <div class="feature-card glass-card int-card" data-category="erp" data-aos="fade-up">
+            <div class="int-logo-box"><i class="fas fa-database"></i></div>
+            <h3>SAP Integration</h3>
+            <p>Connect with SAP ERP solutions to manage finance, logistics, and HR data with enterprise-grade
+              efficiency.
+            </p>
+          </div>
+
+          <div class="feature-card glass-card int-card" data-category="erp" data-aos="fade-up" data-aos-delay="100">
+            <div class="int-logo-box"><i class="fas fa-cloud"></i></div>
+            <h3>Oracle HCM Cloud</h3>
+            <p>Global HR, payroll, and talent management synchronization for complex workforce lifecycles.</p>
+          </div>
+
+          <!-- Accounting -->
+          <div class="feature-card glass-card int-card" data-category="accounting" data-aos="fade-up"
+            data-aos-delay="200">
+            <div class="int-logo-box"><i class="fas fa-calculator"></i></div>
+            <h3>Tally Solutions</h3>
+            <p>Simplify business finances by syncing payroll data directly with Tally for accurate, error-free
+              accounting.
+            </p>
+          </div>
+
+          <div class="feature-card glass-card int-card" data-category="accounting" data-aos="fade-up">
+            <div class="int-logo-box"><i class="fas fa-file-invoice-dollar"></i></div>
+            <h3>QuickBooks</h3>
+            <p>Track expenses and run payroll with easy-to-use accounting tools connected directly to EKTA HR.</p>
+          </div>
+
+          <!-- Security -->
+          <div class="feature-card glass-card int-card" data-category="security" data-aos="fade-up"
+            data-aos-delay="100">
+            <div class="int-logo-box"><i class="fas fa-shield-alt"></i></div>
+            <h3>Okta SSO</h3>
+            <p>Seamless Single Sign-On and automated user provisioning for enhanced organizational security and control.
+            </p>
+          </div>
+
+          <div class="feature-card glass-card int-card" data-category="security" data-aos="fade-up"
+            data-aos-delay="200">
+            <div class="int-logo-box"><i class="fab fa-google"></i></div>
+            <h3>Google Workspace</h3>
+            <p>Streamline authentication using Google credentials for easy access to your EKTA HR dashboard.</p>
+          </div>
+
+          <!-- Collaboration -->
+          <div class="feature-card glass-card int-card" data-category="collaboration" data-aos="fade-up">
+            <div class="int-logo-box"><i class="fas fa-video"></i></div>
+            <h3>Virtual Meetings</h3>
+            <p>Enable one-click Zoom or Meet interviews and onboarding meetings scheduled directly within EKTA.</p>
+          </div>
+
+          <div class="feature-card glass-card int-card" data-category="collaboration" data-aos="fade-up"
+            data-aos-delay="100">
+            <div class="int-logo-box"><i class="fab fa-microsoft"></i></div>
+            <h3>Microsoft Teams</h3>
+            <p>Integrate with MS Teams to facilitate seamless interview scheduling and internal team collaboration.</p>
+          </div>
+
+          <!-- Verification/Rewards -->
+          <div class="feature-card glass-card int-card" data-category="collaboration" data-aos="fade-up"
+            data-aos-delay="200">
+            <div class="int-logo-box"><i class="fas fa-user-check"></i></div>
+            <h3>SpringVerify</h3>
+            <p>Automated background checks and candidate verification directly within the onboarding module.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section (Premium) -->
+    <!-- <section class="sp" style="padding: 80px 0;">
     <div class="container text-center">
       <div class="glass-card"
         style="padding: 80px 40px; background: linear-gradient(135deg, var(--secondary) 0%, #000 100%); color: var(--white); overflow: hidden; position: relative; border: none;"
@@ -749,14 +2369,16 @@
     </div>
   </section> -->
 
-  <!-- Fixed CTA Banner -->
-  <section class="fixed-cta-section" data-aos="zoom-in">
-    <div class="fixed-cta-card">
-      <h5>Transform your workforce with the power of EKTA HR. — <span style="color: var(--secondary)">3 months
-          free.</span></h5>
-      <a href="https://my.ektahr.com/signup" class="btn-fixed-cta">Start 3 months free trail</a>
-    </div>
-  </section>
+    <!-- Fixed CTA Banner -->
+    <section class="fixed-cta-section" data-aos="zoom-in">
+      <div class="fixed-cta-card">
+        <h5>Transform your workforce with the power of EKTA HR. — <span style="color: var(--secondary)">3 months
+            free.</span></h5>
+        <a href="https://my.ektahr.com/signup" class="btn-fixed-cta">Start 3 months free trail</a>
+      </div>
+    </section>
+
+  </div>
 
   <!-- FOOTER -->
   <footer>
@@ -893,6 +2515,50 @@
             card.style.display = 'none';
           }
         });
+      });
+    });
+
+    // Integration Directory Filtering
+    const integrationFilters = document.querySelectorAll('.integration-filter');
+    const integrationCards = document.querySelectorAll('.integration-page .int-card');
+    const integrationFeatureSections = document.querySelectorAll('[data-section-category]');
+
+    integrationFilters.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter');
+        integrationFilters.forEach(item => item.classList.remove('active'));
+        btn.classList.add('active');
+
+        integrationCards.forEach(card => {
+          const match = filter === 'all' || card.getAttribute('data-category') === filter;
+          card.hidden = !match;
+        });
+
+        integrationFeatureSections.forEach(section => {
+          const category = section.getAttribute('data-section-category');
+          const showSection = filter === 'all' || filter === category || (filter === 'biometric' && category === 'api');
+          section.hidden = !showSection;
+        });
+      });
+    });
+
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll('.integration-page .faq-item');
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-q');
+      question.addEventListener('click', () => {
+        const willOpen = !item.classList.contains('open');
+
+        faqItems.forEach(faq => {
+          faq.classList.remove('open');
+          const btn = faq.querySelector('.faq-q');
+          if (btn) btn.setAttribute('aria-expanded', 'false');
+        });
+
+        if (willOpen) {
+          item.classList.add('open');
+          question.setAttribute('aria-expanded', 'true');
+        }
       });
     });
 
